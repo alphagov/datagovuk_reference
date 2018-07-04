@@ -1,0 +1,95 @@
+daemon off;
+#Heroku dynos have at least 4 cores.
+worker_processes <%= ENV['NGINX_WORKERS'] || 4 %>;
+
+events {
+	use epoll;
+	accept_mutex on;
+	worker_connections 1024;
+}
+
+http {
+    gzip on;
+    gzip_comp_level 2;
+    gzip_min_length 512;
+
+	server_tokens off;
+
+	log_format l2met 'measure#nginx.service=$request_time request_id=$http_x_request_id';
+	access_log logs/nginx/access.log l2met;
+	error_log logs/nginx/error.log;
+
+	include mime.types;
+	default_type application/octet-stream;
+	sendfile on;
+
+	#Must read the body in 5 seconds.
+	client_body_timeout 5;
+
+	# Do relative redirects
+	server_name_in_redirect off;
+	port_in_redirect off;
+
+	upstream app_server {
+		server localhost:<%= ENV["PORT"].to_i + 1%> fail_timeout=0;
+ 	}
+
+	server {
+		listen <%= ENV["PORT"] %>;
+		server_name _;
+		keepalive_timeout 5;
+
+		set $base $http_x_forwarded_proto://$host;
+
+	    location /id/open-government-licence {
+	        return 303 http://www.nationalarchives.gov.uk/doc/open-government-licence;
+	    }
+
+	    # Organogram viz redirect
+	    # e.g. /gov-structure/organogram/?pubbod=national-institute-for-health-and-care-excellence
+	    location ~ '^/gov-structure/organogram' {
+	        return 301 https://data.gov.uk/organogram;
+	    }
+
+	    # Organogram data
+	    # All redirected to the TNA Web Archive
+
+	    # e.g. http://reference.data.gov.uk/id/department/co
+	    location ~ '^/id/(department|public-body)/' {
+	        return 301 $http_x_forwarded_proto://webarchive.nationalarchives.gov.uk/+/$http_x_forwarded_proto://reference.data.gov.uk$request_uri;
+	    }
+	    # e.g. http://reference.data.gov.uk/2011-09-30/doc/department/co
+	    location ~ '^/20\d\d-' {
+	        return 301 $http_x_forwarded_proto://webarchive.nationalarchives.gov.uk/+/$http_x_forwarded_proto://reference.data.gov.uk$request_uri;
+	    }
+
+	    # Time interval service formerly run by Epimorphics
+	    # Now running on our own AWS server
+	    # source code at https://github.com/epimorphics/IntervalServer
+	    location ~ '^/(id|doc)/(intervals|gregorian-calendar|uk-calendar|government-calendar|gregorian-instant|gregorian-interval|gregorian-year|gregorian-half|gregorian-quarter|gregorian-month|gregorian-week|gregorian-day|gregorian-hour|gregorian-minute|gregorian-second|year|half|quarter|month|week|day|hour|minute|second|government-year|government-half|government-quarter|government-week)' {
+	       proxy_pass http://app_server;
+	    }
+
+	    # Definitions (vocabularies)
+
+	    # e.g. http://reference.data.gov.uk/def/intervals/IntervalList.ttl
+	    #      redirects to
+	    #      http://reference.data.gov.uk/def/intervals.ttl
+	    location ~ '^(?<root>/def/.*)/.*.(?<extension>ttl|n3|rdf)$' {
+	        return 303 $base$root.$extension;
+	    }
+
+	    # e.g. http://reference.data.gov.uk/def/intervals/IntervalList
+	    #      redirects to
+	    #      http://reference.data.gov.uk/def/intervals
+	    location ~ '^(?<root>/def/.*)/' {
+	        return 303 $base$root;
+	    }
+
+	    # Serve index.html at /
+	    root /app/www;
+	    location / {
+
+	    }
+	}
+}
