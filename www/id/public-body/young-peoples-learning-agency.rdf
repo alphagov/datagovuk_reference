@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Young People's Learning Agency</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency/unit/business-performance-and-communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency/unit/finance-funding-and-corporate-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency/unit/chief-executive-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency/unit/strategy-and-implementation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency/unit/academies"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dfe"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/young-peoples-learning-agency.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency/unit/business-performance-and-communications">
+    <rdfs:label>Business Performance and Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency/unit/finance-funding-and-corporate-services">
+    <rdfs:label>Finance, Funding and Corporate Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency/unit/chief-executive-office">
+    <rdfs:label>Chief Executive Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency/unit/strategy-and-implementation">
+    <rdfs:label>Strategy and Implementation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency/unit/academies">
+    <rdfs:label>Academies</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe">
+    <rdfs:label>Department for Education</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/young-peoples-learning-agency.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/young-peoples-learning-agency"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/young-peoples-learning-agency.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

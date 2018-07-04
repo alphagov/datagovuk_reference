@@ -1,0 +1,7 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/nhs-litigation-authority","NHS Litigation Authority",,"Technical Claims Unit","Department of Health","http://reference.data.gov.uk/id/department/dh"
+"http://reference.data.gov.uk/id/public-body/nhs-litigation-authority","NHS Litigation Authority",,"Finance & IT","Department of Health","http://reference.data.gov.uk/id/department/dh"
+"http://reference.data.gov.uk/id/public-body/nhs-litigation-authority","NHS Litigation Authority","Organization","Family Health Services Appeals","Department of Health","http://reference.data.gov.uk/id/department/dh"
+"http://reference.data.gov.uk/id/public-body/nhs-litigation-authority","NHS Litigation Authority","Organization","Non-clinical claims","Department of Health","http://reference.data.gov.uk/id/department/dh"
+"http://reference.data.gov.uk/id/public-body/nhs-litigation-authority","NHS Litigation Authority","Organization","Risk Management","Department of Health","http://reference.data.gov.uk/id/department/dh"
+"http://reference.data.gov.uk/id/public-body/nhs-litigation-authority","NHS Litigation Authority","Organization","Clinical claims","Department of Health","http://reference.data.gov.uk/id/department/dh"

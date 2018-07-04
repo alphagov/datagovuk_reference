@@ -1,0 +1,110 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/dft> rdf:type msg0:Organization ,
+                                                          ns0:Department ,
+                                                          ns0:PublicBody ;
+                                                 rdfs:label "Department for Transport" ;
+                                                 msg0:hasUnit <http://reference.data.gov.uk/id/department/dft/unit/transport-direct-travel-information> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/international-strategy-environment> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/transport-security-strategy> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/air-accident-investigation> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/group-finance> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/group-hr> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/motoring-agencies> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/dangerous-goods-smart-ticketing-high-speed-rail> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/marine-accident-investigation> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/rail-accident-investigation> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/commercial-technical-services> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/group-internal-audit> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/greener-transport-international> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/maritime> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/private-office-parliamentary> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/business-transformation> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/shared-services> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/corporate-governance> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/strategy> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/roads> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/analysis-science> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/major-projects-london> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/corporate-group> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/local> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/rail> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/london-olympics> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/rail-road-projects> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/general-counsel> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/domestic-group> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/aviation> ,
+                                                              <http://reference.data.gov.uk/id/department/dft/unit/rail-commercial-contracts> ;
+                                                 foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/dft.ttl> . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/transport-direct-travel-information> rdfs:label "Transport Direct & Travel Information" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/international-strategy-environment> rdfs:label "International, Strategy & Environment" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/transport-security-strategy> rdfs:label "Transport Security Strategy" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/air-accident-investigation> rdfs:label "Air Accident Investigation" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/group-finance> rdfs:label "Group Finance" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/group-hr> rdfs:label "Group HR" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/motoring-agencies> rdfs:label "Motoring Agencies" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/dangerous-goods-smart-ticketing-high-speed-rail> rdfs:label "Dangerous Goods, Smart ticketing & High Speed Rail" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/marine-accident-investigation> rdfs:label "Marine Accident Investigation" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/rail-accident-investigation> rdfs:label "Rail Accident Investigation" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/commercial-technical-services> rdfs:label "Commercial & Technical Services" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/group-internal-audit> rdfs:label "Group Internal Audit" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/greener-transport-international> rdfs:label "Greener Transport & International" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/maritime> rdfs:label "Maritime" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/private-office-parliamentary> rdfs:label "Private Office & Parliamentary" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/business-transformation> rdfs:label "Business Transformation" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/shared-services> rdfs:label "Shared Services" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/corporate-governance> rdfs:label "Corporate Governance" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/strategy> rdfs:label "Strategy" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/roads> rdfs:label "Roads" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/analysis-science> rdfs:label "Analysis & Science" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/major-projects-london> rdfs:label "Major Projects & London" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/corporate-group> rdfs:label "Corporate Group" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/local> rdfs:label "Local" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/rail> rdfs:label "Rail" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/london-olympics> rdfs:label "London & Olympics" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/rail-road-projects> rdfs:label "Rail & Road Projects" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/general-counsel> rdfs:label "General Counsel" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/domestic-group> rdfs:label "Domestic Group" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/aviation> rdfs:label "Aviation" . 
+
+<http://reference.data.gov.uk/id/department/dft/unit/rail-commercial-contracts> rdfs:label "Rail Commercial Contracts" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/dft.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/dft> ;
+                                                                 linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                 linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/dft.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

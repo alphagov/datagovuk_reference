@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/Department"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Department for Education</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/academies-policy-and-school-organisation-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/communications-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/strategic-analysis-research-and-policy-impact-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/infrastructure-funding-and-longitudinal-analysis-division"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/academies-delivery-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/internal-audit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/chief-information-officer-and-property-asset-management-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/school-standards-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/children-young-people-and-families-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/qualifications-and-participation-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/teachers-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/education-strategy-performance-and-analysis-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/strategy-and-performance-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/people-and-change-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/office-of-the-schools-commissioner"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/infrastructure-and-funding-directorate-support-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/curriculum-and-behaviour-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/early-years-extended-schools-and-special-needs-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/supporting-children-and-young-people-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/education-funding-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/families-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/legal-advisers-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/free-schools-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/supporting-delivery-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/finance-and-commercial-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/private-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/safeguarding-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dfe/unit/alb-reform-group"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/academies-policy-and-school-organisation-group">
+    <rdfs:label>Academies Policy and School Organisation Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/communications-group">
+    <rdfs:label>Communications Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/strategic-analysis-research-and-policy-impact-group">
+    <rdfs:label>Strategic Analysis Research and Policy Impact Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/infrastructure-funding-and-longitudinal-analysis-division">
+    <rdfs:label>Infrastructure Funding and Longitudinal Analysis Division</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/academies-delivery-group">
+    <rdfs:label>Academies Delivery Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/internal-audit">
+    <rdfs:label>Internal Audit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/chief-information-officer-and-property-asset-management-group">
+    <rdfs:label>Chief Information Officer and Property Asset Management Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/school-standards-group">
+    <rdfs:label>School Standards Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/children-young-people-and-families-directorate">
+    <rdfs:label>Children, Young People and Families Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/qualifications-and-participation-group">
+    <rdfs:label>Qualifications and Participation Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/teachers-group">
+    <rdfs:label>Teachers Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/education-strategy-performance-and-analysis-group">
+    <rdfs:label>Education Strategy, Performance and Analysis Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/strategy-and-performance-group">
+    <rdfs:label>Strategy and Performance Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/people-and-change-group">
+    <rdfs:label>People and Change Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/office-of-the-schools-commissioner">
+    <rdfs:label>Office of the Schools Commissioner</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/infrastructure-and-funding-directorate-support-team">
+    <rdfs:label>Infrastructure and Funding Directorate Support Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/curriculum-and-behaviour-group">
+    <rdfs:label>Curriculum and Behaviour Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/early-years-extended-schools-and-special-needs-group">
+    <rdfs:label>Early Years, Extended Schools and Special Needs Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/supporting-children-and-young-people-group">
+    <rdfs:label>Supporting Children and Young People Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/education-funding-group">
+    <rdfs:label>Education Funding Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/families-group">
+    <rdfs:label>Families Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/legal-advisers-office">
+    <rdfs:label>Legal Advisers Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/free-schools-group">
+    <rdfs:label>Free Schools Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/supporting-delivery-group">
+    <rdfs:label>Supporting Delivery Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/finance-and-commercial-group">
+    <rdfs:label>Finance and Commercial Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/private-office">
+    <rdfs:label>Private Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/safeguarding-group">
+    <rdfs:label>Safeguarding Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe/unit/alb-reform-group">
+    <rdfs:label>ALB Reform Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/department/dfe"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#department"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

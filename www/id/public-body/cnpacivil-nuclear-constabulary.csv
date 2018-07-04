@@ -1,0 +1,5 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/cnpacivil-nuclear-constabulary","CNPA/Civil Nuclear Constabulary",,"CNPA Secretariat","Department of Energy and Climate Change","http://reference.data.gov.uk/id/department/decc"
+"http://reference.data.gov.uk/id/public-body/cnpacivil-nuclear-constabulary","CNPA/Civil Nuclear Constabulary",,"Operational Services","Department of Energy and Climate Change","http://reference.data.gov.uk/id/department/decc"
+"http://reference.data.gov.uk/id/public-body/cnpacivil-nuclear-constabulary","CNPA/Civil Nuclear Constabulary","Organization","Corporate Services","Department of Energy and Climate Change","http://reference.data.gov.uk/id/department/decc"
+"http://reference.data.gov.uk/id/public-body/cnpacivil-nuclear-constabulary","CNPA/Civil Nuclear Constabulary","Organization","Support Services","Department of Energy and Climate Change","http://reference.data.gov.uk/id/department/decc"

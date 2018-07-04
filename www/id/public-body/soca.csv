@@ -1,0 +1,6 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/soca","SOCA",,"Capability and Service Delivery","Home Office","http://reference.data.gov.uk/id/department/ho"
+"http://reference.data.gov.uk/id/public-body/soca","SOCA",,"Operational Delivery","Home Office","http://reference.data.gov.uk/id/department/ho"
+"http://reference.data.gov.uk/id/public-body/soca","SOCA","Organization","Director's Office","Home Office","http://reference.data.gov.uk/id/department/ho"
+"http://reference.data.gov.uk/id/public-body/soca","SOCA","Organization","Strategy and Prevention","Home Office","http://reference.data.gov.uk/id/department/ho"
+"http://reference.data.gov.uk/id/public-body/soca","SOCA","Organization","Child Exploitation Online Protection","Home Office","http://reference.data.gov.uk/id/department/ho"

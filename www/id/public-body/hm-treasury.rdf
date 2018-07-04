@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>HM Treasury</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/alignment-project-clear-line-of-sight"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/banking-financial-sector-analysis"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/chancellors-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/contingency-planning-financial-sector-secretariat-and-projects-teams"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-economics"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-personal-tax-welfare-pensions"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/education-children-and-culture"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/european-union-finances"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/exchequer-funds-and-accounts"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/finance-professionalism"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/health"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/home-legal-and-communities"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/information-workplace-solutions"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iuk-financeinfrastructure-finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/local-government-regions"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/macroeconomic-coordination-strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/parliamentary-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/personal-taxation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/securities-markets"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/treasury-legal-advisors-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/treasury-officer-of-accounts"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/workforce-pay-and-pensions-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/budget-coordination"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/devolved-countries"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/director-generals-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-financial-management-reporting"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-financial-regulation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-financial-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-fiscal"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-public-spending"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-strategy-planning-budget"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/fiscal-statistics-and-policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/gms"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/infrastructure-delivery"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-prog-project-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/pensions-and-savings-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/permanent-secretarys-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/press-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/workplace-project"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/assurance-and-financial-reporting-policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/banking-credit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/business-coordination"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/corporate-finance-business-innovation-skills"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/corporate-services-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/corporate-taxation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-international-eu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/eu-institutions-and-policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/general-expenditure-policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/group-human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-and-reform-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-and-reform-unit-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/strategy-change-and-performance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/tax-administration-compliance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/treasury-group-commercial-and-internal-audit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/work-incentives-and-poverty-analysis"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/change-and-managementstrategic-review-implementation-teams"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/correspondence-information-rights-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/counter-illicit-finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/environmental-tax"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/finance-in-the-business"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-stability-interventions-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/infrastructure-uk-iuk"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/intervention-strategy-and-marketsdebt-and-reserve-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/macroeconomic-prospects"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-and-reform-unit-directors-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/transport-regulation-and-competition"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/chief-secretarys-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/development-finance-climate-energy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/digital-and-corporate-communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-enterprise-growth"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/energy-environment-and-agriculture"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/excise-and-enterprise-tax"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-secretarys-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/government-economic-social-research-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/independent-banking-commission"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/oscar"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-public-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/group-finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/infrastructure-strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iuk-assurance-and-international"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-information-workplace-solutions"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-resource-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/macroeconomic-analysis"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/ppp-policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/strategy-planning-budget"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/vat-international-excise"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/commercial-secretarys-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-business-and-international-tax"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/economic-secretarys-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/european-economic-policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-services-strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/housing-regeneration-and-third-sector"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/insurance-and-savings"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/international-taxoffice-of-tax-simplification-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/labour-market-policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-projects-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/special-advisers"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/asset-freezing-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/budget-strategy-and-tax"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/defence-diplomacy-intelligence"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/equitable-life-and-property-tax"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/exchequer-secretarys-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-regulation-strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/global-economics-coordination-strategy-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/global-economics-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/government-estimates-accounts-and-reporting"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/growth-and-productivity"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-solutions-delivery"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-efficiency-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/strategy-reform-productivity"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/hmt"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/alignment-project-clear-line-of-sight">
+    <rdfs:label>Alignment Project - Clear Line of Sight</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/banking-financial-sector-analysis">
+    <rdfs:label>Banking &amp; Financial Sector Analysis</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/chancellors-office">
+    <rdfs:label>Chancellors Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/contingency-planning-financial-sector-secretariat-and-projects-teams">
+    <rdfs:label>Contingency Planning /Financial Sector Secretariat and Projects Teams</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-economics">
+    <rdfs:label>Directors Office Economics</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-personal-tax-welfare-pensions">
+    <rdfs:label>Directors Office Personal Tax, Welfare &amp; Pensions</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/education-children-and-culture">
+    <rdfs:label>Education, Children and Culture</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/european-union-finances">
+    <rdfs:label>European Union Finances</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/exchequer-funds-and-accounts">
+    <rdfs:label>Exchequer Funds and Accounts</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/finance-professionalism">
+    <rdfs:label>Finance Professionalism</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/health">
+    <rdfs:label>Health</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/home-legal-and-communities">
+    <rdfs:label>Home Legal and Communities</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/information-workplace-solutions">
+    <rdfs:label>Information &amp; Workplace Solutions</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iuk-financeinfrastructure-finance">
+    <rdfs:label>IUK Finance/Infrastructure Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/local-government-regions">
+    <rdfs:label>Local Government &amp; Regions</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/macroeconomic-coordination-strategy">
+    <rdfs:label>Macroeconomic Coordination &amp; Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/parliamentary-unit">
+    <rdfs:label>Parliamentary Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/personal-taxation">
+    <rdfs:label>Personal Taxation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/securities-markets">
+    <rdfs:label>Securities &amp; Markets</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/treasury-legal-advisors-team">
+    <rdfs:label>Treasury Legal Advisors Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/treasury-officer-of-accounts">
+    <rdfs:label>Treasury Officer of Accounts</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/workforce-pay-and-pensions-team">
+    <rdfs:label>Workforce Pay and Pensions Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/budget-coordination">
+    <rdfs:label>Budget Coordination</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/devolved-countries">
+    <rdfs:label>Devolved Countries</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/director-generals-office">
+    <rdfs:label>Director Generals Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-financial-management-reporting">
+    <rdfs:label>Directors Office Financial Management Reporting</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-financial-regulation">
+    <rdfs:label>Directors Office Financial Regulation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-financial-services">
+    <rdfs:label>Directors Office Financial Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-fiscal">
+    <rdfs:label>Directors Office Fiscal</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-public-spending">
+    <rdfs:label>Directors Office Public Spending</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-strategy-planning-budget">
+    <rdfs:label>Directors Office Strategy, Planning &amp; Budget</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/fiscal-statistics-and-policy">
+    <rdfs:label>Fiscal Statistics and Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/gms">
+    <rdfs:label>GMS</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/infrastructure-delivery">
+    <rdfs:label>Infrastructure Delivery</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-prog-project-management">
+    <rdfs:label>IWS Prog &amp; Project Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/pensions-and-savings-team">
+    <rdfs:label>Pensions and Savings Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/permanent-secretarys-office">
+    <rdfs:label>Permanent Secretary's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/press-office">
+    <rdfs:label>Press Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/workplace-project">
+    <rdfs:label>Workplace Project</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/assurance-and-financial-reporting-policy">
+    <rdfs:label>Assurance and Financial Reporting Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/banking-credit">
+    <rdfs:label>Banking &amp; Credit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/business-coordination">
+    <rdfs:label>Business Coordination</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/corporate-finance-business-innovation-skills">
+    <rdfs:label>Corporate Finance, Business, Innovation &amp; Skills</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/corporate-services-directorate">
+    <rdfs:label>Corporate Services Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/corporate-taxation">
+    <rdfs:label>Corporate Taxation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-international-eu">
+    <rdfs:label>Directors Office International &amp; EU</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/eu-institutions-and-policy">
+    <rdfs:label>EU Institutions and Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/general-expenditure-policy">
+    <rdfs:label>General Expenditure Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/group-human-resources">
+    <rdfs:label>Group Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-and-reform-unit">
+    <rdfs:label>Performance and Reform Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-and-reform-unit-team">
+    <rdfs:label>Performance and Reform Unit Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/strategy-change-and-performance">
+    <rdfs:label>Strategy Change and Performance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/tax-administration-compliance">
+    <rdfs:label>Tax Administration &amp; Compliance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/treasury-group-commercial-and-internal-audit">
+    <rdfs:label>Treasury Group Commercial and Internal Audit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/work-incentives-and-poverty-analysis">
+    <rdfs:label>Work Incentives and Poverty Analysis</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/change-and-managementstrategic-review-implementation-teams">
+    <rdfs:label>Change and Management/Strategic Review Implementation Teams</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/correspondence-information-rights-team">
+    <rdfs:label>Correspondence &amp; Information Rights Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/counter-illicit-finance">
+    <rdfs:label>Counter Illicit Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/environmental-tax">
+    <rdfs:label>Environmental Tax</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/finance-in-the-business">
+    <rdfs:label>Finance in the Business</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-stability-interventions-management">
+    <rdfs:label>Financial Stability Interventions Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/infrastructure-uk-iuk">
+    <rdfs:label>Infrastructure UK (IUK)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/intervention-strategy-and-marketsdebt-and-reserve-management">
+    <rdfs:label>Intervention Strategy and Markets/Debt and Reserve Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/macroeconomic-prospects">
+    <rdfs:label>Macroeconomic Prospects</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-and-reform-unit-directors-office">
+    <rdfs:label>Performance and Reform Unit Directors Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/transport-regulation-and-competition">
+    <rdfs:label>Transport Regulation and Competition</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/chief-secretarys-office">
+    <rdfs:label>Chief Secretary's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/development-finance-climate-energy">
+    <rdfs:label>Development Finance, Climate &amp; Energy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/digital-and-corporate-communications">
+    <rdfs:label>Digital and Corporate Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-enterprise-growth">
+    <rdfs:label>Directors Office Enterprise &amp; Growth</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/energy-environment-and-agriculture">
+    <rdfs:label>Energy, Environment and Agriculture</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/excise-and-enterprise-tax">
+    <rdfs:label>Excise and Enterprise Tax</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-secretarys-office">
+    <rdfs:label>Financial Secretary's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/government-economic-social-research-unit">
+    <rdfs:label>Government Economic &amp; Social Research Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/independent-banking-commission">
+    <rdfs:label>Independent Banking Commission</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/oscar">
+    <rdfs:label>Oscar</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-public-services">
+    <rdfs:label>Directors Office Public Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/group-finance">
+    <rdfs:label>Group Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/infrastructure-strategy">
+    <rdfs:label>Infrastructure Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iuk-assurance-and-international">
+    <rdfs:label>IUK Assurance and International</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-information-workplace-solutions">
+    <rdfs:label>IWS Information &amp; Workplace Solutions</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-resource-management">
+    <rdfs:label>IWS Resource Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/macroeconomic-analysis">
+    <rdfs:label>Macroeconomic Analysis</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/ppp-policy">
+    <rdfs:label>PPP Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/strategy-planning-budget">
+    <rdfs:label>Strategy, Planning &amp; Budget</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/vat-international-excise">
+    <rdfs:label>VAT &amp; International Excise</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/commercial-secretarys-office">
+    <rdfs:label>Commercial Secretary's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-business-and-international-tax">
+    <rdfs:label>Directors Office Business and International Tax</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/economic-secretarys-office">
+    <rdfs:label>Economic Secretary's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/european-economic-policy">
+    <rdfs:label>European Economic Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-services-strategy">
+    <rdfs:label>Financial Services Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/housing-regeneration-and-third-sector">
+    <rdfs:label>Housing, Regeneration and Third Sector</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/insurance-and-savings">
+    <rdfs:label>Insurance and Savings</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/international-taxoffice-of-tax-simplification-team">
+    <rdfs:label>International Tax/Office of Tax Simplification Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/labour-market-policy">
+    <rdfs:label>Labour Market Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-projects-team">
+    <rdfs:label>Performance Projects Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/special-advisers">
+    <rdfs:label>Special Advisers</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/asset-freezing-unit">
+    <rdfs:label>Asset Freezing Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/budget-strategy-and-tax">
+    <rdfs:label>Budget Strategy and Tax</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/defence-diplomacy-intelligence">
+    <rdfs:label>Defence Diplomacy &amp; Intelligence</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/equitable-life-and-property-tax">
+    <rdfs:label>Equitable Life and Property Tax</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/exchequer-secretarys-office">
+    <rdfs:label>Exchequer Secretary's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-regulation-strategy">
+    <rdfs:label>Financial Regulation Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/global-economics-coordination-strategy-team">
+    <rdfs:label>Global Economics Coordination Strategy Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/global-economics-team">
+    <rdfs:label>Global Economics Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/government-estimates-accounts-and-reporting">
+    <rdfs:label>Government Estimates Accounts and Reporting</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/growth-and-productivity">
+    <rdfs:label>Growth and Productivity</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-solutions-delivery">
+    <rdfs:label>IWS Solutions Delivery</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-efficiency-team">
+    <rdfs:label>Performance &amp; Efficiency Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/strategy-reform-productivity">
+    <rdfs:label>Strategy, Reform &amp; Productivity</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/hm-treasury"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

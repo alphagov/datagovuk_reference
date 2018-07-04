@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/human-tissue-authority> rdf:type msg0:Organization ,
+                                                                              central-government:PublicBody ;
+                                                                     rdfs:label "Human Tissue Authority" ;
+                                                                     msg0:hasUnit <http://reference.data.gov.uk/id/public-body/human-tissue-authority/unit/communications-and-public-affairs-directorate> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/human-tissue-authority/unit/regulation-directorate> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/human-tissue-authority/unit/strategy-and-quality-directorate> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/human-tissue-authority/unit/resources-directorate> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/human-tissue-authority/unit/chief-executives-office> ;
+                                                                     central-government:parentDepartment <http://reference.data.gov.uk/id/department/dh> ;
+                                                                     foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/human-tissue-authority.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/human-tissue-authority/unit/communications-and-public-affairs-directorate> rdfs:label "Communications and Public Affairs directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/human-tissue-authority/unit/regulation-directorate> rdfs:label "Regulation directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/human-tissue-authority/unit/strategy-and-quality-directorate> rdfs:label "Strategy and Quality directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/human-tissue-authority/unit/resources-directorate> rdfs:label "Resources directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/human-tissue-authority/unit/chief-executives-office> rdfs:label "Chief Executive's Office" . 
+
+<http://reference.data.gov.uk/id/department/dh> rdfs:label "Department of Health" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/human-tissue-authority.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/human-tissue-authority> ;
+                                                                                     linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                     linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/human-tissue-authority.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

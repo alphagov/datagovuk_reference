@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/partnerships-for-schools> rdf:type msg0:Organization ,
+                                                                                central-government:PublicBody ;
+                                                                       rdfs:label "Partnerships for Schools" ;
+                                                                       msg0:hasUnit <http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/technology-planning> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/academies> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/corporate-affairs> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/ceo-office> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/corporate-resources> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/commercial> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/operations> ;
+                                                                       central-government:parentDepartment <http://reference.data.gov.uk/id/department/dfe> ;
+                                                                       foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/partnerships-for-schools.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/technology-planning> rdfs:label "Technology & Planning" . 
+
+<http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/academies> rdfs:label "Academies" . 
+
+<http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/corporate-affairs> rdfs:label "Corporate Affairs" . 
+
+<http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/ceo-office> rdfs:label "CEO Office" . 
+
+<http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/corporate-resources> rdfs:label "Corporate Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/commercial> rdfs:label "Commercial" . 
+
+<http://reference.data.gov.uk/id/public-body/partnerships-for-schools/unit/operations> rdfs:label "Operations" . 
+
+<http://reference.data.gov.uk/id/department/dfe> rdfs:label "Department for Education" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/partnerships-for-schools.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/partnerships-for-schools> ;
+                                                                                       linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                       linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/partnerships-for-schools.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

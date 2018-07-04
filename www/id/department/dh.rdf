@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/Department"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Department of Health</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/chief-nursing-officers-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/informatics-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/office-of-the-nhs-leadership-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-north-west"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-south-east"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-south-west"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-west-midlands"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/chief-medical-officers-private-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/corporate-development-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/policy-strategy-finance-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/research-development-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/workforce-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/nhs-finance-performance-operations-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/dh-permanent-secretary-private-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/health-improvement-protection-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/public-health-england-transition-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/social-care-local-government-care-partnerships-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/national-director-for-improvement-efficiency"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/nhs-medical-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/advisory-committee-on-clinical-excellence-awards"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/communications-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/managing-director-for-commissioning-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/managing-director-for-provider-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-east-midlands"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-london"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-north-east"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/dh.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/chief-nursing-officers-directorate">
+    <rdfs:label>Chief Nursing Officer's Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/informatics-directorate">
+    <rdfs:label>Informatics Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/office-of-the-nhs-leadership-team">
+    <rdfs:label>Office of the NHS Leadership Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-north-west">
+    <rdfs:label>Regional Public Health Group North West</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-south-east">
+    <rdfs:label>Regional Public Health Group South East</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-south-west">
+    <rdfs:label>Regional Public Health Group South West</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-west-midlands">
+    <rdfs:label>Regional Public Health Group West Midlands</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/chief-medical-officers-private-office">
+    <rdfs:label>Chief Medical Officer's Private Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/corporate-development-directorate">
+    <rdfs:label>Corporate Development Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/policy-strategy-finance-directorate">
+    <rdfs:label>Policy Strategy &amp; Finance Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/research-development-directorate">
+    <rdfs:label>Research &amp; Development Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/workforce-directorate">
+    <rdfs:label>Workforce Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/nhs-finance-performance-operations-directorate">
+    <rdfs:label>NHS Finance Performance &amp; Operations Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/dh-permanent-secretary-private-office">
+    <rdfs:label>DH Permanent Secretary - Private Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/health-improvement-protection-directorate">
+    <rdfs:label>Health Improvement &amp; Protection Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/public-health-england-transition-team">
+    <rdfs:label>Public Health England Transition Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/social-care-local-government-care-partnerships-directorate">
+    <rdfs:label>Social Care Local Government &amp; Care Partnerships Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/national-director-for-improvement-efficiency">
+    <rdfs:label>National Director for Improvement &amp; Efficiency</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/nhs-medical-directorate">
+    <rdfs:label>NHS Medical Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/advisory-committee-on-clinical-excellence-awards">
+    <rdfs:label>Advisory Committee on Clinical Excellence Awards</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/communications-directorate">
+    <rdfs:label>Communications Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/managing-director-for-commissioning-development">
+    <rdfs:label>Managing Director for Commissioning Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/managing-director-for-provider-development">
+    <rdfs:label>Managing Director for Provider Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-east-midlands">
+    <rdfs:label>Regional Public Health Group East Midlands</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-london">
+    <rdfs:label>Regional Public Health Group London</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh/unit/regional-public-health-group-north-east">
+    <rdfs:label>Regional Public Health Group North East</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/department/dh.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/department/dh"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#department"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/dh.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

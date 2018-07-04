@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/the-standards-board-for-england> rdf:type msg0:Organization ,
+                                                                                       central-government:PublicBody ;
+                                                                              rdfs:label "The Standards Board for England" ;
+                                                                              msg0:hasUnit <http://reference.data.gov.uk/id/public-body/the-standards-board-for-england/unit/chief-executives-office-including-regulation> ,
+                                                                                           <http://reference.data.gov.uk/id/public-body/the-standards-board-for-england/unit/strategic-relations> ,
+                                                                                           <http://reference.data.gov.uk/id/public-body/the-standards-board-for-england/unit/closure-programme> ;
+                                                                              central-government:parentDepartment <http://reference.data.gov.uk/id/department/dclg> ;
+                                                                              foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/the-standards-board-for-england.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/the-standards-board-for-england/unit/chief-executives-office-including-regulation> rdfs:label "Chief Executive's Office (including regulation)" . 
+
+<http://reference.data.gov.uk/id/public-body/the-standards-board-for-england/unit/strategic-relations> rdfs:label "Strategic Relations" . 
+
+<http://reference.data.gov.uk/id/public-body/the-standards-board-for-england/unit/closure-programme> rdfs:label "Closure Programme" . 
+
+<http://reference.data.gov.uk/id/department/dclg> rdfs:label "Department for Communities and Local Government" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/the-standards-board-for-england.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/the-standards-board-for-england> ;
+                                                                                              linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                              linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/the-standards-board-for-england.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

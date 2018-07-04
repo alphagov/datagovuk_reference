@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/tenant-services-authority> rdf:type msg0:Organization ,
+                                                                                 central-government:PublicBody ;
+                                                                        rdfs:label "Tenant Services Authority" ;
+                                                                        msg0:hasUnit <http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/regulatory-framework-strategy> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/corporate-services> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/assurance-financial-analysis> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/intelligence-analysis> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/investigation-enforcement> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/regulatory-engagement> ;
+                                                                        central-government:parentDepartment <http://reference.data.gov.uk/id/department/dclg> ;
+                                                                        foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/tenant-services-authority.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/regulatory-framework-strategy> rdfs:label "Regulatory Framework & Strategy" . 
+
+<http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/corporate-services> rdfs:label "Corporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/assurance-financial-analysis> rdfs:label "Assurance & Financial Analysis" . 
+
+<http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/intelligence-analysis> rdfs:label "Intelligence & Analysis" . 
+
+<http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/investigation-enforcement> rdfs:label "Investigation & Enforcement" . 
+
+<http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/regulatory-engagement> rdfs:label "Regulatory Engagement" . 
+
+<http://reference.data.gov.uk/id/department/dclg> rdfs:label "Department for Communities and Local Government" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/tenant-services-authority.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/tenant-services-authority> ;
+                                                                                        linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                        linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/tenant-services-authority.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

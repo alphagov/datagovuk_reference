@@ -1,0 +1,200 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors> rdf:type msg0:Organization ,
+                                                                          ns0:Department ,
+                                                                          ns0:PublicBody ;
+                                                                 rdfs:label "Treasury Solicitors" ;
+                                                                 msg0:hasUnit <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-government-equality-office> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-arms-length-bodies-food-veterinary-medicines> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-fish-forestry-plants-seeds-waste> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-academies-and-free-schools> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-management-unit> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a1-moj-private-law> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a2-private-law> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b-public-law> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-e3> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/european-division-litigation> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a-private-law-inquiries> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b2-immigration> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-e1> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources-finance> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-litigation-prosection> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-water-sustainable-development> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/government-legal-service-secretariat> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/n2-al-sweady-inquiry> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-pensions-and-employment> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/business-partnership> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-efficiency-and-reform-group> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-marine-environment-conservation-biodiversity> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-safeguarding-early-years-information-law> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-young-people-albs-and-commercial> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/european-division-cabinet-office-legal> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a6-commercial-procurement> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b4-justice-security> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/n1-national-security-counter-terrorism> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/bona-vacantia> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-team-leader> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources-office-of-the-treasury-solicitor> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-schools-pupils> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a4-ag-general-private-law> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a5-companies-bis-costs-inquiries> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b3-immigration> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-e2> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-solicitors-department> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-health-and-safety-executive> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport-olympic-sports-and-culture> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-agricultural-law> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-business-management-unit> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-commercial-procurement-law> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-international-eu-knowledge-management> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b1-immigration> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-banking-and-financial-crime> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-insurance-markets-and-mutuals> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources-human-resources> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-animal-health-welfare> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a3-mod-private-law> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-financial-stability> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-public-finances-and-general> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport-broadcasting-and-regulated-industries> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-eductions-childrens-services-and-family-law> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/european-division> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b5-general-public-law-planning> ,
+                                                                              <http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-group> ;
+                                                                 foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.ttl> . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-government-equality-office> rdfs:label "Central Advisory Division - Government Equality Office" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs> rdfs:label "Department for Environment, Food & Rural Affairs" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-arms-length-bodies-food-veterinary-medicines> rdfs:label "Department for Environment, Food & Rural Affairs - Arms Length Bodies, Food & Veterinary Medicines" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-fish-forestry-plants-seeds-waste> rdfs:label "Department for Environment, Food & Rural Affairs - Fish, Forestry, Plants, Seeds & Waste" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-academies-and-free-schools> rdfs:label "Department for Education - Academies and Free Schools" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-management-unit> rdfs:label "Litigation - Management Unit" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a1-moj-private-law> rdfs:label "Litigation A1 - MoJ Private Law" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a2-private-law> rdfs:label "Litigation A2 - Private Law" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b-public-law> rdfs:label "Litigation B - Public Law" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-e3> rdfs:label "Employment E3" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources> rdfs:label "Corporate Resources" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/european-division-litigation> rdfs:label "European Division - Litigation" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a-private-law-inquiries> rdfs:label "Litigation A - Private Law & Inquiries" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b2-immigration> rdfs:label "Litigation B2 - Immigration" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-e1> rdfs:label "Employment E1" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division> rdfs:label "Central Advisory Division" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources-finance> rdfs:label "Corporate Resources - Finance" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-litigation-prosection> rdfs:label "Department for Environment, Food & Rural Affairs - Litigation & Prosection" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-water-sustainable-development> rdfs:label "Department for Environment, Food & Rural Affairs - Water & Sustainable Development" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/government-legal-service-secretariat> rdfs:label "Government Legal Service Secretariat" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/n2-al-sweady-inquiry> rdfs:label "N2 Al Sweady Inquiry" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-pensions-and-employment> rdfs:label "Treasury Advisory - Pensions and Employment" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/business-partnership> rdfs:label "Business Partnership" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-efficiency-and-reform-group> rdfs:label "Central Advisory Division - Efficiency and Reform Group" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-marine-environment-conservation-biodiversity> rdfs:label "Department for Environment, Food & Rural Affairs - Marine Environment, Conservation & Biodiversity" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-safeguarding-early-years-information-law> rdfs:label "Department for Education - Safeguarding, Early Years & Information Law" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-young-people-albs-and-commercial> rdfs:label "Department for Education - Young People, ALBs and Commercial" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/european-division-cabinet-office-legal> rdfs:label "European Division - Cabinet Office Legal" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a6-commercial-procurement> rdfs:label "Litigation A6 - Commercial & Procurement" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b4-justice-security> rdfs:label "Litigation B4 - Justice & Security" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/n1-national-security-counter-terrorism> rdfs:label "N1 National Security & Counter Terrorism" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/bona-vacantia> rdfs:label "Bona Vacantia" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-team-leader> rdfs:label "Central Advisory Division Team Leader" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources-office-of-the-treasury-solicitor> rdfs:label "Corporate Resources - Office of the Treasury Solicitor" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-schools-pupils> rdfs:label "Department for Education - Schools & Pupils" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a4-ag-general-private-law> rdfs:label "Litigation A4 - AG & General Private Law" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a5-companies-bis-costs-inquiries> rdfs:label "Litigation A5 - Companies, BIS, Costs & Inquiries" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b3-immigration> rdfs:label "Litigation B3 - Immigration" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-e2> rdfs:label "Employment E2" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-solicitors-department> rdfs:label "Treasury Solicitor's Department" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-health-and-safety-executive> rdfs:label "Central Advisory Division - Health and Safety Executive" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport-olympic-sports-and-culture> rdfs:label "Department for Culture, Media and Sport - Olympic, Sports and Culture" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-agricultural-law> rdfs:label "Department for Environment, Food & Rural Affairs - Agricultural Law" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-business-management-unit> rdfs:label "Department for Environment, Food & Rural Affairs - Business Management Unit" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-commercial-procurement-law> rdfs:label "Department for Environment, Food & Rural Affairs - Commercial & Procurement Law" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-international-eu-knowledge-management> rdfs:label "Department for Environment, Food & Rural Affairs - International, EU & Knowledge Management" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b1-immigration> rdfs:label "Litigation B1 - Immigration" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-banking-and-financial-crime> rdfs:label "Treasury Advisory - Banking and Financial Crime" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-insurance-markets-and-mutuals> rdfs:label "Treasury Advisory - Insurance Markets and Mutuals" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources-human-resources> rdfs:label "Corporate Resources - Human Resources" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport> rdfs:label "Department for Culture, Media and Sport" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-animal-health-welfare> rdfs:label "Department for Environment, Food & Rural Affairs - Animal Health & Welfare" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation> rdfs:label "Litigation" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a3-mod-private-law> rdfs:label "Litigation A3 - MOD Private Law" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-financial-stability> rdfs:label "Treasury Advisory - Financial Stability" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-public-finances-and-general> rdfs:label "Treasury Advisory - Public Finances and General" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport-broadcasting-and-regulated-industries> rdfs:label "Department for Culture, Media and Sport - Broadcasting and Regulated Industries" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-eductions-childrens-services-and-family-law> rdfs:label "Department for Eductions - Children's Services and Family Law" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/european-division> rdfs:label "European Division" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b5-general-public-law-planning> rdfs:label "Litigation B5 - General Public Law & Planning" . 
+
+<http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-group> rdfs:label "Employment Group" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/treasury-solicitors> ;
+                                                                                 linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                                 linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

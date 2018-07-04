@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/decc> rdf:type msg0:Organization ,
+                                                           ns0:Department ,
+                                                           ns0:PublicBody ;
+                                                  rdfs:label "Department of Energy and Climate Change" ;
+                                                  msg0:hasUnit <http://reference.data.gov.uk/id/department/decc/unit/operations-group> ,
+                                                               <http://reference.data.gov.uk/id/department/decc/unit/international-climate-change-and-energy-efficiency> ,
+                                                               <http://reference.data.gov.uk/id/department/decc/unit/private-office-group> ,
+                                                               <http://reference.data.gov.uk/id/department/decc/unit/strategy-and-evidence-group> ,
+                                                               <http://reference.data.gov.uk/id/department/decc/unit/energy-markets-infrastructure> ;
+                                                  foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/decc.ttl> . 
+
+<http://reference.data.gov.uk/id/department/decc/unit/operations-group> rdfs:label "Operations Group" . 
+
+<http://reference.data.gov.uk/id/department/decc/unit/international-climate-change-and-energy-efficiency> rdfs:label "International Climate Change and Energy Efficiency" . 
+
+<http://reference.data.gov.uk/id/department/decc/unit/private-office-group> rdfs:label "Private Office Group" . 
+
+<http://reference.data.gov.uk/id/department/decc/unit/strategy-and-evidence-group> rdfs:label "Strategy and Evidence Group" . 
+
+<http://reference.data.gov.uk/id/department/decc/unit/energy-markets-infrastructure> rdfs:label "Energy Markets & Infrastructure" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/decc.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/decc> ;
+                                                                  linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                  linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/decc.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

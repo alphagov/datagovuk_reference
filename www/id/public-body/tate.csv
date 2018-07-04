@@ -1,0 +1,6 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/tate","Tate",,"Tate Modern","Department for Culture, Media and Sport","http://reference.data.gov.uk/id/department/dcms"
+"http://reference.data.gov.uk/id/public-body/tate","Tate",,"Deputy Director's Office","Department for Culture, Media and Sport","http://reference.data.gov.uk/id/department/dcms"
+"http://reference.data.gov.uk/id/public-body/tate","Tate","Organization","Tate National","Department for Culture, Media and Sport","http://reference.data.gov.uk/id/department/dcms"
+"http://reference.data.gov.uk/id/public-body/tate","Tate","Organization","Chief Operating Officer's Office","Department for Culture, Media and Sport","http://reference.data.gov.uk/id/department/dcms"
+"http://reference.data.gov.uk/id/public-body/tate","Tate","Organization","Tate Britain","Department for Culture, Media and Sport","http://reference.data.gov.uk/id/department/dcms"

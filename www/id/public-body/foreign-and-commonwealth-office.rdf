@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Foreign and Commonwealth office</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/prosperity-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/africa-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/international-institutions-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/defence-and-inernational-security-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/corporate-services-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/communications-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/middle-east-north-africa-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/europe-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/dg-europe-and-globalisation-support-and-resource-management-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/south-asia-afghanistan-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/national-security-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/americas-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/overseas-territories-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/information-technology-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/central-units"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/eastern-europe-and-central-asia-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/consular-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/migration-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/protocol-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/dg-operations-support-resource-management-unit-and-corporate-positions"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/uk-trade-investment"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/economics-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/dg-defence-intelligence-support-and-resource-management-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/estates-security-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/legal-advisers"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/dg-political-support-and-resouce-management-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/asia-pacific-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/human-resources-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/finance-directorate"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/fco"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/foreign-and-commonwealth-office.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/prosperity-directorate">
+    <rdfs:label>Prosperity Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/africa-directorate">
+    <rdfs:label>Africa Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/international-institutions-directorate">
+    <rdfs:label>International Institutions Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/defence-and-inernational-security-directorate">
+    <rdfs:label>Defence and Inernational Security Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/corporate-services-directorate">
+    <rdfs:label>Corporate Services Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/communications-directorate">
+    <rdfs:label>Communications Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/middle-east-north-africa-directorate">
+    <rdfs:label>Middle East &amp; North Africa Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/europe-directorate">
+    <rdfs:label>Europe Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/dg-europe-and-globalisation-support-and-resource-management-unit">
+    <rdfs:label>DG Europe and Globalisation support and Resource Management Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/south-asia-afghanistan-directorate">
+    <rdfs:label>South Asia &amp; Afghanistan Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/national-security-directorate">
+    <rdfs:label>National Security Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/americas-directorate">
+    <rdfs:label>Americas Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/overseas-territories-directorate">
+    <rdfs:label>Overseas Territories Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/information-technology-directorate">
+    <rdfs:label>Information &amp; Technology Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/strategy">
+    <rdfs:label>Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/central-units">
+    <rdfs:label>Central Units</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/eastern-europe-and-central-asia-directorate">
+    <rdfs:label>Eastern Europe and Central Asia Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/consular-directorate">
+    <rdfs:label>Consular Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/migration-directorate">
+    <rdfs:label>Migration Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/protocol-directorate">
+    <rdfs:label>Protocol Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/dg-operations-support-resource-management-unit-and-corporate-positions">
+    <rdfs:label>DG Operations support, Resource Management Unit and corporate positions</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/uk-trade-investment">
+    <rdfs:label>UK Trade &amp; Investment</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/economics-directorate">
+    <rdfs:label>Economics Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/dg-defence-intelligence-support-and-resource-management-unit">
+    <rdfs:label>DG Defence &amp; Intelligence support and Resource Management Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/estates-security-directorate">
+    <rdfs:label>Estates &amp; Security Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/legal-advisers">
+    <rdfs:label>Legal Advisers</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/dg-political-support-and-resouce-management-unit">
+    <rdfs:label>DG Political support and Resouce Management Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/asia-pacific-directorate">
+    <rdfs:label>Asia Pacific Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/human-resources-directorate">
+    <rdfs:label>Human Resources Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office/unit/finance-directorate">
+    <rdfs:label>Finance Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/foreign-and-commonwealth-office.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/foreign-and-commonwealth-office"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/foreign-and-commonwealth-office.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

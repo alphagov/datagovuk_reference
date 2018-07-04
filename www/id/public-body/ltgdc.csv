@@ -1,0 +1,5 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/ltgdc","LTGDC",,"Communication","Department for Communities and Local Government","http://reference.data.gov.uk/id/department/dclg"
+"http://reference.data.gov.uk/id/public-body/ltgdc","LTGDC",,"Operations and Finance","Department for Communities and Local Government","http://reference.data.gov.uk/id/department/dclg"
+"http://reference.data.gov.uk/id/public-body/ltgdc","LTGDC","Organization","Planning Development","Department for Communities and Local Government","http://reference.data.gov.uk/id/department/dclg"
+"http://reference.data.gov.uk/id/public-body/ltgdc","LTGDC","Organization","Regeneration and Development","Department for Communities and Local Government","http://reference.data.gov.uk/id/department/dclg"

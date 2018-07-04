@@ -1,0 +1,137 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/bis> rdf:type msg0:Organization ,
+                                                          ns0:Department ,
+                                                          ns0:PublicBody ;
+                                                 rdfs:label "Department for Business Innovation and Skills" ;
+                                                 msg0:hasUnit <http://reference.data.gov.uk/id/department/bis/unit/br-better-regulation> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/hr-human-resources> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ukti-bg-business-group> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ukti-shr-strategy-and-human-resources> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/legal-grp-legal-services-group-support-office> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/legb-legal-services-directorate-b> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/etid-europe-trade-and-international-directorate-mf> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ia-internal-audit> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/dg-ki-dg-knowledge-and-innovation-ki> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ad-analysis-directorate> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/com-communications> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/bed-business-environment-directorate-mf> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ccp-consumer-and-competition-policy-mf> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/go-scd-government-office-for-science-directorate> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ukti-sectors-group> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/edd-economic-development-directorate-bs> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/fd-finance-directorate> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/hess-higher-education-student-support> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/cea-chief-economic-advisor-and-support> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ukti-dso-defence-and-security-organisation> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ams-advanced-manufacturing-and-services-bs> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ie-information-economy-bs> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ed-enterprise-directorate-bs> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/s-skills-bs> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/esg-economics-strategy-and-growth> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ukti-mg-marketing-group> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ukti-sg-sectors-group> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ukti-eet-economists-and-evaluation-team> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/mpst-ministerial-and-parliamentary-supp> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/icd-innovation-capability-directorate> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/mf-rpu-mf-resource-and-planning-mf> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/fesi-further-education-and-skills-investment-bs> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/rb-research-base-ki> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ukti-itf-it-and-finance> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/cd-commercial-directorate> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/id-innovation-directorate-ki> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/lega-legal-services-directorate-a> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/er-employment-relations-mf> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/se-shareholder-executive> ,
+                                                              <http://reference.data.gov.uk/id/department/bis/unit/ukti-ig-international-group> ;
+                                                 foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/bis.ttl> . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/br-better-regulation> rdfs:label "BR - Better Regulation" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/hr-human-resources> rdfs:label "HR - Human Resources" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ukti-bg-business-group> rdfs:label "UKTI BG - Business Group" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ukti-shr-strategy-and-human-resources> rdfs:label "UKTI SHR - Strategy and Human Resources" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/legal-grp-legal-services-group-support-office> rdfs:label "LEGAL GRP - Legal Services Group Support Office" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/legb-legal-services-directorate-b> rdfs:label "LEGB - Legal Services Directorate B" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/etid-europe-trade-and-international-directorate-mf> rdfs:label "ETID - Europe Trade and International Directorate (MF)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ia-internal-audit> rdfs:label "IA - Internal Audit" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/dg-ki-dg-knowledge-and-innovation-ki> rdfs:label "DG KI - DG Knowledge and Innovation (KI)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ad-analysis-directorate> rdfs:label "AD - Analysis Directorate" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/com-communications> rdfs:label "COM - Communications" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/bed-business-environment-directorate-mf> rdfs:label "BED - Business Environment Directorate (MF)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ccp-consumer-and-competition-policy-mf> rdfs:label "CCP - Consumer and Competition Policy (MF)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/go-scd-government-office-for-science-directorate> rdfs:label "GO SCD - Government Office for Science Directorate" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ukti-sectors-group> rdfs:label "UKTI Sectors Group" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/edd-economic-development-directorate-bs> rdfs:label "EDD - Economic Development Directorate (BS)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/fd-finance-directorate> rdfs:label "FD - Finance Directorate" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/hess-higher-education-student-support> rdfs:label "HESS - Higher Education Student Support" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/cea-chief-economic-advisor-and-support> rdfs:label "CEA - Chief Economic Advisor (and Support)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ukti-dso-defence-and-security-organisation> rdfs:label "UKTI DSO - Defence and Security Organisation" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ams-advanced-manufacturing-and-services-bs> rdfs:label "AMS - Advanced Manufacturing and Services (BS)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ie-information-economy-bs> rdfs:label "IE - Information Economy (BS)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ed-enterprise-directorate-bs> rdfs:label "ED - Enterprise Directorate (BS)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/s-skills-bs> rdfs:label "S - Skills (BS)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/esg-economics-strategy-and-growth> rdfs:label "ESG - Economics Strategy and Growth" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ukti-mg-marketing-group> rdfs:label "UKTI MG - Marketing Group" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ukti-sg-sectors-group> rdfs:label "UKTI SG - Sectors Group" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ukti-eet-economists-and-evaluation-team> rdfs:label "UKTI EET - Economists and Evaluation Team" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/mpst-ministerial-and-parliamentary-supp> rdfs:label "MPST - Ministerial and Parliamentary Supp" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/icd-innovation-capability-directorate> rdfs:label "ICD - Innovation Capability Directorate" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/mf-rpu-mf-resource-and-planning-mf> rdfs:label "MF RPU - MF Resource and Planning (MF)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/fesi-further-education-and-skills-investment-bs> rdfs:label "FESI - Further Education and Skills Investment (BS)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/rb-research-base-ki> rdfs:label "RB - Research Base (KI)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ukti-itf-it-and-finance> rdfs:label "UKTI ITF - IT and Finance" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/cd-commercial-directorate> rdfs:label "CD - Commercial Directorate" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/id-innovation-directorate-ki> rdfs:label "ID - Innovation Directorate (KI)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/lega-legal-services-directorate-a> rdfs:label "LEGA - Legal Services Directorate A" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/er-employment-relations-mf> rdfs:label "ER - Employment Relations (MF)" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/se-shareholder-executive> rdfs:label "SE - Shareholder Executive" . 
+
+<http://reference.data.gov.uk/id/department/bis/unit/ukti-ig-international-group> rdfs:label "UKTI IG - International Group" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/bis.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/bis> ;
+                                                                 linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                 linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/bis.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

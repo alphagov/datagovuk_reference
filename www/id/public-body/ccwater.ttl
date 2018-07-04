@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/ccwater> rdf:type msg0:Organization ,
+                                                               central-government:PublicBody ;
+                                                      rdfs:label "CCWater" ;
+                                                      msg0:hasUnit <http://reference.data.gov.uk/id/public-body/ccwater/unit/governance> ,
+                                                                   <http://reference.data.gov.uk/id/public-body/ccwater/unit/public-relations> ,
+                                                                   <http://reference.data.gov.uk/id/public-body/ccwater/unit/policy-and-research> ,
+                                                                   <http://reference.data.gov.uk/id/public-body/ccwater/unit/corporate-services> ,
+                                                                   <http://reference.data.gov.uk/id/public-body/ccwater/unit/consumer-relations> ;
+                                                      central-government:parentDepartment <http://reference.data.gov.uk/id/department/defra> ;
+                                                      foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/ccwater.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/ccwater/unit/governance> rdfs:label "Governance" . 
+
+<http://reference.data.gov.uk/id/public-body/ccwater/unit/public-relations> rdfs:label "Public Relations" . 
+
+<http://reference.data.gov.uk/id/public-body/ccwater/unit/policy-and-research> rdfs:label "Policy and Research" . 
+
+<http://reference.data.gov.uk/id/public-body/ccwater/unit/corporate-services> rdfs:label "Corporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/ccwater/unit/consumer-relations> rdfs:label "Consumer Relations" . 
+
+<http://reference.data.gov.uk/id/department/defra> rdfs:label "Department for Environment, Food and Rural Affairs" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/ccwater.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/ccwater> ;
+                                                                      linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                      linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/ccwater.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

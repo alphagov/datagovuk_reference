@@ -1,0 +1,886 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Results</title>
+<link rel="shortcut icon" href="/images/datagovuk_favicon.png" type="image/x-icon">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.rdf" type="application/rdf+xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.ttl" type="text/turtle">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.json" type="application/json">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.xml" type="application/xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.html" type="text/html">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.csv" type="text/csv">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="/scripts/jquery.min.js"></script><script type="text/javascript" src="/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script><link rel="stylesheet" href="/css/html5reset-1.6.1.css" type="text/css">
+<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/smoothness/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/result.css" type="text/css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" type="text/css"></link><![endif]-->
+</head>
+<body><div id="page">
+<nav class="site"><section class="formats"><ul>
+<li class="first"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+<li class="last"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury.csv" type="text/csv" rel="alternate" title="view in csv format">csv</a></li>
+</ul></section></nav><header><h1><a href="/">Linked Data API</a></h1></header><nav class="topnav"><section class="moreinfo"><h1>Browse</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Links to further information.</p>
+</div>
+<ul>
+<li><a href="/doc/public-body/hm-treasury/post">Public body SCS posts</a></li>
+<li><a href="/doc/public-body/hm-treasury/unit">Public body units</a></li>
+<li><span class="current">Public body</span></li>
+</ul>
+<ul>
+<li><a href="/doc/ministerial-department">Ministerial departments</a></li>
+<li><a href="/doc/non-ministerial-department">Non-ministerial departments</a></li>
+<li><a href="/doc/department">All departments</a></li>
+<li><a href="/doc/public-body">All public bodies</a></li>
+</ul>
+<ul>
+<li><a href="/doc/minister">All ministers</a></li>
+<li><a href="/doc/seat">All seats</a></li>
+<li><a href="/doc/mp">All MPs</a></li>
+<li><a href="/doc/peer">All peers</a></li>
+</ul></section><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view"><h1>View</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined views, but starred properties are always present no matter what the view. You can star properties by clicking on the <img src="/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.</p>
+</div>
+<ul>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury?_view=description" title="switch to description view">description</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury?_view=all" title="switch to all view">all</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury?_view=minimal" title="switch to minimal view">minimal</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury?_view=public+body" title="switch to public body view">public body</a></li>
+</ul>
+<ul class="properties">
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury?_properties=label"><img src="/images/grey/16x16/Star.png" alt="star this property"> label</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury?_properties=type"><img src="/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury?_properties=unit.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> unit</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-treasury?_properties=parentDepartment"><img src="/images/grey/16x16/Star.png" alt="star this property"> parent department</a></li>
+</ul></section></nav><div id="result"><div class="panel">
+<header><p id="openSearch">Show Search Form</p>
+<h1>HM Treasury</h1>
+<p class="id"><a href="http://reference.data.gov.uk/id/public-body/hm-treasury">http://reference.data.gov.uk/id/public-body/hm-treasury</a></p></header><section id="search"><form action="http://reference.data.gov.uk/2011-09-30/doc/public-body">
+<table>
+<colgroup>
+<col width="25%">
+<col width="70%">
+</colgroup>
+<tr>
+<th class="label"><label for="label">label</label></th>
+<td class="input"><input name="label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="type">type</label></th>
+<td class="input"><input name="type" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="unit.label">unit</label></th>
+<td class="input"><input name="unit.label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="parentDepartment">parent department</label></th>
+<td class="input"><input name="parentDepartment" size="25"></td>
+</tr>
+</table>
+<p><button type="submit">Search</button></p>
+</form></section><section><table id="id1078050">
+<colgroup>
+<col width="25%">
+<col width="*">
+<col width="54">
+</colgroup>
+<tr class="type">
+<th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/def/central-government/PublicBody" title="view on this site">PublicBody</a> <a href="http://reference.data.gov.uk/def/central-government/PublicBody" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value"><a href="http://www.w3.org/ns/org#Organization">Organization</a></td>
+<td class="filter"></td>
+</tr>
+</table></td>
+</tr>
+<tr class="unit">
+<th class="label"><a href="http://www.w3.org/ns/org#hasUnit">unit</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/alignment-project-clear-line-of-sight" title="view on this site">Alignment Project - Clear Line of Sight</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/alignment-project-clear-line-of-sight" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Alignment%20Project%20-%20Clear%20Line%20of%20Sight"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/asset-freezing-unit" title="view on this site">Asset Freezing Unit</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/asset-freezing-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Asset%20Freezing%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/assurance-and-financial-reporting-policy" title="view on this site">Assurance and Financial Reporting Policy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/assurance-and-financial-reporting-policy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Assurance%20and%20Financial%20Reporting%20Policy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/banking-credit" title="view on this site">Banking &amp; Credit</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/banking-credit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Banking%20&amp;%20Credit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/banking-financial-sector-analysis" title="view on this site">Banking &amp; Financial Sector Analysis</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/banking-financial-sector-analysis" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Banking%20&amp;%20Financial%20Sector%20Analysis"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/budget-coordination" title="view on this site">Budget Coordination</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/budget-coordination" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Budget%20Coordination"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/budget-strategy-and-tax" title="view on this site">Budget Strategy and Tax</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/budget-strategy-and-tax" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Budget%20Strategy%20and%20Tax"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/business-coordination" title="view on this site">Business Coordination</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/business-coordination" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Business%20Coordination"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/chancellors-office" title="view on this site">Chancellors Office</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/chancellors-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Chancellors%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/change-and-managementstrategic-review-implementation-teams" title="view on this site">Change and Management/Strategic Review Implementation Teams</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/change-and-managementstrategic-review-implementation-teams" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Change%20and%20Management/Strategic%20Review%20Implementation%20Teams"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/chief-secretarys-office" title="view on this site">Chief Secretary's Office</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/chief-secretarys-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Chief%20Secretary's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/commercial-secretarys-office" title="view on this site">Commercial Secretary's Office</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/commercial-secretarys-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Commercial%20Secretary's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/contingency-planning-financial-sector-secretariat-and-projects-teams" title="view on this site">Contingency Planning /Financial Sector Secretariat and Projects Teams</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/contingency-planning-financial-sector-secretariat-and-projects-teams" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Contingency%20Planning%20/Financial%20Sector%20Secretariat%20and%20Projects%20Teams"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/corporate-finance-business-innovation-skills" title="view on this site">Corporate Finance, Business, Innovation &amp; Skills</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/corporate-finance-business-innovation-skills" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corporate%20Finance,%20Business,%20Innovation%20&amp;%20Skills"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/corporate-services-directorate" title="view on this site">Corporate Services Directorate</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/corporate-services-directorate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corporate%20Services%20Directorate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/corporate-taxation" title="view on this site">Corporate Taxation</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/corporate-taxation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corporate%20Taxation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/correspondence-information-rights-team" title="view on this site">Correspondence &amp; Information Rights Team</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/correspondence-information-rights-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Correspondence%20&amp;%20Information%20Rights%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/counter-illicit-finance" title="view on this site">Counter Illicit Finance</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/counter-illicit-finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Counter%20Illicit%20Finance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/defence-diplomacy-intelligence" title="view on this site">Defence Diplomacy &amp; Intelligence</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/defence-diplomacy-intelligence" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Defence%20Diplomacy%20&amp;%20Intelligence"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/development-finance-climate-energy" title="view on this site">Development Finance, Climate &amp; Energy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/development-finance-climate-energy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Development%20Finance,%20Climate%20&amp;%20Energy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/devolved-countries" title="view on this site">Devolved Countries</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/devolved-countries" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Devolved%20Countries"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/digital-and-corporate-communications" title="view on this site">Digital and Corporate Communications</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/digital-and-corporate-communications" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Digital%20and%20Corporate%20Communications"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/director-generals-office" title="view on this site">Director Generals Office</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/director-generals-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Director%20Generals%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-business-and-international-tax" title="view on this site">Directors Office Business and International Tax</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-business-and-international-tax" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20Business%20and%20International%20Tax"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-economics" title="view on this site">Directors Office Economics</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-economics" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20Economics"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-enterprise-growth" title="view on this site">Directors Office Enterprise &amp; Growth</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-enterprise-growth" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20Enterprise%20&amp;%20Growth"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-financial-management-reporting" title="view on this site">Directors Office Financial Management Reporting</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-financial-management-reporting" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20Financial%20Management%20Reporting"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-financial-regulation" title="view on this site">Directors Office Financial Regulation</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-financial-regulation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20Financial%20Regulation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-financial-services" title="view on this site">Directors Office Financial Services</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-financial-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20Financial%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-fiscal" title="view on this site">Directors Office Fiscal</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-fiscal" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20Fiscal"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-international-eu" title="view on this site">Directors Office International &amp; EU</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-international-eu" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20International%20&amp;%20EU"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-personal-tax-welfare-pensions" title="view on this site">Directors Office Personal Tax, Welfare &amp; Pensions</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-personal-tax-welfare-pensions" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20Personal%20Tax,%20Welfare%20&amp;%20Pensions"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-public-services" title="view on this site">Directors Office Public Services</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-public-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20Public%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-public-spending" title="view on this site">Directors Office Public Spending</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-public-spending" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20Public%20Spending"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/directors-office-strategy-planning-budget" title="view on this site">Directors Office Strategy, Planning &amp; Budget</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/directors-office-strategy-planning-budget" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Directors%20Office%20Strategy,%20Planning%20&amp;%20Budget"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/eu-institutions-and-policy" title="view on this site">EU Institutions and Policy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/eu-institutions-and-policy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=EU%20Institutions%20and%20Policy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/economic-secretarys-office" title="view on this site">Economic Secretary's Office</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/economic-secretarys-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Economic%20Secretary's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/education-children-and-culture" title="view on this site">Education, Children and Culture</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/education-children-and-culture" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Education,%20Children%20and%20Culture"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/energy-environment-and-agriculture" title="view on this site">Energy, Environment and Agriculture</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/energy-environment-and-agriculture" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Energy,%20Environment%20and%20Agriculture"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/environmental-tax" title="view on this site">Environmental Tax</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/environmental-tax" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Environmental%20Tax"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/equitable-life-and-property-tax" title="view on this site">Equitable Life and Property Tax</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/equitable-life-and-property-tax" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Equitable%20Life%20and%20Property%20Tax"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/european-economic-policy" title="view on this site">European Economic Policy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/european-economic-policy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=European%20Economic%20Policy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/european-union-finances" title="view on this site">European Union Finances</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/european-union-finances" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=European%20Union%20Finances"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/exchequer-funds-and-accounts" title="view on this site">Exchequer Funds and Accounts</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/exchequer-funds-and-accounts" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Exchequer%20Funds%20and%20Accounts"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/exchequer-secretarys-office" title="view on this site">Exchequer Secretary's Office</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/exchequer-secretarys-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Exchequer%20Secretary's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/excise-and-enterprise-tax" title="view on this site">Excise and Enterprise Tax</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/excise-and-enterprise-tax" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Excise%20and%20Enterprise%20Tax"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/finance-professionalism" title="view on this site">Finance Professionalism</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/finance-professionalism" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Finance%20Professionalism"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/finance-in-the-business" title="view on this site">Finance in the Business</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/finance-in-the-business" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Finance%20in%20the%20Business"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/financial-regulation-strategy" title="view on this site">Financial Regulation Strategy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-regulation-strategy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Financial%20Regulation%20Strategy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/financial-secretarys-office" title="view on this site">Financial Secretary's Office</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-secretarys-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Financial%20Secretary's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/financial-services-strategy" title="view on this site">Financial Services Strategy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-services-strategy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Financial%20Services%20Strategy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/financial-stability-interventions-management" title="view on this site">Financial Stability Interventions Management</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/financial-stability-interventions-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Financial%20Stability%20Interventions%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/fiscal-statistics-and-policy" title="view on this site">Fiscal Statistics and Policy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/fiscal-statistics-and-policy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Fiscal%20Statistics%20and%20Policy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/gms" title="view on this site">GMS</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/gms" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=GMS"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/general-expenditure-policy" title="view on this site">General Expenditure Policy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/general-expenditure-policy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=General%20Expenditure%20Policy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/global-economics-coordination-strategy-team" title="view on this site">Global Economics Coordination Strategy Team</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/global-economics-coordination-strategy-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Global%20Economics%20Coordination%20Strategy%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/global-economics-team" title="view on this site">Global Economics Team</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/global-economics-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Global%20Economics%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/government-economic-social-research-unit" title="view on this site">Government Economic &amp; Social Research Unit</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/government-economic-social-research-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Government%20Economic%20&amp;%20Social%20Research%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/government-estimates-accounts-and-reporting" title="view on this site">Government Estimates Accounts and Reporting</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/government-estimates-accounts-and-reporting" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Government%20Estimates%20Accounts%20and%20Reporting"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/group-finance" title="view on this site">Group Finance</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/group-finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Group%20Finance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/group-human-resources" title="view on this site">Group Human Resources</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/group-human-resources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Group%20Human%20Resources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/growth-and-productivity" title="view on this site">Growth and Productivity</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/growth-and-productivity" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Growth%20and%20Productivity"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/health" title="view on this site">Health</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/health" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/home-legal-and-communities" title="view on this site">Home Legal and Communities</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/home-legal-and-communities" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Home%20Legal%20and%20Communities"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/housing-regeneration-and-third-sector" title="view on this site">Housing, Regeneration and Third Sector</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/housing-regeneration-and-third-sector" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Housing,%20Regeneration%20and%20Third%20Sector"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/iuk-assurance-and-international" title="view on this site">IUK Assurance and International</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iuk-assurance-and-international" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=IUK%20Assurance%20and%20International"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/iuk-financeinfrastructure-finance" title="view on this site">IUK Finance/Infrastructure Finance</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iuk-financeinfrastructure-finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=IUK%20Finance/Infrastructure%20Finance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/iws-information-workplace-solutions" title="view on this site">IWS Information &amp; Workplace Solutions</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-information-workplace-solutions" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=IWS%20Information%20&amp;%20Workplace%20Solutions"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/iws-prog-project-management" title="view on this site">IWS Prog &amp; Project Management</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-prog-project-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=IWS%20Prog%20&amp;%20Project%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/iws-resource-management" title="view on this site">IWS Resource Management</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-resource-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=IWS%20Resource%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/iws-solutions-delivery" title="view on this site">IWS Solutions Delivery</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/iws-solutions-delivery" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=IWS%20Solutions%20Delivery"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/independent-banking-commission" title="view on this site">Independent Banking Commission</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/independent-banking-commission" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Independent%20Banking%20Commission"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/information-workplace-solutions" title="view on this site">Information &amp; Workplace Solutions</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/information-workplace-solutions" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Information%20&amp;%20Workplace%20Solutions"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/infrastructure-delivery" title="view on this site">Infrastructure Delivery</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/infrastructure-delivery" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Infrastructure%20Delivery"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/infrastructure-strategy" title="view on this site">Infrastructure Strategy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/infrastructure-strategy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Infrastructure%20Strategy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/infrastructure-uk-iuk" title="view on this site">Infrastructure UK (IUK)</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/infrastructure-uk-iuk" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Infrastructure%20UK%20(IUK)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/insurance-and-savings" title="view on this site">Insurance and Savings</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/insurance-and-savings" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Insurance%20and%20Savings"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/international-taxoffice-of-tax-simplification-team" title="view on this site">International Tax/Office of Tax Simplification Team</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/international-taxoffice-of-tax-simplification-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=International%20Tax/Office%20of%20Tax%20Simplification%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/intervention-strategy-and-marketsdebt-and-reserve-management" title="view on this site">Intervention Strategy and Markets/Debt and Reserve Management</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/intervention-strategy-and-marketsdebt-and-reserve-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Intervention%20Strategy%20and%20Markets/Debt%20and%20Reserve%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/labour-market-policy" title="view on this site">Labour Market Policy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/labour-market-policy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Labour%20Market%20Policy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/local-government-regions" title="view on this site">Local Government &amp; Regions</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/local-government-regions" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Local%20Government%20&amp;%20Regions"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/macroeconomic-analysis" title="view on this site">Macroeconomic Analysis</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/macroeconomic-analysis" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Macroeconomic%20Analysis"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/macroeconomic-coordination-strategy" title="view on this site">Macroeconomic Coordination &amp; Strategy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/macroeconomic-coordination-strategy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Macroeconomic%20Coordination%20&amp;%20Strategy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/macroeconomic-prospects" title="view on this site">Macroeconomic Prospects</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/macroeconomic-prospects" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Macroeconomic%20Prospects"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/oscar" title="view on this site">Oscar</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/oscar" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Oscar"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/ppp-policy" title="view on this site">PPP Policy</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/ppp-policy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=PPP%20Policy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/parliamentary-unit" title="view on this site">Parliamentary Unit</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/parliamentary-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Parliamentary%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/pensions-and-savings-team" title="view on this site">Pensions and Savings Team</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/pensions-and-savings-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Pensions%20and%20Savings%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/performance-efficiency-team" title="view on this site">Performance &amp; Efficiency Team</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-efficiency-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Performance%20&amp;%20Efficiency%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/performance-projects-team" title="view on this site">Performance Projects Team</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-projects-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Performance%20Projects%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/performance-and-reform-unit" title="view on this site">Performance and Reform Unit</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-and-reform-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Performance%20and%20Reform%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/performance-and-reform-unit-directors-office" title="view on this site">Performance and Reform Unit Directors Office</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-and-reform-unit-directors-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Performance%20and%20Reform%20Unit%20Directors%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/performance-and-reform-unit-team" title="view on this site">Performance and Reform Unit Team</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/performance-and-reform-unit-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Performance%20and%20Reform%20Unit%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/permanent-secretarys-office" title="view on this site">Permanent Secretary's Office</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/permanent-secretarys-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Permanent%20Secretary's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/personal-taxation" title="view on this site">Personal Taxation</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/personal-taxation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Personal%20Taxation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/press-office" title="view on this site">Press Office</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/press-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Press%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/securities-markets" title="view on this site">Securities &amp; Markets</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/securities-markets" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Securities%20&amp;%20Markets"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/special-advisers" title="view on this site">Special Advisers</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/special-advisers" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Special%20Advisers"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/strategy-change-and-performance" title="view on this site">Strategy Change and Performance</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/strategy-change-and-performance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Strategy%20Change%20and%20Performance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/strategy-planning-budget" title="view on this site">Strategy, Planning &amp; Budget</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/strategy-planning-budget" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Strategy,%20Planning%20&amp;%20Budget"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/strategy-reform-productivity" title="view on this site">Strategy, Reform &amp; Productivity</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/strategy-reform-productivity" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Strategy,%20Reform%20&amp;%20Productivity"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/tax-administration-compliance" title="view on this site">Tax Administration &amp; Compliance</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/tax-administration-compliance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Tax%20Administration%20&amp;%20Compliance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/transport-regulation-and-competition" title="view on this site">Transport Regulation and Competition</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/transport-regulation-and-competition" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Transport%20Regulation%20and%20Competition"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/treasury-group-commercial-and-internal-audit" title="view on this site">Treasury Group Commercial and Internal Audit</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/treasury-group-commercial-and-internal-audit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Treasury%20Group%20Commercial%20and%20Internal%20Audit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/treasury-legal-advisors-team" title="view on this site">Treasury Legal Advisors Team</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/treasury-legal-advisors-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Treasury%20Legal%20Advisors%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/treasury-officer-of-accounts" title="view on this site">Treasury Officer of Accounts</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/treasury-officer-of-accounts" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Treasury%20Officer%20of%20Accounts"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/vat-international-excise" title="view on this site">VAT &amp; International Excise</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/vat-international-excise" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=VAT%20&amp;%20International%20Excise"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/work-incentives-and-poverty-analysis" title="view on this site">Work Incentives and Poverty Analysis</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/work-incentives-and-poverty-analysis" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Work%20Incentives%20and%20Poverty%20Analysis"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/workforce-pay-and-pensions-team" title="view on this site">Workforce Pay and Pensions Team</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/workforce-pay-and-pensions-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Workforce%20Pay%20and%20Pensions%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/hm-treasury/unit/workplace-project" title="view on this site">Workplace Project</a> <a href="http://reference.data.gov.uk/id/public-body/hm-treasury/unit/workplace-project" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Workplace%20Project"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr class="parentDepartment last">
+<th class="label"><a href="http://reference.data.gov.uk/def/central-government/parentDepartment">parent department</a></th>
+<td class="value">
+<a href="/id/department/hmt" title="view on this site">hmt</a> <a href="http://reference.data.gov.uk/id/department/hmt" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+</table></section>
+</div></div>
+<nav class="bottomnav"></nav><footer><div class="provenance"><div class=" query col1">
+<h2>Viewer</h2>
+<p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the <a href="endpoint/url/@href">endpoint's page</a>.</p>
+<form action="http://10.254.6.244/organograms-2011-09-30/sparql" method="post">
+<textarea name="query" wrap="off" data-skip-lines="5">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX org: &lt;http://www.w3.org/ns/org#&gt;
+PREFIX gov: &lt;http://reference.data.gov.uk/def/central-government/&gt;
+CONSTRUCT { 
+    # constructing properties of http://reference.data.gov.uk/id/public-body/hm-treasury 
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; rdf:type ?var_1_0 .
+    ?var_1_0 rdfs:label ?var_1_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; rdfs:label ?var_2_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; skos:prefLabel ?var_3_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; skos:altLabel ?var_4_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; rdfs:comment ?var_5_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; org:hasUnit ?var_6_0 .
+    ?var_6_0 rdfs:label ?var_6_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; gov:parentDepartment ?var_7_0 .
+    ?var_7_0 rdfs:label ?var_7_1_0 .
+} WHERE { 
+  # identifying properties of http://reference.data.gov.uk/id/public-body/hm-treasury 
+  {
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; rdf:type ?var_1_0 .
+    OPTIONAL { ?var_1_0 rdfs:label ?var_1_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; rdfs:label ?var_2_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; skos:prefLabel ?var_3_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; skos:altLabel ?var_4_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; rdfs:comment ?var_5_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; org:hasUnit ?var_6_0 .
+    OPTIONAL { ?var_6_0 rdfs:label ?var_6_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/hm-treasury&gt; gov:parentDepartment ?var_7_0 .
+    OPTIONAL { ?var_7_0 rdfs:label ?var_7_1_0 . }
+  } 
+}
+</textarea><p><button type="submit">Run Query</button></p>
+</form>
+</div></div>
+<p>Powered by <a href="http://code.google.com/p/puelia-php/">Puelia v0.1</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p></footer>
+</div></body>
+</html>

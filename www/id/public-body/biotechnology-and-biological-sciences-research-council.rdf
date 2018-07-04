@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Biotechnology and Biological Sciences Research Council</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/institute-for-animal-health"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/ukro"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-babraham-institute"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-genome-analysis-centre"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/swindon-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/bits"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-operations-centre"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/ukcds"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/rothamsted-research"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/john-innes-centre"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/institute-of-food-research"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/bis"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/biotechnology-and-biological-sciences-research-council.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/institute-for-animal-health">
+    <rdfs:label>Institute for Animal Health</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/ukro">
+    <rdfs:label>UKRO</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-babraham-institute">
+    <rdfs:label>The Babraham Institute</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-genome-analysis-centre">
+    <rdfs:label>The Genome Analysis Centre</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/swindon-office">
+    <rdfs:label>Swindon Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/bits">
+    <rdfs:label>BITS</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-operations-centre">
+    <rdfs:label>The Operations Centre</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/ukcds">
+    <rdfs:label>UKCDS</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/rothamsted-research">
+    <rdfs:label>Rothamsted Research</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/john-innes-centre">
+    <rdfs:label>John Innes Centre</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/institute-of-food-research">
+    <rdfs:label>Institute of Food Research</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/bis">
+    <rdfs:label>Department for Business Innovation and Skills</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/biotechnology-and-biological-sciences-research-council.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/biotechnology-and-biological-sciences-research-council.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

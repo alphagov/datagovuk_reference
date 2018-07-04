@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/information-commissioners-office> rdf:type msg0:Organization ,
+                                                                                        central-government:PublicBody ;
+                                                                               rdfs:label "Information Commissioner's Office" ;
+                                                                               msg0:hasUnit <http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/chief-executive> ,
+                                                                                            <http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/organisational-development> ,
+                                                                                            <http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/operations> ,
+                                                                                            <http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/strategic-liaison> ,
+                                                                                            <http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/policy-delivery> ,
+                                                                                            <http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/corporate-affairs> ;
+                                                                               central-government:parentDepartment <http://reference.data.gov.uk/id/department/justice> ;
+                                                                               foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/information-commissioners-office.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/chief-executive> rdfs:label "Chief Executive" . 
+
+<http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/organisational-development> rdfs:label "Organisational Development" . 
+
+<http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/operations> rdfs:label "Operations" . 
+
+<http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/strategic-liaison> rdfs:label "Strategic Liaison" . 
+
+<http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/policy-delivery> rdfs:label "Policy Delivery" . 
+
+<http://reference.data.gov.uk/id/public-body/information-commissioners-office/unit/corporate-affairs> rdfs:label "Corporate Affairs" . 
+
+<http://reference.data.gov.uk/id/department/justice> rdfs:label "Ministry of Justice" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/information-commissioners-office.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/information-commissioners-office> ;
+                                                                                               linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                               linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/information-commissioners-office.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

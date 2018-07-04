@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Monitor</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/executive-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/communications-public-affairs-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/legislative-support-and-policy-research-workstream"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/licensing-workstream"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/competition-workstream"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/build-workstream"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/regulatory-operations-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/legal-services-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/strategy-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/programme-management-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/human-resources-corporate-services-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/pricing-workstream"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/monitor/unit/continuity-of-service-workstream"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dh"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/monitor.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/executive-office">
+    <rdfs:label>Executive office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/communications-public-affairs-team">
+    <rdfs:label>Communications &amp; Public Affairs Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/legislative-support-and-policy-research-workstream">
+    <rdfs:label>Legislative Support and Policy Research Workstream</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/licensing-workstream">
+    <rdfs:label>Licensing Workstream</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/competition-workstream">
+    <rdfs:label>Competition Workstream</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/build-workstream">
+    <rdfs:label>Build Workstream</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/regulatory-operations-directorate">
+    <rdfs:label>Regulatory Operations Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/legal-services-directorate">
+    <rdfs:label>Legal Services Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/strategy-directorate">
+    <rdfs:label>Strategy Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/programme-management-office">
+    <rdfs:label>Programme Management Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/human-resources-corporate-services-directorate">
+    <rdfs:label>Human Resources &amp; Corporate Services Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/pricing-workstream">
+    <rdfs:label>Pricing Workstream</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/monitor/unit/continuity-of-service-workstream">
+    <rdfs:label>Continuity of Service Workstream</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh">
+    <rdfs:label>Department of Health</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/monitor.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/monitor"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/monitor.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

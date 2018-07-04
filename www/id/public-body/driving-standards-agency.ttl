@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/driving-standards-agency> rdf:type msg0:Organization ,
+                                                                                central-government:PublicBody ;
+                                                                       rdfs:label "Driving Standards Agency" ;
+                                                                       msg0:hasUnit <http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/corporate-support> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/chief-executive> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/engagement-communication> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/finance-coporate-services> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/operations> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/human-resources> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/standards-regulations> ;
+                                                                       central-government:parentDepartment <http://reference.data.gov.uk/id/department/dft> ;
+                                                                       foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/driving-standards-agency.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/corporate-support> rdfs:label "Corporate Support" . 
+
+<http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/chief-executive> rdfs:label "Chief Executive" . 
+
+<http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/engagement-communication> rdfs:label "Engagement & Communication" . 
+
+<http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/finance-coporate-services> rdfs:label "Finance & Coporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/operations> rdfs:label "Operations" . 
+
+<http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/human-resources> rdfs:label "Human Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/driving-standards-agency/unit/standards-regulations> rdfs:label "Standards & Regulations" . 
+
+<http://reference.data.gov.uk/id/department/dft> rdfs:label "Department for Transport" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/driving-standards-agency.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/driving-standards-agency> ;
+                                                                                       linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                       linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/driving-standards-agency.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

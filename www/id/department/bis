@@ -1,0 +1,456 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Results</title>
+<link rel="shortcut icon" href="/images/datagovuk_favicon.png" type="image/x-icon">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.rdf" type="application/rdf+xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.ttl" type="text/turtle">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.json" type="application/json">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.xml" type="application/xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.html" type="text/html">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.csv" type="text/csv">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="/scripts/jquery.min.js"></script><script type="text/javascript" src="/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script><link rel="stylesheet" href="/css/html5reset-1.6.1.css" type="text/css">
+<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/smoothness/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/result.css" type="text/css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" type="text/css"></link><![endif]-->
+</head>
+<body><div id="page">
+<nav class="site"><section class="formats"><ul>
+<li class="first"><a href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+<li class="last"><a href="http://reference.data.gov.uk/2011-09-30/doc/department/bis.csv" type="text/csv" rel="alternate" title="view in csv format">csv</a></li>
+</ul></section></nav><header><h1><a href="/">Linked Data API</a></h1></header><nav class="topnav"><section class="moreinfo"><h1>Browse</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Links to further information.</p>
+</div>
+<ul>
+<li><a href="/doc/department/bis/minister">Department ministers</a></li>
+<li><a href="/doc/department/bis/post">Department SCS posts</a></li>
+<li><a href="/doc/department/bis/unit">Department units</a></li>
+<li><span class="current">Department</span></li>
+</ul>
+<ul>
+<li><a href="/doc/ministerial-department">Ministerial departments</a></li>
+<li><a href="/doc/non-ministerial-department">Non-ministerial departments</a></li>
+<li><a href="/doc/department">All departments</a></li>
+<li><a href="/doc/public-body">All public bodies</a></li>
+</ul>
+<ul>
+<li><a href="/doc/minister">All ministers</a></li>
+<li><a href="/doc/seat">All seats</a></li>
+<li><a href="/doc/mp">All MPs</a></li>
+<li><a href="/doc/peer">All peers</a></li>
+</ul></section><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view"><h1>View</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined views, but starred properties are always present no matter what the view. You can star properties by clicking on the <img src="/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.</p>
+</div>
+<ul>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/bis?_view=description" title="switch to description view">description</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/bis?_view=all" title="switch to all view">all</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/bis?_view=minimal" title="switch to minimal view">minimal</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/bis?_view=department+including+posts" title="switch to department including posts view">department including posts</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/bis?_view=department" title="switch to department view">department</a></li>
+</ul>
+<ul class="properties">
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/bis?_properties=label"><img src="/images/grey/16x16/Star.png" alt="star this property"> label</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/bis?_properties=type"><img src="/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/bis?_properties=unit.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> unit</a></li>
+</ul></section></nav><div id="result"><div class="panel">
+<header><p id="openSearch">Show Search Form</p>
+<h1>Department for Business Innovation and Skills</h1>
+<p class="id"><a href="http://reference.data.gov.uk/id/department/bis">http://reference.data.gov.uk/id/department/bis</a></p></header><section id="search"><form action="http://reference.data.gov.uk/2011-09-30/doc/department">
+<table>
+<colgroup>
+<col width="25%">
+<col width="70%">
+</colgroup>
+<tr>
+<th class="label"><label for="label">label</label></th>
+<td class="input"><input name="label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="type">type</label></th>
+<td class="input"><input name="type" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="unit.label">unit</label></th>
+<td class="input"><input name="unit.label" size="25"></td>
+</tr>
+</table>
+<p><button type="submit">Search</button></p>
+</form></section><section><table id="id1598462">
+<colgroup>
+<col width="25%">
+<col width="*">
+<col width="54">
+</colgroup>
+<tr class="type">
+<th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/def/central-government/Department" title="view on this site">Department</a> <a href="http://reference.data.gov.uk/def/central-government/Department" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/def/central-government/PublicBody" title="view on this site">PublicBody</a> <a href="http://reference.data.gov.uk/def/central-government/PublicBody" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value"><a href="http://www.w3.org/ns/org#Organization">Organization</a></td>
+<td class="filter"></td>
+</tr>
+</table></td>
+</tr>
+<tr class="unit last">
+<th class="label"><a href="http://www.w3.org/ns/org#hasUnit">unit</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ad-analysis-directorate" title="view on this site">AD - Analysis Directorate</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ad-analysis-directorate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=AD%20-%20Analysis%20Directorate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ams-advanced-manufacturing-and-services-bs" title="view on this site">AMS - Advanced Manufacturing and Services (BS)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ams-advanced-manufacturing-and-services-bs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=AMS%20-%20Advanced%20Manufacturing%20and%20Services%20(BS)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/bed-business-environment-directorate-mf" title="view on this site">BED - Business Environment Directorate (MF)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/bed-business-environment-directorate-mf" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=BED%20-%20Business%20Environment%20Directorate%20(MF)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/br-better-regulation" title="view on this site">BR - Better Regulation</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/br-better-regulation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=BR%20-%20Better%20Regulation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ccp-consumer-and-competition-policy-mf" title="view on this site">CCP - Consumer and Competition Policy (MF)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ccp-consumer-and-competition-policy-mf" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=CCP%20-%20Consumer%20and%20Competition%20Policy%20(MF)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/cd-commercial-directorate" title="view on this site">CD - Commercial Directorate</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/cd-commercial-directorate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=CD%20-%20Commercial%20Directorate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/cea-chief-economic-advisor-and-support" title="view on this site">CEA - Chief Economic Advisor (and Support)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/cea-chief-economic-advisor-and-support" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=CEA%20-%20Chief%20Economic%20Advisor%20(and%20Support)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/com-communications" title="view on this site">COM - Communications</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/com-communications" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=COM%20-%20Communications"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/dg-ki-dg-knowledge-and-innovation-ki" title="view on this site">DG KI - DG Knowledge and Innovation (KI)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/dg-ki-dg-knowledge-and-innovation-ki" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=DG%20KI%20-%20DG%20Knowledge%20and%20Innovation%20(KI)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ed-enterprise-directorate-bs" title="view on this site">ED - Enterprise Directorate (BS)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ed-enterprise-directorate-bs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=ED%20-%20Enterprise%20Directorate%20(BS)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/edd-economic-development-directorate-bs" title="view on this site">EDD - Economic Development Directorate (BS)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/edd-economic-development-directorate-bs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=EDD%20-%20Economic%20Development%20Directorate%20(BS)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/er-employment-relations-mf" title="view on this site">ER - Employment Relations (MF)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/er-employment-relations-mf" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=ER%20-%20Employment%20Relations%20(MF)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/esg-economics-strategy-and-growth" title="view on this site">ESG - Economics Strategy and Growth</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/esg-economics-strategy-and-growth" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=ESG%20-%20Economics%20Strategy%20and%20Growth"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/etid-europe-trade-and-international-directorate-mf" title="view on this site">ETID - Europe Trade and International Directorate (MF)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/etid-europe-trade-and-international-directorate-mf" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=ETID%20-%20Europe%20Trade%20and%20International%20Directorate%20(MF)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/fd-finance-directorate" title="view on this site">FD - Finance Directorate</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/fd-finance-directorate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=FD%20-%20Finance%20Directorate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/fesi-further-education-and-skills-investment-bs" title="view on this site">FESI - Further Education and Skills Investment (BS)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/fesi-further-education-and-skills-investment-bs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=FESI%20-%20Further%20Education%20and%20Skills%20Investment%20(BS)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/go-scd-government-office-for-science-directorate" title="view on this site">GO SCD - Government Office for Science Directorate</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/go-scd-government-office-for-science-directorate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=GO%20SCD%20-%20Government%20Office%20for%20Science%20Directorate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/hess-higher-education-student-support" title="view on this site">HESS - Higher Education Student Support</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/hess-higher-education-student-support" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=HESS%20-%20Higher%20Education%20Student%20Support"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/hr-human-resources" title="view on this site">HR - Human Resources</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/hr-human-resources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=HR%20-%20Human%20Resources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ia-internal-audit" title="view on this site">IA - Internal Audit</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ia-internal-audit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=IA%20-%20Internal%20Audit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/icd-innovation-capability-directorate" title="view on this site">ICD - Innovation Capability Directorate</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/icd-innovation-capability-directorate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=ICD%20-%20Innovation%20Capability%20Directorate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/id-innovation-directorate-ki" title="view on this site">ID - Innovation Directorate (KI)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/id-innovation-directorate-ki" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=ID%20-%20Innovation%20Directorate%20(KI)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ie-information-economy-bs" title="view on this site">IE - Information Economy (BS)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ie-information-economy-bs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=IE%20-%20Information%20Economy%20(BS)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/lega-legal-services-directorate-a" title="view on this site">LEGA - Legal Services Directorate A</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/lega-legal-services-directorate-a" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=LEGA%20-%20Legal%20Services%20Directorate%20A"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/legal-grp-legal-services-group-support-office" title="view on this site">LEGAL GRP - Legal Services Group Support Office</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/legal-grp-legal-services-group-support-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=LEGAL%20GRP%20-%20Legal%20Services%20Group%20Support%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/legb-legal-services-directorate-b" title="view on this site">LEGB - Legal Services Directorate B</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/legb-legal-services-directorate-b" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=LEGB%20-%20Legal%20Services%20Directorate%20B"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/mf-rpu-mf-resource-and-planning-mf" title="view on this site">MF RPU - MF Resource and Planning (MF)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/mf-rpu-mf-resource-and-planning-mf" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=MF%20RPU%20-%20MF%20Resource%20and%20Planning%20(MF)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/mpst-ministerial-and-parliamentary-supp" title="view on this site">MPST - Ministerial and Parliamentary Supp</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/mpst-ministerial-and-parliamentary-supp" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=MPST%20-%20Ministerial%20and%20Parliamentary%20Supp"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/rb-research-base-ki" title="view on this site">RB - Research Base (KI)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/rb-research-base-ki" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=RB%20-%20Research%20Base%20(KI)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/s-skills-bs" title="view on this site">S - Skills (BS)</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/s-skills-bs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=S%20-%20Skills%20(BS)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/se-shareholder-executive" title="view on this site">SE - Shareholder Executive</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/se-shareholder-executive" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=SE%20-%20Shareholder%20Executive"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ukti-bg-business-group" title="view on this site">UKTI BG - Business Group</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ukti-bg-business-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=UKTI%20BG%20-%20Business%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ukti-dso-defence-and-security-organisation" title="view on this site">UKTI DSO - Defence and Security Organisation</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ukti-dso-defence-and-security-organisation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=UKTI%20DSO%20-%20Defence%20and%20Security%20Organisation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ukti-eet-economists-and-evaluation-team" title="view on this site">UKTI EET - Economists and Evaluation Team</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ukti-eet-economists-and-evaluation-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=UKTI%20EET%20-%20Economists%20and%20Evaluation%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ukti-ig-international-group" title="view on this site">UKTI IG - International Group</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ukti-ig-international-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=UKTI%20IG%20-%20International%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ukti-itf-it-and-finance" title="view on this site">UKTI ITF - IT and Finance</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ukti-itf-it-and-finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=UKTI%20ITF%20-%20IT%20and%20Finance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ukti-mg-marketing-group" title="view on this site">UKTI MG - Marketing Group</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ukti-mg-marketing-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=UKTI%20MG%20-%20Marketing%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ukti-sg-sectors-group" title="view on this site">UKTI SG - Sectors Group</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ukti-sg-sectors-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=UKTI%20SG%20-%20Sectors%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ukti-shr-strategy-and-human-resources" title="view on this site">UKTI SHR - Strategy and Human Resources</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ukti-shr-strategy-and-human-resources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=UKTI%20SHR%20-%20Strategy%20and%20Human%20Resources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/bis/unit/ukti-sectors-group" title="view on this site">UKTI Sectors Group</a> <a href="http://reference.data.gov.uk/id/department/bis/unit/ukti-sectors-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=UKTI%20Sectors%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></td>
+</tr>
+</table></section>
+</div></div>
+<nav class="bottomnav"></nav><footer><div class="provenance"><div class=" query col1">
+<h2>Viewer</h2>
+<p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the <a href="endpoint/url/@href">endpoint's page</a>.</p>
+<form action="http://10.254.6.244/organograms-2011-09-30/sparql" method="post">
+<textarea name="query" wrap="off" data-skip-lines="4">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX org: &lt;http://www.w3.org/ns/org#&gt;
+CONSTRUCT { 
+    # constructing properties of http://reference.data.gov.uk/id/department/bis 
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; rdf:type ?var_1_0 .
+    ?var_1_0 rdfs:label ?var_1_1_0 .
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; rdfs:label ?var_2_0 .
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; skos:prefLabel ?var_3_0 .
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; skos:altLabel ?var_4_0 .
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; rdfs:comment ?var_5_0 .
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; org:hasUnit ?var_6_0 .
+    ?var_6_0 rdfs:label ?var_6_1_0 .
+} WHERE { 
+  # identifying properties of http://reference.data.gov.uk/id/department/bis 
+  {
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; rdf:type ?var_1_0 .
+    OPTIONAL { ?var_1_0 rdfs:label ?var_1_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; rdfs:label ?var_2_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; skos:prefLabel ?var_3_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; skos:altLabel ?var_4_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; rdfs:comment ?var_5_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/bis&gt; org:hasUnit ?var_6_0 .
+    OPTIONAL { ?var_6_0 rdfs:label ?var_6_1_0 . }
+  } 
+}
+</textarea><p><button type="submit">Run Query</button></p>
+</form>
+</div></div>
+<p>Powered by <a href="http://code.google.com/p/puelia-php/">Puelia v0.1</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p></footer>
+</div></body>
+</html>

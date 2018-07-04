@@ -1,0 +1,466 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Results</title>
+<link rel="shortcut icon" href="/images/datagovuk_favicon.png" type="image/x-icon">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.rdf" type="application/rdf+xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.ttl" type="text/turtle">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.json" type="application/json">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.xml" type="application/xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.html" type="text/html">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.csv" type="text/csv">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="/scripts/jquery.min.js"></script><script type="text/javascript" src="/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script><link rel="stylesheet" href="/css/html5reset-1.6.1.css" type="text/css">
+<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/smoothness/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/result.css" type="text/css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" type="text/css"></link><![endif]-->
+</head>
+<body><div id="page">
+<nav class="site"><section class="formats"><ul>
+<li class="first"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+<li class="last"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.csv" type="text/csv" rel="alternate" title="view in csv format">csv</a></li>
+</ul></section></nav><header><h1><a href="/">Linked Data API</a></h1></header><nav class="topnav"><section class="moreinfo"><h1>Browse</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Links to further information.</p>
+</div>
+<ul>
+<li><a href="/doc/public-body/national-institute-for-health-and-clinical-excelle/post">Public body SCS posts</a></li>
+<li><a href="/doc/public-body/national-institute-for-health-and-clinical-excelle/unit">Public body units</a></li>
+<li><span class="current">Public body</span></li>
+</ul>
+<ul>
+<li><a href="/doc/ministerial-department">Ministerial departments</a></li>
+<li><a href="/doc/non-ministerial-department">Non-ministerial departments</a></li>
+<li><a href="/doc/department">All departments</a></li>
+<li><a href="/doc/public-body">All public bodies</a></li>
+</ul>
+<ul>
+<li><a href="/doc/minister">All ministers</a></li>
+<li><a href="/doc/seat">All seats</a></li>
+<li><a href="/doc/mp">All MPs</a></li>
+<li><a href="/doc/peer">All peers</a></li>
+</ul></section><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view"><h1>View</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined views, but starred properties are always present no matter what the view. You can star properties by clicking on the <img src="/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.</p>
+</div>
+<ul>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle?_view=description" title="switch to description view">description</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle?_view=all" title="switch to all view">all</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle?_view=minimal" title="switch to minimal view">minimal</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle?_view=public+body" title="switch to public body view">public body</a></li>
+</ul>
+<ul class="properties">
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle?_properties=label"><img src="/images/grey/16x16/Star.png" alt="star this property"> label</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle?_properties=type"><img src="/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle?_properties=unit.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> unit</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle?_properties=parentDepartment.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> parent department</a></li>
+</ul></section></nav><div id="result"><div class="panel">
+<header><p id="openSearch">Show Search Form</p>
+<h1>National Institute for Health and Clinical Excellence</h1>
+<p class="id"><a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle">http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle</a></p></header><section id="search"><form action="http://reference.data.gov.uk/2011-09-30/doc/public-body">
+<table>
+<colgroup>
+<col width="25%">
+<col width="70%">
+</colgroup>
+<tr>
+<th class="label"><label for="label">label</label></th>
+<td class="input"><input name="label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="type">type</label></th>
+<td class="input"><input name="type" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="unit.label">unit</label></th>
+<td class="input"><input name="unit.label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="parentDepartment.label">parent department</label></th>
+<td class="input"><input name="parentDepartment.label" size="25"></td>
+</tr>
+</table>
+<p><button type="submit">Search</button></p>
+</form></section><section><table id="id1125208">
+<colgroup>
+<col width="25%">
+<col width="*">
+<col width="54">
+</colgroup>
+<tr class="type">
+<th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/def/central-government/PublicBody" title="view on this site">PublicBody</a> <a href="http://reference.data.gov.uk/def/central-government/PublicBody" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value"><a href="http://www.w3.org/ns/org#Organization">Organization</a></td>
+<td class="filter"></td>
+</tr>
+</table></td>
+</tr>
+<tr class="unit">
+<th class="label"><a href="http://www.w3.org/ns/org#hasUnit">unit</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/accreditation" title="view on this site">Accreditation</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/accreditation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Accreditation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/centre-for-public-health-excellence" title="view on this site">Centre for Public Health Excellence</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/centre-for-public-health-excellence" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Centre%20for%20Public%20Health%20Excellence"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/clinical-guidelines" title="view on this site">Clinical Guidelines</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/clinical-guidelines" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Clinical%20Guidelines"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/commissioned-content" title="view on this site">Commissioned Content</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/commissioned-content" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Commissioned%20Content"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/communications" title="view on this site">Communications</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/communications" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Communications"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/corporate-office" title="view on this site">Corporate Office</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/corporate-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corporate%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/costing-commissioning" title="view on this site">Costing &amp; Commissioning</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/costing-commissioning" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Costing%20&amp;%20Commissioning"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/design" title="view on this site">Design</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/design" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Design"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-release" title="view on this site">Development &amp; Release</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-release" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Development%20&amp;%20Release"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-transition" title="view on this site">Development &amp; Transition</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-transition" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Development%20&amp;%20Transition"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/diagnostics-assessment-programme" title="view on this site">Diagnostics Assessment Programme</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/diagnostics-assessment-programme" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Diagnostics%20Assessment%20Programme"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/egap-and-pathways" title="view on this site">EGAP and Pathways</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/egap-and-pathways" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=EGAP%20and%20Pathways"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/editorial-and-publishing" title="view on this site">Editorial and Publishing</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/editorial-and-publishing" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Editorial%20and%20Publishing"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/engagement-management" title="view on this site">Engagement &amp; Management</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/engagement-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Engagement%20&amp;%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/evidence-resources" title="view on this site">Evidence Resources</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/evidence-resources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Evidence%20Resources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/facilities" title="view on this site">Facilities</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/facilities" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Facilities"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/fellows-programme" title="view on this site">Fellows Programme</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/fellows-programme" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Fellows%20Programme"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/field-team" title="view on this site">Field Team</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/field-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Field%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/finance" title="view on this site">Finance</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Finance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/human-resources" title="view on this site">Human Resources</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/human-resources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Human%20Resources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/it" title="view on this site">IT</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/it" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=IT"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/impact-evaluation" title="view on this site">Impact &amp; Evaluation</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/impact-evaluation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Impact%20&amp;%20Evaluation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/implementation-support-team" title="view on this site">Implementation Support Team</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/implementation-support-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Implementation%20Support%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/information-services" title="view on this site">Information Services</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/information-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Information%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/interventional-procedures" title="view on this site">Interventional Procedures</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/interventional-procedures" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Interventional%20Procedures"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/marketing-comms" title="view on this site">Marketing &amp; Comms</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/marketing-comms" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Marketing%20&amp;%20Comms"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/medical-technologies" title="view on this site">Medical Technologies</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/medical-technologies" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Medical%20Technologies"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/nice-international" title="view on this site">NICE International</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/nice-international" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NICE%20International"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/national-prescribing-centre" title="view on this site">National Prescribing Centre</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/national-prescribing-centre" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=National%20Prescribing%20Centre"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/operations" title="view on this site">Operations</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/operations" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Operations"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-access-scheme-liaison-unit" title="view on this site">Patient Access Scheme Liaison Unit</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-access-scheme-liaison-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Patient%20Access%20Scheme%20Liaison%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-and-public-involvement-unit" title="view on this site">Patient and Public Involvement Unit</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-and-public-involvement-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Patient%20and%20Public%20Involvement%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/quality-systems" title="view on this site">Quality Systems</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/quality-systems" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Quality%20Systems"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/research-development" title="view on this site">Research &amp; Development</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/research-development" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Research%20&amp;%20Development"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/scientific-advice" title="view on this site">Scientific Advice</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/scientific-advice" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Scientific%20Advice"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/search-sources" title="view on this site">Search &amp; Sources</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/search-sources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Search%20&amp;%20Sources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/short-clinical-guidelines" title="view on this site">Short Clinical Guidelines</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/short-clinical-guidelines" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Short%20Clinical%20Guidelines"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/technology-appraisals" title="view on this site">Technology Appraisals</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/technology-appraisals" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Technology%20Appraisals"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/topic-selection" title="view on this site">Topic Selection</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/topic-selection" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Topic%20Selection"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/national-institute-for-health-and-clinical-excelle/unit/user-research" title="view on this site">User Research</a> <a href="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/user-research" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=User%20Research"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr class="parentDepartment last">
+<th class="label"><a href="http://reference.data.gov.uk/def/central-government/parentDepartment">parent department</a></th>
+<td class="value">
+<a href="/id/department/dh" title="view on this site">Department of Health</a> <a href="http://reference.data.gov.uk/id/department/dh" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?parentDepartment.label=Department%20of%20Health"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></section>
+</div></div>
+<nav class="bottomnav"></nav><footer><div class="provenance"><div class=" query col1">
+<h2>Viewer</h2>
+<p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the <a href="endpoint/url/@href">endpoint's page</a>.</p>
+<form action="http://10.254.6.244/organograms-2011-09-30/sparql" method="post">
+<textarea name="query" wrap="off" data-skip-lines="5">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX org: &lt;http://www.w3.org/ns/org#&gt;
+PREFIX gov: &lt;http://reference.data.gov.uk/def/central-government/&gt;
+CONSTRUCT { 
+    # constructing properties of http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle 
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; rdf:type ?var_1_0 .
+    ?var_1_0 rdfs:label ?var_1_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; rdfs:label ?var_2_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; skos:prefLabel ?var_3_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; skos:altLabel ?var_4_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; rdfs:comment ?var_5_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; org:hasUnit ?var_6_0 .
+    ?var_6_0 rdfs:label ?var_6_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; gov:parentDepartment ?var_7_0 .
+    ?var_7_0 rdfs:label ?var_7_1_0 .
+} WHERE { 
+  # identifying properties of http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle 
+  {
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; rdf:type ?var_1_0 .
+    OPTIONAL { ?var_1_0 rdfs:label ?var_1_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; rdfs:label ?var_2_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; skos:prefLabel ?var_3_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; skos:altLabel ?var_4_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; rdfs:comment ?var_5_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; org:hasUnit ?var_6_0 .
+    OPTIONAL { ?var_6_0 rdfs:label ?var_6_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle&gt; gov:parentDepartment ?var_7_0 .
+    OPTIONAL { ?var_7_0 rdfs:label ?var_7_1_0 . }
+  } 
+}
+</textarea><p><button type="submit">Run Query</button></p>
+</form>
+</div></div>
+<p>Powered by <a href="http://code.google.com/p/puelia-php/">Puelia v0.1</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p></footer>
+</div></body>
+</html>

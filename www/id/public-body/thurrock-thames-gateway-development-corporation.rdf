@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/thurrock-thames-gateway-development-corporation">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Thurrock Thames Gateway Development Corporation</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/thurrock-thames-gateway-development-corporation/unit/resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/thurrock-thames-gateway-development-corporation/unit/delivery"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/thurrock-thames-gateway-development-corporation/unit/planning"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/thurrock-thames-gateway-development-corporation/unit/corporate"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dclg"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/thurrock-thames-gateway-development-corporation.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/thurrock-thames-gateway-development-corporation/unit/resources">
+    <rdfs:label>Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/thurrock-thames-gateway-development-corporation/unit/delivery">
+    <rdfs:label>Delivery</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/thurrock-thames-gateway-development-corporation/unit/planning">
+    <rdfs:label>Planning</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/thurrock-thames-gateway-development-corporation/unit/corporate">
+    <rdfs:label>Corporate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dclg">
+    <rdfs:label>Department for Communities and Local Government</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/thurrock-thames-gateway-development-corporation.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/thurrock-thames-gateway-development-corporation"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/thurrock-thames-gateway-development-corporation.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

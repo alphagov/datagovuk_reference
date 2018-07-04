@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/vehicle-operator-services-agency> rdf:type msg0:Organization ,
+                                                                                        central-government:PublicBody ;
+                                                                               rdfs:label "Vehicle & Operator Services Agency" ;
+                                                                               msg0:hasUnit <http://reference.data.gov.uk/id/public-body/vehicle-operator-services-agency/unit/finance> ,
+                                                                                            <http://reference.data.gov.uk/id/public-body/vehicle-operator-services-agency/unit/chief-executive> ,
+                                                                                            <http://reference.data.gov.uk/id/public-body/vehicle-operator-services-agency/unit/strategy-customer> ;
+                                                                               central-government:parentDepartment <http://reference.data.gov.uk/id/department/dft> ;
+                                                                               foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/vehicle-operator-services-agency.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/vehicle-operator-services-agency/unit/finance> rdfs:label "Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/vehicle-operator-services-agency/unit/chief-executive> rdfs:label "Chief Executive" . 
+
+<http://reference.data.gov.uk/id/public-body/vehicle-operator-services-agency/unit/strategy-customer> rdfs:label "Strategy & Customer" . 
+
+<http://reference.data.gov.uk/id/department/dft> rdfs:label "Department for Transport" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/vehicle-operator-services-agency.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/vehicle-operator-services-agency> ;
+                                                                                               linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                               linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/vehicle-operator-services-agency.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

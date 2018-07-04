@@ -1,0 +1,278 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/ho> rdf:type msg0:Organization ,
+                                                         ns0:Department ,
+                                                         ns0:PublicBody ;
+                                                rdfs:label "Home Office" ;
+                                                msg0:hasUnit <http://reference.data.gov.uk/id/department/ho/unit/news> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/drugsalcohol-and-community-directors-office> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/police-productivity> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/finance-and-strategy-directors-office> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-delivery> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/forensic-science-regulation> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/core-skills-assessment-team-csat> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/workforce> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/legal-adviser> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/governance> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/civil-liberties-and-public-protection> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/private-office> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/violent-and-youth-crime-prevention-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/community-safety> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/group-finance-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/accounting-and-finance> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/corporate-support-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/office-of-the-chief-information-officer-portfolio-and-programmes> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-equality-law-better-regulation> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/ministerial-strategy-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/drugs-and-alcohol-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/strategy-skills-and-planning-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-strategic-analysis-and-international> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/crime-policing-analysis> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/migration-border-analysis> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/leadership-and-change> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/international-directorate> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/asylum-criminality-and-enforcement> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/migration-advisory-committee> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/crime-directors-office> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/strategic-centre-for-organised-crime> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/police-transparency-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/public-order> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/forensic-science-service-team> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/adelphi-services> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/science-secretariat> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/judicial-cooperation-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/safeguarding-public-protection-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/office-of-the-head-of-ibpd> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/legal-strategy-team> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/strategic-communications-marketing-and-insight> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/policing-directors-office> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/audit-and-assurance> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-policy-and-transformation> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/central-analysis-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/home-office-statistics> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/hos-shared-support-service> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/group-equality-and-diversity> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/hr-operations> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/crime-and-policing-group-director-generals-office> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/crime-and-asb-reduction-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/uk-football-policy-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/commercial> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/commercial-policing> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/office-of-the-chief-information-officer-information> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-central-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-equality-and-human-rights-commission-ehrc-reform> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/communication-directorate> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/organised-and-financial-crime> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/reducing-reoffending-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/police-reform> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/hillsborough-disclosure-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/director-generals-office> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/value-for-money-and-productivity> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/ips-commercial-home-office-category-management-commercial-policy-assurance-srm> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/office-of-the-chief-information-officer-enterprise-architecture> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/home-office-general-property> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-director-general-and-support> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/centre-for-applied-science-technology> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/counter-terrorism-social-science> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/strategy-analysis-and-performance> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/departmental-security> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/health-safety-wellbeing> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/digital-events-and-staff-communications> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/national-crime-agency-programme> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/national-crime-agency-directors-office> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/resources-and-planning> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/major-projects-commercial> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/information-management-service> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/home-office-it> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-gender-equality-and-lgbt> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/animals-in-science-regulation-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/policy-reward-and-employee-relations> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/mi-team> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/business-support-team> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/border-security-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/ho/unit/migration-policy> ;
+                                                foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/ho.ttl> . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/news> rdfs:label "News" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/drugsalcohol-and-community-directors-office> rdfs:label "Drugs,Alcohol and Community Director's Office" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/police-productivity> rdfs:label "Police Productivity" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/finance-and-strategy-directors-office> rdfs:label "Finance and Strategy Director's Office" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-delivery> rdfs:label "Government Equalities Office - Delivery" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/forensic-science-regulation> rdfs:label "Forensic Science Regulation" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/core-skills-assessment-team-csat> rdfs:label "Core Skills Assessment Team (CSAT)" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/workforce> rdfs:label "Workforce" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/legal-adviser> rdfs:label "Legal Adviser" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/governance> rdfs:label "Governance" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/civil-liberties-and-public-protection> rdfs:label "Civil Liberties and Public Protection" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/private-office> rdfs:label "Private Office" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/violent-and-youth-crime-prevention-unit> rdfs:label "Violent and Youth Crime Prevention Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/community-safety> rdfs:label "Community Safety" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/group-finance-unit> rdfs:label "Group Finance Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/accounting-and-finance> rdfs:label "Accounting and Finance" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/corporate-support-unit> rdfs:label "Corporate Support Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/office-of-the-chief-information-officer-portfolio-and-programmes> rdfs:label "Office of the Chief Information Officer Portfolio and Programmes" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-equality-law-better-regulation> rdfs:label "Government Equalities Office - Equality Law & Better Regulation" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/ministerial-strategy-unit> rdfs:label "Ministerial Strategy Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/drugs-and-alcohol-unit> rdfs:label "Drugs and Alcohol Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/strategy-skills-and-planning-unit> rdfs:label "Strategy, Skills and Planning Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-strategic-analysis-and-international> rdfs:label "Government Equalities Office - Strategic Analysis and International" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/crime-policing-analysis> rdfs:label "Crime & Policing Analysis" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/migration-border-analysis> rdfs:label "Migration & Border Analysis" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/leadership-and-change> rdfs:label "Leadership and Change" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/international-directorate> rdfs:label "International Directorate" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/asylum-criminality-and-enforcement> rdfs:label "Asylum, Criminality and Enforcement" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/migration-advisory-committee> rdfs:label "Migration Advisory Committee" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/crime-directors-office> rdfs:label "Crime Director's Office" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/strategic-centre-for-organised-crime> rdfs:label "Strategic Centre for Organised Crime" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/police-transparency-unit> rdfs:label "Police Transparency Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/public-order> rdfs:label "Public Order" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/forensic-science-service-team> rdfs:label "Forensic Science Service Team" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/adelphi-services> rdfs:label "Adelphi Services" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/science-secretariat> rdfs:label "Science Secretariat" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/judicial-cooperation-unit> rdfs:label "Judicial Co-operation Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/safeguarding-public-protection-unit> rdfs:label "Safeguarding & Public Protection Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/office-of-the-head-of-ibpd> rdfs:label "Office of the Head of IBPD" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/legal-strategy-team> rdfs:label "Legal Strategy Team" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/strategic-communications-marketing-and-insight> rdfs:label "Strategic Communications, Marketing and Insight" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/policing-directors-office> rdfs:label "Policing Director's Office" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/audit-and-assurance> rdfs:label "Audit and Assurance" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-policy-and-transformation> rdfs:label "Government Equalities Office - Policy and Transformation" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/central-analysis-unit> rdfs:label "Central Analysis Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/home-office-statistics> rdfs:label "Home Office Statistics" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/hos-shared-support-service> rdfs:label "HOS Shared Support Service" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/group-equality-and-diversity> rdfs:label "Group Equality and Diversity" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/hr-operations> rdfs:label "HR Operations" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/crime-and-policing-group-director-generals-office> rdfs:label "Crime and Policing Group Director General's Office" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/crime-and-asb-reduction-unit> rdfs:label "Crime and ASB Reduction Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/uk-football-policy-unit> rdfs:label "UK Football Policy Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/commercial> rdfs:label "Commercial" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/commercial-policing> rdfs:label "Commercial - Policing" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/office-of-the-chief-information-officer-information> rdfs:label "Office of the Chief Information Officer - Information" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-central-unit> rdfs:label "Government Equalities Office - Central Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-equality-and-human-rights-commission-ehrc-reform> rdfs:label "Government Equalities Office - Equality and Human Rights Commission (EHRC) Reform" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/communication-directorate> rdfs:label "Communication Directorate" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/organised-and-financial-crime> rdfs:label "Organised and Financial Crime" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/reducing-reoffending-unit> rdfs:label "Reducing Reoffending Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/police-reform> rdfs:label "Police Reform" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/hillsborough-disclosure-unit> rdfs:label "Hillsborough Disclosure Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/director-generals-office> rdfs:label "Director General's Office" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/value-for-money-and-productivity> rdfs:label "Value for Money and Productivity" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/ips-commercial-home-office-category-management-commercial-policy-assurance-srm> rdfs:label "IPS Commercial; Home Office Category Management, Commercial Policy, Assurance & SRM" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/office-of-the-chief-information-officer-enterprise-architecture> rdfs:label "Office of the Chief Information Officer - Enterprise Architecture" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/home-office-general-property> rdfs:label "Home Office General Property" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-director-general-and-support> rdfs:label "Government Equalities Office - Director General and Support" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/centre-for-applied-science-technology> rdfs:label "Centre for Applied Science & Technology" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/counter-terrorism-social-science> rdfs:label "Counter Terrorism Social Science" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/strategy-analysis-and-performance> rdfs:label "Strategy Analysis and Performance" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/departmental-security> rdfs:label "Departmental Security" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/health-safety-wellbeing> rdfs:label "Health Safety & Wellbeing" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/digital-events-and-staff-communications> rdfs:label "Digital, Events and Staff Communications" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/national-crime-agency-programme> rdfs:label "National Crime Agency Programme" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/national-crime-agency-directors-office> rdfs:label "National Crime Agency Director's Office" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/resources-and-planning> rdfs:label "Resources and Planning" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/major-projects-commercial> rdfs:label "Major Projects Commercial" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/information-management-service> rdfs:label "Information Management Service" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/home-office-it> rdfs:label "Home Office IT" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-gender-equality-and-lgbt> rdfs:label "Government Equalities Office - Gender Equality and LGB&T" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/animals-in-science-regulation-unit> rdfs:label "Animals in Science Regulation Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/policy-reward-and-employee-relations> rdfs:label "Policy, Reward and Employee Relations" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/mi-team> rdfs:label "MI Team" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/business-support-team> rdfs:label "Business Support Team" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/border-security-unit> rdfs:label "Border Security Unit" . 
+
+<http://reference.data.gov.uk/id/department/ho/unit/migration-policy> rdfs:label "Migration Policy" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/ho.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/ho> ;
+                                                                linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/ho.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

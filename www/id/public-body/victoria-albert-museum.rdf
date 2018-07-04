@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/victoria-albert-museum">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Victoria &amp; Albert Museum</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/projects-design-estate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/directorate-finance-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/collections-learning"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/public-affairs"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dcms"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/victoria-albert-museum.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/projects-design-estate">
+    <rdfs:label>Projects, Design &amp; Estate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/directorate-finance-resources">
+    <rdfs:label>Directorate, Finance &amp; Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/collections-learning">
+    <rdfs:label>Collections &amp; Learning</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/directorate">
+    <rdfs:label>Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/public-affairs">
+    <rdfs:label>Public Affairs</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms">
+    <rdfs:label>Department for Culture, Media and Sport</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/victoria-albert-museum.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/victoria-albert-museum"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/victoria-albert-museum.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

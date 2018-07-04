@@ -1,0 +1,118 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency> rdf:type msg0:Organization ,
+                                                                                                    central-government:PublicBody ;
+                                                                                           rdfs:label "Animal Health Veterinary Laboritories Agency" ;
+                                                                                           msg0:hasUnit <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/commercial-quality-assurance-unit> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/communications> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/human-resources> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/pathology-and-host-susceptibility> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/veterinary-surveillance> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/commissioning-and-performance> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/country-director-england> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/bacteriology> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/data-systems-group-cera-3> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/safety-quality-and-biosecurity-safety> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/virology> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/chief-scientist> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/commercial> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/safety-quality-and-biosecurity-quality> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/country-director-scotland> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/specialist-service-centres> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/veterinary-and-science-policy-advice-team> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/finance-and-procurement> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/information-technology> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/country-director-wales> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/imt> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/centre-for-epidemiology-and-risk-analysis> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/estates-and-environment> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/veterinary-and-technical-services> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/veterinary-exotics-notifiable-diseases-unit> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/customer-accounts-and-programme-support> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/laboratory-services> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/specialist-scientific-services> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/library> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/fellowship> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/strategy-and-business-planning-unit-and-corporate-office> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/business-change-and-programme-management-office> ,
+                                                                                                        <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/contingency-planning-and-regulatory-hub> ;
+                                                                                           central-government:parentDepartment <http://reference.data.gov.uk/id/department/defra> ;
+                                                                                           foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/animal-health-veterinary-laboritories-agency.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/commercial-quality-assurance-unit> rdfs:label "Commercial (Quality Assurance Unit)" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/communications> rdfs:label "Communications" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/human-resources> rdfs:label "Human Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/pathology-and-host-susceptibility> rdfs:label "Pathology and Host Susceptibility" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/veterinary-surveillance> rdfs:label "Veterinary Surveillance" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/commissioning-and-performance> rdfs:label "Commissioning and Performance" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/country-director-england> rdfs:label "Country Director (England)" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/bacteriology> rdfs:label "Bacteriology" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/data-systems-group-cera-3> rdfs:label "Data Systems Group (CERA 3)" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/safety-quality-and-biosecurity-safety> rdfs:label "Safety, Quality and Biosecurity - Safety" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/virology> rdfs:label "Virology" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/chief-scientist> rdfs:label "Chief Scientist" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/commercial> rdfs:label "Commercial" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/safety-quality-and-biosecurity-quality> rdfs:label "Safety, Quality and Biosecurity - Quality" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/country-director-scotland> rdfs:label "Country Director (Scotland)" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/specialist-service-centres> rdfs:label "Specialist Service Centres" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/veterinary-and-science-policy-advice-team> rdfs:label "Veterinary and Science Policy Advice Team" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/finance-and-procurement> rdfs:label "Finance and Procurement" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/information-technology> rdfs:label "Information Technology" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/country-director-wales> rdfs:label "Country Director (Wales)" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/imt> rdfs:label "IMT" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/centre-for-epidemiology-and-risk-analysis> rdfs:label "Centre for Epidemiology and Risk Analysis" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/estates-and-environment> rdfs:label "Estates and Environment" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/veterinary-and-technical-services> rdfs:label "Veterinary and Technical Services" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/veterinary-exotics-notifiable-diseases-unit> rdfs:label "Veterinary Exotics Notifiable Diseases Unit" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/customer-accounts-and-programme-support> rdfs:label "Customer Accounts and Programme Support" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/laboratory-services> rdfs:label "Laboratory Services" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/specialist-scientific-services> rdfs:label "Specialist Scientific Services" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/library> rdfs:label "Library" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/fellowship> rdfs:label "Fellowship" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/strategy-and-business-planning-unit-and-corporate-office> rdfs:label "Strategy and Business Planning Unit and Corporate Office" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/business-change-and-programme-management-office> rdfs:label "Business Change and Programme Management Office" . 
+
+<http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency/unit/contingency-planning-and-regulatory-hub> rdfs:label "Contingency Planning and Regulatory Hub" . 
+
+<http://reference.data.gov.uk/id/department/defra> rdfs:label "Department for Environment, Food and Rural Affairs" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/animal-health-veterinary-laboritories-agency.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/animal-health-veterinary-laboritories-agency> ;
+                                                                                                           linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                                           linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/animal-health-veterinary-laboritories-agency.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

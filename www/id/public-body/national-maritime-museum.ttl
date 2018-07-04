@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/national-maritime-museum> rdf:type msg0:Organization ,
+                                                                                central-government:PublicBody ;
+                                                                       rdfs:label "National Maritime Museum" ;
+                                                                       msg0:hasUnit <http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/collections-and-curatorial> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/finance-and-enterprises> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/exhibitions-and-programmes> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/operations-and-hr> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/communications-and-visitor-experience> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/directorate> ;
+                                                                       central-government:parentDepartment <http://reference.data.gov.uk/id/department/dcms> ;
+                                                                       foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/national-maritime-museum.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/collections-and-curatorial> rdfs:label "Collections and Curatorial" . 
+
+<http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/finance-and-enterprises> rdfs:label "Finance and Enterprises" . 
+
+<http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/exhibitions-and-programmes> rdfs:label "Exhibitions and Programmes" . 
+
+<http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/operations-and-hr> rdfs:label "Operations and HR" . 
+
+<http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/communications-and-visitor-experience> rdfs:label "Communications and Visitor Experience" . 
+
+<http://reference.data.gov.uk/id/public-body/national-maritime-museum/unit/directorate> rdfs:label "Directorate" . 
+
+<http://reference.data.gov.uk/id/department/dcms> rdfs:label "Department for Culture, Media and Sport" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/national-maritime-museum.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/national-maritime-museum> ;
+                                                                                       linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                       linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/national-maritime-museum.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

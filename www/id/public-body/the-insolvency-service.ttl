@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/the-insolvency-service> rdf:type msg0:Organization ,
+                                                                              central-government:PublicBody ;
+                                                                     rdfs:label "The Insolvency Service" ;
+                                                                     msg0:hasUnit <http://reference.data.gov.uk/id/public-body/the-insolvency-service/unit/corporate-and-business-services> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/the-insolvency-service/unit/policy> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/the-insolvency-service/unit/strategy-planning-communication-and-finance-corporate-governance> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/the-insolvency-service/unit/official-receiver-services> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/the-insolvency-service/unit/investigations-and-enforcement> ;
+                                                                     central-government:parentDepartment <http://reference.data.gov.uk/id/department/bis> ;
+                                                                     foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/the-insolvency-service.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/the-insolvency-service/unit/corporate-and-business-services> rdfs:label "Corporate and Business Services" . 
+
+<http://reference.data.gov.uk/id/public-body/the-insolvency-service/unit/policy> rdfs:label "Policy" . 
+
+<http://reference.data.gov.uk/id/public-body/the-insolvency-service/unit/strategy-planning-communication-and-finance-corporate-governance> rdfs:label "Strategy, Planning & Communication and Finance & Corporate Governance" . 
+
+<http://reference.data.gov.uk/id/public-body/the-insolvency-service/unit/official-receiver-services> rdfs:label "Official Receiver Services" . 
+
+<http://reference.data.gov.uk/id/public-body/the-insolvency-service/unit/investigations-and-enforcement> rdfs:label "Investigations and Enforcement" . 
+
+<http://reference.data.gov.uk/id/department/bis> rdfs:label "Department for Business Innovation and Skills" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/the-insolvency-service.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/the-insolvency-service> ;
+                                                                                     linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                     linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/the-insolvency-service.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

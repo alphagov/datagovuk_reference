@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/Department"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Department for Culture, Media and Sport</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/broadband-communications-content-inclusion"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/broadband-delivery"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/broadband-spectrum-resilience-security"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/goe-security-and-regeneration"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/ministerial-support-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/goe-uk-wide-operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/goe-finance-and-sponsorship"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/goe-programmes"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/information-systems"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/procurement-property-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/goe-staging"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/goe-communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/goe-international-dignitary-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/government-art-collection"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/goe-government-services-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/goe-olympic-legacy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dcms/unit/departmental-flexible-pool"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/dcms.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/broadband-communications-content-inclusion">
+    <rdfs:label>Broadband Communications, Content &amp; Inclusion</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/broadband-delivery">
+    <rdfs:label>Broadband Delivery</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/broadband-spectrum-resilience-security">
+    <rdfs:label>Broadband Spectrum, Resilience &amp; Security</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/goe-security-and-regeneration">
+    <rdfs:label>GOE Security and Regeneration</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/ministerial-support-team">
+    <rdfs:label>Ministerial Support Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/goe-uk-wide-operations">
+    <rdfs:label>GOE UK Wide Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/finance">
+    <rdfs:label>Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/goe-finance-and-sponsorship">
+    <rdfs:label>GOE Finance and Sponsorship</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/goe-programmes">
+    <rdfs:label>GOE Programmes</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/information-systems">
+    <rdfs:label>Information Systems</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/procurement-property-services">
+    <rdfs:label>Procurement &amp; Property Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/goe-staging">
+    <rdfs:label>GOE Staging</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/goe-communications">
+    <rdfs:label>GOE Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/goe-international-dignitary-management">
+    <rdfs:label>GOE International &amp; Dignitary Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/government-art-collection">
+    <rdfs:label>Government Art Collection</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/human-resources">
+    <rdfs:label>Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/goe-government-services-team">
+    <rdfs:label>GOE Government Services Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/goe-olympic-legacy">
+    <rdfs:label>GOE Olympic Legacy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms/unit/departmental-flexible-pool">
+    <rdfs:label>Departmental Flexible Pool</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/department/dcms.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/department/dcms"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#department"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/dcms.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

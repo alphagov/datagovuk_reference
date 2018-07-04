@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/fc">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/Department"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Forestry Commission</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/fc/unit/policy-programme-group-fce"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/fc/unit/finance-accounting-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/fc/unit/forest-enterprise-england"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/fc/unit/corporate-forestry-support"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/fc/unit/human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/fc/unit/information-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/fc/unit/forestry-commission-england"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/fc/unit/forest-research"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/fc/unit/forestry-business-units"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/fc.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/fc/unit/policy-programme-group-fce">
+    <rdfs:label>Policy &amp; Programme Group, FC(E)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/fc/unit/finance-accounting-services">
+    <rdfs:label>Finance &amp; Accounting Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/fc/unit/forest-enterprise-england">
+    <rdfs:label>Forest Enterprise England</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/fc/unit/corporate-forestry-support">
+    <rdfs:label>Corporate &amp; Forestry Support</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/fc/unit/human-resources">
+    <rdfs:label>Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/fc/unit/information-services">
+    <rdfs:label>Information Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/fc/unit/forestry-commission-england">
+    <rdfs:label>Forestry Commission England</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/fc/unit/forest-research">
+    <rdfs:label>Forest Research</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/fc/unit/forestry-business-units">
+    <rdfs:label>Forestry Business Units</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/department/fc.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/department/fc"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#department"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/fc.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

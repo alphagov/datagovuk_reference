@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/care-quality-commission">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Care Quality Commission</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/finance-and-corporate-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/strategic-marketing-and-communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/intelligence"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/governance-and-legal-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/regulatory-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/operations"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dh"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/care-quality-commission.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/finance-and-corporate-services">
+    <rdfs:label>Finance and Corporate Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/human-resources">
+    <rdfs:label>Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/strategic-marketing-and-communications">
+    <rdfs:label>Strategic Marketing and Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/intelligence">
+    <rdfs:label>Intelligence</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/governance-and-legal-services">
+    <rdfs:label>Governance and Legal Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/regulatory-development">
+    <rdfs:label>Regulatory Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/operations">
+    <rdfs:label>Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh">
+    <rdfs:label>Department of Health</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/care-quality-commission.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/care-quality-commission"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/care-quality-commission.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

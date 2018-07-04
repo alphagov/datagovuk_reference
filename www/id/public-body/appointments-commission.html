@@ -1,0 +1,242 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Results</title>
+<link rel="shortcut icon" href="/images/datagovuk_favicon.png" type="image/x-icon">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.rdf" type="application/rdf+xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.ttl" type="text/turtle">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.json" type="application/json">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.xml" type="application/xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.csv" type="text/csv">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="/scripts/jquery.min.js"></script><script type="text/javascript" src="/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script><link rel="stylesheet" href="/css/html5reset-1.6.1.css" type="text/css">
+<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/smoothness/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/result.css" type="text/css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" type="text/css"></link><![endif]-->
+</head>
+<body><div id="page">
+<nav class="site"><section class="formats"><ul>
+<li class="first"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+<li class="last"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.csv" type="text/csv" rel="alternate" title="view in csv format">csv</a></li>
+</ul></section></nav><header><h1><a href="/">Linked Data API</a></h1></header><nav class="topnav"><section class="moreinfo"><h1>Browse</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Links to further information.</p>
+</div>
+<ul>
+<li><a href="/doc/public-body/appointments-commission/post">Public body SCS posts</a></li>
+<li><a href="/doc/public-body/appointments-commission/unit">Public body units</a></li>
+<li><span class="current">Public body</span></li>
+</ul>
+<ul>
+<li><a href="/doc/ministerial-department">Ministerial departments</a></li>
+<li><a href="/doc/non-ministerial-department">Non-ministerial departments</a></li>
+<li><a href="/doc/department">All departments</a></li>
+<li><a href="/doc/public-body">All public bodies</a></li>
+</ul>
+<ul>
+<li><a href="/doc/minister">All ministers</a></li>
+<li><a href="/doc/seat">All seats</a></li>
+<li><a href="/doc/mp">All MPs</a></li>
+<li><a href="/doc/peer">All peers</a></li>
+</ul></section><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view"><h1>View</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined views, but starred properties are always present no matter what the view. You can star properties by clicking on the <img src="/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.</p>
+</div>
+<ul>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.html?_view=description" title="switch to description view">description</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.html?_view=all" title="switch to all view">all</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.html?_view=minimal" title="switch to minimal view">minimal</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.html?_view=public+body" title="switch to public body view">public body</a></li>
+</ul>
+<ul class="properties">
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.html?_properties=label"><img src="/images/grey/16x16/Star.png" alt="star this property"> label</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.html?_properties=type"><img src="/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.html?_properties=unit.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> unit</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/appointments-commission.html?_properties=parentDepartment.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> parent department</a></li>
+</ul></section></nav><div id="result"><div class="panel">
+<header><p id="openSearch">Show Search Form</p>
+<h1>Appointments Commission</h1>
+<p class="id"><a href="http://reference.data.gov.uk/id/public-body/appointments-commission">http://reference.data.gov.uk/id/public-body/appointments-commission</a></p></header><section id="search"><form action="http://reference.data.gov.uk/2011-09-30/doc/public-body">
+<table>
+<colgroup>
+<col width="25%">
+<col width="70%">
+</colgroup>
+<tr>
+<th class="label"><label for="label">label</label></th>
+<td class="input"><input name="label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="type">type</label></th>
+<td class="input"><input name="type" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="unit.label">unit</label></th>
+<td class="input"><input name="unit.label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="parentDepartment.label">parent department</label></th>
+<td class="input"><input name="parentDepartment.label" size="25"></td>
+</tr>
+</table>
+<p><button type="submit">Search</button></p>
+</form></section><section><table id="id1093885">
+<colgroup>
+<col width="25%">
+<col width="*">
+<col width="54">
+</colgroup>
+<tr class="type">
+<th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/def/central-government/PublicBody" title="view on this site">PublicBody</a> <a href="http://reference.data.gov.uk/def/central-government/PublicBody" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value"><a href="http://www.w3.org/ns/org#Organization">Organization</a></td>
+<td class="filter"></td>
+</tr>
+</table></td>
+</tr>
+<tr class="unit">
+<th class="label"><a href="http://www.w3.org/ns/org#hasUnit">unit</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/id/public-body/appointments-commission/unit/chief-executives-office" title="view on this site">Chief Executives Office</a> <a href="http://reference.data.gov.uk/id/public-body/appointments-commission/unit/chief-executives-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Chief%20Executives%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/appointments-commission/unit/outplacement-services" title="view on this site">Outplacement Services</a> <a href="http://reference.data.gov.uk/id/public-body/appointments-commission/unit/outplacement-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Outplacement%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/appointments-commission/unit/recruitment-selection" title="view on this site">Recruitment &amp; Selection</a> <a href="http://reference.data.gov.uk/id/public-body/appointments-commission/unit/recruitment-selection" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Recruitment%20&amp;%20Selection"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr class="parentDepartment last">
+<th class="label"><a href="http://reference.data.gov.uk/def/central-government/parentDepartment">parent department</a></th>
+<td class="value">
+<a href="/id/department/dh" title="view on this site">Department of Health</a> <a href="http://reference.data.gov.uk/id/department/dh" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?parentDepartment.label=Department%20of%20Health"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></section>
+</div></div>
+<nav class="bottomnav"></nav><footer><div class="provenance"><div class=" query col1">
+<h2>Viewer</h2>
+<p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the <a href="endpoint/url/@href">endpoint's page</a>.</p>
+<form action="http://10.254.6.244/organograms-2011-09-30/sparql" method="post">
+<textarea name="query" wrap="off" data-skip-lines="5">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX org: &lt;http://www.w3.org/ns/org#&gt;
+PREFIX gov: &lt;http://reference.data.gov.uk/def/central-government/&gt;
+CONSTRUCT { 
+    # constructing properties of http://reference.data.gov.uk/id/public-body/appointments-commission 
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; rdf:type ?var_1_0 .
+    ?var_1_0 rdfs:label ?var_1_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; rdfs:label ?var_2_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; skos:prefLabel ?var_3_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; skos:altLabel ?var_4_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; rdfs:comment ?var_5_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; org:hasUnit ?var_6_0 .
+    ?var_6_0 rdfs:label ?var_6_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; gov:parentDepartment ?var_7_0 .
+    ?var_7_0 rdfs:label ?var_7_1_0 .
+} WHERE { 
+  # identifying properties of http://reference.data.gov.uk/id/public-body/appointments-commission 
+  {
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; rdf:type ?var_1_0 .
+    OPTIONAL { ?var_1_0 rdfs:label ?var_1_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; rdfs:label ?var_2_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; skos:prefLabel ?var_3_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; skos:altLabel ?var_4_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; rdfs:comment ?var_5_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; org:hasUnit ?var_6_0 .
+    OPTIONAL { ?var_6_0 rdfs:label ?var_6_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/appointments-commission&gt; gov:parentDepartment ?var_7_0 .
+    OPTIONAL { ?var_7_0 rdfs:label ?var_7_1_0 . }
+  } 
+}
+</textarea><p><button type="submit">Run Query</button></p>
+</form>
+</div></div>
+<p>Powered by <a href="http://code.google.com/p/puelia-php/">Puelia v0.1</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p></footer>
+</div></body>
+</html>

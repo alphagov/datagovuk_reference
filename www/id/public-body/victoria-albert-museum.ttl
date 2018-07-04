@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/victoria-albert-museum> rdf:type msg0:Organization ,
+                                                                              central-government:PublicBody ;
+                                                                     rdfs:label "Victoria & Albert Museum" ;
+                                                                     msg0:hasUnit <http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/projects-design-estate> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/directorate-finance-resources> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/collections-learning> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/directorate> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/public-affairs> ;
+                                                                     central-government:parentDepartment <http://reference.data.gov.uk/id/department/dcms> ;
+                                                                     foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/victoria-albert-museum.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/projects-design-estate> rdfs:label "Projects, Design & Estate" . 
+
+<http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/directorate-finance-resources> rdfs:label "Directorate, Finance & Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/collections-learning> rdfs:label "Collections & Learning" . 
+
+<http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/directorate> rdfs:label "Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/victoria-albert-museum/unit/public-affairs> rdfs:label "Public Affairs" . 
+
+<http://reference.data.gov.uk/id/department/dcms> rdfs:label "Department for Culture, Media and Sport" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/victoria-albert-museum.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/victoria-albert-museum> ;
+                                                                                     linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                     linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/victoria-albert-museum.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

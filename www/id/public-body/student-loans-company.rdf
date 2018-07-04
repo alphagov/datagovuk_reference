@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Student Loans Company</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/customer-contact-services-division"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/hub-services-division"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/infrastructure-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/processing-services-division"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/programme-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/business-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/central-document-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/core-processingeu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/finance-division"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/infrastructure-support"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/internal-communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/legal-compliance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/operations-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/procurement"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/external-affairs"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/customer-insight"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/customer-support-centre-wales"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/dsa"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/executive-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/financial-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/infrastructure-division"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/internal-audit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/organisational-development-learning"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/people-transformation-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/preassessment"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/risk-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/stakeholder-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/strategic-development-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/facilities"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/external-reporting"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/practitioners-support"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/fe-services-hillington"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/accounting-systems"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/complaints-resolution"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/customer-support-centre-darlington"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/fraud-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/human-resources-division"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/online-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/change-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/change-management-division"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/customer-support-centre-glasgow"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/icr-operations-department"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/information-security-assurance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/information-advice-guidance-iag"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/infrastructure-oracle-technology"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/management-reporting-efficiency"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/operations-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/repayment-division"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/systems-development-division"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/data-services-analysis"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/collections"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/workforce-management-dpt"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/bis"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/student-loans-company.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/customer-contact-services-division">
+    <rdfs:label>Customer Contact Services Division</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/hub-services-division">
+    <rdfs:label>Hub Services Division</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/infrastructure-services">
+    <rdfs:label>Infrastructure Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/processing-services-division">
+    <rdfs:label>Processing Services Division</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/programme-office">
+    <rdfs:label>Programme Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/business-development">
+    <rdfs:label>Business Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/central-document-services">
+    <rdfs:label>Central Document Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/core-processingeu">
+    <rdfs:label>Core Processing/EU</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/finance-division">
+    <rdfs:label>Finance Division</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/infrastructure-support">
+    <rdfs:label>Infrastructure Support</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/internal-communications">
+    <rdfs:label>Internal Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/legal-compliance">
+    <rdfs:label>Legal &amp; Compliance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/operations-services">
+    <rdfs:label>Operations Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/procurement">
+    <rdfs:label>Procurement</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/policy">
+    <rdfs:label>Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/external-affairs">
+    <rdfs:label>External Affairs</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/customer-insight">
+    <rdfs:label>Customer Insight</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/customer-support-centre-wales">
+    <rdfs:label>Customer Support Centre - Wales</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/dsa">
+    <rdfs:label>DSA</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/executive-services">
+    <rdfs:label>Executive Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/financial-services">
+    <rdfs:label>Financial Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/infrastructure-division">
+    <rdfs:label>Infrastructure Division</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/internal-audit">
+    <rdfs:label>Internal Audit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/organisational-development-learning">
+    <rdfs:label>Organisational Development &amp; Learning</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/people-transformation-directorate">
+    <rdfs:label>People &amp; Transformation Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/preassessment">
+    <rdfs:label>Pre-Assessment</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/risk-management">
+    <rdfs:label>Risk Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/stakeholder-services">
+    <rdfs:label>Stakeholder Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/strategic-development-directorate">
+    <rdfs:label>Strategic Development Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/facilities">
+    <rdfs:label>Facilities</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/external-reporting">
+    <rdfs:label>External Reporting</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/practitioners-support">
+    <rdfs:label>Practitioner's Support</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/fe-services-hillington">
+    <rdfs:label>FE Services - Hillington</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/accounting-systems">
+    <rdfs:label>Accounting Systems</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/complaints-resolution">
+    <rdfs:label>Complaints Resolution</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/customer-support-centre-darlington">
+    <rdfs:label>Customer Support Centre - Darlington</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/fraud-management">
+    <rdfs:label>Fraud Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/human-resources-division">
+    <rdfs:label>Human Resources Division</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/online-services">
+    <rdfs:label>Online Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/change-management">
+    <rdfs:label>Change Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/change-management-division">
+    <rdfs:label>Change Management Division</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/customer-support-centre-glasgow">
+    <rdfs:label>Customer Support Centre - Glasgow</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/icr-operations-department">
+    <rdfs:label>ICR Operations Department</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/information-security-assurance">
+    <rdfs:label>Information Security &amp; Assurance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/information-advice-guidance-iag">
+    <rdfs:label>Information, Advice &amp; Guidance (IAG)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/infrastructure-oracle-technology">
+    <rdfs:label>Infrastructure Oracle Technology</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/management-reporting-efficiency">
+    <rdfs:label>Management Reporting &amp; Efficiency</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/operations-directorate">
+    <rdfs:label>Operations Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/repayment-division">
+    <rdfs:label>Repayment Division</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/systems-development-division">
+    <rdfs:label>Systems Development Division</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/data-services-analysis">
+    <rdfs:label>Data Services &amp; Analysis</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/collections">
+    <rdfs:label>Collections</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/student-loans-company/unit/workforce-management-dpt">
+    <rdfs:label>Workforce Management Dpt</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/bis">
+    <rdfs:label>Department for Business Innovation and Skills</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/student-loans-company.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/student-loans-company"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/student-loans-company.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

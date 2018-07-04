@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/asset-protection-agency">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Asset Protection Agency</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/legal-and-compliance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/investment-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/finance-operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/risk"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/operations"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/hmt"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/asset-protection-agency.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/finance">
+    <rdfs:label>Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/legal-and-compliance">
+    <rdfs:label>Legal and Compliance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/investment-management">
+    <rdfs:label>Investment Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/finance-operations">
+    <rdfs:label>Finance &amp; Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/risk">
+    <rdfs:label>Risk</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/asset-protection-agency/unit/operations">
+    <rdfs:label>Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/asset-protection-agency.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/asset-protection-agency"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/asset-protection-agency.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

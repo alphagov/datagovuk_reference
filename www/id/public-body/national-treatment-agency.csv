@@ -1,0 +1,5 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/national-treatment-agency","National Treatment Agency",,"Corporate Services Directorate","Department of Health","http://reference.data.gov.uk/id/department/dh"
+"http://reference.data.gov.uk/id/public-body/national-treatment-agency","National Treatment Agency",,"Chief Executive's Office","Department of Health","http://reference.data.gov.uk/id/department/dh"
+"http://reference.data.gov.uk/id/public-body/national-treatment-agency","National Treatment Agency","Organization","Communication & Policy Information Directorate","Department of Health","http://reference.data.gov.uk/id/department/dh"
+"http://reference.data.gov.uk/id/public-body/national-treatment-agency","National Treatment Agency","Organization","Delivery Directorate","Department of Health","http://reference.data.gov.uk/id/department/dh"

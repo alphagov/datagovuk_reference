@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>UK Border Agency</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-resources-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/business-design-and-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-and-asylum-biometrics-system-programme-iabs"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-london-and-south-east"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-wales-and-the-south-west"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-regional-operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-midlands-and-east-of-england"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/criminality-and-detention-group-operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/criminality-and-detention-group-crime-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/intelligence-group-directors-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-liaison-and-intelligence"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/finance-and-performance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/performance-and-change"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/commercial"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-london-area"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-north-west"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/criminal-detention-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/intelligence-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/finance-property"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-south-east-area"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-enterprise"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/olympic-programme"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-south-region-and-european-operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-appeals-and-litigation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/people-and-organisational-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/security-and-anticorruption-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/director-international-group-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-gulf-region"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-asia-pacific-region"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/identity-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/complaints-improvement-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/human-resources-and-organisational-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/criminal-detention-group-private-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/counter-terrorism-and-organised-crime"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-americas"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-finance-and-business-strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/communications-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-eborders"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/special-cases-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-south-asia-region"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-africa"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/chief-executives-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-scotland-and-northern-ireland"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-transformation-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-north-region"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-assurance-performance-resource"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/criminality-and-detention-group-corporate-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-visa-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/central-policy-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/corporate-directors-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-intelligence-and-analysis"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-casework-programme"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-central-region"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-euromed-region"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/knowledge-and-information-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-protectionasylum-directors-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-north-east-yorkshire-and-humber"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-casework-resolution"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-national-operations-and-performance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/heathrow-operations"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/ho"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/uk-border-agency.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-resources-management">
+    <rdfs:label>International Group Resources Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/business-design-and-development">
+    <rdfs:label>Business Design and Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-and-asylum-biometrics-system-programme-iabs">
+    <rdfs:label>Immigration and Asylum Biometrics System Programme (IABS)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-london-and-south-east">
+    <rdfs:label>Immigration Group London and South East</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-wales-and-the-south-west">
+    <rdfs:label>Immigration Group Wales and the South West</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-regional-operations">
+    <rdfs:label>Immigration Group Regional Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-midlands-and-east-of-england">
+    <rdfs:label>Immigration Group Midlands and East of England</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/criminality-and-detention-group-operations">
+    <rdfs:label>Criminality and Detention Group - Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/criminality-and-detention-group-crime-directorate">
+    <rdfs:label>Criminality and Detention Group - Crime Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/intelligence-group-directors-office">
+    <rdfs:label>Intelligence Group Director's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-liaison-and-intelligence">
+    <rdfs:label>International Group Liaison and Intelligence</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/finance-and-performance">
+    <rdfs:label>Finance and Performance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/performance-and-change">
+    <rdfs:label>Performance and Change</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/commercial">
+    <rdfs:label>Commercial</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-london-area">
+    <rdfs:label>Immigration Group London Area</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-north-west">
+    <rdfs:label>Immigration Group North West</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/criminal-detention-group">
+    <rdfs:label>Criminal Detention Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/intelligence-directorate">
+    <rdfs:label>Intelligence Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/finance-property">
+    <rdfs:label>Finance &amp; Property</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-south-east-area">
+    <rdfs:label>Immigration Group South East Area</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-enterprise">
+    <rdfs:label>Immigration Group Enterprise</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/olympic-programme">
+    <rdfs:label>Olympic Programme</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-south-region-and-european-operations">
+    <rdfs:label>Border Force South Region and European Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-appeals-and-litigation">
+    <rdfs:label>Immigration Group Appeals and Litigation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/people-and-organisational-development">
+    <rdfs:label>People and Organisational Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/security-and-anticorruption-unit">
+    <rdfs:label>Security and Anti-Corruption Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/director-international-group-office">
+    <rdfs:label>Director International Group Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-gulf-region">
+    <rdfs:label>International Group Gulf Region</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-asia-pacific-region">
+    <rdfs:label>International Group Asia Pacific Region</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/identity-management">
+    <rdfs:label>Identity Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group">
+    <rdfs:label>Immigration Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/complaints-improvement-directorate">
+    <rdfs:label>Complaints Improvement Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/human-resources-and-organisational-development">
+    <rdfs:label>Human Resources and Organisational Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/criminal-detention-group-private-office">
+    <rdfs:label>Criminal Detention Group Private Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/counter-terrorism-and-organised-crime">
+    <rdfs:label>Counter Terrorism and Organised Crime</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-americas">
+    <rdfs:label>International Group Americas</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-finance-and-business-strategy">
+    <rdfs:label>Immigration Group Finance and Business Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/communications-directorate">
+    <rdfs:label>Communications Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-eborders">
+    <rdfs:label>Border Force e-borders</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/human-resources">
+    <rdfs:label>Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/special-cases-directorate">
+    <rdfs:label>Special Cases Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-south-asia-region">
+    <rdfs:label>International Group South Asia Region</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-africa">
+    <rdfs:label>International Group Africa</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/chief-executives-office">
+    <rdfs:label>Chief Executive's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-scotland-and-northern-ireland">
+    <rdfs:label>Immigration Group Scotland and Northern Ireland</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-transformation-group">
+    <rdfs:label>Border Transformation Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-north-region">
+    <rdfs:label>Border Force North Region</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-assurance-performance-resource">
+    <rdfs:label>Border Force Assurance Performance &amp; Resource</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/criminality-and-detention-group-corporate-services">
+    <rdfs:label>Criminality and Detention Group - Corporate Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-visa-services">
+    <rdfs:label>International Group Visa Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/central-policy-unit">
+    <rdfs:label>Central Policy Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/corporate-directors-office">
+    <rdfs:label>Corporate Director's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-intelligence-and-analysis">
+    <rdfs:label>Immigration Group Intelligence and Analysis</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-casework-programme">
+    <rdfs:label>Immigration Casework Programme</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-central-region">
+    <rdfs:label>Border Force Central Region</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/international-group-euromed-region">
+    <rdfs:label>International Group Euromed Region</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/knowledge-and-information-management">
+    <rdfs:label>Knowledge and Information Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-protectionasylum-directors-office">
+    <rdfs:label>Immigration Group Protection/Asylum Directors Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-north-east-yorkshire-and-humber">
+    <rdfs:label>'Immigration Group North East, Yorkshire and Humber'</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/immigration-group-casework-resolution">
+    <rdfs:label>Immigration Group Casework Resolution</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/border-force-national-operations-and-performance">
+    <rdfs:label>Border Force National Operations and Performance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/uk-border-agency/unit/heathrow-operations">
+    <rdfs:label>Heathrow Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/ho">
+    <rdfs:label>Home Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/uk-border-agency.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/uk-border-agency"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/uk-border-agency.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

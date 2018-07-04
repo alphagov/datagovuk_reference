@@ -1,0 +1,5 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/ecitb","ECITB",,"Development & Qualty","Department for Business Innovation and Skills","http://reference.data.gov.uk/id/department/bis"
+"http://reference.data.gov.uk/id/public-body/ecitb","ECITB",,"Operations","Department for Business Innovation and Skills","http://reference.data.gov.uk/id/department/bis"
+"http://reference.data.gov.uk/id/public-body/ecitb","ECITB","Organization","Executive","Department for Business Innovation and Skills","http://reference.data.gov.uk/id/department/bis"
+"http://reference.data.gov.uk/id/public-body/ecitb","ECITB","Organization","Finance & Legal","Department for Business Innovation and Skills","http://reference.data.gov.uk/id/department/bis"

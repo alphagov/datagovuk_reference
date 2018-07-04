@@ -1,0 +1,124 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency> rdf:type msg0:Organization ,
+                                                                             central-government:PublicBody ;
+                                                                    rdfs:label "Rural Payments Agency" ;
+                                                                    msg0:hasUnit <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/chief-executives-office> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/cross-compliance> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/flexible-resource> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/human-resources> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/managed-document-service> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/planning-and-performance-directorate> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/trader-schemes> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/british-cattle-movement-service> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/compliance-team> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/customer-service-centre> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/document-system-services> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/rural-development-smu> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/communications> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/commercial-directorate> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/customer-registration> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/cio-directorate> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/corporate-services> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/exeter-sps> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/other-support-odtoruost> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/customer-directorate> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/inspectorate> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/internal-audit> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/other-schemes-ocdsmts> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/sps-delivery-team> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/site-administration> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/workington-sps> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/carlisle-sps> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/defra-investigation-services> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/customer-payment-accounting-team> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/finance> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/graphical-information-services> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/northallerton-sps> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/policy-directorate> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/sps-management-unit> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/uk-coordinating-body> ;
+                                                                    central-government:parentDepartment <http://reference.data.gov.uk/id/department/defra> ;
+                                                                    foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/rural-payments-agency.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/chief-executives-office> rdfs:label "Chief Executives Office" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/cross-compliance> rdfs:label "Cross Compliance" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/flexible-resource> rdfs:label "Flexible Resource" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/human-resources> rdfs:label "Human Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/managed-document-service> rdfs:label "Managed Document Service" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/planning-and-performance-directorate> rdfs:label "Planning and Performance Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/trader-schemes> rdfs:label "Trader Schemes" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/british-cattle-movement-service> rdfs:label "British Cattle Movement Service" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/compliance-team> rdfs:label "Compliance Team" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/customer-service-centre> rdfs:label "Customer Service Centre" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/document-system-services> rdfs:label "Document & System Services" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/rural-development-smu> rdfs:label "Rural Development SMU" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/communications> rdfs:label "Communications" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/commercial-directorate> rdfs:label "Commercial Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/customer-registration> rdfs:label "Customer Registration" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/cio-directorate> rdfs:label "CIO Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/corporate-services> rdfs:label "Corporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/exeter-sps> rdfs:label "Exeter SPS" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/other-support-odtoruost> rdfs:label "Other Support (ODT/ORU/OST)" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/customer-directorate> rdfs:label "Customer Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/inspectorate> rdfs:label "Inspectorate" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/internal-audit> rdfs:label "Internal Audit" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/other-schemes-ocdsmts> rdfs:label "Other Schemes (OCDS/MTS)" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/sps-delivery-team> rdfs:label "SPS Delivery Team" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/site-administration> rdfs:label "Site Administration" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/workington-sps> rdfs:label "Workington SPS" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/carlisle-sps> rdfs:label "Carlisle SPS" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/defra-investigation-services> rdfs:label "Defra Investigation Services" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/customer-payment-accounting-team> rdfs:label "Customer Payment Accounting Team" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/finance> rdfs:label "Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/graphical-information-services> rdfs:label "Graphical Information Services" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/northallerton-sps> rdfs:label "Northallerton SPS" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/policy-directorate> rdfs:label "Policy Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/sps-management-unit> rdfs:label "SPS Management Unit" . 
+
+<http://reference.data.gov.uk/id/public-body/rural-payments-agency/unit/uk-coordinating-body> rdfs:label "UK Co-ordinating Body" . 
+
+<http://reference.data.gov.uk/id/department/defra> rdfs:label "Department for Environment, Food and Rural Affairs" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/rural-payments-agency.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/rural-payments-agency> ;
+                                                                                    linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                    linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/rural-payments-agency.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

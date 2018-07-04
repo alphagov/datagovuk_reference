@@ -1,0 +1,106 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/cps> rdf:type msg0:Organization ,
+                                                          ns0:Department ,
+                                                          ns0:PublicBody ;
+                                                 rdfs:label "Crown Prosecution Service" ;
+                                                 msg0:hasUnit <http://reference.data.gov.uk/id/department/cps/unit/north-west> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/cps-direct> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/south-west> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/wales> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/private-office> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/hq-finance-directorate> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/hq-human-resources-directorate> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/london> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/merseyside-and-cheshire> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/north-east> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/hq-equality-and-diversity-unit> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/hq-strategy-and-policy-directorate> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/eastern> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/south-east> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/wessex> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/public-services-prosecution-division> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/hq-operations-directorate> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/special-crime-and-counter-terrorism-division> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/east-midlands> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/central-fraud-group> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/business-development-directorate> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/thames-and-chiltern> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/west-midlands> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/yorkshire-and-humberside> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/organised-crime-division> ,
+                                                              <http://reference.data.gov.uk/id/department/cps/unit/hq-communication-division> ;
+                                                 foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/cps.ttl> . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/north-west> rdfs:label "North West" ,
+                                                                            "NORTH WEST" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/cps-direct> rdfs:label "CPS Direct" ,
+                                                                            "CPS DIRECT" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/south-west> rdfs:label "South West" ,
+                                                                            "SOUTH WEST" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/wales> rdfs:label "Wales" ,
+                                                                       "WALES" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/private-office> rdfs:label "Private Office" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/hq-finance-directorate> rdfs:label "HQ Finance Directorate" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/hq-human-resources-directorate> rdfs:label "HQ Human Resources Directorate" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/london> rdfs:label "LONDON" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/merseyside-and-cheshire> rdfs:label "Merseyside and Cheshire" ,
+                                                                                         "MERSEYSIDE AND CHESHIRE" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/north-east> rdfs:label "NORTH EAST" ,
+                                                                            "North East" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/hq-equality-and-diversity-unit> rdfs:label "HQ Equality and Diversity Unit" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/hq-strategy-and-policy-directorate> rdfs:label "HQ Strategy and Policy Directorate" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/eastern> rdfs:label "EASTERN" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/south-east> rdfs:label "South East" ,
+                                                                            "SOUTH EAST" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/wessex> rdfs:label "Wessex" ,
+                                                                        "WESSEX" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/public-services-prosecution-division> rdfs:label "Public Services Prosecution Division" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/hq-operations-directorate> rdfs:label "HQ Operations Directorate" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/special-crime-and-counter-terrorism-division> rdfs:label "Special Crime and Counter Terrorism Division" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/east-midlands> rdfs:label "EAST MIDLANDS" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/central-fraud-group> rdfs:label "Central Fraud Group" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/business-development-directorate> rdfs:label "Business Development Directorate" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/thames-and-chiltern> rdfs:label "Thames and Chiltern" ,
+                                                                                     "THAMES AND CHILTERN" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/west-midlands> rdfs:label "West Midlands" ,
+                                                                               "WEST MIDLANDS" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/yorkshire-and-humberside> rdfs:label "Yorkshire and Humberside" ,
+                                                                                          "YORKSHIRE AND HUMBERSIDE" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/organised-crime-division> rdfs:label "Organised Crime Division" . 
+
+<http://reference.data.gov.uk/id/department/cps/unit/hq-communication-division> rdfs:label "HQ Communication Division" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/cps.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/cps> ;
+                                                                 linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                 linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/cps.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

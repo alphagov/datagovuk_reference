@@ -1,0 +1,958 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Results</title>
+<link rel="shortcut icon" href="/images/datagovuk_favicon.png" type="image/x-icon">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.rdf" type="application/rdf+xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.ttl" type="text/turtle">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.json" type="application/json">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.xml" type="application/xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.html" type="text/html">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.csv" type="text/csv">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="/scripts/jquery.min.js"></script><script type="text/javascript" src="/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script><link rel="stylesheet" href="/css/html5reset-1.6.1.css" type="text/css">
+<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/smoothness/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/result.css" type="text/css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" type="text/css"></link><![endif]-->
+</head>
+<body><div id="page">
+<nav class="site"><section class="formats"><ul>
+<li class="first"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+<li class="last"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.csv" type="text/csv" rel="alternate" title="view in csv format">csv</a></li>
+</ul></section></nav><header><h1><a href="/">Linked Data API</a></h1></header><nav class="topnav"><section class="moreinfo"><h1>Browse</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Links to further information.</p>
+</div>
+<ul>
+<li><a href="/doc/public-body/valuation-office-agency/post">Public body SCS posts</a></li>
+<li><a href="/doc/public-body/valuation-office-agency/unit">Public body units</a></li>
+<li><span class="current">Public body</span></li>
+</ul>
+<ul>
+<li><a href="/doc/ministerial-department">Ministerial departments</a></li>
+<li><a href="/doc/non-ministerial-department">Non-ministerial departments</a></li>
+<li><a href="/doc/department">All departments</a></li>
+<li><a href="/doc/public-body">All public bodies</a></li>
+</ul>
+<ul>
+<li><a href="/doc/minister">All ministers</a></li>
+<li><a href="/doc/seat">All seats</a></li>
+<li><a href="/doc/mp">All MPs</a></li>
+<li><a href="/doc/peer">All peers</a></li>
+</ul></section><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view"><h1>View</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined views, but starred properties are always present no matter what the view. You can star properties by clicking on the <img src="/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.</p>
+</div>
+<ul>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency?_view=description" title="switch to description view">description</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency?_view=all" title="switch to all view">all</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency?_view=minimal" title="switch to minimal view">minimal</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency?_view=public+body" title="switch to public body view">public body</a></li>
+</ul>
+<ul class="properties">
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency?_properties=label"><img src="/images/grey/16x16/Star.png" alt="star this property"> label</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency?_properties=type"><img src="/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency?_properties=unit.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> unit</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency?_properties=parentDepartment"><img src="/images/grey/16x16/Star.png" alt="star this property"> parent department</a></li>
+</ul></section></nav><div id="result"><div class="panel">
+<header><p id="openSearch">Show Search Form</p>
+<h1>Valuation Office Agency</h1>
+<p class="id"><a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency">http://reference.data.gov.uk/id/public-body/valuation-office-agency</a></p></header><section id="search"><form action="http://reference.data.gov.uk/2011-09-30/doc/public-body">
+<table>
+<colgroup>
+<col width="25%">
+<col width="70%">
+</colgroup>
+<tr>
+<th class="label"><label for="label">label</label></th>
+<td class="input"><input name="label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="type">type</label></th>
+<td class="input"><input name="type" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="unit.label">unit</label></th>
+<td class="input"><input name="unit.label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="parentDepartment">parent department</label></th>
+<td class="input"><input name="parentDepartment" size="25"></td>
+</tr>
+</table>
+<p><button type="submit">Search</button></p>
+</form></section><section><table id="id1068142">
+<colgroup>
+<col width="25%">
+<col width="*">
+<col width="54">
+</colgroup>
+<tr class="type">
+<th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/def/central-government/PublicBody" title="view on this site">PublicBody</a> <a href="http://reference.data.gov.uk/def/central-government/PublicBody" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value"><a href="http://www.w3.org/ns/org#Organization">Organization</a></td>
+<td class="filter"></td>
+</tr>
+</table></td>
+</tr>
+<tr class="unit">
+<th class="label"><a href="http://www.w3.org/ns/org#hasUnit">unit</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/2015-voa-strategy" title="view on this site">2015 VOA Strategy</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/2015-voa-strategy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=2015%20VOA%20Strategy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/adjudicators-office" title="view on this site">Adjudicators Office</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/adjudicators-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Adjudicators%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/agency-security-program" title="view on this site">Agency Security Program</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/agency-security-program" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Agency%20Security%20Program"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/alnwick" title="view on this site">Alnwick</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/alnwick" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Alnwick"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/analysis-information" title="view on this site">Analysis &amp; Information</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/analysis-information" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Analysis%20&amp;%20Information"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/aylesbury" title="view on this site">Aylesbury</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/aylesbury" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Aylesbury"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/bangor" title="view on this site">Bangor</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bangor" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Bangor"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/barking" title="view on this site">Barking</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/barking" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Barking"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/barnstaple" title="view on this site">Barnstaple</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/barnstaple" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Barnstaple"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/basingstoke" title="view on this site">Basingstoke</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/basingstoke" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Basingstoke"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/bedford" title="view on this site">Bedford</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bedford" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Bedford"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/birmingham" title="view on this site">Birmingham</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/birmingham" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Birmingham"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/board-secretariat" title="view on this site">Board Secretariat</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/board-secretariat" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Board%20Secretariat"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/bournemouth" title="view on this site">Bournemouth</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bournemouth" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Bournemouth"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/bristol" title="view on this site">Bristol</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bristol" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Bristol"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/bromley" title="view on this site">Bromley</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bromley" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Bromley"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/business-partners-group" title="view on this site">Business Partners Group</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/business-partners-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Business%20Partners%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/cs-ncs" title="view on this site">CS &amp; NCS</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cs-ncs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=CS%20&amp;%20NCS"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/cs-caseworker-costs" title="view on this site">CS Caseworker Costs</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cs-caseworker-costs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=CS%20Caseworker%20Costs"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/cambridge" title="view on this site">Cambridge</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cambridge" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Cambridge"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/cardiff" title="view on this site">Cardiff</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cardiff" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Cardiff"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/carlisle" title="view on this site">Carlisle</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/carlisle" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Carlisle"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/carmarthen" title="view on this site">Carmarthen</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/carmarthen" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Carmarthen"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/chatham" title="view on this site">Chatham</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/chatham" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Chatham"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/city-tower-hamlets" title="view on this site">City &amp; Tower Hamlets</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/city-tower-hamlets" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=City%20&amp;%20Tower%20Hamlets"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/colchester" title="view on this site">Colchester</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/colchester" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Colchester"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/commercial-services" title="view on this site">Commercial Services</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/commercial-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Commercial%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/corporateaccomunit" title="view on this site">CorporateAccomUnit</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/corporateaccomunit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=CorporateAccomUnit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/corporatecommunications" title="view on this site">CorporateCommunications</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/corporatecommunications" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=CorporateCommunications"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/council-tax-and-housing-allowances" title="view on this site">Council Tax and Housing Allowances</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/council-tax-and-housing-allowances" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Council%20Tax%20and%20Housing%20Allowances"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/coventry" title="view on this site">Coventry</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/coventry" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Coventry"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/crewe" title="view on this site">Crewe</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/crewe" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Crewe"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/customer-strategy-insight" title="view on this site">Customer Strategy &amp; Insight</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/customer-strategy-insight" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Customer%20Strategy%20&amp;%20Insight"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/customerservices" title="view on this site">CustomerServices</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/customerservices" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=CustomerServices"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/datastrategy" title="view on this site">DataStrategy</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/datastrategy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=DataStrategy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/derby" title="view on this site">Derby</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/derby" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Derby"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/dorchester" title="view on this site">Dorchester</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/dorchester" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Dorchester"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/durham" title="view on this site">Durham</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/durham" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Durham"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/eastanglia" title="view on this site">EastAnglia</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/eastanglia" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=EastAnglia"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/eastmidlands" title="view on this site">EastMidlands</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/eastmidlands" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=EastMidlands"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/eastbourne" title="view on this site">Eastbourne</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/eastbourne" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Eastbourne"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/easternsru" title="view on this site">EasternSRU</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/easternsru" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=EasternSRU"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/exeter" title="view on this site">Exeter</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/exeter" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Exeter"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/financeplanning" title="view on this site">Finance&amp;Planning</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/financeplanning" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Finance&amp;Planning"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/financestrategyandplanningfsp" title="view on this site">Finance,StrategyandPlanning(FS&amp;P)</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/financestrategyandplanningfsp" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Finance,StrategyandPlanning(FS&amp;P)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/financialoperationsunit" title="view on this site">FinancialOperationsUnit</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/financialoperationsunit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=FinancialOperationsUnit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/folkestone" title="view on this site">Folkestone</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/folkestone" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Folkestone"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/gloucester" title="view on this site">Gloucester</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/gloucester" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Gloucester"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/gloucesterlondon-central" title="view on this site">Gloucester(London Central)</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/gloucesterlondon-central" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Gloucester(London%20Central)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/governance-assurance-procurement-unit" title="view on this site">Governance, Assurance &amp; Procurement Unit</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/governance-assurance-procurement-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Governance,%20Assurance%20&amp;%20Procurement%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/graduatevaluers" title="view on this site">GraduateValuers</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/graduatevaluers" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=GraduateValuers"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/grimsby" title="view on this site">Grimsby</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/grimsby" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Grimsby"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/guildford" title="view on this site">Guildford</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/guildford" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Guildford"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/hroperations" title="view on this site">HROperations</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/hroperations" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=HROperations"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/halifax" title="view on this site">Halifax</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/halifax" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Halifax"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/halifaxdatacapturecentre" title="view on this site">HalifaxDataCaptureCentre</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/halifaxdatacapturecentre" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=HalifaxDataCaptureCentre"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/harrogate" title="view on this site">Harrogate</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/harrogate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Harrogate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/harrow" title="view on this site">Harrow</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/harrow" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Harrow"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/housing-allowances" title="view on this site">Housing Allowances</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/housing-allowances" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Housing%20Allowances"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/huddersfield" title="view on this site">Huddersfield</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/huddersfield" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Huddersfield"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/hull" title="view on this site">Hull</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/hull" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Hull"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/it-and-business-services" title="view on this site">IT and Business Services</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/it-and-business-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=IT%20and%20Business%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/ipswich" title="view on this site">Ipswich</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/ipswich" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Ipswich"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/kidderminster" title="view on this site">Kidderminster</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/kidderminster" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Kidderminster"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/lancaster" title="view on this site">Lancaster</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/lancaster" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Lancaster"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/learning" title="view on this site">Learning</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/learning" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Learning"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/leeds" title="view on this site">Leeds</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/leeds" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Leeds"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/leicester" title="view on this site">Leicester</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/leicester" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Leicester"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/lincoln" title="view on this site">Lincoln</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/lincoln" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Lincoln"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/live-services" title="view on this site">Live Services</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/live-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Live%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/liverpool" title="view on this site">Liverpool</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/liverpool" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Liverpool"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/local-government-direct-ncs-management" title="view on this site">Local Government Direct NCS Management</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/local-government-direct-ncs-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Local%20Government%20Direct%20NCS%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/local-housing-allowances" title="view on this site">Local Housing Allowances</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/local-housing-allowances" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Local%20Housing%20Allowances"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/localtaxationhousing-allowances" title="view on this site">LocalTaxation&amp;Housing Allowances</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/localtaxationhousing-allowances" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=LocalTaxation&amp;Housing%20Allowances"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/londoncentral-westminister" title="view on this site">LondonCentral (Westminister)</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/londoncentral-westminister" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=LondonCentral%20(Westminister)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/londonnorth" title="view on this site">LondonNorth</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/londonnorth" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=LondonNorth"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/londonsouth" title="view on this site">LondonSouth</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/londonsouth" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=LondonSouth"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/manchester" title="view on this site">Manchester</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/manchester" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Manchester"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/merthyrtydfil" title="view on this site">MerthyrTydfil</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/merthyrtydfil" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=MerthyrTydfil"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/mineralsteam" title="view on this site">MineralsTeam</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/mineralsteam" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=MineralsTeam"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/nabs" title="view on this site">NABS</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/nabs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NABS"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/ncs-caseworkers-costs" title="view on this site">NCS Caseworkers Costs</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/ncs-caseworkers-costs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NCS%20Caseworkers%20Costs"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/newcastle" title="view on this site">Newcastle</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/newcastle" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Newcastle"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/newport" title="view on this site">Newport</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/newport" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Newport"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/northampton" title="view on this site">Northampton</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/northampton" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Northampton"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/northernsru" title="view on this site">NorthernSRU</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/northernsru" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NorthernSRU"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/norwich" title="view on this site">Norwich</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/norwich" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Norwich"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/oxford" title="view on this site">Oxford</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/oxford" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Oxford"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/performanceandanalysispa" title="view on this site">PerformanceandAnalysis(P&amp;A)</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/performanceandanalysispa" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=PerformanceandAnalysis(P&amp;A)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/peterborough" title="view on this site">Peterborough</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/peterborough" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Peterborough"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/plymouth" title="view on this site">Plymouth</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/plymouth" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Plymouth"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/portfolio-delivery-group" title="view on this site">Portfolio Delivery Group</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/portfolio-delivery-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Portfolio%20Delivery%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/preston" title="view on this site">Preston</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/preston" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Preston"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/private-office" title="view on this site">Private Office</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/private-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Private%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/rating" title="view on this site">Rating</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/rating" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Rating"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/reading" title="view on this site">Reading</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/reading" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Reading"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/reigate" title="view on this site">Reigate</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/reigate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Reigate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/rhyl" title="view on this site">Rhyl</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/rhyl" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Rhyl"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/sruoperationscentre" title="view on this site">SRUOperationsCentre</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/sruoperationscentre" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=SRUOperationsCentre"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/svucvt" title="view on this site">SVU&amp;CVT</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/svucvt" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=SVU&amp;CVT"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/sheffield" title="view on this site">Sheffield</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/sheffield" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Sheffield"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/shrewsbury" title="view on this site">Shrewsbury</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/shrewsbury" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Shrewsbury"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/southampton" title="view on this site">Southampton</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/southampton" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Southampton"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/southernsru" title="view on this site">SouthernSRU</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/southernsru" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=SouthernSRU"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/stalbans" title="view on this site">StAlbans</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/stalbans" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=StAlbans"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/staustell" title="view on this site">StAustell</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/staustell" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=StAustell"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/stokeontrent" title="view on this site">StokeonTrent</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/stokeontrent" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=StokeonTrent"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/strategy-people-change" title="view on this site">Strategy, People &amp;Change</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/strategy-people-change" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Strategy,%20People%20&amp;Change"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/swansea" title="view on this site">Swansea</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/swansea" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Swansea"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/swindon" title="view on this site">Swindon</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/swindon" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Swindon"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/taunton" title="view on this site">Taunton</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/taunton" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Taunton"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/teeside" title="view on this site">Teeside</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/teeside" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Teeside"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/tunbridge-wells" title="view on this site">Tunbridge Wells</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/tunbridge-wells" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Tunbridge%20Wells"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/ulverston" title="view on this site">Ulverston</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/ulverston" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Ulverston"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/utilitiesratingteam" title="view on this site">UtilitiesRatingTeam</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/utilitiesratingteam" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=UtilitiesRatingTeam"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/valuation-tribunal-support-group" title="view on this site">Valuation Tribunal Support Group</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/valuation-tribunal-support-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Valuation%20Tribunal%20Support%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/waleswesternsru" title="view on this site">Wales&amp;WesternSRU</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/waleswesternsru" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wales&amp;WesternSRU"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/wolverhampton" title="view on this site">Wolverhampton</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/wolverhampton" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wolverhampton"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/worcester" title="view on this site">Worcester</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/worcester" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Worcester"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/worthing" title="view on this site">Worthing</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/worthing" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Worthing"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/wrexham" title="view on this site">Wrexham</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/wrexham" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wrexham"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/valuation-office-agency/unit/york" title="view on this site">York</a> <a href="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/york" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=York"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr class="parentDepartment last">
+<th class="label"><a href="http://reference.data.gov.uk/def/central-government/parentDepartment">parent department</a></th>
+<td class="value">
+<a href="/id/department/hmrc" title="view on this site">hmrc</a> <a href="http://reference.data.gov.uk/id/department/hmrc" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+</table></section>
+</div></div>
+<nav class="bottomnav"></nav><footer><div class="provenance"><div class=" query col1">
+<h2>Viewer</h2>
+<p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the <a href="endpoint/url/@href">endpoint's page</a>.</p>
+<form action="http://10.254.6.244/organograms-2011-09-30/sparql" method="post">
+<textarea name="query" wrap="off" data-skip-lines="5">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX org: &lt;http://www.w3.org/ns/org#&gt;
+PREFIX gov: &lt;http://reference.data.gov.uk/def/central-government/&gt;
+CONSTRUCT { 
+    # constructing properties of http://reference.data.gov.uk/id/public-body/valuation-office-agency 
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; rdf:type ?var_1_0 .
+    ?var_1_0 rdfs:label ?var_1_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; rdfs:label ?var_2_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; skos:prefLabel ?var_3_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; skos:altLabel ?var_4_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; rdfs:comment ?var_5_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; org:hasUnit ?var_6_0 .
+    ?var_6_0 rdfs:label ?var_6_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; gov:parentDepartment ?var_7_0 .
+    ?var_7_0 rdfs:label ?var_7_1_0 .
+} WHERE { 
+  # identifying properties of http://reference.data.gov.uk/id/public-body/valuation-office-agency 
+  {
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; rdf:type ?var_1_0 .
+    OPTIONAL { ?var_1_0 rdfs:label ?var_1_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; rdfs:label ?var_2_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; skos:prefLabel ?var_3_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; skos:altLabel ?var_4_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; rdfs:comment ?var_5_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; org:hasUnit ?var_6_0 .
+    OPTIONAL { ?var_6_0 rdfs:label ?var_6_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/valuation-office-agency&gt; gov:parentDepartment ?var_7_0 .
+    OPTIONAL { ?var_7_0 rdfs:label ?var_7_1_0 . }
+  } 
+}
+</textarea><p><button type="submit">Run Query</button></p>
+</form>
+</div></div>
+<p>Powered by <a href="http://code.google.com/p/puelia-php/">Puelia v0.1</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p></footer>
+</div></body>
+</html>

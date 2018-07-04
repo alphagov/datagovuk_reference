@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/soca> rdf:type msg0:Organization ,
+                                                            central-government:PublicBody ;
+                                                   rdfs:label "SOCA" ;
+                                                   msg0:hasUnit <http://reference.data.gov.uk/id/public-body/soca/unit/capability-and-service-delivery> ,
+                                                                <http://reference.data.gov.uk/id/public-body/soca/unit/operational-delivery> ,
+                                                                <http://reference.data.gov.uk/id/public-body/soca/unit/directors-office> ,
+                                                                <http://reference.data.gov.uk/id/public-body/soca/unit/strategy-and-prevention> ,
+                                                                <http://reference.data.gov.uk/id/public-body/soca/unit/child-exploitation-online-protection> ;
+                                                   central-government:parentDepartment <http://reference.data.gov.uk/id/department/ho> ;
+                                                   foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/soca.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/soca/unit/capability-and-service-delivery> rdfs:label "Capability and Service Delivery" . 
+
+<http://reference.data.gov.uk/id/public-body/soca/unit/operational-delivery> rdfs:label "Operational Delivery" . 
+
+<http://reference.data.gov.uk/id/public-body/soca/unit/directors-office> rdfs:label "Director's Office" . 
+
+<http://reference.data.gov.uk/id/public-body/soca/unit/strategy-and-prevention> rdfs:label "Strategy and Prevention" . 
+
+<http://reference.data.gov.uk/id/public-body/soca/unit/child-exploitation-online-protection> rdfs:label "Child Exploitation Online Protection" . 
+
+<http://reference.data.gov.uk/id/department/ho> rdfs:label "Home Office" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/soca.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/soca> ;
+                                                                   linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                   linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/soca.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

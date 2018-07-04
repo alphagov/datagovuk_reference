@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Advisory Conciliation and Arbitration Service</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/data-entry-centre"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-individual-conciliation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/nottingham"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/birmingham"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/leeds"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-collective-conciliation-arbitration"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/certification-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-research-evaluation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/scotland"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/bury-st-edmunds"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/cardiff"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-caseflow-project"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-strategy-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/newcastle"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/bristol"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/central-arbitration-committee"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/fleet"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-helpline-operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/london"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-equality"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-information-guidance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/manchester"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-delivery-managet"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-hr-strategic-estates"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/liverpool"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-advice-training"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-digital-solutions"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-it"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/bis"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/data-entry-centre">
+    <rdfs:label>DATA ENTRY CENTRE</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-finance">
+    <rdfs:label>NATIONAL FINANCE</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-individual-conciliation">
+    <rdfs:label>NATIONAL INDIVIDUAL CONCILIATION</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/nottingham">
+    <rdfs:label>NOTTINGHAM</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/birmingham">
+    <rdfs:label>BIRMINGHAM</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/leeds">
+    <rdfs:label>LEEDS</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-collective-conciliation-arbitration">
+    <rdfs:label>NATIONAL COLLECTIVE CONCILIATION &amp; ARBITRATION</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/certification-office">
+    <rdfs:label>CERTIFICATION OFFICE</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-research-evaluation">
+    <rdfs:label>NATIONAL RESEARCH &amp; EVALUATION</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/scotland">
+    <rdfs:label>SCOTLAND</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/bury-st-edmunds">
+    <rdfs:label>BURY ST EDMUNDS</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/cardiff">
+    <rdfs:label>CARDIFF</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-caseflow-project">
+    <rdfs:label>NATIONAL CASEFLOW PROJECT</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-strategy-unit">
+    <rdfs:label>NATIONAL STRATEGY UNIT</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/newcastle">
+    <rdfs:label>NEWCASTLE</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/bristol">
+    <rdfs:label>BRISTOL</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/central-arbitration-committee">
+    <rdfs:label>CENTRAL ARBITRATION COMMITTEE</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/fleet">
+    <rdfs:label>FLEET</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-helpline-operations">
+    <rdfs:label>NATIONAL HELPLINE &amp; OPERATIONS</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/london">
+    <rdfs:label>LONDON</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-equality">
+    <rdfs:label>NATIONAL EQUALITY</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-information-guidance">
+    <rdfs:label>NATIONAL INFORMATION &amp; GUIDANCE</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/manchester">
+    <rdfs:label>MANCHESTER</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-communications">
+    <rdfs:label>NATIONAL COMMUNICATIONS</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-delivery-managet">
+    <rdfs:label>NATIONAL DELIVERY MANAGET</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-hr-strategic-estates">
+    <rdfs:label>NATIONAL HR &amp; STRATEGIC ESTATES</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/liverpool">
+    <rdfs:label>LIVERPOOL</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-advice-training">
+    <rdfs:label>NATIONAL ADVICE &amp; TRAINING</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-digital-solutions">
+    <rdfs:label>NATIONAL DIGITAL SOLUTIONS</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-it">
+    <rdfs:label>NATIONAL IT</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/bis">
+    <rdfs:label>Department for Business Innovation and Skills</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

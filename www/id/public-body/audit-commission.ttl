@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/audit-commission> rdf:type msg0:Organization ,
+                                                                        central-government:PublicBody ;
+                                                               rdfs:label "Audit Commission" ;
+                                                               msg0:hasUnit <http://reference.data.gov.uk/id/public-body/audit-commission/unit/audit-practice> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/audit-commission/unit/business-information-services> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/audit-commission/unit/finance-planning> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/audit-commission/unit/policy> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/audit-commission/unit/analysis> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/audit-commission/unit/legal> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/audit-commission/unit/communications-management> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/audit-commission/unit/research> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/audit-commission/unit/audit-policy-regulation> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/audit-commission/unit/health> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/audit-commission/unit/chief-executives-office> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/audit-commission/unit/human-resources> ;
+                                                               central-government:parentDepartment <http://reference.data.gov.uk/id/department/dclg> ;
+                                                               foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/audit-commission.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/audit-practice> rdfs:label "Audit Practice" . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/business-information-services> rdfs:label "Business Information Services" . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/finance-planning> rdfs:label "Finance & Planning" . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/policy> rdfs:label "Policy" . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/analysis> rdfs:label "Analysis" . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/legal> rdfs:label "Legal" . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/communications-management> rdfs:label "Communications Management" . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/research> rdfs:label "Research" . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/audit-policy-regulation> rdfs:label "Audit Policy & Regulation" . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/health> rdfs:label "Health" . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/chief-executives-office> rdfs:label "Chief Executive's Office" . 
+
+<http://reference.data.gov.uk/id/public-body/audit-commission/unit/human-resources> rdfs:label "Human Resources" . 
+
+<http://reference.data.gov.uk/id/department/dclg> rdfs:label "Department for Communities and Local Government" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/audit-commission.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/audit-commission> ;
+                                                                               linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                               linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/audit-commission.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

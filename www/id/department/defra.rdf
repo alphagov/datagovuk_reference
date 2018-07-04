@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/Department"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Department for Environment, Food and Rural Affairs</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/commercial-estates"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/information-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/strategic-evidence"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/marine-programme-natural-environment"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/strategic-human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/water-floods-environmental-risk-regulation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/cap-reform-eu-budget-strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/environment-rural-director-generals-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/gecs-group-senior-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/secretariat"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/shared-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/climate-waste-and-atmosphere"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/farming-for-the-future"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/food-chain"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/veterinary-science-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/wildlife-landscape-and-rural"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/change-programme"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/climate-change-exotic-diseases-agency-relations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/finance-and-performance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/defra/unit/strategy-and-sustainability"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/defra.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/commercial-estates">
+    <rdfs:label>Commercial &amp; Estates</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/communications">
+    <rdfs:label>Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/information-services">
+    <rdfs:label>Information Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/strategic-evidence">
+    <rdfs:label>Strategic Evidence</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/marine-programme-natural-environment">
+    <rdfs:label>Marine Programme &amp; Natural Environment</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/strategic-human-resources">
+    <rdfs:label>Strategic Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/water-floods-environmental-risk-regulation">
+    <rdfs:label>Water, Floods, Environmental Risk &amp; Regulation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/cap-reform-eu-budget-strategy">
+    <rdfs:label>CAP Reform &amp; EU Budget Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/environment-rural-director-generals-office">
+    <rdfs:label>Environment &amp; Rural Director General's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/gecs-group-senior-management">
+    <rdfs:label>GECS Group Senior Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/secretariat">
+    <rdfs:label>Secretariat</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/shared-services">
+    <rdfs:label>Shared Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/climate-waste-and-atmosphere">
+    <rdfs:label>Climate, Waste and Atmosphere</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/farming-for-the-future">
+    <rdfs:label>Farming for the Future</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/food-chain">
+    <rdfs:label>Food Chain</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/veterinary-science-team">
+    <rdfs:label>Veterinary Science Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/wildlife-landscape-and-rural">
+    <rdfs:label>Wildlife, Landscape and Rural</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/change-programme">
+    <rdfs:label>Change Programme</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/climate-change-exotic-diseases-agency-relations">
+    <rdfs:label>Climate Change, Exotic Diseases &amp; Agency Relations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/finance-and-performance">
+    <rdfs:label>Finance and Performance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra/unit/strategy-and-sustainability">
+    <rdfs:label>Strategy and Sustainability</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/department/defra.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/department/defra"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#department"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/defra.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

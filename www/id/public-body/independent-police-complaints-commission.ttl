@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission> rdf:type msg0:Organization ,
+                                                                                                central-government:PublicBody ;
+                                                                                       rdfs:label "Independent Police Complaints Commission" ;
+                                                                                       msg0:hasUnit <http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission/unit/investigations-directorate> ,
+                                                                                                    <http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission/unit/business-services-directorate> ,
+                                                                                                    <http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission/unit/chief-executives-private-office-and-commission-secretariat> ,
+                                                                                                    <http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission/unit/standards-and-quality-standards-directorate> ,
+                                                                                                    <http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission/unit/casework-and-customer-services-directorate> ;
+                                                                                       central-government:parentDepartment <http://reference.data.gov.uk/id/department/ho> ;
+                                                                                       foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/independent-police-complaints-commission.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission/unit/investigations-directorate> rdfs:label "Investigations Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission/unit/business-services-directorate> rdfs:label "Business Services Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission/unit/chief-executives-private-office-and-commission-secretariat> rdfs:label "Chief Executive's Private Office and Commission Secretariat" . 
+
+<http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission/unit/standards-and-quality-standards-directorate> rdfs:label "Standards and Quality Standards Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission/unit/casework-and-customer-services-directorate> rdfs:label "Casework and Customer Services Directorate" . 
+
+<http://reference.data.gov.uk/id/department/ho> rdfs:label "Home Office" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/independent-police-complaints-commission.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/independent-police-complaints-commission> ;
+                                                                                                       linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                                       linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/independent-police-complaints-commission.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

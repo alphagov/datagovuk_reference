@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/nhs-blood-transplant> rdf:type msg0:Organization ,
+                                                                            central-government:PublicBody ;
+                                                                   rdfs:label "NHS Blood & Transplant" ;
+                                                                   msg0:hasUnit <http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/human-resources-directorate> ,
+                                                                                <http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/clinical-directorate> ,
+                                                                                <http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/business-transformation-services-directorate> ,
+                                                                                <http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/estates-and-logistics-directorate> ,
+                                                                                <http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/finance-directorate> ,
+                                                                                <http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/patient-services-directorate> ,
+                                                                                <http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/organ-donation-and-transplantation-directorate> ,
+                                                                                <http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/blood-donation-directorate> ,
+                                                                                <http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/communications-directorate> ;
+                                                                   central-government:parentDepartment <http://reference.data.gov.uk/id/department/dh> ;
+                                                                   foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/nhs-blood-transplant.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/human-resources-directorate> rdfs:label "Human Resources Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/clinical-directorate> rdfs:label "Clinical Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/business-transformation-services-directorate> rdfs:label "Business Transformation Services Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/estates-and-logistics-directorate> rdfs:label "Estates and Logistics Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/finance-directorate> rdfs:label "Finance Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/patient-services-directorate> rdfs:label "Patient Services Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/organ-donation-and-transplantation-directorate> rdfs:label "Organ Donation and Transplantation Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/blood-donation-directorate> rdfs:label "Blood Donation Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-blood-transplant/unit/communications-directorate> rdfs:label "Communications Directorate" . 
+
+<http://reference.data.gov.uk/id/department/dh> rdfs:label "Department of Health" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/nhs-blood-transplant.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/nhs-blood-transplant> ;
+                                                                                   linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                   linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/nhs-blood-transplant.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

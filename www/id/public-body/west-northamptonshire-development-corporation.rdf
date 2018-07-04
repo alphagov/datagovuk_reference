@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/west-northamptonshire-development-corporation">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>West Northamptonshire Development Corporation</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/west-northamptonshire-development-corporation/unit/regeneration-and-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/west-northamptonshire-development-corporation/unit/planning-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/west-northamptonshire-development-corporation/unit/operations"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dclg"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/west-northamptonshire-development-corporation.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/west-northamptonshire-development-corporation/unit/regeneration-and-development">
+    <rdfs:label>Regeneration and Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/west-northamptonshire-development-corporation/unit/planning-services">
+    <rdfs:label>Planning Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/west-northamptonshire-development-corporation/unit/operations">
+    <rdfs:label>Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dclg">
+    <rdfs:label>Department for Communities and Local Government</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/west-northamptonshire-development-corporation.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/west-northamptonshire-development-corporation"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/west-northamptonshire-development-corporation.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

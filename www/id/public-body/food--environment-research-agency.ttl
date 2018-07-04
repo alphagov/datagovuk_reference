@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/food--environment-research-agency> rdf:type msg0:Organization ,
+                                                                                         central-government:PublicBody ;
+                                                                                rdfs:label "Food & Environment Research Agency" ;
+                                                                                msg0:hasUnit <http://reference.data.gov.uk/id/public-body/food--environment-research-agency/unit/finance-corporate-services-directorate> ,
+                                                                                             <http://reference.data.gov.uk/id/public-body/food--environment-research-agency/unit/operations-directorate> ,
+                                                                                             <http://reference.data.gov.uk/id/public-body/food--environment-research-agency/unit/external-affairs-directorate> ,
+                                                                                             <http://reference.data.gov.uk/id/public-body/food--environment-research-agency/unit/chief-scientist-group> ,
+                                                                                             <http://reference.data.gov.uk/id/public-body/food--environment-research-agency/unit/policy-regulation-directorate> ;
+                                                                                central-government:parentDepartment <http://reference.data.gov.uk/id/department/defra> ;
+                                                                                foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/food--environment-research-agency.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/food--environment-research-agency/unit/finance-corporate-services-directorate> rdfs:label "Finance & Corporate Services Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/food--environment-research-agency/unit/operations-directorate> rdfs:label "Operations Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/food--environment-research-agency/unit/external-affairs-directorate> rdfs:label "External Affairs Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/food--environment-research-agency/unit/chief-scientist-group> rdfs:label "Chief Scientist Group" . 
+
+<http://reference.data.gov.uk/id/public-body/food--environment-research-agency/unit/policy-regulation-directorate> rdfs:label "Policy & Regulation Directorate" . 
+
+<http://reference.data.gov.uk/id/department/defra> rdfs:label "Department for Environment, Food and Rural Affairs" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/food--environment-research-agency.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/food--environment-research-agency> ;
+                                                                                                linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                                linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/food--environment-research-agency.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

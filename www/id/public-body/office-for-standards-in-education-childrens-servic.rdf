@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Office for Standards in Education, Children's Services and Skills</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/safeguarding-and-regulation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/complaints"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/business-and-publications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/directorate-support-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/legal-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/technical-development-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/delivery-performance-and-support-midlands"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/delivery-performance-and-support-north"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/childrens-services-assessment"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/information-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/national-business-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/education-and-care"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/north-inspection"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/strategic-performance-and-policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/moving-forward"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/property"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/procurement"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/delivery-wide-management-and-monitoring-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/childrens-right-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/human-resources-and-organisational-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/delivery-performance-and-support-south"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/quality-assurance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/inspection-data-and-insight"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/midlands-inspection"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/early-years-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/learning-and-skills"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/south-inspection"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/national-scheduling"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/social-care-remit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/knowledge-and-dissimination"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/public-involvement"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dfe"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/office-for-standards-in-education-childrens-servic.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/safeguarding-and-regulation">
+    <rdfs:label>Safeguarding and Regulation</rdfs:label>
+    <rdfs:label>Safeguarding and regulation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/complaints">
+    <rdfs:label>Complaints</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/business-and-publications">
+    <rdfs:label>Business and Publications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/directorate-support-services">
+    <rdfs:label>Directorate Support Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/legal-services">
+    <rdfs:label>Legal Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/technical-development-unit">
+    <rdfs:label>Technical Development Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/delivery-performance-and-support-midlands">
+    <rdfs:label>Delivery, Performance and Support (Midlands)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/delivery-performance-and-support-north">
+    <rdfs:label>Delivery, Performance and Support (North)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/childrens-services-assessment">
+    <rdfs:label>Children's Services Assessment</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/information-services">
+    <rdfs:label>Information Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/finance">
+    <rdfs:label>Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/national-business-unit">
+    <rdfs:label>National Business Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/education-and-care">
+    <rdfs:label>Education and Care</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/north-inspection">
+    <rdfs:label>North Inspection</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/strategic-performance-and-policy">
+    <rdfs:label>Strategic Performance and Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/moving-forward">
+    <rdfs:label>Moving Forward</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/property">
+    <rdfs:label>Property</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/procurement">
+    <rdfs:label>Procurement</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/delivery-wide-management-and-monitoring-team">
+    <rdfs:label>Delivery Wide Management and Monitoring Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/childrens-right-team">
+    <rdfs:label>Children's Right Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/human-resources-and-organisational-development">
+    <rdfs:label>Human resources and Organisational Development</rdfs:label>
+    <rdfs:label>Human Resources and Organisational Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/delivery-performance-and-support-south">
+    <rdfs:label>Delivery, Performance and Support (South)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/quality-assurance">
+    <rdfs:label>Quality Assurance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/inspection-data-and-insight">
+    <rdfs:label>Inspection Data and Insight</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/communications">
+    <rdfs:label>Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/midlands-inspection">
+    <rdfs:label>Midlands Inspection</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/early-years-development">
+    <rdfs:label>Early Years Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/learning-and-skills">
+    <rdfs:label>Learning and Skills</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/south-inspection">
+    <rdfs:label>South Inspection</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/national-scheduling">
+    <rdfs:label>National Scheduling</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/social-care-remit">
+    <rdfs:label>Social Care Remit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/knowledge-and-dissimination">
+    <rdfs:label>Knowledge and Dissimination</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic/unit/public-involvement">
+    <rdfs:label>Public Involvement</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe">
+    <rdfs:label>Department for Education</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/office-for-standards-in-education-childrens-servic.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/office-for-standards-in-education-childrens-servic"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/office-for-standards-in-education-childrens-servic.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

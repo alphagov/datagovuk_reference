@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission> rdf:type msg0:Organization ,
+                                                                                          central-government:PublicBody ;
+                                                                                 rdfs:label "Infrastructure Planning Commission" ;
+                                                                                 msg0:hasUnit <http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission/unit/chief-executives-office> ,
+                                                                                              <http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission/unit/legal-services> ,
+                                                                                              <http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission/unit/finance-corporate-services> ,
+                                                                                              <http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission/unit/operations> ,
+                                                                                              <http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission/unit/commissioners> ;
+                                                                                 central-government:parentDepartment <http://reference.data.gov.uk/id/department/dclg> ;
+                                                                                 foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/infrastructure-planning-commission.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission/unit/chief-executives-office> rdfs:label "Chief Executive's Office" . 
+
+<http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission/unit/legal-services> rdfs:label "Legal Services" . 
+
+<http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission/unit/finance-corporate-services> rdfs:label "Finance & Corporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission/unit/operations> rdfs:label "Operations" . 
+
+<http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission/unit/commissioners> rdfs:label "Commissioners" . 
+
+<http://reference.data.gov.uk/id/department/dclg> rdfs:label "Department for Communities and Local Government" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/infrastructure-planning-commission.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/infrastructure-planning-commission> ;
+                                                                                                 linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                                 linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/infrastructure-planning-commission.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

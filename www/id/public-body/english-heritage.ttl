@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/english-heritage> rdf:type msg0:Organization ,
+                                                                        central-government:PublicBody ;
+                                                               rdfs:label "English Heritage" ;
+                                                               msg0:hasUnit <http://reference.data.gov.uk/id/public-body/english-heritage/unit/chief-executives-office> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/english-heritage/unit/heritage-protection-and-planning> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/english-heritage/unit/national-advice-and-information> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/english-heritage/unit/resources> ,
+                                                                            <http://reference.data.gov.uk/id/public-body/english-heritage/unit/national-collections> ;
+                                                               central-government:parentDepartment <http://reference.data.gov.uk/id/department/dcms> ;
+                                                               foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/english-heritage.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/english-heritage/unit/chief-executives-office> rdfs:label "Chief Executive's Office" . 
+
+<http://reference.data.gov.uk/id/public-body/english-heritage/unit/heritage-protection-and-planning> rdfs:label "Heritage Protection and Planning" . 
+
+<http://reference.data.gov.uk/id/public-body/english-heritage/unit/national-advice-and-information> rdfs:label "National Advice and Information" . 
+
+<http://reference.data.gov.uk/id/public-body/english-heritage/unit/resources> rdfs:label "Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/english-heritage/unit/national-collections> rdfs:label "National Collections" . 
+
+<http://reference.data.gov.uk/id/department/dcms> rdfs:label "Department for Culture, Media and Sport" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/english-heritage.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/english-heritage> ;
+                                                                               linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                               linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/english-heritage.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

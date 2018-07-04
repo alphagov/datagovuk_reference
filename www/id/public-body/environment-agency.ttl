@@ -1,0 +1,397 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/environment-agency> rdf:type msg0:Organization ,
+                                                                          central-government:PublicBody ;
+                                                                 rdfs:label "Environment Agency" ;
+                                                                 msg0:hasUnit <http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-anglian-office-anglian-office> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-eastern> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-water-framework-directive> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-strategy-reporting> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-efficiency-programme> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-legal> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-natational-permitting-service-central-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-central> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-west> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-area> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-office-flood-and-coastal-risk-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-south> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-kent-and-south-london> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-south-west> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-fisheries-biodiversity> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-evidence-services> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-1b1s-service-centre-team> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-incident-management-incidents-flood-response> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-business-development-and-support> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-business-development-and-support-business-development> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-flood-forecasting-centre> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-national-trading-and-regulatory-services> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-solutions-del> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-operations-head-office> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-operations-regional> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-service-centre> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-midlands-office-flood-and-coastal-risk-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office-flood-and-coastal-risk-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office-london-environment-team> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office-regional-environmental-planning> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-internal-audit> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities-climate-change> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-strategy-reporting-strategic-environment-planning> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-legal-legal-services> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-monitoring-assessment-and-planning> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-business-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-east> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north-west-office-regional-environmental-planning> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-north-east-thames> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-south-east> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-flood-and-coastal-risk-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-strategic-unit-wales> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-anglian-office-flood-and-coastal-risk-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-central> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-programme-director> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-procurement-national> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-incident-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-portfolio-mgt> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-strategy-and-engagement> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-strategy-and-engagement-stakeholder-and-legal-development> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-monitoring-assessment-and-planning-national-monitoring> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-security> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-service-delivery> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-west-thames> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-northern> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-corporate-planning-and-performance> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-media-corporate-comms> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-bathing-waters> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-future-regulation> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-business-finance-operations-local> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-legal-legal-services-national> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-operations-technical-services> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-operations-planning-development-planning-performance-communications-planning-performance> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-operations-national-operations-delivery> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-communications-and-business-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-internal-transformation> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-office> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-office-regional-environmental-planning> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-yorkshire-area> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-corporate-services> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-water-resources> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-portfolio-resources> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-illegal-waste> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-radioactive-substances-regulation> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-research-innovation> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-business-finance> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-financial-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-financial-service-centre-head-of-financial-development> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-asset-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-midlands-office-environment-and-performance-manager> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north-ambition> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-solent-and-south-downs> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-north> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-human-resources> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-business-improvements> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-environmental-investment> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities-sustainable-places> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-site-based-regulation> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-evidence-services-data-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-incident-management-and-operations> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-capital-programme-management-service> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-national-environmental-assessment-service> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-operations-director-of-operations> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-assets-head> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-customer-services-and-solutions> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-innovation-and-architecture> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office-flood-and-coastal-risk-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office-local-business-strategy-unit-regional-environmental-planning> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-environmental-delivery-options> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-finance> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-anglian-office-environment-performance-manager> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-directors-office> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-evidence-services-economics> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-environmental-financepension-fund-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-asset-management-business-and-commercial-modelling> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-investment-and-funding> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-strategy> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-midlands-office> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north-west-office> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office-environment-and-performance-management> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-devoncornwall> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-wessex> ;
+                                                                 central-government:parentDepartment <http://reference.data.gov.uk/id/department/defra> ;
+                                                                 foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-anglian-office-anglian-office> rdfs:label "Anglian - Anglian Office - Anglian Office" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-eastern> rdfs:label "Anglian - Eastern" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality> rdfs:label "Head Office - Environment and Business - Land & Water Quality" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-water-framework-directive> rdfs:label "Head Office - Environment and Business - Land & Water Quality - Water Framework Directive" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence> rdfs:label "Head Office - Evidence" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-strategy-reporting> rdfs:label "Head Office - Evidence - Strategy & Reporting" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-efficiency-programme> rdfs:label "Head Office - Finance - Efficiency Programme" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-legal> rdfs:label "Head Office - Legal" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-natational-permitting-service-central-management> rdfs:label "Head Office - National Operations - National Operations Services - Natational Permitting Service - Central Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-central> rdfs:label "Midlands - Central" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-west> rdfs:label "Midlands - West" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-area> rdfs:label "North East - North East Area" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-office-flood-and-coastal-risk-management> rdfs:label "North East - North East Office - Flood and Coastal Risk Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-south> rdfs:label "North West - South" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-kent-and-south-london> rdfs:label "South East - Kent and South London" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-south-west> rdfs:label "Wales - South West" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-fisheries-biodiversity> rdfs:label "Head Office - Environment and Business - Land & Water Quality - Fisheries & Biodiversity" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-evidence-services> rdfs:label "Head Office - Evidence - Evidence Services" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-1b1s-service-centre-team> rdfs:label "Head Office - Finance - 1B1S Service Centre Team" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-incident-management-incidents-flood-response> rdfs:label "Head Office - Flood and Coastal Risk Management - Incident Management - Incidents & Flood Response" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-business-development-and-support> rdfs:label "Head Office - National Operations - Business Development and Support" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-business-development-and-support-business-development> rdfs:label "Head Office - National Operations - Business Development and Support - Business Development" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-flood-forecasting-centre> rdfs:label "Head Office - National Operations - Flood Forecasting Centre" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-national-trading-and-regulatory-services> rdfs:label "Head Office - National Operations - National Operations Services - National Trading and Regulatory Services" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services> rdfs:label "Head Office - Resources - Corporate Information Services" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-solutions-del> rdfs:label "Head Office - Resources - Corporate Information Services - Solutions Del" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-operations-head-office> rdfs:label "Head Office - Resources - Human Resources - Human Resources Operations (Head Office)" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-operations-regional> rdfs:label "Head Office - Resources - Human Resources - Human Resources Operations (Regional)" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-service-centre> rdfs:label "Head Office - Resources - Human Resources - Human Resources Service Centre" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-midlands-office-flood-and-coastal-risk-management> rdfs:label "Midlands - Midlands Office - Flood and Coastal Risk Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north> rdfs:label "North West - North" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office-flood-and-coastal-risk-management> rdfs:label "South East - South East Office - Flood and Coastal Risk Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office-london-environment-team> rdfs:label "South East - South East Office - London Environment Team" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office-regional-environmental-planning> rdfs:label "South West - South West Office - Regional Environmental Planning" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-internal-audit> rdfs:label "Head Office - Chief Executive's Directorate - Internal Audit" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities-climate-change> rdfs:label "Head Office - Environment and Business - Climate Change and Communities - Climate Change" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-strategy-reporting-strategic-environment-planning> rdfs:label "Head Office - Evidence - Strategy & Reporting - Strategic Environment Planning" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-legal-legal-services> rdfs:label "Head Office - Legal - Legal Services" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-monitoring-assessment-and-planning> rdfs:label "Head Office - National Operations - Monitoring, Assessment and Planning" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services> rdfs:label "Head Office - National Operations - National Operations Services" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-business-management> rdfs:label "Head Office - Resources - Business Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-east> rdfs:label "Midlands - East" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north-west-office-regional-environmental-planning> rdfs:label "North West - North West Office - Regional Environmental Planning" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-north-east-thames> rdfs:label "South East - North East Thames" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-south-east> rdfs:label "Wales - South East" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-flood-and-coastal-risk-management> rdfs:label "Wales - Wales Office - Flood and Coastal Risk Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-strategic-unit-wales> rdfs:label "Wales - Wales Office - Strategic Unit Wales" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-anglian-office-flood-and-coastal-risk-management> rdfs:label "Anglian - Anglian Office - Flood and Coastal Risk Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-central> rdfs:label "Anglian - Central" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate> rdfs:label "Head Office - Chief Executive's Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-programme-director> rdfs:label "Head Office - Environment and Business - Programme Director" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-procurement-national> rdfs:label "Head Office - Finance - Procurement - National" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-incident-management> rdfs:label "Head Office - Flood and Coastal Risk Management - Incident Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-portfolio-mgt> rdfs:label "Head Office - Flood and Coastal Risk Management - Portfolio Mgt" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-strategy-and-engagement> rdfs:label "Head Office - Flood and Coastal Risk Management - Strategy and Engagement" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-strategy-and-engagement-stakeholder-and-legal-development> rdfs:label "Head Office - Flood and Coastal Risk Management - Strategy and Engagement - Stakeholder and Legal Development" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-monitoring-assessment-and-planning-national-monitoring> rdfs:label "Head Office - National Operations - Monitoring, Assessment and Planning - National Monitoring" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-security> rdfs:label "Head Office - National Operations - Security" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-service-delivery> rdfs:label "Head Office - Resources - Corporate Information Services - Service Delivery" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-west-thames> rdfs:label "South East - West Thames" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office> rdfs:label "South West - South West Office" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-northern> rdfs:label "Anglian - Northern" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-corporate-planning-and-performance> rdfs:label "Head Office - Chief Executive's Directorate - Corporate Planning and Performance" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-media-corporate-comms> rdfs:label "Head Office - Chief Executive's Directorate - Media & Corporate Comms" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-bathing-waters> rdfs:label "Head Office - Environment and Business - Bathing Waters" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-future-regulation> rdfs:label "Head Office - Environment and Business - Regulated Industry - Future Regulation" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-business-finance-operations-local> rdfs:label "Head Office - Finance - Business Finance - Operations Local" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-legal-legal-services-national> rdfs:label "Head Office - Legal - Legal Services - National" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-operations-technical-services> rdfs:label "Head Office - National Operations - National Operations Services - Operations Technical Services" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-operations-planning-development-planning-performance-communications-planning-performance> rdfs:label "Head Office - National Operations - Operations Planning & Development - Planning Performance & Communications - Planning & Performance" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-operations-national-operations-delivery> rdfs:label "Head Office - Operations - National Operations Delivery" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-communications-and-business-management> rdfs:label "Head Office - Resources - Corporate Information Services - Communications and Business Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-internal-transformation> rdfs:label "Head Office - Resources - Human Resources - Internal Transformation" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-office> rdfs:label "North East - North East Office" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-office-regional-environmental-planning> rdfs:label "North East - North East Office - Regional Environmental Planning" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-yorkshire-area> rdfs:label "North East - Yorkshire Area" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office> rdfs:label "Wales - Wales Office" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-corporate-services> rdfs:label "Wales - Wales Office - Corporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-water-resources> rdfs:label "Head Office - Environment and Business - Land & Water Quality - Water Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-portfolio-resources> rdfs:label "Head Office - Environment and Business - Portfolio & Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-illegal-waste> rdfs:label "Head Office - Environment and Business - Regulated Industry - Illegal & Waste" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-radioactive-substances-regulation> rdfs:label "Head Office - Environment and Business - Regulated Industry - Radioactive Substances Regulation" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-research-innovation> rdfs:label "Head Office - Evidence - Research & Innovation" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-business-finance> rdfs:label "Head Office - Finance - Business Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-financial-management> rdfs:label "Head Office - Finance - Financial Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-financial-service-centre-head-of-financial-development> rdfs:label "Head Office - Finance - Financial Service Centre - Head of Financial Development" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-asset-management> rdfs:label "Head Office - Flood and Coastal Risk Management - Asset Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-midlands-office-environment-and-performance-manager> rdfs:label "Midlands - Midlands Office - Environment and Performance Manager" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north-ambition> rdfs:label "North West - North Ambition" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-solent-and-south-downs> rdfs:label "South East - Solent and South Downs" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-north> rdfs:label "Wales - North" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-human-resources> rdfs:label "Wales - Wales Office - Human Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-business-improvements> rdfs:label "Head Office - Chief Executive's Directorate - Business Improvements" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-environmental-investment> rdfs:label "Head Office - Chief Executive's Directorate - Environmental Investment" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities> rdfs:label "Head Office - Environment and Business - Climate Change and Communities" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities-sustainable-places> rdfs:label "Head Office - Environment and Business - Climate Change and Communities - Sustainable Places" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-site-based-regulation> rdfs:label "Head Office - Environment and Business - Regulated Industry - Site Based Regulation" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-evidence-services-data-management> rdfs:label "Head Office - Evidence - Evidence Services - Data Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance> rdfs:label "Head Office - Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-incident-management-and-operations> rdfs:label "Head Office - National Operations - Incident Management and Operations" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-capital-programme-management-service> rdfs:label "Head Office - National Operations - National Capital Programme Management Service" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-national-environmental-assessment-service> rdfs:label "Head Office - National Operations - National Operations Services - National Environmental Assessment Service" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-operations-director-of-operations> rdfs:label "Head Office - Operations - Director of Operations" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-assets-head> rdfs:label "Head Office - Resources - Corporate Assets - Head" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-customer-services-and-solutions> rdfs:label "Head Office - Resources - Corporate Information Services - Customer Services and Solutions" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-innovation-and-architecture> rdfs:label "Head Office - Resources - Corporate Information Services - Innovation and Architecture" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources> rdfs:label "Head Office - Resources - Human Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office> rdfs:label "South East - South East Office" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office-flood-and-coastal-risk-management> rdfs:label "South West - South West Office - Flood and Coastal Risk Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office-local-business-strategy-unit-regional-environmental-planning> rdfs:label "South West - South West Office - Local Business Strategy Unit - Regional Environmental Planning" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-environmental-delivery-options> rdfs:label "Wales - Wales Office - Environmental Delivery Options" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-finance> rdfs:label "Wales - Wales Office - Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-anglian-office-environment-performance-manager> rdfs:label "Anglian - Anglian Office - Environment Performance Manager" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-directors-office> rdfs:label "Head Office - Environment and Business - Directors Office" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry> rdfs:label "Head Office - Environment and Business - Regulated Industry" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-evidence-services-economics> rdfs:label "Head Office - Evidence - Evidence Services - Economics" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-environmental-financepension-fund-management> rdfs:label "Head Office - Finance - Environmental Finance/Pension Fund Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management> rdfs:label "Head Office - Flood and Coastal Risk Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-asset-management-business-and-commercial-modelling> rdfs:label "Head Office - Flood and Coastal Risk Management - Asset Management - Business and Commercial Modelling" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-investment-and-funding> rdfs:label "Head Office - Flood and Coastal Risk Management - Investment and Funding" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-strategy> rdfs:label "Head Office - Resources - Human Resources - Human Resources Strategy" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-midlands-office> rdfs:label "Midlands - Midlands Office" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north-west-office> rdfs:label "North West - North West Office" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office-environment-and-performance-management> rdfs:label "South East - South East Office - Environment and Performance Management" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-devoncornwall> rdfs:label "South West - Devon&Cornwall" . 
+
+<http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-wessex> rdfs:label "South West - Wessex" . 
+
+<http://reference.data.gov.uk/id/department/defra> rdfs:label "Department for Environment, Food and Rural Affairs" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/environment-agency> ;
+                                                                                 linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                 linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

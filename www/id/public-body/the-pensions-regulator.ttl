@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-regulator> rdf:type msg0:Organization ,
+                                                                              central-government:PublicBody ;
+                                                                     rdfs:label "The Pensions Regulator" ;
+                                                                     msg0:hasUnit <http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/employer-compliance> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/corporate-and-international-affairs> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/chief-executives-office> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/support-operations> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/customer-communications> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/dc-governance-and-administration> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/risk> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/db-regulation> ;
+                                                                     central-government:parentDepartment <http://reference.data.gov.uk/id/department/dwp> ;
+                                                                     foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/the-pensions-regulator.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/employer-compliance> rdfs:label "Employer Compliance" . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/corporate-and-international-affairs> rdfs:label "Corporate and International Affairs" . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/chief-executives-office> rdfs:label "Chief Executive's Office" . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/support-operations> rdfs:label "Support Operations" . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/customer-communications> rdfs:label "Customer Communications" . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/dc-governance-and-administration> rdfs:label "DC Governance and Administration" . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/risk> rdfs:label "Risk" . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-regulator/unit/db-regulation> rdfs:label "DB Regulation" . 
+
+<http://reference.data.gov.uk/id/department/dwp> rdfs:label "Department for Work and Pensions" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/the-pensions-regulator.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/the-pensions-regulator> ;
+                                                                                     linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                     linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/the-pensions-regulator.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

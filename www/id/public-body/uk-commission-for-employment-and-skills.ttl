@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills> rdf:type msg0:Organization ,
+                                                                                               central-government:PublicBody ;
+                                                                                      rdfs:label "UK Commission for Employment and Skills" ;
+                                                                                      msg0:hasUnit <http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/business-services-communications> ,
+                                                                                                   <http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/business-services-finance> ,
+                                                                                                   <http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/business-services-governance> ,
+                                                                                                   <http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/project-delivery> ,
+                                                                                                   <http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/research-technical> ,
+                                                                                                   <http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/business-services-information-technology-facilities> ,
+                                                                                                   <http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/business-services-human-resources> ;
+                                                                                      central-government:parentDepartment <http://reference.data.gov.uk/id/department/bis> ;
+                                                                                      foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/uk-commission-for-employment-and-skills.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/business-services-communications> rdfs:label "Business Services - Communications" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/business-services-finance> rdfs:label "Business Services - Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/business-services-governance> rdfs:label "Business Services - Governance" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/project-delivery> rdfs:label "Project Delivery" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/research-technical> rdfs:label "Research & Technical" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/business-services-information-technology-facilities> rdfs:label "Business Services - Information Technology & Facilities" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills/unit/business-services-human-resources> rdfs:label "Business Services - Human Resources" . 
+
+<http://reference.data.gov.uk/id/department/bis> rdfs:label "Department for Business Innovation and Skills" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/uk-commission-for-employment-and-skills.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/uk-commission-for-employment-and-skills> ;
+                                                                                                      linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                                      linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/uk-commission-for-employment-and-skills.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/dcms> rdf:type msg0:Organization ,
+                                                           ns0:Department ,
+                                                           ns0:PublicBody ;
+                                                  rdfs:label "Department for Culture, Media and Sport" ;
+                                                  msg0:hasUnit <http://reference.data.gov.uk/id/department/dcms/unit/broadband-communications-content-inclusion> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/broadband-delivery> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/broadband-spectrum-resilience-security> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/goe-security-and-regeneration> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/ministerial-support-team> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/goe-uk-wide-operations> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/finance> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/goe-finance-and-sponsorship> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/goe-programmes> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/information-systems> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/procurement-property-services> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/goe-staging> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/goe-communications> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/goe-international-dignitary-management> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/government-art-collection> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/human-resources> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/goe-government-services-team> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/goe-olympic-legacy> ,
+                                                               <http://reference.data.gov.uk/id/department/dcms/unit/departmental-flexible-pool> ;
+                                                  foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/dcms.ttl> . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/broadband-communications-content-inclusion> rdfs:label "Broadband Communications, Content & Inclusion" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/broadband-delivery> rdfs:label "Broadband Delivery" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/broadband-spectrum-resilience-security> rdfs:label "Broadband Spectrum, Resilience & Security" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/goe-security-and-regeneration> rdfs:label "GOE Security and Regeneration" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/ministerial-support-team> rdfs:label "Ministerial Support Team" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/goe-uk-wide-operations> rdfs:label "GOE UK Wide Operations" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/finance> rdfs:label "Finance" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/goe-finance-and-sponsorship> rdfs:label "GOE Finance and Sponsorship" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/goe-programmes> rdfs:label "GOE Programmes" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/information-systems> rdfs:label "Information Systems" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/procurement-property-services> rdfs:label "Procurement & Property Services" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/goe-staging> rdfs:label "GOE Staging" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/goe-communications> rdfs:label "GOE Communications" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/goe-international-dignitary-management> rdfs:label "GOE International & Dignitary Management" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/government-art-collection> rdfs:label "Government Art Collection" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/human-resources> rdfs:label "Human Resources" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/goe-government-services-team> rdfs:label "GOE Government Services Team" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/goe-olympic-legacy> rdfs:label "GOE Olympic Legacy" . 
+
+<http://reference.data.gov.uk/id/department/dcms/unit/departmental-flexible-pool> rdfs:label "Departmental Flexible Pool" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/dcms.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/dcms> ;
+                                                                  linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                  linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/dcms.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

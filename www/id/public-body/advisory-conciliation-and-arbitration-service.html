@@ -1,0 +1,404 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Results</title>
+<link rel="shortcut icon" href="/images/datagovuk_favicon.png" type="image/x-icon">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.rdf" type="application/rdf+xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.ttl" type="text/turtle">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.json" type="application/json">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.xml" type="application/xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.csv" type="text/csv">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="/scripts/jquery.min.js"></script><script type="text/javascript" src="/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script><link rel="stylesheet" href="/css/html5reset-1.6.1.css" type="text/css">
+<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/smoothness/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/result.css" type="text/css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" type="text/css"></link><![endif]-->
+</head>
+<body><div id="page">
+<nav class="site"><section class="formats"><ul>
+<li class="first"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+<li class="last"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.csv" type="text/csv" rel="alternate" title="view in csv format">csv</a></li>
+</ul></section></nav><header><h1><a href="/">Linked Data API</a></h1></header><nav class="topnav"><section class="moreinfo"><h1>Browse</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Links to further information.</p>
+</div>
+<ul>
+<li><a href="/doc/public-body/advisory-conciliation-and-arbitration-service/post">Public body SCS posts</a></li>
+<li><a href="/doc/public-body/advisory-conciliation-and-arbitration-service/unit">Public body units</a></li>
+<li><span class="current">Public body</span></li>
+</ul>
+<ul>
+<li><a href="/doc/ministerial-department">Ministerial departments</a></li>
+<li><a href="/doc/non-ministerial-department">Non-ministerial departments</a></li>
+<li><a href="/doc/department">All departments</a></li>
+<li><a href="/doc/public-body">All public bodies</a></li>
+</ul>
+<ul>
+<li><a href="/doc/minister">All ministers</a></li>
+<li><a href="/doc/seat">All seats</a></li>
+<li><a href="/doc/mp">All MPs</a></li>
+<li><a href="/doc/peer">All peers</a></li>
+</ul></section><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view"><h1>View</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined views, but starred properties are always present no matter what the view. You can star properties by clicking on the <img src="/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.</p>
+</div>
+<ul>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.html?_view=description" title="switch to description view">description</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.html?_view=all" title="switch to all view">all</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.html?_view=minimal" title="switch to minimal view">minimal</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.html?_view=public+body" title="switch to public body view">public body</a></li>
+</ul>
+<ul class="properties">
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.html?_properties=label"><img src="/images/grey/16x16/Star.png" alt="star this property"> label</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.html?_properties=type"><img src="/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.html?_properties=unit.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> unit</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/advisory-conciliation-and-arbitration-service.html?_properties=parentDepartment.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> parent department</a></li>
+</ul></section></nav><div id="result"><div class="panel">
+<header><p id="openSearch">Show Search Form</p>
+<h1>Advisory Conciliation and Arbitration Service</h1>
+<p class="id"><a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service">http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service</a></p></header><section id="search"><form action="http://reference.data.gov.uk/2011-09-30/doc/public-body">
+<table>
+<colgroup>
+<col width="25%">
+<col width="70%">
+</colgroup>
+<tr>
+<th class="label"><label for="label">label</label></th>
+<td class="input"><input name="label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="type">type</label></th>
+<td class="input"><input name="type" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="unit.label">unit</label></th>
+<td class="input"><input name="unit.label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="parentDepartment.label">parent department</label></th>
+<td class="input"><input name="parentDepartment.label" size="25"></td>
+</tr>
+</table>
+<p><button type="submit">Search</button></p>
+</form></section><section><table id="id1409243">
+<colgroup>
+<col width="25%">
+<col width="*">
+<col width="54">
+</colgroup>
+<tr class="type">
+<th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/def/central-government/PublicBody" title="view on this site">PublicBody</a> <a href="http://reference.data.gov.uk/def/central-government/PublicBody" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value"><a href="http://www.w3.org/ns/org#Organization">Organization</a></td>
+<td class="filter"></td>
+</tr>
+</table></td>
+</tr>
+<tr class="unit">
+<th class="label"><a href="http://www.w3.org/ns/org#hasUnit">unit</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/birmingham" title="view on this site">BIRMINGHAM</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/birmingham" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=BIRMINGHAM"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/bristol" title="view on this site">BRISTOL</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/bristol" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=BRISTOL"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/bury-st-edmunds" title="view on this site">BURY ST EDMUNDS</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/bury-st-edmunds" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=BURY%20ST%20EDMUNDS"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/cardiff" title="view on this site">CARDIFF</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/cardiff" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=CARDIFF"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/central-arbitration-committee" title="view on this site">CENTRAL ARBITRATION COMMITTEE</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/central-arbitration-committee" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=CENTRAL%20ARBITRATION%20COMMITTEE"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/certification-office" title="view on this site">CERTIFICATION OFFICE</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/certification-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=CERTIFICATION%20OFFICE"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/data-entry-centre" title="view on this site">DATA ENTRY CENTRE</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/data-entry-centre" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=DATA%20ENTRY%20CENTRE"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/fleet" title="view on this site">FLEET</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/fleet" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=FLEET"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/leeds" title="view on this site">LEEDS</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/leeds" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=LEEDS"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/liverpool" title="view on this site">LIVERPOOL</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/liverpool" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=LIVERPOOL"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/london" title="view on this site">LONDON</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/london" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=LONDON"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/manchester" title="view on this site">MANCHESTER</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/manchester" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=MANCHESTER"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-advice-training" title="view on this site">NATIONAL ADVICE &amp; TRAINING</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-advice-training" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20ADVICE%20&amp;%20TRAINING"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-caseflow-project" title="view on this site">NATIONAL CASEFLOW PROJECT</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-caseflow-project" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20CASEFLOW%20PROJECT"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-collective-conciliation-arbitration" title="view on this site">NATIONAL COLLECTIVE CONCILIATION &amp; ARBITRATION</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-collective-conciliation-arbitration" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20COLLECTIVE%20CONCILIATION%20&amp;%20ARBITRATION"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-communications" title="view on this site">NATIONAL COMMUNICATIONS</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-communications" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20COMMUNICATIONS"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-delivery-managet" title="view on this site">NATIONAL DELIVERY MANAGET</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-delivery-managet" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20DELIVERY%20MANAGET"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-digital-solutions" title="view on this site">NATIONAL DIGITAL SOLUTIONS</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-digital-solutions" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20DIGITAL%20SOLUTIONS"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-equality" title="view on this site">NATIONAL EQUALITY</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-equality" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20EQUALITY"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-finance" title="view on this site">NATIONAL FINANCE</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20FINANCE"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-helpline-operations" title="view on this site">NATIONAL HELPLINE &amp; OPERATIONS</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-helpline-operations" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20HELPLINE%20&amp;%20OPERATIONS"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-hr-strategic-estates" title="view on this site">NATIONAL HR &amp; STRATEGIC ESTATES</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-hr-strategic-estates" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20HR%20&amp;%20STRATEGIC%20ESTATES"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-individual-conciliation" title="view on this site">NATIONAL INDIVIDUAL CONCILIATION</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-individual-conciliation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20INDIVIDUAL%20CONCILIATION"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-information-guidance" title="view on this site">NATIONAL INFORMATION &amp; GUIDANCE</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-information-guidance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20INFORMATION%20&amp;%20GUIDANCE"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-it" title="view on this site">NATIONAL IT</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-it" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20IT"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-research-evaluation" title="view on this site">NATIONAL RESEARCH &amp; EVALUATION</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-research-evaluation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20RESEARCH%20&amp;%20EVALUATION"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-strategy-unit" title="view on this site">NATIONAL STRATEGY UNIT</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/national-strategy-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NATIONAL%20STRATEGY%20UNIT"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/newcastle" title="view on this site">NEWCASTLE</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/newcastle" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NEWCASTLE"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/nottingham" title="view on this site">NOTTINGHAM</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/nottingham" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=NOTTINGHAM"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/advisory-conciliation-and-arbitration-service/unit/scotland" title="view on this site">SCOTLAND</a> <a href="http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service/unit/scotland" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=SCOTLAND"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr class="parentDepartment last">
+<th class="label"><a href="http://reference.data.gov.uk/def/central-government/parentDepartment">parent department</a></th>
+<td class="value">
+<a href="/id/department/bis" title="view on this site">Department for Business Innovation and Skills</a> <a href="http://reference.data.gov.uk/id/department/bis" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?parentDepartment.label=Department%20for%20Business%20Innovation%20and%20Skills"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></section>
+</div></div>
+<nav class="bottomnav"></nav><footer><div class="provenance"><div class=" query col1">
+<h2>Viewer</h2>
+<p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the <a href="endpoint/url/@href">endpoint's page</a>.</p>
+<form action="http://10.254.6.244/organograms-2011-09-30/sparql" method="post">
+<textarea name="query" wrap="off" data-skip-lines="5">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX org: &lt;http://www.w3.org/ns/org#&gt;
+PREFIX gov: &lt;http://reference.data.gov.uk/def/central-government/&gt;
+CONSTRUCT { 
+    # constructing properties of http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service 
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; rdf:type ?var_1_0 .
+    ?var_1_0 rdfs:label ?var_1_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; rdfs:label ?var_2_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; skos:prefLabel ?var_3_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; skos:altLabel ?var_4_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; rdfs:comment ?var_5_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; org:hasUnit ?var_6_0 .
+    ?var_6_0 rdfs:label ?var_6_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; gov:parentDepartment ?var_7_0 .
+    ?var_7_0 rdfs:label ?var_7_1_0 .
+} WHERE { 
+  # identifying properties of http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service 
+  {
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; rdf:type ?var_1_0 .
+    OPTIONAL { ?var_1_0 rdfs:label ?var_1_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; rdfs:label ?var_2_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; skos:prefLabel ?var_3_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; skos:altLabel ?var_4_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; rdfs:comment ?var_5_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; org:hasUnit ?var_6_0 .
+    OPTIONAL { ?var_6_0 rdfs:label ?var_6_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/advisory-conciliation-and-arbitration-service&gt; gov:parentDepartment ?var_7_0 .
+    OPTIONAL { ?var_7_0 rdfs:label ?var_7_1_0 . }
+  } 
+}
+</textarea><p><button type="submit">Run Query</button></p>
+</form>
+</div></div>
+<p>Powered by <a href="http://code.google.com/p/puelia-php/">Puelia v0.1</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p></footer>
+</div></body>
+</html>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Children and Family Court Advisory and Support Service</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/chief-executives-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/itbt"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/south-operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/central-operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/north-operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/legal"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/human-resources"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dfe"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/children-and-family-court-advisory-and-support-ser.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/chief-executives-office">
+    <rdfs:label>Chief Executive's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/itbt">
+    <rdfs:label>IT/BT</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/south-operations">
+    <rdfs:label>South Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/central-operations">
+    <rdfs:label>Central Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/finance">
+    <rdfs:label>Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/north-operations">
+    <rdfs:label>North Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/policy">
+    <rdfs:label>Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/legal">
+    <rdfs:label>Legal</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser/unit/human-resources">
+    <rdfs:label>Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe">
+    <rdfs:label>Department for Education</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/children-and-family-court-advisory-and-support-ser.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/children-and-family-court-advisory-and-support-ser"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/children-and-family-court-advisory-and-support-ser.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

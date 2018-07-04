@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate> rdf:type msg0:Organization ,
+                                                                                                 central-government:PublicBody ;
+                                                                                        rdfs:label "HM Crown Prosecution Service Inspectorate" ;
+                                                                                        msg0:hasUnit <http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/audit-research> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/inspection-development> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/corporate-services> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/inspection-support> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/hm-inspectors-business-management> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/prosecution-legal-practice> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/joint-inspection> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/hm-inspectors-legal> ;
+                                                                                        central-government:parentDepartment <http://reference.data.gov.uk/id/department/attorney-general> ;
+                                                                                        foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-crown-prosecution-service-inspectorate.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/audit-research> rdfs:label "Audit & Research" . 
+
+<http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/inspection-development> rdfs:label "Inspection Development" . 
+
+<http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/corporate-services> rdfs:label "Corporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/inspection-support> rdfs:label "Inspection Support" . 
+
+<http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/hm-inspectors-business-management> rdfs:label "HM Inspectors: Business Management" . 
+
+<http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/prosecution-legal-practice> rdfs:label "Prosecution & Legal Practice" . 
+
+<http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/joint-inspection> rdfs:label "Joint Inspection" . 
+
+<http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate/unit/hm-inspectors-legal> rdfs:label "HM Inspectors: Legal" . 
+
+<http://reference.data.gov.uk/id/department/attorney-general> rdfs:label "Attorney General's Office" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-crown-prosecution-service-inspectorate.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/hm-crown-prosecution-service-inspectorate> ;
+                                                                                                        linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                                        linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/hm-crown-prosecution-service-inspectorate.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

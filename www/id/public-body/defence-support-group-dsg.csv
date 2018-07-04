@@ -1,0 +1,6 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/defence-support-group-dsg","Defence Support Group (DSG)",,"Human Resources","Ministry of Defence","http://reference.data.gov.uk/id/department/mod"
+"http://reference.data.gov.uk/id/public-body/defence-support-group-dsg","Defence Support Group (DSG)",,"Strategy","Ministry of Defence","http://reference.data.gov.uk/id/department/mod"
+"http://reference.data.gov.uk/id/public-body/defence-support-group-dsg","Defence Support Group (DSG)","Organization","Finance","Ministry of Defence","http://reference.data.gov.uk/id/department/mod"
+"http://reference.data.gov.uk/id/public-body/defence-support-group-dsg","Defence Support Group (DSG)","Organization","Operations","Ministry of Defence","http://reference.data.gov.uk/id/department/mod"
+"http://reference.data.gov.uk/id/public-body/defence-support-group-dsg","Defence Support Group (DSG)","Organization","Commercial","Ministry of Defence","http://reference.data.gov.uk/id/department/mod"

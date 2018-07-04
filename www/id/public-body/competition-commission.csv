@@ -1,0 +1,4 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/competition-commission","Competition Commission",,"Corporate Services & Secretariat","Department for Business Innovation and Skills","http://reference.data.gov.uk/id/department/bis"
+"http://reference.data.gov.uk/id/public-body/competition-commission","Competition Commission",,"Inquiry Teams","Department for Business Innovation and Skills","http://reference.data.gov.uk/id/department/bis"
+"http://reference.data.gov.uk/id/public-body/competition-commission","Competition Commission","Organization","Professional Groups","Department for Business Innovation and Skills","http://reference.data.gov.uk/id/department/bis"

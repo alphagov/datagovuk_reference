@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/nhs-litigation-authority> rdf:type msg0:Organization ,
+                                                                                central-government:PublicBody ;
+                                                                       rdfs:label "NHS Litigation Authority" ;
+                                                                       msg0:hasUnit <http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/technical-claims-unit> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/finance-it> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/family-health-services-appeals> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/nonclinical-claims> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/risk-management> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/clinical-claims> ;
+                                                                       central-government:parentDepartment <http://reference.data.gov.uk/id/department/dh> ;
+                                                                       foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/nhs-litigation-authority.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/technical-claims-unit> rdfs:label "Technical Claims Unit" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/finance-it> rdfs:label "Finance & IT" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/family-health-services-appeals> rdfs:label "Family Health Services Appeals" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/nonclinical-claims> rdfs:label "Non-clinical claims" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/risk-management> rdfs:label "Risk Management" . 
+
+<http://reference.data.gov.uk/id/public-body/nhs-litigation-authority/unit/clinical-claims> rdfs:label "Clinical claims" . 
+
+<http://reference.data.gov.uk/id/department/dh> rdfs:label "Department of Health" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/nhs-litigation-authority.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/nhs-litigation-authority> ;
+                                                                                       linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                       linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/nhs-litigation-authority.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>National Museums Liverpool</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/exhibitions"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/financial-accounting"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/museum-of-liverpool"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/marketing-and-communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/collections-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/international-slavery-museum"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/visitor-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/communities"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/development-and-communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/directors-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/education-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/merseyside-maritime-museum"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/art-galleries"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/financial-planning"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/urban-history"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/world-museum"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/education"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/estate-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/information-systems"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dcms"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-museums-liverpool.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/development">
+    <rdfs:label>Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/exhibitions">
+    <rdfs:label>Exhibitions</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/financial-accounting">
+    <rdfs:label>Financial Accounting</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/human-resources">
+    <rdfs:label>Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/museum-of-liverpool">
+    <rdfs:label>Museum of Liverpool</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/marketing-and-communications">
+    <rdfs:label>Marketing and Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/collections-management">
+    <rdfs:label>Collections Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/international-slavery-museum">
+    <rdfs:label>International Slavery Museum</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/visitor-services">
+    <rdfs:label>Visitor Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/communities">
+    <rdfs:label>Communities</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/development-and-communications">
+    <rdfs:label>Development and Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/directors-office">
+    <rdfs:label>Directors Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/education-development">
+    <rdfs:label>Education Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/merseyside-maritime-museum">
+    <rdfs:label>Merseyside Maritime Museum</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/art-galleries">
+    <rdfs:label>Art Galleries</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/financial-planning">
+    <rdfs:label>Financial Planning</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/urban-history">
+    <rdfs:label>Urban History</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/world-museum">
+    <rdfs:label>World Museum</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/education">
+    <rdfs:label>Education</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/estate-management">
+    <rdfs:label>Estate Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museums-liverpool/unit/information-systems">
+    <rdfs:label>Information Systems</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms">
+    <rdfs:label>Department for Culture, Media and Sport</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-museums-liverpool.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/national-museums-liverpool"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-museums-liverpool.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

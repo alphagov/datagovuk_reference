@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Serious Fraud Office</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/graphics"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/bribery-and-corruption-business-area"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/ist"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/proceeds-of-crime-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/chief-executives-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/directors-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/international-assistance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/facilities-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/digital-forensic-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/ehmu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/fraud-business-area"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/intelligence"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/law-clerks"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/procurement"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/chief-capability-officer"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/chief-investigating-officer"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/attorney-general"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/serious-fraud-office.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/human-resources">
+    <rdfs:label>Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/graphics">
+    <rdfs:label>Graphics</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/finance">
+    <rdfs:label>Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/bribery-and-corruption-business-area">
+    <rdfs:label>Bribery and Corruption Business Area</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/ist">
+    <rdfs:label>IST</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/proceeds-of-crime-unit">
+    <rdfs:label>Proceeds of Crime Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/chief-executives-office">
+    <rdfs:label>Chief Executives Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/directors-office">
+    <rdfs:label>Director's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/policy">
+    <rdfs:label>Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/international-assistance">
+    <rdfs:label>International Assistance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/facilities-management">
+    <rdfs:label>Facilities Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/digital-forensic-unit">
+    <rdfs:label>Digital Forensic Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/ehmu">
+    <rdfs:label>EHMU</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/fraud-business-area">
+    <rdfs:label>Fraud Business Area</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/intelligence">
+    <rdfs:label>Intelligence</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/law-clerks">
+    <rdfs:label>Law Clerks</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/procurement">
+    <rdfs:label>Procurement</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/chief-capability-officer">
+    <rdfs:label>Chief Capability Officer</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/serious-fraud-office/unit/chief-investigating-officer">
+    <rdfs:label>Chief Investigating Officer</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/attorney-general">
+    <rdfs:label>Attorney General's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/serious-fraud-office.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/serious-fraud-office"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/serious-fraud-office.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

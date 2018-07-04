@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/tenant-services-authority">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Tenant Services Authority</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/regulatory-framework-strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/corporate-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/assurance-financial-analysis"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/intelligence-analysis"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/investigation-enforcement"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/regulatory-engagement"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dclg"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/tenant-services-authority.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/regulatory-framework-strategy">
+    <rdfs:label>Regulatory Framework &amp; Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/corporate-services">
+    <rdfs:label>Corporate Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/assurance-financial-analysis">
+    <rdfs:label>Assurance &amp; Financial Analysis</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/intelligence-analysis">
+    <rdfs:label>Intelligence &amp; Analysis</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/investigation-enforcement">
+    <rdfs:label>Investigation &amp; Enforcement</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/tenant-services-authority/unit/regulatory-engagement">
+    <rdfs:label>Regulatory Engagement</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dclg">
+    <rdfs:label>Department for Communities and Local Government</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/tenant-services-authority.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/tenant-services-authority"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/tenant-services-authority.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

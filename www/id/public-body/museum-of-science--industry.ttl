@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/museum-of-science--industry> rdf:type msg0:Organization ,
+                                                                                   central-government:PublicBody ;
+                                                                          rdfs:label "Museum of Science & Industry" ;
+                                                                          msg0:hasUnit <http://reference.data.gov.uk/id/public-body/museum-of-science--industry/unit/directorate> ,
+                                                                                       <http://reference.data.gov.uk/id/public-body/museum-of-science--industry/unit/finance-management-services> ,
+                                                                                       <http://reference.data.gov.uk/id/public-body/museum-of-science--industry/unit/interpretation-learning> ,
+                                                                                       <http://reference.data.gov.uk/id/public-body/museum-of-science--industry/unit/marketing-business-development> ,
+                                                                                       <http://reference.data.gov.uk/id/public-body/museum-of-science--industry/unit/operational-support-management> ;
+                                                                          central-government:parentDepartment <http://reference.data.gov.uk/id/department/dcms> ;
+                                                                          foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/museum-of-science--industry.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/museum-of-science--industry/unit/directorate> rdfs:label "Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/museum-of-science--industry/unit/finance-management-services> rdfs:label "Finance & Management Services" . 
+
+<http://reference.data.gov.uk/id/public-body/museum-of-science--industry/unit/interpretation-learning> rdfs:label "Interpretation & Learning" . 
+
+<http://reference.data.gov.uk/id/public-body/museum-of-science--industry/unit/marketing-business-development> rdfs:label "Marketing & Business Development" . 
+
+<http://reference.data.gov.uk/id/public-body/museum-of-science--industry/unit/operational-support-management> rdfs:label "Operational & Support Management" . 
+
+<http://reference.data.gov.uk/id/department/dcms> rdfs:label "Department for Culture, Media and Sport" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/museum-of-science--industry.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/museum-of-science--industry> ;
+                                                                                          linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                          linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/museum-of-science--industry.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

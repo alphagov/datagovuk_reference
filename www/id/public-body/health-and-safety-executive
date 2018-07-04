@@ -1,0 +1,742 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Results</title>
+<link rel="shortcut icon" href="/images/datagovuk_favicon.png" type="image/x-icon">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.rdf" type="application/rdf+xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.ttl" type="text/turtle">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.json" type="application/json">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.xml" type="application/xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.html" type="text/html">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.csv" type="text/csv">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="/scripts/jquery.min.js"></script><script type="text/javascript" src="/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script><link rel="stylesheet" href="/css/html5reset-1.6.1.css" type="text/css">
+<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/smoothness/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/result.css" type="text/css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" type="text/css"></link><![endif]-->
+</head>
+<body><div id="page">
+<nav class="site"><section class="formats"><ul>
+<li class="first"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+<li class="last"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive.csv" type="text/csv" rel="alternate" title="view in csv format">csv</a></li>
+</ul></section></nav><header><h1><a href="/">Linked Data API</a></h1></header><nav class="topnav"><section class="moreinfo"><h1>Browse</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Links to further information.</p>
+</div>
+<ul>
+<li><a href="/doc/public-body/health-and-safety-executive/post">Public body SCS posts</a></li>
+<li><a href="/doc/public-body/health-and-safety-executive/unit">Public body units</a></li>
+<li><span class="current">Public body</span></li>
+</ul>
+<ul>
+<li><a href="/doc/ministerial-department">Ministerial departments</a></li>
+<li><a href="/doc/non-ministerial-department">Non-ministerial departments</a></li>
+<li><a href="/doc/department">All departments</a></li>
+<li><a href="/doc/public-body">All public bodies</a></li>
+</ul>
+<ul>
+<li><a href="/doc/minister">All ministers</a></li>
+<li><a href="/doc/seat">All seats</a></li>
+<li><a href="/doc/mp">All MPs</a></li>
+<li><a href="/doc/peer">All peers</a></li>
+</ul></section><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view"><h1>View</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined views, but starred properties are always present no matter what the view. You can star properties by clicking on the <img src="/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.</p>
+</div>
+<ul>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive?_view=description" title="switch to description view">description</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive?_view=all" title="switch to all view">all</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive?_view=minimal" title="switch to minimal view">minimal</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive?_view=public+body" title="switch to public body view">public body</a></li>
+</ul>
+<ul class="properties">
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive?_properties=label"><img src="/images/grey/16x16/Star.png" alt="star this property"> label</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive?_properties=type"><img src="/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive?_properties=unit.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> unit</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/health-and-safety-executive?_properties=parentDepartment.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> parent department</a></li>
+</ul></section></nav><div id="result"><div class="panel">
+<header><p id="openSearch">Show Search Form</p>
+<h1>Health and Safety Executive</h1>
+<p class="id"><a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive">http://reference.data.gov.uk/id/public-body/health-and-safety-executive</a></p></header><section id="search"><form action="http://reference.data.gov.uk/2011-09-30/doc/public-body">
+<table>
+<colgroup>
+<col width="25%">
+<col width="70%">
+</colgroup>
+<tr>
+<th class="label"><label for="label">label</label></th>
+<td class="input"><input name="label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="type">type</label></th>
+<td class="input"><input name="type" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="unit.label">unit</label></th>
+<td class="input"><input name="unit.label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="parentDepartment.label">parent department</label></th>
+<td class="input"><input name="parentDepartment.label" size="25"></td>
+</tr>
+</table>
+<p><button type="submit">Search</button></p>
+</form></section><section><table id="id1209259">
+<colgroup>
+<col width="25%">
+<col width="*">
+<col width="54">
+</colgroup>
+<tr class="type">
+<th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/def/central-government/PublicBody" title="view on this site">PublicBody</a> <a href="http://reference.data.gov.uk/def/central-government/PublicBody" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value"><a href="http://www.w3.org/ns/org#Organization">Organization</a></td>
+<td class="filter"></td>
+</tr>
+</table></td>
+</tr>
+<tr class="unit">
+<th class="label"><a href="http://www.w3.org/ns/org#hasUnit">unit</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/business-services-division-business-serv" title="view on this site">Business Services Division - Business Serv</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/business-services-division-business-serv" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Business%20Services%20Division%20-%20Business%20Serv"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/chemicals-reg-directorate-bio-pes-env" title="view on this site">Chemicals Reg Directorate - Bio Pes Env</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/chemicals-reg-directorate-bio-pes-env" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Chemicals%20Reg%20Directorate%20-%20Bio%20Pes%20Env"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/chemicals-reg-directorate-chem-shh" title="view on this site">Chemicals Reg Directorate - Chem S&amp;HH</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/chemicals-reg-directorate-chem-shh" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Chemicals%20Reg%20Directorate%20-%20Chem%20S&amp;HH"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/chemicals-reg-directorate-director" title="view on this site">Chemicals Reg Directorate - Director</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/chemicals-reg-directorate-director" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Chemicals%20Reg%20Directorate%20-%20Director"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/chemicals-reg-directorate-plan-res" title="view on this site">Chemicals Reg Directorate - Plan &amp; Res</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/chemicals-reg-directorate-plan-res" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Chemicals%20Reg%20Directorate%20-%20Plan%20&amp;%20Res"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/chemicals-reg-directorate-reg-policy" title="view on this site">Chemicals Reg Directorate - Reg Policy</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/chemicals-reg-directorate-reg-policy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Chemicals%20Reg%20Directorate%20-%20Reg%20Policy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/chief-executives-office-chief-execs-off" title="view on this site">Chief Executives Office - Chief Execs Off</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/chief-executives-office-chief-execs-off" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Chief%20Executives%20Office%20-%20Chief%20Execs%20Off"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/communications-directorate-comm-delivery-s" title="view on this site">Communications Directorate - Comm Delivery S</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/communications-directorate-comm-delivery-s" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Communications%20Directorate%20-%20Comm%20Delivery%20S"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/communications-directorate-director-of-cd" title="view on this site">Communications Directorate - Director of CD</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/communications-directorate-director-of-cd" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Communications%20Directorate%20-%20Director%20of%20CD"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/communications-directorate-external-comms" title="view on this site">Communications Directorate - External Comms</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/communications-directorate-external-comms" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Communications%20Directorate%20-%20External%20Comms"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/communications-directorate-internal-comms" title="view on this site">Communications Directorate - Internal Comms</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/communications-directorate-internal-comms" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Communications%20Directorate%20-%20Internal%20Comms"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-analytical-serv" title="view on this site">Corp Science, Eng &amp; Analysis - Analytical Serv</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-analytical-serv" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corp%20Science,%20Eng%20&amp;%20Analysis%20-%20Analytical%20Serv"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-corp-hss" title="view on this site">Corp Science, Eng &amp; Analysis - Corp HSS</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-corp-hss" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corp%20Science,%20Eng%20&amp;%20Analysis%20-%20Corp%20HSS"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-corp-su" title="view on this site">Corp Science, Eng &amp; Analysis - Corp SU</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-corp-su" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corp%20Science,%20Eng%20&amp;%20Analysis%20-%20Corp%20SU"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-head-of-csead" title="view on this site">Corp Science, Eng &amp; Analysis - Head of CSEAD</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-head-of-csead" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corp%20Science,%20Eng%20&amp;%20Analysis%20-%20Head%20of%20CSEAD"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-risk-com-pu" title="view on this site">Corp Science, Eng &amp; Analysis - Risk Com PU</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-risk-com-pu" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corp%20Science,%20Eng%20&amp;%20Analysis%20-%20Risk%20Com%20PU"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-science-strat" title="view on this site">Corp Science, Eng &amp; Analysis - Science Strat</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-science-strat" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corp%20Science,%20Eng%20&amp;%20Analysis%20-%20Science%20Strat"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-spec-su" title="view on this site">Corp Science, Eng &amp; Analysis - Spec SU</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-spec-su" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corp%20Science,%20Eng%20&amp;%20Analysis%20-%20Spec%20SU"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-specialist-grp" title="view on this site">Corp Science, Eng &amp; Analysis - Specialist Grp</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/corp-science-eng-analysis-specialist-grp" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Corp%20Science,%20Eng%20&amp;%20Analysis%20-%20Specialist%20Grp"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/cross-cutting-interventions-dir-sup-team" title="view on this site">Cross Cutting Interventions - Dir Sup Team</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/cross-cutting-interventions-dir-sup-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Cross%20Cutting%20Interventions%20-%20Dir%20Sup%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/cross-cutting-interventions-lnglat-hlth-rsk" title="view on this site">Cross Cutting Interventions - LngLat Hlth Rsk</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/cross-cutting-interventions-lnglat-hlth-rsk" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Cross%20Cutting%20Interventions%20-%20LngLat%20Hlth%20Rsk"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/cross-cutting-interventions-strtgc-intvntns" title="view on this site">Cross Cutting Interventions - Strtgc Intvntns</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/cross-cutting-interventions-strtgc-intvntns" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Cross%20Cutting%20Interventions%20-%20Strtgc%20Intvntns"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/cross-cutting-interventions-wrk-env-radgas" title="view on this site">Cross Cutting Interventions - Wrk Env Rad&amp;Gas</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/cross-cutting-interventions-wrk-env-radgas" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Cross%20Cutting%20Interventions%20-%20Wrk%20Env%20Rad&amp;Gas"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/deputy-chief-executive-deputy-ceo-ops" title="view on this site">Deputy Chief Executive - Deputy CEO Ops</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/deputy-chief-executive-deputy-ceo-ops" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Deputy%20Chief%20Executive%20-%20Deputy%20CEO%20Ops"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/deputy-chief-executive-prof-supp-team" title="view on this site">Deputy Chief Executive - Prof Supp Team</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/deputy-chief-executive-prof-supp-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Deputy%20Chief%20Executive%20-%20Prof%20Supp%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/deputy-chief-executive-strat-efft-team" title="view on this site">Deputy Chief Executive - Strat Efft Team</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/deputy-chief-executive-strat-efft-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Deputy%20Chief%20Executive%20-%20Strat%20Efft%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/deputy-chief-executive-strategy-team" title="view on this site">Deputy Chief Executive - Strategy Team</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/deputy-chief-executive-strategy-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Deputy%20Chief%20Executive%20-%20Strategy%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/field-operations-directorate-construction" title="view on this site">Field Operations Directorate - Construction</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/field-operations-directorate-construction" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Field%20Operations%20Directorate%20-%20Construction"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/field-operations-directorate-eastsouth-east" title="view on this site">Field Operations Directorate - East&amp;South East</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/field-operations-directorate-eastsouth-east" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Field%20Operations%20Directorate%20-%20East&amp;South%20East"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/field-operations-directorate-london" title="view on this site">Field Operations Directorate - London</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/field-operations-directorate-london" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Field%20Operations%20Directorate%20-%20London"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/field-operations-directorate-midlands" title="view on this site">Field Operations Directorate - Midlands</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/field-operations-directorate-midlands" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Field%20Operations%20Directorate%20-%20Midlands"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/field-operations-directorate-north-west-head" title="view on this site">Field Operations Directorate - North West Head</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/field-operations-directorate-north-west-head" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Field%20Operations%20Directorate%20-%20North%20West%20Head"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/field-operations-directorate-scotland" title="view on this site">Field Operations Directorate - Scotland</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/field-operations-directorate-scotland" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Field%20Operations%20Directorate%20-%20Scotland"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/field-operations-directorate-specialist-grp" title="view on this site">Field Operations Directorate - Specialist Grp</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/field-operations-directorate-specialist-grp" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Field%20Operations%20Directorate%20-%20Specialist%20Grp"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/field-operations-directorate-walessouth-wes" title="view on this site">Field Operations Directorate - Wales&amp;South Wes</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/field-operations-directorate-walessouth-wes" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Field%20Operations%20Directorate%20-%20Wales&amp;South%20Wes"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/field-operations-directorate-yorksnorth-eas" title="view on this site">Field Operations Directorate - Yorks&amp;North Eas</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/field-operations-directorate-yorksnorth-eas" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Field%20Operations%20Directorate%20-%20Yorks&amp;North%20Eas"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/hazardous-installations-direc-chemical-indust" title="view on this site">Hazardous Installations Direc - Chemical Indust</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/hazardous-installations-direc-chemical-indust" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Hazardous%20Installations%20Direc%20-%20Chemical%20Indust"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/hazardous-installations-direc-hid-director" title="view on this site">Hazardous Installations Direc - HID Director</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/hazardous-installations-direc-hid-director" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Hazardous%20Installations%20Direc%20-%20HID%20Director"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/hazardous-installations-direc-headquarters" title="view on this site">Hazardous Installations Direc - Headquarters</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/hazardous-installations-direc-headquarters" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Hazardous%20Installations%20Direc%20-%20Headquarters"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/hazardous-installations-direc-offshore-div" title="view on this site">Hazardous Installations Direc - Offshore Div</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/hazardous-installations-direc-offshore-div" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Hazardous%20Installations%20Direc%20-%20Offshore%20Div"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/hazardous-installations-direc-specialised-ind" title="view on this site">Hazardous Installations Direc - Specialised Ind</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/hazardous-installations-direc-specialised-ind" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Hazardous%20Installations%20Direc%20-%20Specialised%20Ind"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-analytical-sci" title="view on this site">Health &amp; Safety Laboratories - Analytical Sci</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-analytical-sci" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Analytical%20Sci"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-board" title="view on this site">Health &amp; Safety Laboratories - Board</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-board" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Board"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-commercial" title="view on this site">Health &amp; Safety Laboratories - Commercial</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-commercial" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Commercial"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-corp-inf-serv" title="view on this site">Health &amp; Safety Laboratories - Corp Inf &amp; Serv</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-corp-inf-serv" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Corp%20Inf%20&amp;%20Serv"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-enginrng-sfty" title="view on this site">Health &amp; Safety Laboratories - Enginrng Sfty</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-enginrng-sfty" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Enginrng%20Sfty"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-exp-notif-body" title="view on this site">Health &amp; Safety Laboratories - Exp Notif Body</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-exp-notif-body" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Exp%20Notif%20Body"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-explosion-sfty" title="view on this site">Health &amp; Safety Laboratories - Explosion Sfty</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-explosion-sfty" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Explosion%20Sfty"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-finance" title="view on this site">Health &amp; Safety Laboratories - Finance</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Finance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-fireproc-sfty" title="view on this site">Health &amp; Safety Laboratories - Fire&amp;Proc Sfty</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-fireproc-sfty" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Fire&amp;Proc%20Sfty"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-hr-unit" title="view on this site">Health &amp; Safety Laboratories - HR Unit</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-hr-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20HR%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-head-of-science" title="view on this site">Health &amp; Safety Laboratories - Head of Science</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-head-of-science" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Head%20of%20Science"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-human-sciences" title="view on this site">Health &amp; Safety Laboratories - Human Sciences</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-human-sciences" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Human%20Sciences"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-mathematic-sci" title="view on this site">Health &amp; Safety Laboratories - Mathematic Sci</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-mathematic-sci" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Mathematic%20Sci"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-occup-hygiene" title="view on this site">Health &amp; Safety Laboratories - Occup Hygiene</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-occup-hygiene" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Occup%20Hygiene"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-personal-safety" title="view on this site">Health &amp; Safety Laboratories - Personal Safety</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-personal-safety" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Personal%20Safety"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-proj-delivery" title="view on this site">Health &amp; Safety Laboratories - Proj Delivery</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-proj-delivery" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Proj%20Delivery"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-train-conf" title="view on this site">Health &amp; Safety Laboratories - Train &amp; Conf</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-train-conf" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Train%20&amp;%20Conf"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-vis-present-ser" title="view on this site">Health &amp; Safety Laboratories - Vis Present Ser</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-vis-present-ser" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Vis%20Present%20Ser"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-workplace-hlth" title="view on this site">Health &amp; Safety Laboratories - Workplace Hlth</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/health-safety-laboratories-workplace-hlth" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Health%20&amp;%20Safety%20Laboratories%20-%20Workplace%20Hlth"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/human-resources-directorate-dir-and-support" title="view on this site">Human Resources Directorate - Dir and Support</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/human-resources-directorate-dir-and-support" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Human%20Resources%20Directorate%20-%20Dir%20and%20Support"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/human-resources-directorate-hr-bus-partners" title="view on this site">Human Resources Directorate - HR Bus Partners</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/human-resources-directorate-hr-bus-partners" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Human%20Resources%20Directorate%20-%20HR%20Bus%20Partners"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/human-resources-directorate-hr-service-cntr" title="view on this site">Human Resources Directorate - HR Service Cntr</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/human-resources-directorate-hr-service-cntr" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Human%20Resources%20Directorate%20-%20HR%20Service%20Cntr"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/human-resources-directorate-hr-strat-pol" title="view on this site">Human Resources Directorate - HR Strat &amp; Pol</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/human-resources-directorate-hr-strat-pol" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Human%20Resources%20Directorate%20-%20HR%20Strat%20&amp;%20Pol"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/human-resources-directorate-learn-and-dev" title="view on this site">Human Resources Directorate - Learn and Dev</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/human-resources-directorate-learn-and-dev" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Human%20Resources%20Directorate%20-%20Learn%20and%20Dev"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/human-resources-directorate-trade-unions" title="view on this site">Human Resources Directorate - Trade Unions</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/human-resources-directorate-trade-unions" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Human%20Resources%20Directorate%20-%20Trade%20Unions"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/legal-advisors-office-legal-advisors" title="view on this site">Legal Advisors Office - Legal Advisors</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/legal-advisors-office-legal-advisors" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Legal%20Advisors%20Office%20-%20Legal%20Advisors"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/local-authority-unit-local-authority" title="view on this site">Local Authority Unit - Local Authority</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/local-authority-unit-local-authority" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Local%20Authority%20Unit%20-%20Local%20Authority"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-director-of-onr" title="view on this site">Office for Nuclear Regulation - Director of ONR</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-director-of-onr" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Office%20for%20Nuclear%20Regulation%20-%20Director%20of%20ONR"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-1" title="view on this site">Office for Nuclear Regulation - ONR 1</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-1" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Office%20for%20Nuclear%20Regulation%20-%20ONR%201"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-2" title="view on this site">Office for Nuclear Regulation - ONR 2</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-2" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Office%20for%20Nuclear%20Regulation%20-%20ONR%202"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-3" title="view on this site">Office for Nuclear Regulation - ONR 3</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-3" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Office%20for%20Nuclear%20Regulation%20-%20ONR%203"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-4" title="view on this site">Office for Nuclear Regulation - ONR 4</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-4" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Office%20for%20Nuclear%20Regulation%20-%20ONR%204"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-5" title="view on this site">Office for Nuclear Regulation - ONR 5</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-5" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Office%20for%20Nuclear%20Regulation%20-%20ONR%205"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-6" title="view on this site">Office for Nuclear Regulation - ONR 6</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-6" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Office%20for%20Nuclear%20Regulation%20-%20ONR%206"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-7" title="view on this site">Office for Nuclear Regulation - ONR 7</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/office-for-nuclear-regulation-onr-7" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Office%20for%20Nuclear%20Regulation%20-%20ONR%207"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/operational-strategy-div-agr-food-sect" title="view on this site">Operational Strategy Div - Agr &amp; Food Sect</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/operational-strategy-div-agr-food-sect" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Operational%20Strategy%20Div%20-%20Agr%20&amp;%20Food%20Sect"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/operational-strategy-div-health-public" title="view on this site">Operational Strategy Div - Health &amp; Public</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/operational-strategy-div-health-public" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Operational%20Strategy%20Div%20-%20Health%20&amp;%20Public"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/operational-strategy-div-manufacturing" title="view on this site">Operational Strategy Div - Manufacturing</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/operational-strategy-div-manufacturing" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Operational%20Strategy%20Div%20-%20Manufacturing"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/operational-strategy-div-serv-transsaf" title="view on this site">Operational Strategy Div - Serv Trans&amp;Saf</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/operational-strategy-div-serv-transsaf" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Operational%20Strategy%20Div%20-%20Serv%20Trans&amp;Saf"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/parliamentary-secretariat-unit-parliam-sec-u" title="view on this site">Parliamentary &amp; Secretariat Unit - Parliam &amp; Sec U</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/parliamentary-secretariat-unit-parliam-sec-u" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Parliamentary%20&amp;%20Secretariat%20Unit%20-%20Parliam%20&amp;%20Sec%20U"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/planningfin-procurement-dir-dir-and-support" title="view on this site">Planning,Fin &amp; Procurement Dir - Dir and Support</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/planningfin-procurement-dir-dir-and-support" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Planning,Fin%20&amp;%20Procurement%20Dir%20-%20Dir%20and%20Support"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/planningfin-procurement-dir-finance-unit" title="view on this site">Planning,Fin &amp; Procurement Dir - Finance Unit</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/planningfin-procurement-dir-finance-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Planning,Fin%20&amp;%20Procurement%20Dir%20-%20Finance%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/planningfin-procurement-dir-internal-audit" title="view on this site">Planning,Fin &amp; Procurement Dir - Internal Audit</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/planningfin-procurement-dir-internal-audit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Planning,Fin%20&amp;%20Procurement%20Dir%20-%20Internal%20Audit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/planningfin-procurement-dir-plan-perform" title="view on this site">Planning,Fin &amp; Procurement Dir - Plan &amp; Perform</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/planningfin-procurement-dir-plan-perform" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Planning,Fin%20&amp;%20Procurement%20Dir%20-%20Plan%20&amp;%20Perform"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/health-and-safety-executive/unit/planningfin-procurement-dir-procurement-unt" title="view on this site">Planning,Fin &amp; Procurement Dir - Procurement Unt</a> <a href="http://reference.data.gov.uk/id/public-body/health-and-safety-executive/unit/planningfin-procurement-dir-procurement-unt" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Planning,Fin%20&amp;%20Procurement%20Dir%20-%20Procurement%20Unt"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr class="parentDepartment last">
+<th class="label"><a href="http://reference.data.gov.uk/def/central-government/parentDepartment">parent department</a></th>
+<td class="value">
+<a href="/id/department/dwp" title="view on this site">Department for Work and Pensions</a> <a href="http://reference.data.gov.uk/id/department/dwp" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?parentDepartment.label=Department%20for%20Work%20and%20Pensions"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></section>
+</div></div>
+<nav class="bottomnav"></nav><footer><div class="provenance"><div class=" query col1">
+<h2>Viewer</h2>
+<p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the <a href="endpoint/url/@href">endpoint's page</a>.</p>
+<form action="http://10.254.6.244/organograms-2011-09-30/sparql" method="post">
+<textarea name="query" wrap="off" data-skip-lines="5">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX org: &lt;http://www.w3.org/ns/org#&gt;
+PREFIX gov: &lt;http://reference.data.gov.uk/def/central-government/&gt;
+CONSTRUCT { 
+    # constructing properties of http://reference.data.gov.uk/id/public-body/health-and-safety-executive 
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; rdf:type ?var_1_0 .
+    ?var_1_0 rdfs:label ?var_1_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; rdfs:label ?var_2_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; skos:prefLabel ?var_3_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; skos:altLabel ?var_4_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; rdfs:comment ?var_5_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; org:hasUnit ?var_6_0 .
+    ?var_6_0 rdfs:label ?var_6_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; gov:parentDepartment ?var_7_0 .
+    ?var_7_0 rdfs:label ?var_7_1_0 .
+} WHERE { 
+  # identifying properties of http://reference.data.gov.uk/id/public-body/health-and-safety-executive 
+  {
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; rdf:type ?var_1_0 .
+    OPTIONAL { ?var_1_0 rdfs:label ?var_1_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; rdfs:label ?var_2_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; skos:prefLabel ?var_3_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; skos:altLabel ?var_4_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; rdfs:comment ?var_5_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; org:hasUnit ?var_6_0 .
+    OPTIONAL { ?var_6_0 rdfs:label ?var_6_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/health-and-safety-executive&gt; gov:parentDepartment ?var_7_0 .
+    OPTIONAL { ?var_7_0 rdfs:label ?var_7_1_0 . }
+  } 
+}
+</textarea><p><button type="submit">Run Query</button></p>
+</form>
+</div></div>
+<p>Powered by <a href="http://code.google.com/p/puelia-php/">Puelia v0.1</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p></footer>
+</div></body>
+</html>

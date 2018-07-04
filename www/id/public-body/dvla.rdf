@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/dvla">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>DVLA</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/dvla/unit/operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/dvla/unit/information-systems"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/dvla/unit/procurement"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/dvla/unit/corporate-affairs"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/dvla/unit/human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/dvla/unit/eservices-enforcement"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/dvla/unit/chief-executive"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/dvla/unit/estates-corporate-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/dvla/unit/finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/dvla/unit/audit"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dft"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/dvla.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/dvla/unit/operations">
+    <rdfs:label>Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/dvla/unit/information-systems">
+    <rdfs:label>Information Systems</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/dvla/unit/procurement">
+    <rdfs:label>Procurement</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/dvla/unit/corporate-affairs">
+    <rdfs:label>Corporate Affairs</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/dvla/unit/human-resources">
+    <rdfs:label>Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/dvla/unit/eservices-enforcement">
+    <rdfs:label>e-services &amp; Enforcement</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/dvla/unit/chief-executive">
+    <rdfs:label>Chief Executive</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/dvla/unit/estates-corporate-services">
+    <rdfs:label>Estates &amp; Corporate Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/dvla/unit/finance">
+    <rdfs:label>Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/dvla/unit/audit">
+    <rdfs:label>Audit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft">
+    <rdfs:label>Department for Transport</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/dvla.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/dvla"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/dvla.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

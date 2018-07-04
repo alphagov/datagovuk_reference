@@ -1,0 +1,738 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Results</title>
+<link rel="shortcut icon" href="/images/datagovuk_favicon.png" type="image/x-icon">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.rdf" type="application/rdf+xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.ttl" type="text/turtle">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.json" type="application/json">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.xml" type="application/xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.html" type="text/html">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.csv" type="text/csv">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="/scripts/jquery.min.js"></script><script type="text/javascript" src="/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script><link rel="stylesheet" href="/css/html5reset-1.6.1.css" type="text/css">
+<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/smoothness/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/result.css" type="text/css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" type="text/css"></link><![endif]-->
+</head>
+<body><div id="page">
+<nav class="site"><section class="formats"><ul>
+<li class="first"><a href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+<li class="last"><a href="http://reference.data.gov.uk/2011-09-30/doc/department/ho.csv" type="text/csv" rel="alternate" title="view in csv format">csv</a></li>
+</ul></section></nav><header><h1><a href="/">Linked Data API</a></h1></header><nav class="topnav"><section class="moreinfo"><h1>Browse</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Links to further information.</p>
+</div>
+<ul>
+<li><a href="/doc/department/ho/minister">Department ministers</a></li>
+<li><a href="/doc/department/ho/post">Department SCS posts</a></li>
+<li><a href="/doc/department/ho/unit">Department units</a></li>
+<li><span class="current">Department</span></li>
+</ul>
+<ul>
+<li><a href="/doc/ministerial-department">Ministerial departments</a></li>
+<li><a href="/doc/non-ministerial-department">Non-ministerial departments</a></li>
+<li><a href="/doc/department">All departments</a></li>
+<li><a href="/doc/public-body">All public bodies</a></li>
+</ul>
+<ul>
+<li><a href="/doc/minister">All ministers</a></li>
+<li><a href="/doc/seat">All seats</a></li>
+<li><a href="/doc/mp">All MPs</a></li>
+<li><a href="/doc/peer">All peers</a></li>
+</ul></section><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view"><h1>View</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined views, but starred properties are always present no matter what the view. You can star properties by clicking on the <img src="/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.</p>
+</div>
+<ul>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/ho?_view=description" title="switch to description view">description</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/ho?_view=all" title="switch to all view">all</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/ho?_view=minimal" title="switch to minimal view">minimal</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/ho?_view=department+including+posts" title="switch to department including posts view">department including posts</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/ho?_view=department" title="switch to department view">department</a></li>
+</ul>
+<ul class="properties">
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/ho?_properties=label"><img src="/images/grey/16x16/Star.png" alt="star this property"> label</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/ho?_properties=type"><img src="/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/ho?_properties=unit.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> unit</a></li>
+</ul></section></nav><div id="result"><div class="panel">
+<header><p id="openSearch">Show Search Form</p>
+<h1>Home Office</h1>
+<p class="id"><a href="http://reference.data.gov.uk/id/department/ho">http://reference.data.gov.uk/id/department/ho</a></p></header><section id="search"><form action="http://reference.data.gov.uk/2011-09-30/doc/department">
+<table>
+<colgroup>
+<col width="25%">
+<col width="70%">
+</colgroup>
+<tr>
+<th class="label"><label for="label">label</label></th>
+<td class="input"><input name="label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="type">type</label></th>
+<td class="input"><input name="type" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="unit.label">unit</label></th>
+<td class="input"><input name="unit.label" size="25"></td>
+</tr>
+</table>
+<p><button type="submit">Search</button></p>
+</form></section><section><table id="id1475733">
+<colgroup>
+<col width="25%">
+<col width="*">
+<col width="54">
+</colgroup>
+<tr class="type">
+<th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/def/central-government/Department" title="view on this site">Department</a> <a href="http://reference.data.gov.uk/def/central-government/Department" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/def/central-government/PublicBody" title="view on this site">PublicBody</a> <a href="http://reference.data.gov.uk/def/central-government/PublicBody" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value"><a href="http://www.w3.org/ns/org#Organization">Organization</a></td>
+<td class="filter"></td>
+</tr>
+</table></td>
+</tr>
+<tr class="unit last">
+<th class="label"><a href="http://www.w3.org/ns/org#hasUnit">unit</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/accounting-and-finance" title="view on this site">Accounting and Finance</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/accounting-and-finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Accounting%20and%20Finance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/adelphi-services" title="view on this site">Adelphi Services</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/adelphi-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Adelphi%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/animals-in-science-regulation-unit" title="view on this site">Animals in Science Regulation Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/animals-in-science-regulation-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Animals%20in%20Science%20Regulation%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/asylum-criminality-and-enforcement" title="view on this site">Asylum, Criminality and Enforcement</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/asylum-criminality-and-enforcement" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Asylum,%20Criminality%20and%20Enforcement"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/audit-and-assurance" title="view on this site">Audit and Assurance</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/audit-and-assurance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Audit%20and%20Assurance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/border-security-unit" title="view on this site">Border Security Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/border-security-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Border%20Security%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/business-support-team" title="view on this site">Business Support Team</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/business-support-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Business%20Support%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/central-analysis-unit" title="view on this site">Central Analysis Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/central-analysis-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Central%20Analysis%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/centre-for-applied-science-technology" title="view on this site">Centre for Applied Science &amp; Technology</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/centre-for-applied-science-technology" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Centre%20for%20Applied%20Science%20&amp;%20Technology"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/civil-liberties-and-public-protection" title="view on this site">Civil Liberties and Public Protection</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/civil-liberties-and-public-protection" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Civil%20Liberties%20and%20Public%20Protection"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/commercial" title="view on this site">Commercial</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/commercial" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Commercial"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/commercial-policing" title="view on this site">Commercial - Policing</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/commercial-policing" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Commercial%20-%20Policing"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/communication-directorate" title="view on this site">Communication Directorate</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/communication-directorate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Communication%20Directorate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/community-safety" title="view on this site">Community Safety</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/community-safety" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Community%20Safety"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/core-skills-assessment-team-csat" title="view on this site">Core Skills Assessment Team (CSAT)</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/core-skills-assessment-team-csat" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Core%20Skills%20Assessment%20Team%20(CSAT)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/corporate-support-unit" title="view on this site">Corporate Support Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/corporate-support-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Corporate%20Support%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/counter-terrorism-social-science" title="view on this site">Counter Terrorism Social Science</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/counter-terrorism-social-science" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Counter%20Terrorism%20Social%20Science"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/crime-policing-analysis" title="view on this site">Crime &amp; Policing Analysis</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/crime-policing-analysis" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Crime%20&amp;%20Policing%20Analysis"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/crime-directors-office" title="view on this site">Crime Director's Office</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/crime-directors-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Crime%20Director's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/crime-and-asb-reduction-unit" title="view on this site">Crime and ASB Reduction Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/crime-and-asb-reduction-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Crime%20and%20ASB%20Reduction%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/crime-and-policing-group-director-generals-office" title="view on this site">Crime and Policing Group Director General's Office</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/crime-and-policing-group-director-generals-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Crime%20and%20Policing%20Group%20Director%20General's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/departmental-security" title="view on this site">Departmental Security</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/departmental-security" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Departmental%20Security"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/digital-events-and-staff-communications" title="view on this site">Digital, Events and Staff Communications</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/digital-events-and-staff-communications" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Digital,%20Events%20and%20Staff%20Communications"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/director-generals-office" title="view on this site">Director General's Office</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/director-generals-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Director%20General's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/drugs-and-alcohol-unit" title="view on this site">Drugs and Alcohol Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/drugs-and-alcohol-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Drugs%20and%20Alcohol%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/drugsalcohol-and-community-directors-office" title="view on this site">Drugs,Alcohol and Community Director's Office</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/drugsalcohol-and-community-directors-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Drugs,Alcohol%20and%20Community%20Director's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/finance-and-strategy-directors-office" title="view on this site">Finance and Strategy Director's Office</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/finance-and-strategy-directors-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Finance%20and%20Strategy%20Director's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/forensic-science-regulation" title="view on this site">Forensic Science Regulation</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/forensic-science-regulation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Forensic%20Science%20Regulation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/forensic-science-service-team" title="view on this site">Forensic Science Service Team</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/forensic-science-service-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Forensic%20Science%20Service%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/governance" title="view on this site">Governance</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/governance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Governance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/government-equalities-office-central-unit" title="view on this site">Government Equalities Office - Central Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-central-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Government%20Equalities%20Office%20-%20Central%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/government-equalities-office-delivery" title="view on this site">Government Equalities Office - Delivery</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-delivery" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Government%20Equalities%20Office%20-%20Delivery"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/government-equalities-office-director-general-and-support" title="view on this site">Government Equalities Office - Director General and Support</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-director-general-and-support" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Government%20Equalities%20Office%20-%20Director%20General%20and%20Support"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/government-equalities-office-equality-law-better-regulation" title="view on this site">Government Equalities Office - Equality Law &amp; Better Regulation</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-equality-law-better-regulation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Government%20Equalities%20Office%20-%20Equality%20Law%20&amp;%20Better%20Regulation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/government-equalities-office-equality-and-human-rights-commission-ehrc-reform" title="view on this site">Government Equalities Office - Equality and Human Rights Commission (EHRC) Reform</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-equality-and-human-rights-commission-ehrc-reform" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Government%20Equalities%20Office%20-%20Equality%20and%20Human%20Rights%20Commission%20(EHRC)%20Reform"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/government-equalities-office-gender-equality-and-lgbt" title="view on this site">Government Equalities Office - Gender Equality and LGB&amp;T</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-gender-equality-and-lgbt" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Government%20Equalities%20Office%20-%20Gender%20Equality%20and%20LGB&amp;T"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/government-equalities-office-policy-and-transformation" title="view on this site">Government Equalities Office - Policy and Transformation</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-policy-and-transformation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Government%20Equalities%20Office%20-%20Policy%20and%20Transformation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/government-equalities-office-strategic-analysis-and-international" title="view on this site">Government Equalities Office - Strategic Analysis and International</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/government-equalities-office-strategic-analysis-and-international" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Government%20Equalities%20Office%20-%20Strategic%20Analysis%20and%20International"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/group-equality-and-diversity" title="view on this site">Group Equality and Diversity</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/group-equality-and-diversity" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Group%20Equality%20and%20Diversity"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/group-finance-unit" title="view on this site">Group Finance Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/group-finance-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Group%20Finance%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/hos-shared-support-service" title="view on this site">HOS Shared Support Service</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/hos-shared-support-service" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=HOS%20Shared%20Support%20Service"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/hr-operations" title="view on this site">HR Operations</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/hr-operations" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=HR%20Operations"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/health-safety-wellbeing" title="view on this site">Health Safety &amp; Wellbeing</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/health-safety-wellbeing" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Health%20Safety%20&amp;%20Wellbeing"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/hillsborough-disclosure-unit" title="view on this site">Hillsborough Disclosure Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/hillsborough-disclosure-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Hillsborough%20Disclosure%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/home-office-general-property" title="view on this site">Home Office General Property</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/home-office-general-property" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Home%20Office%20General%20Property"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/home-office-it" title="view on this site">Home Office IT</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/home-office-it" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Home%20Office%20IT"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/home-office-statistics" title="view on this site">Home Office Statistics</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/home-office-statistics" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Home%20Office%20Statistics"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/ips-commercial-home-office-category-management-commercial-policy-assurance-srm" title="view on this site">IPS Commercial; Home Office Category Management, Commercial Policy, Assurance &amp; SRM</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/ips-commercial-home-office-category-management-commercial-policy-assurance-srm" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=IPS%20Commercial;%20Home%20Office%20Category%20Management,%20Commercial%20Policy,%20Assurance%20&amp;%20SRM"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/information-management-service" title="view on this site">Information Management Service</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/information-management-service" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Information%20Management%20Service"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/international-directorate" title="view on this site">International Directorate</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/international-directorate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=International%20Directorate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/judicial-cooperation-unit" title="view on this site">Judicial Co-operation Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/judicial-cooperation-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Judicial%20Co-operation%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/leadership-and-change" title="view on this site">Leadership and Change</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/leadership-and-change" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Leadership%20and%20Change"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/legal-adviser" title="view on this site">Legal Adviser</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/legal-adviser" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Legal%20Adviser"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/legal-strategy-team" title="view on this site">Legal Strategy Team</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/legal-strategy-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Legal%20Strategy%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/mi-team" title="view on this site">MI Team</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/mi-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=MI%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/major-projects-commercial" title="view on this site">Major Projects Commercial</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/major-projects-commercial" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Major%20Projects%20Commercial"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/migration-border-analysis" title="view on this site">Migration &amp; Border Analysis</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/migration-border-analysis" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Migration%20&amp;%20Border%20Analysis"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/migration-advisory-committee" title="view on this site">Migration Advisory Committee</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/migration-advisory-committee" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Migration%20Advisory%20Committee"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/migration-policy" title="view on this site">Migration Policy</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/migration-policy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Migration%20Policy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/ministerial-strategy-unit" title="view on this site">Ministerial Strategy Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/ministerial-strategy-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Ministerial%20Strategy%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/national-crime-agency-directors-office" title="view on this site">National Crime Agency Director's Office</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/national-crime-agency-directors-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=National%20Crime%20Agency%20Director's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/national-crime-agency-programme" title="view on this site">National Crime Agency Programme</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/national-crime-agency-programme" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=National%20Crime%20Agency%20Programme"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/news" title="view on this site">News</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/news" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=News"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/office-of-the-chief-information-officer-enterprise-architecture" title="view on this site">Office of the Chief Information Officer - Enterprise Architecture</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/office-of-the-chief-information-officer-enterprise-architecture" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Office%20of%20the%20Chief%20Information%20Officer%20-%20Enterprise%20Architecture"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/office-of-the-chief-information-officer-information" title="view on this site">Office of the Chief Information Officer - Information</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/office-of-the-chief-information-officer-information" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Office%20of%20the%20Chief%20Information%20Officer%20-%20Information"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/office-of-the-chief-information-officer-portfolio-and-programmes" title="view on this site">Office of the Chief Information Officer Portfolio and Programmes</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/office-of-the-chief-information-officer-portfolio-and-programmes" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Office%20of%20the%20Chief%20Information%20Officer%20Portfolio%20and%20Programmes"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/office-of-the-head-of-ibpd" title="view on this site">Office of the Head of IBPD</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/office-of-the-head-of-ibpd" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Office%20of%20the%20Head%20of%20IBPD"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/organised-and-financial-crime" title="view on this site">Organised and Financial Crime</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/organised-and-financial-crime" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Organised%20and%20Financial%20Crime"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/police-productivity" title="view on this site">Police Productivity</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/police-productivity" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Police%20Productivity"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/police-reform" title="view on this site">Police Reform</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/police-reform" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Police%20Reform"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/police-transparency-unit" title="view on this site">Police Transparency Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/police-transparency-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Police%20Transparency%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/policing-directors-office" title="view on this site">Policing Director's Office</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/policing-directors-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Policing%20Director's%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/policy-reward-and-employee-relations" title="view on this site">Policy, Reward and Employee Relations</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/policy-reward-and-employee-relations" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Policy,%20Reward%20and%20Employee%20Relations"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/private-office" title="view on this site">Private Office</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/private-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Private%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/public-order" title="view on this site">Public Order</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/public-order" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Public%20Order"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/reducing-reoffending-unit" title="view on this site">Reducing Reoffending Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/reducing-reoffending-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Reducing%20Reoffending%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/resources-and-planning" title="view on this site">Resources and Planning</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/resources-and-planning" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Resources%20and%20Planning"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/safeguarding-public-protection-unit" title="view on this site">Safeguarding &amp; Public Protection Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/safeguarding-public-protection-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Safeguarding%20&amp;%20Public%20Protection%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/science-secretariat" title="view on this site">Science Secretariat</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/science-secretariat" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Science%20Secretariat"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/strategic-centre-for-organised-crime" title="view on this site">Strategic Centre for Organised Crime</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/strategic-centre-for-organised-crime" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Strategic%20Centre%20for%20Organised%20Crime"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/strategic-communications-marketing-and-insight" title="view on this site">Strategic Communications, Marketing and Insight</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/strategic-communications-marketing-and-insight" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Strategic%20Communications,%20Marketing%20and%20Insight"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/strategy-analysis-and-performance" title="view on this site">Strategy Analysis and Performance</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/strategy-analysis-and-performance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Strategy%20Analysis%20and%20Performance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/strategy-skills-and-planning-unit" title="view on this site">Strategy, Skills and Planning Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/strategy-skills-and-planning-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Strategy,%20Skills%20and%20Planning%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/uk-football-policy-unit" title="view on this site">UK Football Policy Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/uk-football-policy-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=UK%20Football%20Policy%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/value-for-money-and-productivity" title="view on this site">Value for Money and Productivity</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/value-for-money-and-productivity" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Value%20for%20Money%20and%20Productivity"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/violent-and-youth-crime-prevention-unit" title="view on this site">Violent and Youth Crime Prevention Unit</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/violent-and-youth-crime-prevention-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Violent%20and%20Youth%20Crime%20Prevention%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/ho/unit/workforce" title="view on this site">Workforce</a> <a href="http://reference.data.gov.uk/id/department/ho/unit/workforce" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Workforce"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></td>
+</tr>
+</table></section>
+</div></div>
+<nav class="bottomnav"></nav><footer><div class="provenance"><div class=" query col1">
+<h2>Viewer</h2>
+<p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the <a href="endpoint/url/@href">endpoint's page</a>.</p>
+<form action="http://10.254.6.244/organograms-2011-09-30/sparql" method="post">
+<textarea name="query" wrap="off" data-skip-lines="4">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX org: &lt;http://www.w3.org/ns/org#&gt;
+CONSTRUCT { 
+    # constructing properties of http://reference.data.gov.uk/id/department/ho 
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; rdf:type ?var_1_0 .
+    ?var_1_0 rdfs:label ?var_1_1_0 .
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; rdfs:label ?var_2_0 .
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; skos:prefLabel ?var_3_0 .
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; skos:altLabel ?var_4_0 .
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; rdfs:comment ?var_5_0 .
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; org:hasUnit ?var_6_0 .
+    ?var_6_0 rdfs:label ?var_6_1_0 .
+} WHERE { 
+  # identifying properties of http://reference.data.gov.uk/id/department/ho 
+  {
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; rdf:type ?var_1_0 .
+    OPTIONAL { ?var_1_0 rdfs:label ?var_1_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; rdfs:label ?var_2_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; skos:prefLabel ?var_3_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; skos:altLabel ?var_4_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; rdfs:comment ?var_5_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/ho&gt; org:hasUnit ?var_6_0 .
+    OPTIONAL { ?var_6_0 rdfs:label ?var_6_1_0 . }
+  } 
+}
+</textarea><p><button type="submit">Run Query</button></p>
+</form>
+</div></div>
+<p>Powered by <a href="http://code.google.com/p/puelia-php/">Puelia v0.1</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p></footer>
+</div></body>
+</html>

@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/intellectual-property-office> rdf:type msg0:Organization ,
+                                                                                    central-government:PublicBody ;
+                                                                           rdfs:label "Intellectual Property Office" ;
+                                                                           msg0:hasUnit <http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/trade-marks-directorate> ,
+                                                                                        <http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/copyright-and-ip-enforcement-directorate> ,
+                                                                                        <http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/finance-directorate> ,
+                                                                                        <http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/international-policy-directorate> ,
+                                                                                        <http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/innovation-directorate> ,
+                                                                                        <http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/patents-directorate> ,
+                                                                                        <http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/business-support-directorate> ;
+                                                                           central-government:parentDepartment <http://reference.data.gov.uk/id/department/bis> ;
+                                                                           foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/intellectual-property-office.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/trade-marks-directorate> rdfs:label "Trade Marks Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/copyright-and-ip-enforcement-directorate> rdfs:label "Copyright and IP Enforcement Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/finance-directorate> rdfs:label "Finance Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/international-policy-directorate> rdfs:label "International Policy Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/innovation-directorate> rdfs:label "Innovation Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/patents-directorate> rdfs:label "Patents Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/intellectual-property-office/unit/business-support-directorate> rdfs:label "Business Support Directorate" . 
+
+<http://reference.data.gov.uk/id/department/bis> rdfs:label "Department for Business Innovation and Skills" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/intellectual-property-office.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/intellectual-property-office> ;
+                                                                                           linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                           linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/intellectual-property-office.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>National Museum of Science and Industry</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/learning"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/nmsi-enterprises"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/directors-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/science-museum"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/national-railway-museum"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/national-media-museum"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/hr-ict"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dcms"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-museum-of-science-and-industry.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/learning">
+    <rdfs:label>Learning</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/nmsi-enterprises">
+    <rdfs:label>NMSI Enterprises</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/directors-office">
+    <rdfs:label>Director's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/science-museum">
+    <rdfs:label>Science Museum</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/national-railway-museum">
+    <rdfs:label>National Railway Museum</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/national-media-museum">
+    <rdfs:label>National Media Museum</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/finance">
+    <rdfs:label>Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/development">
+    <rdfs:label>Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry/unit/hr-ict">
+    <rdfs:label>HR &amp; ICT</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms">
+    <rdfs:label>Department for Culture, Media and Sport</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-museum-of-science-and-industry.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/national-museum-of-science-and-industry"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-museum-of-science-and-industry.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/Department"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Department for Transport</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/transport-direct-travel-information"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/international-strategy-environment"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/transport-security-strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/air-accident-investigation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/group-finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/group-hr"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/motoring-agencies"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/dangerous-goods-smart-ticketing-high-speed-rail"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/marine-accident-investigation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/rail-accident-investigation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/commercial-technical-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/group-internal-audit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/greener-transport-international"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/maritime"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/private-office-parliamentary"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/business-transformation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/shared-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/corporate-governance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/roads"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/analysis-science"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/major-projects-london"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/corporate-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/local"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/rail"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/london-olympics"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/rail-road-projects"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/general-counsel"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/domestic-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/aviation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dft/unit/rail-commercial-contracts"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/dft.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/transport-direct-travel-information">
+    <rdfs:label>Transport Direct &amp; Travel Information</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/international-strategy-environment">
+    <rdfs:label>International, Strategy &amp; Environment</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/transport-security-strategy">
+    <rdfs:label>Transport Security Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/air-accident-investigation">
+    <rdfs:label>Air Accident Investigation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/group-finance">
+    <rdfs:label>Group Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/group-hr">
+    <rdfs:label>Group HR</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/motoring-agencies">
+    <rdfs:label>Motoring Agencies</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/dangerous-goods-smart-ticketing-high-speed-rail">
+    <rdfs:label>Dangerous Goods, Smart ticketing &amp; High Speed Rail</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/marine-accident-investigation">
+    <rdfs:label>Marine Accident Investigation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/rail-accident-investigation">
+    <rdfs:label>Rail Accident Investigation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/commercial-technical-services">
+    <rdfs:label>Commercial &amp; Technical Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/group-internal-audit">
+    <rdfs:label>Group Internal Audit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/greener-transport-international">
+    <rdfs:label>Greener Transport &amp; International</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/maritime">
+    <rdfs:label>Maritime</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/private-office-parliamentary">
+    <rdfs:label>Private Office &amp; Parliamentary</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/business-transformation">
+    <rdfs:label>Business Transformation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/shared-services">
+    <rdfs:label>Shared Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/corporate-governance">
+    <rdfs:label>Corporate Governance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/strategy">
+    <rdfs:label>Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/roads">
+    <rdfs:label>Roads</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/analysis-science">
+    <rdfs:label>Analysis &amp; Science</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/major-projects-london">
+    <rdfs:label>Major Projects &amp; London</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/corporate-group">
+    <rdfs:label>Corporate Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/local">
+    <rdfs:label>Local</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/rail">
+    <rdfs:label>Rail</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/london-olympics">
+    <rdfs:label>London &amp; Olympics</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/rail-road-projects">
+    <rdfs:label>Rail &amp; Road Projects</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/general-counsel">
+    <rdfs:label>General Counsel</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/domestic-group">
+    <rdfs:label>Domestic Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/aviation">
+    <rdfs:label>Aviation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dft/unit/rail-commercial-contracts">
+    <rdfs:label>Rail Commercial Contracts</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/department/dft.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/department/dft"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#department"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/dft.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

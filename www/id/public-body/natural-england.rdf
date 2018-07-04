@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Natural England</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/performance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/regulation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/standards"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/landscape-and-biodiversity"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/estates-facilities"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/organisation-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/external-affairs"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/systems-knowledge-information"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/board-and-executive-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/land-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/procurement"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/legal-support"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/integration"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/land-use"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/evidence-and-advice"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/marine"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/customer-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england/unit/access-and-engagement"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/defra"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/natural-england.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/performance">
+    <rdfs:label>Performance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/regulation">
+    <rdfs:label>Regulation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/standards">
+    <rdfs:label>Standards</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/landscape-and-biodiversity">
+    <rdfs:label>Landscape and Biodiversity</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/estates-facilities">
+    <rdfs:label>Estates &amp; Facilities</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/organisation-development">
+    <rdfs:label>Organisation Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/external-affairs">
+    <rdfs:label>External Affairs</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/systems-knowledge-information">
+    <rdfs:label>Systems Knowledge &amp; Information</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/finance">
+    <rdfs:label>Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/board-and-executive-services">
+    <rdfs:label>Board and Executive Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/land-management">
+    <rdfs:label>Land Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/procurement">
+    <rdfs:label>Procurement</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/legal-support">
+    <rdfs:label>Legal Support</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/integration">
+    <rdfs:label>Integration</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/land-use">
+    <rdfs:label>Land Use</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/evidence-and-advice">
+    <rdfs:label>Evidence and Advice</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/marine">
+    <rdfs:label>Marine</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/customer-services">
+    <rdfs:label>Customer Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/natural-england/unit/access-and-engagement">
+    <rdfs:label>Access and Engagement</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/defra">
+    <rdfs:label>Department for Environment, Food and Rural Affairs</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/natural-england.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/natural-england"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/natural-england.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

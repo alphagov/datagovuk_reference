@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/health-protection-agency> rdf:type msg0:Organization ,
+                                                                                central-government:PublicBody ;
+                                                                       rdfs:label "Health Protection Agency" ;
+                                                                       msg0:hasUnit <http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/communications-division> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/finance-and-resources-division> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/human-resources-division> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/microbiology-services> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/national-institute-for-biological-standards-and-control> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/research-and-development-division> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/health-protection-services> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/public-health-strategy-division> ,
+                                                                                    <http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/centre-for-radiation-chemicals-and-environmental-hazards-crcehpa-radiation-chemical-and-environment> ;
+                                                                       central-government:parentDepartment <http://reference.data.gov.uk/id/department/dh> ;
+                                                                       foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/health-protection-agency.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/communications-division> rdfs:label "Communications Division" . 
+
+<http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/finance-and-resources-division> rdfs:label "Finance and Resources Division" . 
+
+<http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/human-resources-division> rdfs:label "Human Resources Division" . 
+
+<http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/microbiology-services> rdfs:label "Microbiology Services" . 
+
+<http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/national-institute-for-biological-standards-and-control> rdfs:label "National Institute for Biological Standards and Control" . 
+
+<http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/research-and-development-division> rdfs:label "Research and Development Division" . 
+
+<http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/health-protection-services> rdfs:label "Health Protection Services" . 
+
+<http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/public-health-strategy-division> rdfs:label "Public Health Strategy Division" . 
+
+<http://reference.data.gov.uk/id/public-body/health-protection-agency/unit/centre-for-radiation-chemicals-and-environmental-hazards-crcehpa-radiation-chemical-and-environment> rdfs:label "Centre for Radiation Chemicals and Environmental Hazards (CRCE/HPA Radiation Chemical and Environment)" . 
+
+<http://reference.data.gov.uk/id/department/dh> rdfs:label "Department of Health" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/health-protection-agency.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/health-protection-agency> ;
+                                                                                       linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                       linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/health-protection-agency.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

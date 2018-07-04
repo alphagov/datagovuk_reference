@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/mod> rdf:type msg0:Organization ,
+                                                          ns0:Department ,
+                                                          ns0:PublicBody ;
+                                                 rdfs:label "Ministry of Defence" ;
+                                                 msg0:hasUnit <http://reference.data.gov.uk/id/department/mod/unit/defence-infrastructure-organisation> ,
+                                                              <http://reference.data.gov.uk/id/department/mod/unit/defence-science-and-technology-laboratory> ,
+                                                              <http://reference.data.gov.uk/id/department/mod/unit/navy-command-tlb> ,
+                                                              <http://reference.data.gov.uk/id/department/mod/unit/central-top-level-budget> ,
+                                                              <http://reference.data.gov.uk/id/department/mod/unit/defence-equipment-and-support> ,
+                                                              <http://reference.data.gov.uk/id/department/mod/unit/permanent-joint-headquarters> ,
+                                                              <http://reference.data.gov.uk/id/department/mod/unit/royal-air-force-air-command> ,
+                                                              <http://reference.data.gov.uk/id/department/mod/unit/land-forces> ;
+                                                 foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/mod.ttl> . 
+
+<http://reference.data.gov.uk/id/department/mod/unit/defence-infrastructure-organisation> rdfs:label "Defence Infrastructure Organisation" . 
+
+<http://reference.data.gov.uk/id/department/mod/unit/defence-science-and-technology-laboratory> rdfs:label "Defence Science and Technology Laboratory" . 
+
+<http://reference.data.gov.uk/id/department/mod/unit/navy-command-tlb> rdfs:label "Navy Command TLB" . 
+
+<http://reference.data.gov.uk/id/department/mod/unit/central-top-level-budget> rdfs:label "Central Top Level Budget" . 
+
+<http://reference.data.gov.uk/id/department/mod/unit/defence-equipment-and-support> rdfs:label "Defence Equipment and Support" . 
+
+<http://reference.data.gov.uk/id/department/mod/unit/permanent-joint-headquarters> rdfs:label "Permanent Joint Headquarters" . 
+
+<http://reference.data.gov.uk/id/department/mod/unit/royal-air-force-air-command> rdfs:label "Royal Air Force Air Command" . 
+
+<http://reference.data.gov.uk/id/department/mod/unit/land-forces> rdfs:label "Land Forces" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/mod.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/mod> ;
+                                                                 linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                 linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/mod.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

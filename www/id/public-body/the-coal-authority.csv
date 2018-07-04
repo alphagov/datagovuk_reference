@@ -1,0 +1,5 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/the-coal-authority","The Coal Authority",,"Environment","Department of Energy and Climate Change","http://reference.data.gov.uk/id/department/decc"
+"http://reference.data.gov.uk/id/public-body/the-coal-authority","The Coal Authority",,"Executive","Department of Energy and Climate Change","http://reference.data.gov.uk/id/department/decc"
+"http://reference.data.gov.uk/id/public-body/the-coal-authority","The Coal Authority","Organization","Operations","Department of Energy and Climate Change","http://reference.data.gov.uk/id/department/decc"
+"http://reference.data.gov.uk/id/public-body/the-coal-authority","The Coal Authority","Organization","Corporate Services","Department of Energy and Climate Change","http://reference.data.gov.uk/id/department/decc"

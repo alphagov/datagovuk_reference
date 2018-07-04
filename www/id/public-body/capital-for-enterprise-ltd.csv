@@ -1,0 +1,5 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd","Capital for Enterprise Ltd",,"Corporate Services","Department for Business Innovation and Skills","http://reference.data.gov.uk/id/department/bis"
+"http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd","Capital for Enterprise Ltd",,"Equity","Department for Business Innovation and Skills","http://reference.data.gov.uk/id/department/bis"
+"http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd","Capital for Enterprise Ltd","Organization","Chief Executive","Department for Business Innovation and Skills","http://reference.data.gov.uk/id/department/bis"
+"http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd","Capital for Enterprise Ltd","Organization","Debt","Department for Business Innovation and Skills","http://reference.data.gov.uk/id/department/bis"

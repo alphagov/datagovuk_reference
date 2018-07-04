@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd> rdf:type msg0:Organization ,
+                                                                                  central-government:PublicBody ;
+                                                                         rdfs:label "Capital for Enterprise Ltd" ;
+                                                                         msg0:hasUnit <http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd/unit/corporate-services> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd/unit/equity> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd/unit/chief-executive> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd/unit/debt> ;
+                                                                         central-government:parentDepartment <http://reference.data.gov.uk/id/department/bis> ;
+                                                                         foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/capital-for-enterprise-ltd.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd/unit/corporate-services> rdfs:label "Corporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd/unit/equity> rdfs:label "Equity" . 
+
+<http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd/unit/chief-executive> rdfs:label "Chief Executive" . 
+
+<http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd/unit/debt> rdfs:label "Debt" . 
+
+<http://reference.data.gov.uk/id/department/bis> rdfs:label "Department for Business Innovation and Skills" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/capital-for-enterprise-ltd.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/capital-for-enterprise-ltd> ;
+                                                                                         linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                         linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/capital-for-enterprise-ltd.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

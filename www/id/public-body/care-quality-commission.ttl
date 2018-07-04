@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/care-quality-commission> rdf:type msg0:Organization ,
+                                                                               central-government:PublicBody ;
+                                                                      rdfs:label "Care Quality Commission" ;
+                                                                      msg0:hasUnit <http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/finance-and-corporate-services> ,
+                                                                                   <http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/human-resources> ,
+                                                                                   <http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/strategic-marketing-and-communications> ,
+                                                                                   <http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/intelligence> ,
+                                                                                   <http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/governance-and-legal-services> ,
+                                                                                   <http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/regulatory-development> ,
+                                                                                   <http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/operations> ;
+                                                                      central-government:parentDepartment <http://reference.data.gov.uk/id/department/dh> ;
+                                                                      foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/care-quality-commission.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/finance-and-corporate-services> rdfs:label "Finance and Corporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/human-resources> rdfs:label "Human Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/strategic-marketing-and-communications> rdfs:label "Strategic Marketing and Communications" . 
+
+<http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/intelligence> rdfs:label "Intelligence" . 
+
+<http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/governance-and-legal-services> rdfs:label "Governance and Legal Services" . 
+
+<http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/regulatory-development> rdfs:label "Regulatory Development" . 
+
+<http://reference.data.gov.uk/id/public-body/care-quality-commission/unit/operations> rdfs:label "Operations" . 
+
+<http://reference.data.gov.uk/id/department/dh> rdfs:label "Department of Health" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/care-quality-commission.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/care-quality-commission> ;
+                                                                                      linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                      linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/care-quality-commission.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/british-museum> rdf:type msg0:Organization ,
+                                                                      central-government:PublicBody ;
+                                                             rdfs:label "British Museum" ;
+                                                             msg0:hasUnit <http://reference.data.gov.uk/id/public-body/british-museum/unit/strategic-planning-and-projects> ,
+                                                                          <http://reference.data.gov.uk/id/public-body/british-museum/unit/public-engagement> ,
+                                                                          <http://reference.data.gov.uk/id/public-body/british-museum/unit/income-generation-and-administration> ,
+                                                                          <http://reference.data.gov.uk/id/public-body/british-museum/unit/collections> ,
+                                                                          <http://reference.data.gov.uk/id/public-body/british-museum/unit/visitor-and-building-services> ;
+                                                             central-government:parentDepartment <http://reference.data.gov.uk/id/department/dcms> ;
+                                                             foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/british-museum.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/british-museum/unit/strategic-planning-and-projects> rdfs:label "Strategic Planning and Projects" . 
+
+<http://reference.data.gov.uk/id/public-body/british-museum/unit/public-engagement> rdfs:label "Public Engagement" . 
+
+<http://reference.data.gov.uk/id/public-body/british-museum/unit/income-generation-and-administration> rdfs:label "Income Generation and Administration" . 
+
+<http://reference.data.gov.uk/id/public-body/british-museum/unit/collections> rdfs:label "Collections" . 
+
+<http://reference.data.gov.uk/id/public-body/british-museum/unit/visitor-and-building-services> rdfs:label "Visitor and Building Services" . 
+
+<http://reference.data.gov.uk/id/department/dcms> rdfs:label "Department for Culture, Media and Sport" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/british-museum.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/british-museum> ;
+                                                                             linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                             linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/british-museum.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

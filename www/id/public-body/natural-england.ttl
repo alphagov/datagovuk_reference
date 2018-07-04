@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/natural-england> rdf:type msg0:Organization ,
+                                                                       central-government:PublicBody ;
+                                                              rdfs:label "Natural England" ;
+                                                              msg0:hasUnit <http://reference.data.gov.uk/id/public-body/natural-england/unit/performance> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/regulation> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/standards> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/landscape-and-biodiversity> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/estates-facilities> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/organisation-development> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/external-affairs> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/systems-knowledge-information> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/finance> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/board-and-executive-services> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/land-management> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/procurement> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/legal-support> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/integration> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/land-use> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/evidence-and-advice> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/marine> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/customer-services> ,
+                                                                           <http://reference.data.gov.uk/id/public-body/natural-england/unit/access-and-engagement> ;
+                                                              central-government:parentDepartment <http://reference.data.gov.uk/id/department/defra> ;
+                                                              foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/natural-england.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/performance> rdfs:label "Performance" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/regulation> rdfs:label "Regulation" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/standards> rdfs:label "Standards" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/landscape-and-biodiversity> rdfs:label "Landscape and Biodiversity" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/estates-facilities> rdfs:label "Estates & Facilities" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/organisation-development> rdfs:label "Organisation Development" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/external-affairs> rdfs:label "External Affairs" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/systems-knowledge-information> rdfs:label "Systems Knowledge & Information" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/finance> rdfs:label "Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/board-and-executive-services> rdfs:label "Board and Executive Services" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/land-management> rdfs:label "Land Management" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/procurement> rdfs:label "Procurement" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/legal-support> rdfs:label "Legal Support" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/integration> rdfs:label "Integration" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/land-use> rdfs:label "Land Use" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/evidence-and-advice> rdfs:label "Evidence and Advice" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/marine> rdfs:label "Marine" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/customer-services> rdfs:label "Customer Services" . 
+
+<http://reference.data.gov.uk/id/public-body/natural-england/unit/access-and-engagement> rdfs:label "Access and Engagement" . 
+
+<http://reference.data.gov.uk/id/department/defra> rdfs:label "Department for Environment, Food and Rural Affairs" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/natural-england.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/natural-england> ;
+                                                                              linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                              linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/natural-england.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

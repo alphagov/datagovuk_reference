@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/mod">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/Department"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Ministry of Defence</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/mod/unit/defence-infrastructure-organisation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/mod/unit/defence-science-and-technology-laboratory"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/mod/unit/navy-command-tlb"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/mod/unit/central-top-level-budget"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/mod/unit/defence-equipment-and-support"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/mod/unit/permanent-joint-headquarters"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/mod/unit/royal-air-force-air-command"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/mod/unit/land-forces"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/mod.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/mod/unit/defence-infrastructure-organisation">
+    <rdfs:label>Defence Infrastructure Organisation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/mod/unit/defence-science-and-technology-laboratory">
+    <rdfs:label>Defence Science and Technology Laboratory</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/mod/unit/navy-command-tlb">
+    <rdfs:label>Navy Command TLB</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/mod/unit/central-top-level-budget">
+    <rdfs:label>Central Top Level Budget</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/mod/unit/defence-equipment-and-support">
+    <rdfs:label>Defence Equipment and Support</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/mod/unit/permanent-joint-headquarters">
+    <rdfs:label>Permanent Joint Headquarters</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/mod/unit/royal-air-force-air-command">
+    <rdfs:label>Royal Air Force Air Command</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/mod/unit/land-forces">
+    <rdfs:label>Land Forces</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/department/mod.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/department/mod"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#department"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/mod.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

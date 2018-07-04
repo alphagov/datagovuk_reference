@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/defra> rdf:type msg0:Organization ,
+                                                            ns0:Department ,
+                                                            ns0:PublicBody ;
+                                                   rdfs:label "Department for Environment, Food and Rural Affairs" ;
+                                                   msg0:hasUnit <http://reference.data.gov.uk/id/department/defra/unit/commercial-estates> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/communications> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/information-services> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/strategic-evidence> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/marine-programme-natural-environment> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/strategic-human-resources> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/water-floods-environmental-risk-regulation> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/cap-reform-eu-budget-strategy> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/environment-rural-director-generals-office> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/gecs-group-senior-management> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/secretariat> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/shared-services> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/climate-waste-and-atmosphere> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/farming-for-the-future> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/food-chain> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/veterinary-science-team> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/wildlife-landscape-and-rural> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/change-programme> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/climate-change-exotic-diseases-agency-relations> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/finance-and-performance> ,
+                                                                <http://reference.data.gov.uk/id/department/defra/unit/strategy-and-sustainability> ;
+                                                   foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/defra.ttl> . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/commercial-estates> rdfs:label "Commercial & Estates" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/communications> rdfs:label "Communications" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/information-services> rdfs:label "Information Services" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/strategic-evidence> rdfs:label "Strategic Evidence" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/marine-programme-natural-environment> rdfs:label "Marine Programme & Natural Environment" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/strategic-human-resources> rdfs:label "Strategic Human Resources" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/water-floods-environmental-risk-regulation> rdfs:label "Water, Floods, Environmental Risk & Regulation" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/cap-reform-eu-budget-strategy> rdfs:label "CAP Reform & EU Budget Strategy" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/environment-rural-director-generals-office> rdfs:label "Environment & Rural Director General's Office" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/gecs-group-senior-management> rdfs:label "GECS Group Senior Management" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/secretariat> rdfs:label "Secretariat" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/shared-services> rdfs:label "Shared Services" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/climate-waste-and-atmosphere> rdfs:label "Climate, Waste and Atmosphere" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/farming-for-the-future> rdfs:label "Farming for the Future" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/food-chain> rdfs:label "Food Chain" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/veterinary-science-team> rdfs:label "Veterinary Science Team" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/wildlife-landscape-and-rural> rdfs:label "Wildlife, Landscape and Rural" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/change-programme> rdfs:label "Change Programme" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/climate-change-exotic-diseases-agency-relations> rdfs:label "Climate Change, Exotic Diseases & Agency Relations" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/finance-and-performance> rdfs:label "Finance and Performance" . 
+
+<http://reference.data.gov.uk/id/department/defra/unit/strategy-and-sustainability> rdfs:label "Strategy and Sustainability" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/defra.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/defra> ;
+                                                                   linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                   linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/defra.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

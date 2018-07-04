@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-gallery">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>The National Gallery</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-gallery/unit/conservation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-gallery/unit/public-affairs-and-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-gallery/unit/collections"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-gallery/unit/directors-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-gallery/unit/education-information-and-access"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-gallery/unit/operations-and-administration"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-gallery/unit/science"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dcms"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-gallery.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-gallery/unit/conservation">
+    <rdfs:label>Conservation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-gallery/unit/public-affairs-and-development">
+    <rdfs:label>Public Affairs and Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-gallery/unit/collections">
+    <rdfs:label>Collections</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-gallery/unit/directors-office">
+    <rdfs:label>Director's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-gallery/unit/education-information-and-access">
+    <rdfs:label>Education, Information and Access</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-gallery/unit/operations-and-administration">
+    <rdfs:label>Operations and Administration</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-gallery/unit/science">
+    <rdfs:label>Science</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms">
+    <rdfs:label>Department for Culture, Media and Sport</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-gallery.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/national-gallery"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-gallery.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

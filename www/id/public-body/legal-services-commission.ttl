@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission> rdf:type msg0:Organization ,
+                                                                                 central-government:PublicBody ;
+                                                                        rdfs:label "Legal Services Commission" ;
+                                                                        msg0:hasUnit <http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/case-management> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/chief-executive> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/integrated-delivery-change-programme> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/assurance-performance-management> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/legal-service-development> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/legal-aid-commissioning-contract-management> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/human-resources-organisational-design> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/contract-management> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/high-cost-cases> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/financial-controller> ,
+                                                                                     <http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/information-systems-department> ;
+                                                                        central-government:parentDepartment <http://reference.data.gov.uk/id/department/justice> ;
+                                                                        foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/legal-services-commission.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/case-management> rdfs:label "Case Management" . 
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/chief-executive> rdfs:label "Chief Executive" . 
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/integrated-delivery-change-programme> rdfs:label "Integrated Delivery & Change Programme" . 
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/assurance-performance-management> rdfs:label "Assurance & Performance Management" . 
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/legal-service-development> rdfs:label "Legal & Service Development" . 
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/legal-aid-commissioning-contract-management> rdfs:label "Legal Aid Commissioning & Contract Management" . 
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/human-resources-organisational-design> rdfs:label "Human Resources & Organisational Design" . 
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/contract-management> rdfs:label "Contract Management" . 
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/high-cost-cases> rdfs:label "High Cost Cases" . 
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/financial-controller> rdfs:label "Financial Controller" . 
+
+<http://reference.data.gov.uk/id/public-body/legal-services-commission/unit/information-systems-department> rdfs:label "Information Systems Department" . 
+
+<http://reference.data.gov.uk/id/department/justice> rdfs:label "Ministry of Justice" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/legal-services-commission.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/legal-services-commission> ;
+                                                                                        linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                        linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/legal-services-commission.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

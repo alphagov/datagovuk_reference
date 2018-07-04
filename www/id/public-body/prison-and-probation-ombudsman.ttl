@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/prison-and-probation-ombudsman> rdf:type msg0:Organization ,
+                                                                                      central-government:PublicBody ;
+                                                                             rdfs:label "Prison and Probation Ombudsman" ;
+                                                                             msg0:hasUnit <http://reference.data.gov.uk/id/public-body/prison-and-probation-ombudsman/unit/prison-and-probation-ombudsman> ;
+                                                                             central-government:parentDepartment <http://reference.data.gov.uk/id/department/justice> ;
+                                                                             foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/prison-and-probation-ombudsman.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/prison-and-probation-ombudsman/unit/prison-and-probation-ombudsman> rdfs:label "Prison and Probation Ombudsman" . 
+
+<http://reference.data.gov.uk/id/department/justice> rdfs:label "Ministry of Justice" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/prison-and-probation-ombudsman.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/prison-and-probation-ombudsman> ;
+                                                                                             linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                             linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/prison-and-probation-ombudsman.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

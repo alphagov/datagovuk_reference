@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>United Kingdom Hydrographic Office</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/chief-operating-officer"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/office-of-chief-executive"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/commercial-finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/head-of-products-services-and-strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/national-hydrographer"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/chief-information-officer"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/corporate-services"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/mod"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/united-kingdom-hydrographic-office.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/chief-operating-officer">
+    <rdfs:label>Chief Operating Officer</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/office-of-chief-executive">
+    <rdfs:label>Office of Chief Executive</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/commercial-finance">
+    <rdfs:label>Commercial &amp; Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/head-of-products-services-and-strategy">
+    <rdfs:label>Head of Products, Services and Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/national-hydrographer">
+    <rdfs:label>National Hydrographer</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/chief-information-officer">
+    <rdfs:label>Chief Information Officer</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office/unit/corporate-services">
+    <rdfs:label>Corporate Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/mod">
+    <rdfs:label>Ministry of Defence</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/united-kingdom-hydrographic-office.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/united-kingdom-hydrographic-office"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/united-kingdom-hydrographic-office.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

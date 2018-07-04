@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/wallace-collection> rdf:type msg0:Organization ,
+                                                                          central-government:PublicBody ;
+                                                                 rdfs:label "Wallace Collection" ;
+                                                                 msg0:hasUnit <http://reference.data.gov.uk/id/public-body/wallace-collection/unit/collections-department> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/wallace-collection/unit/development-marketing-department> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/wallace-collection/unit/finance-operations-department> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/wallace-collection/unit/project-team> ,
+                                                                              <http://reference.data.gov.uk/id/public-body/wallace-collection/unit/directors-office> ;
+                                                                 central-government:parentDepartment <http://reference.data.gov.uk/id/department/dcms> ;
+                                                                 foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/wallace-collection.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/wallace-collection/unit/collections-department> rdfs:label "Collections Department" . 
+
+<http://reference.data.gov.uk/id/public-body/wallace-collection/unit/development-marketing-department> rdfs:label "Development & Marketing Department" . 
+
+<http://reference.data.gov.uk/id/public-body/wallace-collection/unit/finance-operations-department> rdfs:label "Finance & Operations Department" . 
+
+<http://reference.data.gov.uk/id/public-body/wallace-collection/unit/project-team> rdfs:label "Project Team" . 
+
+<http://reference.data.gov.uk/id/public-body/wallace-collection/unit/directors-office> rdfs:label "Director's Office" . 
+
+<http://reference.data.gov.uk/id/department/dcms> rdfs:label "Department for Culture, Media and Sport" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/wallace-collection.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/wallace-collection> ;
+                                                                                 linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                 linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/wallace-collection.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

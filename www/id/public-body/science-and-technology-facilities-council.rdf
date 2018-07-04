@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Science and Technology Facilities Council</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/isis-operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/science-programme-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/technology"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/business-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/corporate-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/accelerator-science-and-technology"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/particle-physics"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/campus-strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/nuclear-physics"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/ral-space"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/corporate-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/finance-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/ceocoo-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/computational-science-and-engineering"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/corporate-affairs"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/escience"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/isis"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/joint-astronomy-centre"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/central-laser-facility"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/innovationssil"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/bis"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/science-and-technology-facilities-council.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/isis-operations">
+    <rdfs:label>ISIS Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/science-programme-office">
+    <rdfs:label>Science Programme Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/technology">
+    <rdfs:label>Technology</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/communications">
+    <rdfs:label>Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/business-development">
+    <rdfs:label>Business Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/corporate-development">
+    <rdfs:label>Corporate Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/accelerator-science-and-technology">
+    <rdfs:label>Accelerator Science and Technology</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/particle-physics">
+    <rdfs:label>Particle Physics</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/campus-strategy">
+    <rdfs:label>Campus Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/nuclear-physics">
+    <rdfs:label>Nuclear Physics</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/ral-space">
+    <rdfs:label>RAL Space</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/corporate-services">
+    <rdfs:label>Corporate Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/finance-directorate">
+    <rdfs:label>Finance Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/ceocoo-office">
+    <rdfs:label>CEO/COO Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/computational-science-and-engineering">
+    <rdfs:label>Computational Science and Engineering</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/corporate-affairs">
+    <rdfs:label>Corporate Affairs</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/escience">
+    <rdfs:label>eScience</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/isis">
+    <rdfs:label>ISIS</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/joint-astronomy-centre">
+    <rdfs:label>Joint Astronomy Centre</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/central-laser-facility">
+    <rdfs:label>Central Laser Facility</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council/unit/innovationssil">
+    <rdfs:label>Innovations/SIL</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/bis">
+    <rdfs:label>Department for Business Innovation and Skills</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/science-and-technology-facilities-council.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/science-and-technology-facilities-council"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/science-and-technology-facilities-council.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

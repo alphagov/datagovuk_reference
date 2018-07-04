@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum> rdf:type msg0:Organization ,
+                                                                              central-government:PublicBody ;
+                                                                     rdfs:label "Sir John Soane's Museum" ;
+                                                                     msg0:hasUnit <http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/conservation> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/education> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/library-services> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/finance> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/trading> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/directorate> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/exhibitions> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/development> ,
+                                                                                  <http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/visitor-services> ;
+                                                                     central-government:parentDepartment <http://reference.data.gov.uk/id/department/dcms> ;
+                                                                     foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/sir-john-soanes-museum.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/conservation> rdfs:label "Conservation" . 
+
+<http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/education> rdfs:label "Education" . 
+
+<http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/library-services> rdfs:label "Library Services" . 
+
+<http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/finance> rdfs:label "Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/trading> rdfs:label "Trading" . 
+
+<http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/directorate> rdfs:label "Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/exhibitions> rdfs:label "Exhibitions" . 
+
+<http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/development> rdfs:label "Development" . 
+
+<http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum/unit/visitor-services> rdfs:label "Visitor Services" . 
+
+<http://reference.data.gov.uk/id/department/dcms> rdfs:label "Department for Culture, Media and Sport" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/sir-john-soanes-museum.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/sir-john-soanes-museum> ;
+                                                                                     linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                     linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/sir-john-soanes-museum.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

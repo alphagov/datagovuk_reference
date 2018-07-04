@@ -1,0 +1,139 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle> rdf:type msg0:Organization ,
+                                                                                                          central-government:PublicBody ;
+                                                                                                 rdfs:label "National Institute for Health and Clinical Excellence" ;
+                                                                                                 msg0:hasUnit <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/clinical-guidelines> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/diagnostics-assessment-programme> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/commissioned-content> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/nice-international> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-and-public-involvement-unit> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/it> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/accreditation> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/operations> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-access-scheme-liaison-unit> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/centre-for-public-health-excellence> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/quality-systems> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/corporate-office> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/impact-evaluation> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-release> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/search-sources> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/scientific-advice> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/topic-selection> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/costing-commissioning> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/medical-technologies> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/field-team> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/information-services> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/egap-and-pathways> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/finance> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/human-resources> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/user-research> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/design> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/short-clinical-guidelines> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/implementation-support-team> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/national-prescribing-centre> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/editorial-and-publishing> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/fellows-programme> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-transition> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/marketing-comms> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/evidence-resources> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/facilities> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/engagement-management> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/research-development> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/communications> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/technology-appraisals> ,
+                                                                                                              <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/interventional-procedures> ;
+                                                                                                 central-government:parentDepartment <http://reference.data.gov.uk/id/department/dh> ;
+                                                                                                 foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/clinical-guidelines> rdfs:label "Clinical Guidelines" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/diagnostics-assessment-programme> rdfs:label "Diagnostics Assessment Programme" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/commissioned-content> rdfs:label "Commissioned Content" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/nice-international> rdfs:label "NICE International" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-and-public-involvement-unit> rdfs:label "Patient and Public Involvement Unit" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/it> rdfs:label "IT" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/accreditation> rdfs:label "Accreditation" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/operations> rdfs:label "Operations" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-access-scheme-liaison-unit> rdfs:label "Patient Access Scheme Liaison Unit" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/centre-for-public-health-excellence> rdfs:label "Centre for Public Health Excellence" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/quality-systems> rdfs:label "Quality Systems" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/corporate-office> rdfs:label "Corporate Office" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/impact-evaluation> rdfs:label "Impact & Evaluation" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-release> rdfs:label "Development & Release" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/search-sources> rdfs:label "Search & Sources" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/scientific-advice> rdfs:label "Scientific Advice" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/topic-selection> rdfs:label "Topic Selection" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/costing-commissioning> rdfs:label "Costing & Commissioning" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/medical-technologies> rdfs:label "Medical Technologies" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/field-team> rdfs:label "Field Team" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/information-services> rdfs:label "Information Services" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/egap-and-pathways> rdfs:label "EGAP and Pathways" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/finance> rdfs:label "Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/human-resources> rdfs:label "Human Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/user-research> rdfs:label "User Research" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/design> rdfs:label "Design" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/short-clinical-guidelines> rdfs:label "Short Clinical Guidelines" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/implementation-support-team> rdfs:label "Implementation Support Team" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/national-prescribing-centre> rdfs:label "National Prescribing Centre" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/editorial-and-publishing> rdfs:label "Editorial and Publishing" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/fellows-programme> rdfs:label "Fellows Programme" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-transition> rdfs:label "Development & Transition" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/marketing-comms> rdfs:label "Marketing & Comms" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/evidence-resources> rdfs:label "Evidence Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/facilities> rdfs:label "Facilities" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/engagement-management> rdfs:label "Engagement & Management" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/research-development> rdfs:label "Research & Development" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/communications> rdfs:label "Communications" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/technology-appraisals> rdfs:label "Technology Appraisals" . 
+
+<http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/interventional-procedures> rdfs:label "Interventional Procedures" . 
+
+<http://reference.data.gov.uk/id/department/dh> rdfs:label "Department of Health" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle> ;
+                                                                                                                 linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                                                 linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

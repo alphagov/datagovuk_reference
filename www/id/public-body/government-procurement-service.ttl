@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/government-procurement-service> rdf:type msg0:Organization ,
+                                                                                      central-government:PublicBody ;
+                                                                             rdfs:label "Government Procurement Service" ;
+                                                                             msg0:hasUnit <http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/executive-hr> ,
+                                                                                          <http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/sourcing-category-management> ,
+                                                                                          <http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/corporate-services> ,
+                                                                                          <http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/marketing-communications> ,
+                                                                                          <http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/business-services-procurement> ,
+                                                                                          <http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/customer-services> ,
+                                                                                          <http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/resources-financeit-internal-audit-sourcing-operations-whitehall> ,
+                                                                                          <http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/ict-procurement> ,
+                                                                                          <http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/executive> ;
+                                                                             central-government:parentDepartment <http://reference.data.gov.uk/id/department/co> ;
+                                                                             foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/government-procurement-service.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/executive-hr> rdfs:label "Executive (HR)" . 
+
+<http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/sourcing-category-management> rdfs:label "Sourcing & Category Management" . 
+
+<http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/corporate-services> rdfs:label "Corporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/marketing-communications> rdfs:label "Marketing & Communications" . 
+
+<http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/business-services-procurement> rdfs:label "Business Services Procurement" . 
+
+<http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/customer-services> rdfs:label "Customer Services" . 
+
+<http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/resources-financeit-internal-audit-sourcing-operations-whitehall> rdfs:label "Resources (Finance,IT, Internal Audit, Sourcing Operations & Whitehall)" . 
+
+<http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/ict-procurement> rdfs:label "ICT Procurement" . 
+
+<http://reference.data.gov.uk/id/public-body/government-procurement-service/unit/executive> rdfs:label "Executive" . 
+
+<http://reference.data.gov.uk/id/department/co> rdfs:label "Cabinet Office" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/government-procurement-service.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/government-procurement-service> ;
+                                                                                             linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                             linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/government-procurement-service.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

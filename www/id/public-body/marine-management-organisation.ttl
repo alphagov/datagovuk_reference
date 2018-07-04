@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/marine-management-organisation> rdf:type msg0:Organization ,
+                                                                                      central-government:PublicBody ;
+                                                                             rdfs:label "Marine Management Organisation" ;
+                                                                             msg0:hasUnit <http://reference.data.gov.uk/id/public-body/marine-management-organisation/unit/customers-and-partnerships> ,
+                                                                                          <http://reference.data.gov.uk/id/public-body/marine-management-organisation/unit/operations-and-compliance> ,
+                                                                                          <http://reference.data.gov.uk/id/public-body/marine-management-organisation/unit/corporate-support-and-governance> ,
+                                                                                          <http://reference.data.gov.uk/id/public-body/marine-management-organisation/unit/planning-and-regulation> ;
+                                                                             central-government:parentDepartment <http://reference.data.gov.uk/id/department/defra> ;
+                                                                             foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/marine-management-organisation.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/marine-management-organisation/unit/customers-and-partnerships> rdfs:label "Customers and Partnerships" . 
+
+<http://reference.data.gov.uk/id/public-body/marine-management-organisation/unit/operations-and-compliance> rdfs:label "Operations and Compliance" . 
+
+<http://reference.data.gov.uk/id/public-body/marine-management-organisation/unit/corporate-support-and-governance> rdfs:label "Corporate Support and Governance" . 
+
+<http://reference.data.gov.uk/id/public-body/marine-management-organisation/unit/planning-and-regulation> rdfs:label "Planning and Regulation" . 
+
+<http://reference.data.gov.uk/id/department/defra> rdfs:label "Department for Environment, Food and Rural Affairs" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/marine-management-organisation.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/marine-management-organisation> ;
+                                                                                             linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                             linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/marine-management-organisation.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

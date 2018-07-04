@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/npia> rdf:type msg0:Organization ,
+                                                            central-government:PublicBody ;
+                                                   rdfs:label "NPIA" ;
+                                                   msg0:hasUnit <http://reference.data.gov.uk/id/public-body/npia/unit/operations> ,
+                                                                <http://reference.data.gov.uk/id/public-body/npia/unit/people-dev> ,
+                                                                <http://reference.data.gov.uk/id/public-body/npia/unit/resources> ,
+                                                                <http://reference.data.gov.uk/id/public-body/npia/unit/ceo-directorate> ,
+                                                                <http://reference.data.gov.uk/id/public-body/npia/unit/ppp> ,
+                                                                <http://reference.data.gov.uk/id/public-body/npia/unit/icts> ;
+                                                   central-government:parentDepartment <http://reference.data.gov.uk/id/department/ho> ;
+                                                   foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/npia.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/npia/unit/operations> rdfs:label "Operations" . 
+
+<http://reference.data.gov.uk/id/public-body/npia/unit/people-dev> rdfs:label "People & Dev" . 
+
+<http://reference.data.gov.uk/id/public-body/npia/unit/resources> rdfs:label "Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/npia/unit/ceo-directorate> rdfs:label "CEO Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/npia/unit/ppp> rdfs:label "PPP" . 
+
+<http://reference.data.gov.uk/id/public-body/npia/unit/icts> rdfs:label "ICTS" . 
+
+<http://reference.data.gov.uk/id/department/ho> rdfs:label "Home Office" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/npia.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/npia> ;
+                                                                   linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                   linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/npia.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

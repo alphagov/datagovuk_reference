@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Medical Research Council</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-cancer-cell-unit-ccu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-national-institute-for-medical-research-nimr"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-protein-phosphorylation-unit-ppu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-regional-centre-london"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-human-genetics-unit-hgu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-cognition-and-brain-sciences-unit-cbsu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-clinical-sciences-centre-csc"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-clinical-trial-service-unit-ctsu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-functional-genomics-unit-fgu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-international-nutrition-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-social-and-public-health-sciences-unit-sphsu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-toxicology-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-laboratory-of-molecular-biology-lmb"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-anatomical-neuropharmacology-unit-anu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-head-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/cambridge-centre"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-research-centre-at-harwell"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-collaborative-centre-for-human-nutrition-research-hnr"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-mammalian-genetics-unit-mgu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-prion-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-general-practice-research-framework-gprf"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-clinical-trials-unit-ctu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-unit-for-lifelong-health-and-ageing"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-mitochondrial-biology-unit-mbu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/oxford-centre"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-mary-lyon-centre"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrcuniversity-of-glasgow-centre-for-virus-research-cvr"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-cell-biology-unit-cbu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-epidemiology-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-biostatistics-unit-bsu"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-lifecourse-epidemiology-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/institute-of-hearing-research-ihr"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/bis"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/medical-research-council.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-cancer-cell-unit-ccu">
+    <rdfs:label>MRC Cancer Cell Unit (CCU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-national-institute-for-medical-research-nimr">
+    <rdfs:label>MRC National Institute for Medical Research (NIMR)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-protein-phosphorylation-unit-ppu">
+    <rdfs:label>MRC Protein Phosphorylation Unit (PPU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-regional-centre-london">
+    <rdfs:label>MRC Regional Centre London</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-human-genetics-unit-hgu">
+    <rdfs:label>MRC Human Genetics Unit (HGU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-cognition-and-brain-sciences-unit-cbsu">
+    <rdfs:label>MRC Cognition and Brain Sciences Unit (CBSU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-clinical-sciences-centre-csc">
+    <rdfs:label>MRC Clinical Sciences Centre (CSC)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-clinical-trial-service-unit-ctsu">
+    <rdfs:label>MRC Clinical Trial Service Unit (CTSU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-functional-genomics-unit-fgu">
+    <rdfs:label>MRC Functional Genomics Unit (FGU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-international-nutrition-group">
+    <rdfs:label>MRC International Nutrition Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-social-and-public-health-sciences-unit-sphsu">
+    <rdfs:label>MRC Social and Public Health Sciences Unit (SPHSU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-toxicology-unit">
+    <rdfs:label>MRC Toxicology Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-laboratory-of-molecular-biology-lmb">
+    <rdfs:label>MRC Laboratory of Molecular Biology (LMB)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-anatomical-neuropharmacology-unit-anu">
+    <rdfs:label>MRC Anatomical Neuropharmacology Unit (ANU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-head-office">
+    <rdfs:label>MRC Head Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/cambridge-centre">
+    <rdfs:label>Cambridge Centre</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-research-centre-at-harwell">
+    <rdfs:label>MRC Research Centre at Harwell</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-collaborative-centre-for-human-nutrition-research-hnr">
+    <rdfs:label>MRC Collaborative Centre for Human Nutrition Research (HNR)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-mammalian-genetics-unit-mgu">
+    <rdfs:label>MRC Mammalian Genetics Unit (MGU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-prion-unit">
+    <rdfs:label>MRC Prion Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-general-practice-research-framework-gprf">
+    <rdfs:label>MRC General Practice Research Framework (GPRF)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-clinical-trials-unit-ctu">
+    <rdfs:label>MRC Clinical Trials Unit (CTU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-unit-for-lifelong-health-and-ageing">
+    <rdfs:label>MRC Unit for Lifelong Health and Ageing</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-mitochondrial-biology-unit-mbu">
+    <rdfs:label>MRC Mitochondrial Biology Unit (MBU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/oxford-centre">
+    <rdfs:label>Oxford Centre</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-mary-lyon-centre">
+    <rdfs:label>MRC Mary Lyon Centre</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrcuniversity-of-glasgow-centre-for-virus-research-cvr">
+    <rdfs:label>MRC-University of Glasgow Centre for Virus Research (CVR)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-cell-biology-unit-cbu">
+    <rdfs:label>MRC Cell Biology Unit (CBU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-epidemiology-unit">
+    <rdfs:label>MRC Epidemiology Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-biostatistics-unit-bsu">
+    <rdfs:label>MRC Biostatistics Unit (BSU)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/mrc-lifecourse-epidemiology-unit">
+    <rdfs:label>MRC Lifecourse Epidemiology Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/medical-research-council/unit/institute-of-hearing-research-ihr">
+    <rdfs:label>Institute of Hearing Research (IHR)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/bis">
+    <rdfs:label>Department for Business Innovation and Skills</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/medical-research-council.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/medical-research-council"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/medical-research-council.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

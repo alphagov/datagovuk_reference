@@ -1,0 +1,7 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/npia","NPIA",,"Operations","Home Office","http://reference.data.gov.uk/id/department/ho"
+"http://reference.data.gov.uk/id/public-body/npia","NPIA",,"People & Dev","Home Office","http://reference.data.gov.uk/id/department/ho"
+"http://reference.data.gov.uk/id/public-body/npia","NPIA","Organization","Resources","Home Office","http://reference.data.gov.uk/id/department/ho"
+"http://reference.data.gov.uk/id/public-body/npia","NPIA","Organization","CEO Directorate","Home Office","http://reference.data.gov.uk/id/department/ho"
+"http://reference.data.gov.uk/id/public-body/npia","NPIA","Organization","PPP","Home Office","http://reference.data.gov.uk/id/department/ho"
+"http://reference.data.gov.uk/id/public-body/npia","NPIA","Organization","ICTS","Home Office","http://reference.data.gov.uk/id/department/ho"

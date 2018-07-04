@@ -1,0 +1,679 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms> rdf:type msg0:Organization ,
+                                                                                                 central-government:PublicBody ;
+                                                                                        rdfs:label "National Offender Management Service (NOMS)" ;
+                                                                                        msg0:hasUnit <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/foston-hall> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/leicester> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/morton-hall> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/ranby> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wellingborough> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bullwood-hall> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hollesley-bay> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/downview> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wakefield> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/blantyre-house> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/canterbury> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lewes> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/rochester> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/sheppey-clustered-services> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/standford-hill> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/kirklevington-grange> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/thorn-cross> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wymott> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/reading> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/winchester> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bristol> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/leyhill> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hewell> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/business-and-service-development-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/business-change-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-national-operational-services> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-yorkshire-and-humberside> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/equalities-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/offender-employment-skills-services-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/rom-west-midlands> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/yorkshire-humberside-estate-management> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/cambridgeshire-peterborough-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/kent-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/gartree> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bure> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wayland> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/manchester> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/ford> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/acklington> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/low-newton> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/buckley-hall> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/dorchester> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/eastwood-park> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/erlestoke-and-shepton-mallet> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/portland> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/cardiff> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/birmingham> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/area-off-kent-and-sussex> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/chief-operating-officers-office> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-commissioning-and-commercial-office> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-probation-and-contracted-services> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/finance-directors-off-and-csu> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/learning-development> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/national-operations-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/nomis-programme> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/noms-communications-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/organisational-restructure-programme> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/avon-somerset-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bedfordshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/derbyshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/merseyside-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/northamptonshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wales-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/onley> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/latchmere-house> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/belmarsh> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/whitemoor> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/woodhill> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/sheppey-reducing-reoffending> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/swaleside> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/deerbolt> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/garth> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/kirkham> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lancaster> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lancaster-farms> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/aylesbury> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/uskprescoed> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/werrington> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/do-not-use-mental-health-unit> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-london> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-north-east> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/financial-control-accountancy> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/financial-performance> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/noms-cymru-regional-services> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/organisational-development-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/probation-trust-unit> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/public-protection-and-mental-health-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/security-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hertfordshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/south-yorkshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/warwickshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/glen-parva> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bedford> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/highpoint> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/the-mount> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/cookham-wood> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/dover> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hindley> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/dartmoor> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/gloucester> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/stafford> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/askham-grange> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/everthorpe> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/moorland> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/new-hall> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-wales-cymru> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hr-policy-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/london-area-services> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/operations-property-unit> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/rehabilitation-services-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/rom-south-east> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/cheshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/devon-cornwall-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hampshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/northumbria-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/staffordshire-west-midlands-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wiltshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/nottingham> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/blundeston> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/chelmsford> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/warren-hill> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/coldingley> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/pentonville> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wormwood-scrubs> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/frankland> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/elmley> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/maidstone> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/durham> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/holme-house> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/preston> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/risley> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/swansea> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/featherstone> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wetherby> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hr-secondments-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/land-based-activities> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/noms-ict> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/partnershipspathway-delivery> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/prisoners-escort-and-custody-service-pecs> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/public-sector-bids-unit> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/tss-kent-and-sussex> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wales-prison-estate-management> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/dorset-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/leicestershire-rutland-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/london-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/surrey-sussex-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/north-sea-camp> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/stocken> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/littlehey> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/high-down> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/send> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wandsworth> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/liverpool> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/styal> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bullingdon> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/huntercombe> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/kingston> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/the-verne> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/leeds> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wealstun> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/briefing-casework-unit> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-hrs-office-and-programme-hub> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-east-of-england> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/offender-safety-rights-and-responsibilities-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/performance-information-and-analysis-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/secretariat> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/cumbria-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/durham-tees-valley-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/humberside-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/norfolk-suffolk-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/thames-valley-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/west-yorkshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lincoln> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/sudbury> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/holloway> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/full-sutton> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/long-lartin> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/east-sutton-park> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/haverigg> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/kennet> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/haslar> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/drake-hall> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/shrewsbury> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/stoke-heath> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lindholme> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/business-and-strategic-planning> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/deputy-directorate-of-contracted-prisons-office> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/deputy-directorate-of-probation-office> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-high-security-off> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-public-sector-prisons> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-south-east> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-south-west> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/essex-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/gloucestershire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/greater-manchester-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lancashire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/nottinghamshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/west-mercia-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/york-north-yorkshire-probation-trust> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/whatton> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/norwich> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/brixton> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/feltham> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/isis> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/grendon> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/isle-of-wight> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/channings-wood> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/exeter> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/guys-marsh> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/brinsford> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/swinfen-hall> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hull> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/northallerton> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-east-midlands> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-north-west> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-west-midlands> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/east-midlands-estates> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/high-security-prisons-group> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/tss-west-midlands-area> ,
+                                                                                                     <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lincolnshire-probation-trust> ;
+                                                                                        central-government:parentDepartment <http://reference.data.gov.uk/id/department/justice> ;
+                                                                                        foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/national-offender-management-service-noms.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/foston-hall> rdfs:label "Foston Hall" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/leicester> rdfs:label "Leicester" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/morton-hall> rdfs:label "Morton Hall" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/ranby> rdfs:label "Ranby" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wellingborough> rdfs:label "Wellingborough" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bullwood-hall> rdfs:label "Bullwood Hall" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hollesley-bay> rdfs:label "Hollesley Bay" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/downview> rdfs:label "Downview" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wakefield> rdfs:label "Wakefield" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/blantyre-house> rdfs:label "Blantyre House" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/canterbury> rdfs:label "Canterbury" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lewes> rdfs:label "Lewes" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/rochester> rdfs:label "Rochester" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/sheppey-clustered-services> rdfs:label "Sheppey Clustered Services" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/standford-hill> rdfs:label "Standford Hill" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/kirklevington-grange> rdfs:label "Kirklevington Grange" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/thorn-cross> rdfs:label "Thorn Cross" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wymott> rdfs:label "Wymott" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/reading> rdfs:label "Reading" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/winchester> rdfs:label "Winchester" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bristol> rdfs:label "Bristol" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/leyhill> rdfs:label "Leyhill" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hewell> rdfs:label "Hewell" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/business-and-service-development-group> rdfs:label "Business and Service Development Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/business-change-group> rdfs:label "Business Change Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-national-operational-services> rdfs:label "Director of National Operational Services" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-yorkshire-and-humberside> rdfs:label "DOMS Office - Yorkshire and Humberside" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/equalities-group> rdfs:label "Equalities Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/offender-employment-skills-services-group> rdfs:label "Offender Employment Skills & Services Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/rom-west-midlands> rdfs:label "ROM - West Midlands" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/yorkshire-humberside-estate-management> rdfs:label "Yorkshire & Humberside Estate Management" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/cambridgeshire-peterborough-probation-trust> rdfs:label "Cambridgeshire & Peterborough Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/kent-probation-trust> rdfs:label "Kent Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/gartree> rdfs:label "Gartree" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bure> rdfs:label "Bure" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wayland> rdfs:label "Wayland" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/manchester> rdfs:label "Manchester" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/ford> rdfs:label "Ford" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/acklington> rdfs:label "Acklington" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/low-newton> rdfs:label "Low Newton" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/buckley-hall> rdfs:label "Buckley Hall" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/dorchester> rdfs:label "Dorchester" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/eastwood-park> rdfs:label "Eastwood Park" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/erlestoke-and-shepton-mallet> rdfs:label "Erlestoke and Shepton Mallet" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/portland> rdfs:label "Portland" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/cardiff> rdfs:label "Cardiff" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/birmingham> rdfs:label "Birmingham" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/area-off-kent-and-sussex> rdfs:label "Area Off - Kent and Sussex" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/chief-operating-officers-office> rdfs:label "Chief Operating Officers Office" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-commissioning-and-commercial-office> rdfs:label "Director of Commissioning and Commercial Office" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-probation-and-contracted-services> rdfs:label "Director of Probation and Contracted Services" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/finance-directors-off-and-csu> rdfs:label "Finance Director's Off and CSU" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/learning-development> rdfs:label "Learning & Development" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/national-operations-group> rdfs:label "National Operations Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/nomis-programme> rdfs:label "NOMIS Programme" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/noms-communications-group> rdfs:label "NOMS Communications Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/organisational-restructure-programme> rdfs:label "Organisational Restructure Programme" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/avon-somerset-probation-trust> rdfs:label "Avon & Somerset Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bedfordshire-probation-trust> rdfs:label "Bedfordshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/derbyshire-probation-trust> rdfs:label "Derbyshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/merseyside-probation-trust> rdfs:label "Merseyside Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/northamptonshire-probation-trust> rdfs:label "Northamptonshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wales-probation-trust> rdfs:label "Wales Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/onley> rdfs:label "Onley" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/latchmere-house> rdfs:label "Latchmere House" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/belmarsh> rdfs:label "Belmarsh" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/whitemoor> rdfs:label "Whitemoor" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/woodhill> rdfs:label "Woodhill" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/sheppey-reducing-reoffending> rdfs:label "Sheppey Reducing Re-Offending" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/swaleside> rdfs:label "Swaleside" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/deerbolt> rdfs:label "Deerbolt" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/garth> rdfs:label "Garth" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/kirkham> rdfs:label "Kirkham" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lancaster> rdfs:label "Lancaster" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lancaster-farms> rdfs:label "Lancaster Farms" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/aylesbury> rdfs:label "Aylesbury" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/uskprescoed> rdfs:label "Usk/Prescoed" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/werrington> rdfs:label "Werrington" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/do-not-use-mental-health-unit> rdfs:label "DO NOT USE Mental Health Unit" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-london> rdfs:label "DOMS Office - London" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-north-east> rdfs:label "DOMS Office - North East" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/financial-control-accountancy> rdfs:label "Financial Control & Accountancy" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/financial-performance> rdfs:label "Financial Performance" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/noms-cymru-regional-services> rdfs:label "NOMS Cymru Regional Services" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/organisational-development-group> rdfs:label "Organisational Development Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/probation-trust-unit> rdfs:label "Probation Trust Unit" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/public-protection-and-mental-health-group> rdfs:label "Public Protection and Mental Health Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/security-group> rdfs:label "Security Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hertfordshire-probation-trust> rdfs:label "Hertfordshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/south-yorkshire-probation-trust> rdfs:label "South Yorkshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/warwickshire-probation-trust> rdfs:label "Warwickshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/glen-parva> rdfs:label "Glen Parva" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bedford> rdfs:label "Bedford" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/highpoint> rdfs:label "Highpoint" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/the-mount> rdfs:label "The Mount" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/cookham-wood> rdfs:label "Cookham Wood" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/dover> rdfs:label "Dover" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hindley> rdfs:label "Hindley" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/dartmoor> rdfs:label "Dartmoor" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/gloucester> rdfs:label "Gloucester" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/stafford> rdfs:label "Stafford" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/askham-grange> rdfs:label "Askham Grange" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/everthorpe> rdfs:label "Everthorpe" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/moorland> rdfs:label "Moorland" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/new-hall> rdfs:label "New Hall" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-wales-cymru> rdfs:label "DOMS Office - Wales Cymru" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hr-policy-group> rdfs:label "HR Policy Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/london-area-services> rdfs:label "London Area Services" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/operations-property-unit> rdfs:label "Operations Property Unit" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/rehabilitation-services-group> rdfs:label "Rehabilitation Services Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/rom-south-east> rdfs:label "ROM - South East" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/cheshire-probation-trust> rdfs:label "Cheshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/devon-cornwall-probation-trust> rdfs:label "Devon & Cornwall Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hampshire-probation-trust> rdfs:label "Hampshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/northumbria-probation-trust> rdfs:label "Northumbria Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/staffordshire-west-midlands-probation-trust> rdfs:label "Staffordshire & West Midlands Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wiltshire-probation-trust> rdfs:label "Wiltshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/nottingham> rdfs:label "Nottingham" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/blundeston> rdfs:label "Blundeston" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/chelmsford> rdfs:label "Chelmsford" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/warren-hill> rdfs:label "Warren Hill" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/coldingley> rdfs:label "Coldingley" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/pentonville> rdfs:label "Pentonville" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wormwood-scrubs> rdfs:label "Wormwood Scrubs" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/frankland> rdfs:label "Frankland" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/elmley> rdfs:label "Elmley" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/maidstone> rdfs:label "Maidstone" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/durham> rdfs:label "Durham" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/holme-house> rdfs:label "Holme House" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/preston> rdfs:label "Preston" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/risley> rdfs:label "Risley" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/swansea> rdfs:label "Swansea" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/featherstone> rdfs:label "Featherstone" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wetherby> rdfs:label "Wetherby" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hr-secondments-group> rdfs:label "HR Secondments Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/land-based-activities> rdfs:label "Land Based Activities" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/noms-ict> rdfs:label "NOMS ICT" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/partnershipspathway-delivery> rdfs:label "Partnerships/Pathway Delivery" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/prisoners-escort-and-custody-service-pecs> rdfs:label "Prisoners Escort and Custody Service (PECS)" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/public-sector-bids-unit> rdfs:label "Public Sector Bids Unit" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/tss-kent-and-sussex> rdfs:label "TSS Kent and Sussex" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wales-prison-estate-management> rdfs:label "Wales Prison Estate Management" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/dorset-probation-trust> rdfs:label "Dorset Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/leicestershire-rutland-probation-trust> rdfs:label "Leicestershire & Rutland Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/london-probation-trust> rdfs:label "London Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/surrey-sussex-probation-trust> rdfs:label "Surrey & Sussex Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/north-sea-camp> rdfs:label "North Sea Camp" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/stocken> rdfs:label "Stocken" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/littlehey> rdfs:label "Littlehey" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/high-down> rdfs:label "High Down" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/send> rdfs:label "Send" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wandsworth> rdfs:label "Wandsworth" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/liverpool> rdfs:label "Liverpool" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/styal> rdfs:label "Styal" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/bullingdon> rdfs:label "Bullingdon" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/huntercombe> rdfs:label "Huntercombe" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/kingston> rdfs:label "Kingston" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/the-verne> rdfs:label "The Verne" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/leeds> rdfs:label "Leeds" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/wealstun> rdfs:label "Wealstun" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/briefing-casework-unit> rdfs:label "Briefing & Casework Unit" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-hrs-office-and-programme-hub> rdfs:label "Director of HRs Office and Programme Hub" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-east-of-england> rdfs:label "DOMS Office - East of England" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/offender-safety-rights-and-responsibilities-group> rdfs:label "Offender Safety Rights and Responsibilities Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/performance-information-and-analysis-group> rdfs:label "Performance Information and Analysis Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/secretariat> rdfs:label "Secretariat" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/cumbria-probation-trust> rdfs:label "Cumbria Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/durham-tees-valley-probation-trust> rdfs:label "Durham Tees Valley Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/humberside-probation-trust> rdfs:label "Humberside Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/norfolk-suffolk-probation-trust> rdfs:label "Norfolk & Suffolk Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/thames-valley-probation-trust> rdfs:label "Thames Valley Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/west-yorkshire-probation-trust> rdfs:label "West Yorkshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lincoln> rdfs:label "Lincoln" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/sudbury> rdfs:label "Sudbury" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/holloway> rdfs:label "Holloway" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/full-sutton> rdfs:label "Full Sutton" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/long-lartin> rdfs:label "Long Lartin" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/east-sutton-park> rdfs:label "East Sutton Park" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/haverigg> rdfs:label "Haverigg" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/kennet> rdfs:label "Kennet" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/haslar> rdfs:label "Haslar" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/drake-hall> rdfs:label "Drake Hall" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/shrewsbury> rdfs:label "Shrewsbury" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/stoke-heath> rdfs:label "Stoke Heath" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lindholme> rdfs:label "Lindholme" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/business-and-strategic-planning> rdfs:label "Business and Strategic Planning" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/deputy-directorate-of-contracted-prisons-office> rdfs:label "Deputy Directorate of Contracted Prisons Office" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/deputy-directorate-of-probation-office> rdfs:label "Deputy Directorate of Probation Office" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-high-security-off> rdfs:label "Director of High Security Off" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/director-of-public-sector-prisons> rdfs:label "Director of Public Sector Prisons" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-south-east> rdfs:label "DOMS Office - South East" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-south-west> rdfs:label "DOMS Office - South West" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/essex-probation-trust> rdfs:label "Essex Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/gloucestershire-probation-trust> rdfs:label "Gloucestershire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/greater-manchester-probation-trust> rdfs:label "Greater Manchester Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lancashire-probation-trust> rdfs:label "Lancashire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/nottinghamshire-probation-trust> rdfs:label "Nottinghamshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/west-mercia-probation-trust> rdfs:label "West Mercia Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/york-north-yorkshire-probation-trust> rdfs:label "York & North Yorkshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/whatton> rdfs:label "Whatton" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/norwich> rdfs:label "Norwich" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/brixton> rdfs:label "Brixton" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/feltham> rdfs:label "Feltham" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/isis> rdfs:label "Isis" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/grendon> rdfs:label "Grendon" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/isle-of-wight> rdfs:label "Isle of Wight" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/channings-wood> rdfs:label "Channings Wood" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/exeter> rdfs:label "Exeter" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/guys-marsh> rdfs:label "Guys Marsh" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/brinsford> rdfs:label "Brinsford" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/swinfen-hall> rdfs:label "Swinfen Hall" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/hull> rdfs:label "Hull" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/northallerton> rdfs:label "Northallerton" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-east-midlands> rdfs:label "DOMS Office - East Midlands" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-north-west> rdfs:label "DOMS Office - North West" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/doms-office-west-midlands> rdfs:label "DOMS Office - West Midlands" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/east-midlands-estates> rdfs:label "East Midlands Estates" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/high-security-prisons-group> rdfs:label "High Security Prisons Group" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/tss-west-midlands-area> rdfs:label "TSS - West Midlands Area" . 
+
+<http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms/unit/lincolnshire-probation-trust> rdfs:label "Lincolnshire Probation Trust" . 
+
+<http://reference.data.gov.uk/id/department/justice> rdfs:label "Ministry of Justice" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/national-offender-management-service-noms.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/national-offender-management-service-noms> ;
+                                                                                                        linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                                        linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/national-offender-management-service-noms.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

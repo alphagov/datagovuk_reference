@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council> rdf:type msg0:Organization ,
+                                                                                                      central-government:PublicBody ;
+                                                                                             rdfs:label "Engineering & Physical Sciences Research Council" ;
+                                                                                             msg0:hasUnit <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/communications-information-and-strategy-joint-reprographics> ,
+                                                                                                          <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/communications-information-and-strategy-is> ,
+                                                                                                          <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/communications-information-and-strategy-rcuk> ,
+                                                                                                          <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/delivery-challenges> ,
+                                                                                                          <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/delivery-integrators> ,
+                                                                                                          <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/delivery-capability> ,
+                                                                                                          <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/operations-target-costing> ,
+                                                                                                          <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/operations-finance> ,
+                                                                                                          <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/executive-leadership-team> ,
+                                                                                                          <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/operations-ssc-interface> ,
+                                                                                                          <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/operations-human-resources-office-facilities> ,
+                                                                                                          <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/communications-information-and-strategy> ;
+                                                                                             central-government:parentDepartment <http://reference.data.gov.uk/id/department/bis> ;
+                                                                                             foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/engineering-physical-sciences-research-council.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/communications-information-and-strategy-joint-reprographics> rdfs:label "Communications, Information and Strategy - Joint Reprographics" . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/communications-information-and-strategy-is> rdfs:label "Communications, Information and Strategy - IS" . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/communications-information-and-strategy-rcuk> rdfs:label "Communications, Information and Strategy - RCUK" . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/delivery-challenges> rdfs:label "Delivery - Challenges" . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/delivery-integrators> rdfs:label "Delivery - Integrators" . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/delivery-capability> rdfs:label "Delivery - Capability" . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/operations-target-costing> rdfs:label "Operations - Target Costing" . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/operations-finance> rdfs:label "Operations - Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/executive-leadership-team> rdfs:label "Executive Leadership Team" . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/operations-ssc-interface> rdfs:label "Operations - SSC Interface" . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/operations-human-resources-office-facilities> rdfs:label "Operations - Human Resources & Office Facilities" . 
+
+<http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council/unit/communications-information-and-strategy> rdfs:label "Communications, Information and Strategy" . 
+
+<http://reference.data.gov.uk/id/department/bis> rdfs:label "Department for Business Innovation and Skills" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/engineering-physical-sciences-research-council.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/engineering-physical-sciences-research-council> ;
+                                                                                                             linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                                             linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/engineering-physical-sciences-research-council.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

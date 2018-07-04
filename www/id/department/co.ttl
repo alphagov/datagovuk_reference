@@ -1,0 +1,153 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/co> rdf:type msg0:Organization ,
+                                                         ns0:Department ,
+                                                         ns0:PublicBody ;
+                                                rdfs:label "Cabinet Office" ;
+                                                msg0:hasUnit <http://reference.data.gov.uk/id/department/co/unit/europe-and-global-issues-secretariat> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/office-of-the-deputy-prime-minister> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-live-events> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-publications> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-prog-office> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-inhouse-content> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-corporate-comms> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-it> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-procurement> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/honours-and-appointments-secretariat> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/it-and-telecoms-branch> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-moving-image-audio-content> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/prime-ministers-office> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/government-property-unit> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-channel-integration> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-govgap-team> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-client-account-team> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-chief-executive-office> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/government-digital-service> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/knowledge-and-information-management> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-news-pr> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-facilities> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/efficiency-and-reform-group> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/scheme-management-executive> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-strategy-planning> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-research> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-interactive-services> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-hr> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-theme-lead-group> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-mmunds> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-regional-marketing> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/constitution-group> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/human-resources> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/economic-and-domestic-affairs-secretariat> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-training-and-welfare> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/independent-offices> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/office-of-the-parliamentary-counsel> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/national-school-of-government> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/cabinet-office-communications> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/finance-and-estates-management> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/private-office-group> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-direct-relationship-marketing> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/gcn-training-development> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/coi-finance-ia> ,
+                                                             <http://reference.data.gov.uk/id/department/co/unit/boundary-commission-for-england> ;
+                                                foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/co.ttl> . 
+
+<http://reference.data.gov.uk/id/department/co/unit/europe-and-global-issues-secretariat> rdfs:label "Europe and Global Issues Secretariat" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/office-of-the-deputy-prime-minister> rdfs:label "Office of the Deputy Prime Minister" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-live-events> rdfs:label "COI - Live Events" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-publications> rdfs:label "COI - Publications" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-prog-office> rdfs:label "COI - Prog Office" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-inhouse-content> rdfs:label "COI - In-House Content" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-corporate-comms> rdfs:label "COI - Corporate Comms" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-it> rdfs:label "COI- IT" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-procurement> rdfs:label "COI - Procurement" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/honours-and-appointments-secretariat> rdfs:label "Honours and Appointments Secretariat" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/it-and-telecoms-branch> rdfs:label "IT and Telecoms Branch" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-moving-image-audio-content> rdfs:label "COI - Moving Image & Audio Content" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/prime-ministers-office> rdfs:label "Prime Minister's Office" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/government-property-unit> rdfs:label "Government Property Unit" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-channel-integration> rdfs:label "COI - Channel Integration" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-govgap-team> rdfs:label "COI - GovGap Team" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-client-account-team> rdfs:label "COI - Client Account Team" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-chief-executive-office> rdfs:label "COI - Chief Executive Office" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/government-digital-service> rdfs:label "Government Digital Service" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/knowledge-and-information-management> rdfs:label "Knowledge and Information Management" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-news-pr> rdfs:label "COI- News & PR" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-facilities> rdfs:label "COI - Facilities" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/efficiency-and-reform-group> rdfs:label "Efficiency and Reform Group" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/scheme-management-executive> rdfs:label "Scheme Management Executive" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-strategy-planning> rdfs:label "COI - Strategy & Planning" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-research> rdfs:label "COI - Research" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-interactive-services> rdfs:label "COI - Interactive Services" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-hr> rdfs:label "COI - HR" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-theme-lead-group> rdfs:label "COI- Theme Lead Group" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-mmunds> rdfs:label "COI - MMU&NDS" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-regional-marketing> rdfs:label "COI - Regional Marketing" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/constitution-group> rdfs:label "Constitution Group" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/human-resources> rdfs:label "HUMAN RESOURCES" ,
+                                                                                "Human Resources" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/economic-and-domestic-affairs-secretariat> rdfs:label "Economic and Domestic Affairs Secretariat" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-training-and-welfare> rdfs:label "COI - Training and Welfare" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/independent-offices> rdfs:label "Independent Offices" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/office-of-the-parliamentary-counsel> rdfs:label "Office of the Parliamentary Counsel" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/national-school-of-government> rdfs:label "National School of Government" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/cabinet-office-communications> rdfs:label "Cabinet Office Communications" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/finance-and-estates-management> rdfs:label "Finance and Estates Management" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/private-office-group> rdfs:label "Private Office Group" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-direct-relationship-marketing> rdfs:label "COI - Direct & Relationship Marketing" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/gcn-training-development> rdfs:label "GCN Training & Development" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/coi-finance-ia> rdfs:label "COI - Finance & IA" . 
+
+<http://reference.data.gov.uk/id/department/co/unit/boundary-commission-for-england> rdfs:label "Boundary Commission for England" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/co.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/co> ;
+                                                                linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/co.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

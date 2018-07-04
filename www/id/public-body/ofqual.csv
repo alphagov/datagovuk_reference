@@ -1,0 +1,5 @@
+"uri","label","type","unit","parent department","parent department > uri"
+"http://reference.data.gov.uk/id/public-body/ofqual","Ofqual",,"Strategic Management","Department for Education","http://reference.data.gov.uk/id/department/dfe"
+"http://reference.data.gov.uk/id/public-body/ofqual","Ofqual",,"Standards","Department for Education","http://reference.data.gov.uk/id/department/dfe"
+"http://reference.data.gov.uk/id/public-body/ofqual","Ofqual","Organization","Regulation","Department for Education","http://reference.data.gov.uk/id/department/dfe"
+"http://reference.data.gov.uk/id/public-body/ofqual","Ofqual","Organization","Internal and External Affairs","Department for Education","http://reference.data.gov.uk/id/department/dfe"

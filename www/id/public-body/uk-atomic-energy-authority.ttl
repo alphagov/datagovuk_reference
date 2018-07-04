@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority> rdf:type msg0:Organization ,
+                                                                                  central-government:PublicBody ;
+                                                                         rdfs:label "UK Atomic Energy Authority" ;
+                                                                         msg0:hasUnit <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/assurance-division> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/directorate> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/power-supplies-and-rf-systems-department> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/theory-and-modelling-department> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/engineering-implementation-department> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/finance-and-contracts-department> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/jet-diagnostics-department> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/technology-division> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/active-operations-department> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/mast-experiments-department> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/tokamak-and-nb-operations-department> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/human-resources-department> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/support-division> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/central-engineering-department> ,
+                                                                                      <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/codas-and-it-department> ;
+                                                                         central-government:parentDepartment <http://reference.data.gov.uk/id/department/bis> ;
+                                                                         foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/uk-atomic-energy-authority.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/assurance-division> rdfs:label "Assurance Division" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/directorate> rdfs:label "Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/power-supplies-and-rf-systems-department> rdfs:label "Power Supplies and RF Systems Department" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/theory-and-modelling-department> rdfs:label "Theory and Modelling Department" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/engineering-implementation-department> rdfs:label "Engineering Implementation Department" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/finance-and-contracts-department> rdfs:label "Finance and Contracts Department" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/jet-diagnostics-department> rdfs:label "JET Diagnostics Department" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/technology-division> rdfs:label "Technology Division" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/active-operations-department> rdfs:label "Active Operations Department" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/mast-experiments-department> rdfs:label "MAST Experiments Department" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/tokamak-and-nb-operations-department> rdfs:label "Tokamak and NB Operations Department" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/human-resources-department> rdfs:label "Human Resources Department" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/support-division> rdfs:label "Support Division" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/central-engineering-department> rdfs:label "Central Engineering Department" . 
+
+<http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority/unit/codas-and-it-department> rdfs:label "CODAS and IT Department" . 
+
+<http://reference.data.gov.uk/id/department/bis> rdfs:label "Department for Business Innovation and Skills" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/uk-atomic-energy-authority.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/uk-atomic-energy-authority> ;
+                                                                                         linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                         linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/uk-atomic-energy-authority.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/tate> rdf:type msg0:Organization ,
+                                                            central-government:PublicBody ;
+                                                   rdfs:label "Tate" ;
+                                                   msg0:hasUnit <http://reference.data.gov.uk/id/public-body/tate/unit/tate-modern> ,
+                                                                <http://reference.data.gov.uk/id/public-body/tate/unit/deputy-directors-office> ,
+                                                                <http://reference.data.gov.uk/id/public-body/tate/unit/tate-national> ,
+                                                                <http://reference.data.gov.uk/id/public-body/tate/unit/chief-operating-officers-office> ,
+                                                                <http://reference.data.gov.uk/id/public-body/tate/unit/tate-britain> ;
+                                                   central-government:parentDepartment <http://reference.data.gov.uk/id/department/dcms> ;
+                                                   foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/tate.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/tate/unit/tate-modern> rdfs:label "Tate Modern" . 
+
+<http://reference.data.gov.uk/id/public-body/tate/unit/deputy-directors-office> rdfs:label "Deputy Director's Office" . 
+
+<http://reference.data.gov.uk/id/public-body/tate/unit/tate-national> rdfs:label "Tate National" . 
+
+<http://reference.data.gov.uk/id/public-body/tate/unit/chief-operating-officers-office> rdfs:label "Chief Operating Officer's Office" . 
+
+<http://reference.data.gov.uk/id/public-body/tate/unit/tate-britain> rdfs:label "Tate Britain" . 
+
+<http://reference.data.gov.uk/id/department/dcms> rdfs:label "Department for Culture, Media and Sport" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/tate.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/tate> ;
+                                                                   linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                   linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/tate.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

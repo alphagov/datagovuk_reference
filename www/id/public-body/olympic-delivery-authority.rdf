@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Olympic Delivery Authority</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/construction"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/corporate-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/infrastructure-and-utilities"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/transport"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/property"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/design-and-regeneration"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/commercial-and-legal"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/planning-decisions"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dcms"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/olympic-delivery-authority.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/construction">
+    <rdfs:label>Construction</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/human-resources">
+    <rdfs:label>Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/communications">
+    <rdfs:label>Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/corporate-services">
+    <rdfs:label>Corporate Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/infrastructure-and-utilities">
+    <rdfs:label>Infrastructure and Utilities</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/transport">
+    <rdfs:label>Transport</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/property">
+    <rdfs:label>Property</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/design-and-regeneration">
+    <rdfs:label>Design and Regeneration</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/commercial-and-legal">
+    <rdfs:label>Commercial and Legal</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/finance">
+    <rdfs:label>Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority/unit/planning-decisions">
+    <rdfs:label>Planning Decisions</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dcms">
+    <rdfs:label>Department for Culture, Media and Sport</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/olympic-delivery-authority.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/olympic-delivery-authority"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/olympic-delivery-authority.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

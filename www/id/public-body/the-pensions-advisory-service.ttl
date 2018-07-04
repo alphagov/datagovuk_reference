@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-advisory-service> rdf:type msg0:Organization ,
+                                                                                     central-government:PublicBody ;
+                                                                            rdfs:label "The Pensions Advisory Service" ;
+                                                                            msg0:hasUnit <http://reference.data.gov.uk/id/public-body/the-pensions-advisory-service/unit/policy-technical-development> ,
+                                                                                         <http://reference.data.gov.uk/id/public-body/the-pensions-advisory-service/unit/information-guidance> ,
+                                                                                         <http://reference.data.gov.uk/id/public-body/the-pensions-advisory-service/unit/corporate-services> ,
+                                                                                         <http://reference.data.gov.uk/id/public-body/the-pensions-advisory-service/unit/dispute-resolution> ;
+                                                                            central-government:parentDepartment <http://reference.data.gov.uk/id/department/dwp> ;
+                                                                            foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/the-pensions-advisory-service.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-advisory-service/unit/policy-technical-development> rdfs:label "Policy & Technical Development" . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-advisory-service/unit/information-guidance> rdfs:label "Information & Guidance" . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-advisory-service/unit/corporate-services> rdfs:label "Corporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/the-pensions-advisory-service/unit/dispute-resolution> rdfs:label "Dispute Resolution" . 
+
+<http://reference.data.gov.uk/id/department/dwp> rdfs:label "Department for Work and Pensions" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/the-pensions-advisory-service.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/the-pensions-advisory-service> ;
+                                                                                            linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                            linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/the-pensions-advisory-service.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

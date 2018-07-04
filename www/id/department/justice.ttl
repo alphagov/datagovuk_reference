@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/justice> rdf:type msg0:Organization ,
+                                                              ns0:Department ,
+                                                              ns0:PublicBody ;
+                                                     rdfs:label "Ministry of Justice" ;
+                                                     msg0:hasUnit <http://reference.data.gov.uk/id/department/justice/unit/corporate-performance-group> ,
+                                                                  <http://reference.data.gov.uk/id/department/justice/unit/private-office> ,
+                                                                  <http://reference.data.gov.uk/id/department/justice/unit/her-majestys-courts-and-tribunals-service-hmcts> ,
+                                                                  <http://reference.data.gov.uk/id/department/justice/unit/justice-policy-group> ,
+                                                                  <http://reference.data.gov.uk/id/department/justice/unit/office-of-the-public-guardian-opg> ;
+                                                     foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/justice.ttl> . 
+
+<http://reference.data.gov.uk/id/department/justice/unit/corporate-performance-group> rdfs:label "Corporate Performance Group" . 
+
+<http://reference.data.gov.uk/id/department/justice/unit/private-office> rdfs:label "Private Office" . 
+
+<http://reference.data.gov.uk/id/department/justice/unit/her-majestys-courts-and-tribunals-service-hmcts> rdfs:label "Her Majesty's Courts and Tribunals Service (HMCTS)" . 
+
+<http://reference.data.gov.uk/id/department/justice/unit/justice-policy-group> rdfs:label "Justice Policy Group" . 
+
+<http://reference.data.gov.uk/id/department/justice/unit/office-of-the-public-guardian-opg> rdfs:label "Office of the Public Guardian (OPG)" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/justice.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/justice> ;
+                                                                     linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                     linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/justice.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

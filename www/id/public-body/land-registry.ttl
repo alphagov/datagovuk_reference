@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/land-registry> rdf:type msg0:Organization ,
+                                                                     central-government:PublicBody ;
+                                                            rdfs:label "Land Registry" ;
+                                                            msg0:hasUnit <http://reference.data.gov.uk/id/public-body/land-registry/unit/hr-directorate> ,
+                                                                         <http://reference.data.gov.uk/id/public-body/land-registry/unit/finance-directorate> ,
+                                                                         <http://reference.data.gov.uk/id/public-body/land-registry/unit/legal-services-group> ,
+                                                                         <http://reference.data.gov.uk/id/public-body/land-registry/unit/commercial-and-customer-directorate> ,
+                                                                         <http://reference.data.gov.uk/id/public-body/land-registry/unit/chief-land-registrars-office> ,
+                                                                         <http://reference.data.gov.uk/id/public-body/land-registry/unit/information-systems> ,
+                                                                         <http://reference.data.gov.uk/id/public-body/land-registry/unit/operations-directorate> ;
+                                                            central-government:parentDepartment <http://reference.data.gov.uk/id/department/bis> ;
+                                                            foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/land-registry.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/land-registry/unit/hr-directorate> rdfs:label "HR Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/land-registry/unit/finance-directorate> rdfs:label "Finance Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/land-registry/unit/legal-services-group> rdfs:label "Legal Services Group" . 
+
+<http://reference.data.gov.uk/id/public-body/land-registry/unit/commercial-and-customer-directorate> rdfs:label "Commercial and Customer Directorate" . 
+
+<http://reference.data.gov.uk/id/public-body/land-registry/unit/chief-land-registrars-office> rdfs:label "Chief Land Registrars Office" . 
+
+<http://reference.data.gov.uk/id/public-body/land-registry/unit/information-systems> rdfs:label "Information Systems" . 
+
+<http://reference.data.gov.uk/id/public-body/land-registry/unit/operations-directorate> rdfs:label "Operations Directorate" . 
+
+<http://reference.data.gov.uk/id/department/bis> rdfs:label "Department for Business Innovation and Skills" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/land-registry.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/land-registry> ;
+                                                                            linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                            linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/land-registry.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

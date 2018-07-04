@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/dfid> rdf:type msg0:Organization ,
+                                                            central-government:PublicBody ;
+                                                   rdfs:label "DFID" ;
+                                                   msg0:hasUnit <http://reference.data.gov.uk/id/public-body/dfid/unit/finance-corporate-performance> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dfid/unit/country-programmes> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dfid/unit/corporate-performance> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dfid/unit/policy-international> ;
+                                                   central-government:parentDepartment <http://reference.data.gov.uk/id/department/dfid> ;
+                                                   foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/dfid.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/dfid/unit/finance-corporate-performance> rdfs:label "Finance & Corporate Performance" . 
+
+<http://reference.data.gov.uk/id/public-body/dfid/unit/country-programmes> rdfs:label "Country programmes" . 
+
+<http://reference.data.gov.uk/id/public-body/dfid/unit/corporate-performance> rdfs:label "Corporate Performance" . 
+
+<http://reference.data.gov.uk/id/public-body/dfid/unit/policy-international> rdfs:label "Policy & International" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/dfid.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/dfid> ;
+                                                                   linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                   linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/dfid.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

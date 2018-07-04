@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix ns0: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/department/attorney-general> rdf:type msg0:Organization ,
+                                                                       ns0:Department ,
+                                                                       ns0:PublicBody ;
+                                                              rdfs:label "Attorney General's Office" ;
+                                                              msg0:hasUnit <http://reference.data.gov.uk/id/department/attorney-general/unit/business-support-team> ,
+                                                                           <http://reference.data.gov.uk/id/department/attorney-general/unit/criminal-law> ,
+                                                                           <http://reference.data.gov.uk/id/department/attorney-general/unit/civil-law> ,
+                                                                           <http://reference.data.gov.uk/id/department/attorney-general/unit/finance-and-strategy> ,
+                                                                           <http://reference.data.gov.uk/id/department/attorney-general/unit/head-of-attorney-generals-office> ;
+                                                              foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/department/attorney-general.ttl> . 
+
+<http://reference.data.gov.uk/id/department/attorney-general/unit/business-support-team> rdfs:label "Business Support Team" . 
+
+<http://reference.data.gov.uk/id/department/attorney-general/unit/criminal-law> rdfs:label "Criminal Law" . 
+
+<http://reference.data.gov.uk/id/department/attorney-general/unit/civil-law> rdfs:label "Civil Law" . 
+
+<http://reference.data.gov.uk/id/department/attorney-general/unit/finance-and-strategy> rdfs:label "Finance and Strategy" . 
+
+<http://reference.data.gov.uk/id/department/attorney-general/unit/head-of-attorney-generals-office> rdfs:label "Head of Attorney General's Office" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/department/attorney-general.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/department/attorney-general> ;
+                                                                              linked-data:definition <http://organogram.data.gov.uk/api#department> ;
+                                                                              linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/department/attorney-general.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

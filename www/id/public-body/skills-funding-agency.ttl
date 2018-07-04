@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/skills-funding-agency> rdf:type msg0:Organization ,
+                                                                             central-government:PublicBody ;
+                                                                    rdfs:label "Skills Funding Agency" ;
+                                                                    msg0:hasUnit <http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/information-management-services> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/provider-services> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/skills-funding-agency-chief-executive-office> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/communications-and-campaigns> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/employer-and-learner-services> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/human-resources-and-facilities> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/strategic-finance> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/national-apprenticeship-service> ,
+                                                                                 <http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/regional-skills-services> ;
+                                                                    central-government:parentDepartment <http://reference.data.gov.uk/id/department/bis> ;
+                                                                    foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/skills-funding-agency.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/information-management-services> rdfs:label "Information Management Services" . 
+
+<http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/provider-services> rdfs:label "Provider Services" . 
+
+<http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/skills-funding-agency-chief-executive-office> rdfs:label "Skills Funding Agency Chief Executive Office" . 
+
+<http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/communications-and-campaigns> rdfs:label "Communications and Campaigns" . 
+
+<http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/employer-and-learner-services> rdfs:label "Employer and Learner Services" . 
+
+<http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/human-resources-and-facilities> rdfs:label "Human Resources and Facilities" . 
+
+<http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/strategic-finance> rdfs:label "Strategic Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/national-apprenticeship-service> rdfs:label "National Apprenticeship Service" . 
+
+<http://reference.data.gov.uk/id/public-body/skills-funding-agency/unit/regional-skills-services> rdfs:label "Regional Skills Services" . 
+
+<http://reference.data.gov.uk/id/department/bis> rdfs:label "Department for Business Innovation and Skills" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/skills-funding-agency.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/skills-funding-agency> ;
+                                                                                    linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                    linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/skills-funding-agency.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

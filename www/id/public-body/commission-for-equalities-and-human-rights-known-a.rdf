@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Commission for Equalities and Human Rights (known as the Equality and Human Rights Commission)</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-group-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-people"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/legal-legal-enforcement"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/legal-group-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/legal-human-rights"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/regulation-policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-ict"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-helpline"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-group-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-english-regions"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-buildings-and-facilities"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-grants"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/legal-legal-casework"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-external-affairs"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-intelligence-hub"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-stakeholder-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/commissioners-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-corporate-law-and-governance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-information"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/regulation-group-directorate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/wales"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-business-planning"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/legal-legal-policy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/scotland"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/ho"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/commission-for-equalities-and-human-rights-known-a.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-group-directorate">
+    <rdfs:label>Corporate Management, Group Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-people">
+    <rdfs:label>Corporate Management, People</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/legal-legal-enforcement">
+    <rdfs:label>Legal, Legal Enforcement</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/legal-group-directorate">
+    <rdfs:label>Legal, Group Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/legal-human-rights">
+    <rdfs:label>Legal, Human Rights</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/regulation-policy">
+    <rdfs:label>Regulation, Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-ict">
+    <rdfs:label>Corporate Management, ICT</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-helpline">
+    <rdfs:label>Intelligence &amp; Engagement, Helpline</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-group-directorate">
+    <rdfs:label>Intelligence &amp; Engagement, Group Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-english-regions">
+    <rdfs:label>Intelligence &amp; Engagement, English Regions</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-buildings-and-facilities">
+    <rdfs:label>Corporate Management, Buildings and Facilities</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-finance">
+    <rdfs:label>Corporate Management, Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-grants">
+    <rdfs:label>Corporate Management, Grants</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/legal-legal-casework">
+    <rdfs:label>Legal, Legal Casework</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-external-affairs">
+    <rdfs:label>Intelligence &amp; Engagement, External Affairs</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-intelligence-hub">
+    <rdfs:label>Intelligence &amp; Engagement, Intelligence Hub</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/intelligence-engagement-stakeholder-management">
+    <rdfs:label>Intelligence &amp; Engagement, Stakeholder Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/commissioners-office">
+    <rdfs:label>Commissioner's Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-corporate-law-and-governance">
+    <rdfs:label>Corporate Management, Corporate Law and Governance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-information">
+    <rdfs:label>Corporate Management, Information</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/regulation-group-directorate">
+    <rdfs:label>Regulation, Group Directorate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/wales">
+    <rdfs:label>Wales</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/corporate-management-business-planning">
+    <rdfs:label>Corporate Management, Business Planning</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/legal-legal-policy">
+    <rdfs:label>Legal, Legal Policy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a/unit/scotland">
+    <rdfs:label>Scotland</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/ho">
+    <rdfs:label>Home Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/commission-for-equalities-and-human-rights-known-a.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/commission-for-equalities-and-human-rights-known-a"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/commission-for-equalities-and-human-rights-known-a.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

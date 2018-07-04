@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Valuation Office Agency</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/rating"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/londoncentral-westminister"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/norwich"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/coventry"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/newport"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/svucvt"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/commercial-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/aylesbury"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/performanceandanalysispa"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/2015-voa-strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/adjudicators-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/strategy-people-change"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/nabs"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/datastrategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/plymouth"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/alnwick"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/taunton"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/mineralsteam"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/liverpool"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/hull"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/hroperations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/stalbans"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cs-ncs"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/crewe"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/financialoperationsunit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/local-government-direct-ncs-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/corporatecommunications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/ncs-caseworkers-costs"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/stokeontrent"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/waleswesternsru"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/northernsru"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/lancaster"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/northampton"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/durham"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/customerservices"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/carmarthen"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/leicester"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/worcester"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/reading"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/halifaxdatacapturecentre"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/financestrategyandplanningfsp"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/dorchester"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/ulverston"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/southernsru"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/council-tax-and-housing-allowances"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/staustell"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/swindon"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/manchester"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/barnstaple"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cambridge"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/exeter"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/guildford"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bedford"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/huddersfield"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/tunbridge-wells"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/barking"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/chatham"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/it-and-business-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/gloucester"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/portfolio-delivery-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/folkestone"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/swansea"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bournemouth"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/wrexham"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/corporateaccomunit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/preston"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/merthyrtydfil"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/lincoln"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/londonsouth"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/utilitiesratingteam"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/londonnorth"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/harrogate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/housing-allowances"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/graduatevaluers"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/financeplanning"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/live-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/sheffield"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/birmingham"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/southampton"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/carlisle"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/kidderminster"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/colchester"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/leeds"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/gloucesterlondon-central"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/peterborough"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/basingstoke"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/analysis-information"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/ipswich"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cs-caseworker-costs"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/worthing"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/newcastle"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/easternsru"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/governance-assurance-procurement-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cardiff"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/harrow"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/oxford"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/sruoperationscentre"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/derby"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bristol"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/york"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/business-partners-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/shrewsbury"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/valuation-tribunal-support-group"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/private-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/rhyl"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/local-housing-allowances"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/halifax"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/eastmidlands"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/city-tower-hamlets"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/localtaxationhousing-allowances"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/wolverhampton"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bromley"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/reigate"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/eastbourne"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/teeside"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/learning"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bangor"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/agency-security-program"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/eastanglia"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/grimsby"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/customer-strategy-insight"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/board-secretariat"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/hmrc"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/rating">
+    <rdfs:label>Rating</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/londoncentral-westminister">
+    <rdfs:label>LondonCentral (Westminister)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/norwich">
+    <rdfs:label>Norwich</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/coventry">
+    <rdfs:label>Coventry</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/newport">
+    <rdfs:label>Newport</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/svucvt">
+    <rdfs:label>SVU&amp;CVT</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/commercial-services">
+    <rdfs:label>Commercial Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/aylesbury">
+    <rdfs:label>Aylesbury</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/performanceandanalysispa">
+    <rdfs:label>PerformanceandAnalysis(P&amp;A)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/2015-voa-strategy">
+    <rdfs:label>2015 VOA Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/adjudicators-office">
+    <rdfs:label>Adjudicators Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/strategy-people-change">
+    <rdfs:label>Strategy, People &amp;Change</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/nabs">
+    <rdfs:label>NABS</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/datastrategy">
+    <rdfs:label>DataStrategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/plymouth">
+    <rdfs:label>Plymouth</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/alnwick">
+    <rdfs:label>Alnwick</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/taunton">
+    <rdfs:label>Taunton</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/mineralsteam">
+    <rdfs:label>MineralsTeam</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/liverpool">
+    <rdfs:label>Liverpool</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/hull">
+    <rdfs:label>Hull</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/hroperations">
+    <rdfs:label>HROperations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/stalbans">
+    <rdfs:label>StAlbans</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cs-ncs">
+    <rdfs:label>CS &amp; NCS</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/crewe">
+    <rdfs:label>Crewe</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/financialoperationsunit">
+    <rdfs:label>FinancialOperationsUnit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/local-government-direct-ncs-management">
+    <rdfs:label>Local Government Direct NCS Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/corporatecommunications">
+    <rdfs:label>CorporateCommunications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/ncs-caseworkers-costs">
+    <rdfs:label>NCS Caseworkers Costs</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/stokeontrent">
+    <rdfs:label>StokeonTrent</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/waleswesternsru">
+    <rdfs:label>Wales&amp;WesternSRU</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/northernsru">
+    <rdfs:label>NorthernSRU</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/lancaster">
+    <rdfs:label>Lancaster</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/northampton">
+    <rdfs:label>Northampton</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/durham">
+    <rdfs:label>Durham</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/customerservices">
+    <rdfs:label>CustomerServices</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/carmarthen">
+    <rdfs:label>Carmarthen</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/leicester">
+    <rdfs:label>Leicester</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/worcester">
+    <rdfs:label>Worcester</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/reading">
+    <rdfs:label>Reading</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/halifaxdatacapturecentre">
+    <rdfs:label>HalifaxDataCaptureCentre</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/financestrategyandplanningfsp">
+    <rdfs:label>Finance,StrategyandPlanning(FS&amp;P)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/dorchester">
+    <rdfs:label>Dorchester</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/ulverston">
+    <rdfs:label>Ulverston</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/southernsru">
+    <rdfs:label>SouthernSRU</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/council-tax-and-housing-allowances">
+    <rdfs:label>Council Tax and Housing Allowances</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/staustell">
+    <rdfs:label>StAustell</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/swindon">
+    <rdfs:label>Swindon</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/manchester">
+    <rdfs:label>Manchester</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/barnstaple">
+    <rdfs:label>Barnstaple</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cambridge">
+    <rdfs:label>Cambridge</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/exeter">
+    <rdfs:label>Exeter</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/guildford">
+    <rdfs:label>Guildford</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bedford">
+    <rdfs:label>Bedford</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/huddersfield">
+    <rdfs:label>Huddersfield</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/tunbridge-wells">
+    <rdfs:label>Tunbridge Wells</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/barking">
+    <rdfs:label>Barking</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/chatham">
+    <rdfs:label>Chatham</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/it-and-business-services">
+    <rdfs:label>IT and Business Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/gloucester">
+    <rdfs:label>Gloucester</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/portfolio-delivery-group">
+    <rdfs:label>Portfolio Delivery Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/folkestone">
+    <rdfs:label>Folkestone</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/swansea">
+    <rdfs:label>Swansea</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bournemouth">
+    <rdfs:label>Bournemouth</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/wrexham">
+    <rdfs:label>Wrexham</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/corporateaccomunit">
+    <rdfs:label>CorporateAccomUnit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/preston">
+    <rdfs:label>Preston</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/merthyrtydfil">
+    <rdfs:label>MerthyrTydfil</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/lincoln">
+    <rdfs:label>Lincoln</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/londonsouth">
+    <rdfs:label>LondonSouth</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/utilitiesratingteam">
+    <rdfs:label>UtilitiesRatingTeam</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/londonnorth">
+    <rdfs:label>LondonNorth</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/harrogate">
+    <rdfs:label>Harrogate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/housing-allowances">
+    <rdfs:label>Housing Allowances</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/graduatevaluers">
+    <rdfs:label>GraduateValuers</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/financeplanning">
+    <rdfs:label>Finance&amp;Planning</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/live-services">
+    <rdfs:label>Live Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/sheffield">
+    <rdfs:label>Sheffield</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/birmingham">
+    <rdfs:label>Birmingham</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/southampton">
+    <rdfs:label>Southampton</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/carlisle">
+    <rdfs:label>Carlisle</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/kidderminster">
+    <rdfs:label>Kidderminster</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/colchester">
+    <rdfs:label>Colchester</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/leeds">
+    <rdfs:label>Leeds</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/gloucesterlondon-central">
+    <rdfs:label>Gloucester(London Central)</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/peterborough">
+    <rdfs:label>Peterborough</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/basingstoke">
+    <rdfs:label>Basingstoke</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/analysis-information">
+    <rdfs:label>Analysis &amp; Information</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/ipswich">
+    <rdfs:label>Ipswich</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cs-caseworker-costs">
+    <rdfs:label>CS Caseworker Costs</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/worthing">
+    <rdfs:label>Worthing</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/newcastle">
+    <rdfs:label>Newcastle</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/easternsru">
+    <rdfs:label>EasternSRU</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/governance-assurance-procurement-unit">
+    <rdfs:label>Governance, Assurance &amp; Procurement Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/cardiff">
+    <rdfs:label>Cardiff</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/harrow">
+    <rdfs:label>Harrow</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/oxford">
+    <rdfs:label>Oxford</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/sruoperationscentre">
+    <rdfs:label>SRUOperationsCentre</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/derby">
+    <rdfs:label>Derby</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bristol">
+    <rdfs:label>Bristol</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/york">
+    <rdfs:label>York</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/business-partners-group">
+    <rdfs:label>Business Partners Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/shrewsbury">
+    <rdfs:label>Shrewsbury</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/valuation-tribunal-support-group">
+    <rdfs:label>Valuation Tribunal Support Group</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/private-office">
+    <rdfs:label>Private Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/rhyl">
+    <rdfs:label>Rhyl</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/local-housing-allowances">
+    <rdfs:label>Local Housing Allowances</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/halifax">
+    <rdfs:label>Halifax</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/eastmidlands">
+    <rdfs:label>EastMidlands</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/city-tower-hamlets">
+    <rdfs:label>City &amp; Tower Hamlets</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/localtaxationhousing-allowances">
+    <rdfs:label>LocalTaxation&amp;Housing Allowances</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/wolverhampton">
+    <rdfs:label>Wolverhampton</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bromley">
+    <rdfs:label>Bromley</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/reigate">
+    <rdfs:label>Reigate</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/eastbourne">
+    <rdfs:label>Eastbourne</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/teeside">
+    <rdfs:label>Teeside</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/learning">
+    <rdfs:label>Learning</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/bangor">
+    <rdfs:label>Bangor</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/agency-security-program">
+    <rdfs:label>Agency Security Program</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/eastanglia">
+    <rdfs:label>EastAnglia</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/grimsby">
+    <rdfs:label>Grimsby</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/customer-strategy-insight">
+    <rdfs:label>Customer Strategy &amp; Insight</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/valuation-office-agency/unit/board-secretariat">
+    <rdfs:label>Board Secretariat</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/valuation-office-agency"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/valuation-office-agency.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

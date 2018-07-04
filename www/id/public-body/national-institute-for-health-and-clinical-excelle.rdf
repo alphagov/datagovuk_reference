@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>National Institute for Health and Clinical Excellence</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/clinical-guidelines"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/diagnostics-assessment-programme"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/commissioned-content"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/nice-international"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-and-public-involvement-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/it"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/accreditation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/operations"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-access-scheme-liaison-unit"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/centre-for-public-health-excellence"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/quality-systems"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/corporate-office"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/impact-evaluation"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-release"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/search-sources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/scientific-advice"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/topic-selection"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/costing-commissioning"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/medical-technologies"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/field-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/information-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/egap-and-pathways"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/finance"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/user-research"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/design"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/short-clinical-guidelines"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/implementation-support-team"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/national-prescribing-centre"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/editorial-and-publishing"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/fellows-programme"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-transition"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/marketing-comms"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/evidence-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/facilities"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/engagement-management"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/research-development"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/communications"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/technology-appraisals"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/interventional-procedures"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dh"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/clinical-guidelines">
+    <rdfs:label>Clinical Guidelines</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/diagnostics-assessment-programme">
+    <rdfs:label>Diagnostics Assessment Programme</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/commissioned-content">
+    <rdfs:label>Commissioned Content</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/nice-international">
+    <rdfs:label>NICE International</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-and-public-involvement-unit">
+    <rdfs:label>Patient and Public Involvement Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/it">
+    <rdfs:label>IT</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/accreditation">
+    <rdfs:label>Accreditation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/operations">
+    <rdfs:label>Operations</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/patient-access-scheme-liaison-unit">
+    <rdfs:label>Patient Access Scheme Liaison Unit</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/centre-for-public-health-excellence">
+    <rdfs:label>Centre for Public Health Excellence</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/quality-systems">
+    <rdfs:label>Quality Systems</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/corporate-office">
+    <rdfs:label>Corporate Office</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/impact-evaluation">
+    <rdfs:label>Impact &amp; Evaluation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-release">
+    <rdfs:label>Development &amp; Release</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/search-sources">
+    <rdfs:label>Search &amp; Sources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/scientific-advice">
+    <rdfs:label>Scientific Advice</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/topic-selection">
+    <rdfs:label>Topic Selection</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/costing-commissioning">
+    <rdfs:label>Costing &amp; Commissioning</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/medical-technologies">
+    <rdfs:label>Medical Technologies</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/field-team">
+    <rdfs:label>Field Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/information-services">
+    <rdfs:label>Information Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/egap-and-pathways">
+    <rdfs:label>EGAP and Pathways</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/finance">
+    <rdfs:label>Finance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/human-resources">
+    <rdfs:label>Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/user-research">
+    <rdfs:label>User Research</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/design">
+    <rdfs:label>Design</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/short-clinical-guidelines">
+    <rdfs:label>Short Clinical Guidelines</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/implementation-support-team">
+    <rdfs:label>Implementation Support Team</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/national-prescribing-centre">
+    <rdfs:label>National Prescribing Centre</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/editorial-and-publishing">
+    <rdfs:label>Editorial and Publishing</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/fellows-programme">
+    <rdfs:label>Fellows Programme</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/development-transition">
+    <rdfs:label>Development &amp; Transition</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/marketing-comms">
+    <rdfs:label>Marketing &amp; Comms</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/evidence-resources">
+    <rdfs:label>Evidence Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/facilities">
+    <rdfs:label>Facilities</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/engagement-management">
+    <rdfs:label>Engagement &amp; Management</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/research-development">
+    <rdfs:label>Research &amp; Development</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/communications">
+    <rdfs:label>Communications</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/technology-appraisals">
+    <rdfs:label>Technology Appraisals</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle/unit/interventional-procedures">
+    <rdfs:label>Interventional Procedures</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dh">
+    <rdfs:label>Department of Health</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/national-institute-for-health-and-clinical-excelle"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/national-institute-for-health-and-clinical-excelle.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

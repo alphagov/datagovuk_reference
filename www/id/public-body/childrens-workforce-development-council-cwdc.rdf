@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:central-government="http://reference.data.gov.uk/def/central-government/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/childrens-workforce-development-council-cwdc">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Children's Workforce Development Council (CWDC)</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/childrens-workforce-development-council-cwdc/unit/early-yearssector-leadership"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/childrens-workforce-development-council-cwdc/unit/finance-company-secretary"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/childrens-workforce-development-council-cwdc/unit/social-work"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/public-body/childrens-workforce-development-council-cwdc/unit/business-development-performance"/>
+    <central-government:parentDepartment rdf:resource="http://reference.data.gov.uk/id/department/dfe"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/childrens-workforce-development-council-cwdc.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/childrens-workforce-development-council-cwdc/unit/early-yearssector-leadership">
+    <rdfs:label>Early Years/Sector Leadership</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/childrens-workforce-development-council-cwdc/unit/finance-company-secretary">
+    <rdfs:label>Finance &amp; Company Secretary</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/childrens-workforce-development-council-cwdc/unit/social-work">
+    <rdfs:label>Social Work</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/public-body/childrens-workforce-development-council-cwdc/unit/business-development-performance">
+    <rdfs:label>Business Development &amp; Performance</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dfe">
+    <rdfs:label>Department for Education</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/public-body/childrens-workforce-development-council-cwdc.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/public-body/childrens-workforce-development-council-cwdc"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#publicBody"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/public-body/childrens-workforce-development-council-cwdc.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

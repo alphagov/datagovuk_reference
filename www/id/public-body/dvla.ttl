@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/dvla> rdf:type msg0:Organization ,
+                                                            central-government:PublicBody ;
+                                                   rdfs:label "DVLA" ;
+                                                   msg0:hasUnit <http://reference.data.gov.uk/id/public-body/dvla/unit/operations> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dvla/unit/information-systems> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dvla/unit/procurement> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dvla/unit/corporate-affairs> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dvla/unit/human-resources> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dvla/unit/eservices-enforcement> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dvla/unit/chief-executive> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dvla/unit/estates-corporate-services> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dvla/unit/finance> ,
+                                                                <http://reference.data.gov.uk/id/public-body/dvla/unit/audit> ;
+                                                   central-government:parentDepartment <http://reference.data.gov.uk/id/department/dft> ;
+                                                   foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/dvla.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/dvla/unit/operations> rdfs:label "Operations" . 
+
+<http://reference.data.gov.uk/id/public-body/dvla/unit/information-systems> rdfs:label "Information Systems" . 
+
+<http://reference.data.gov.uk/id/public-body/dvla/unit/procurement> rdfs:label "Procurement" . 
+
+<http://reference.data.gov.uk/id/public-body/dvla/unit/corporate-affairs> rdfs:label "Corporate Affairs" . 
+
+<http://reference.data.gov.uk/id/public-body/dvla/unit/human-resources> rdfs:label "Human Resources" . 
+
+<http://reference.data.gov.uk/id/public-body/dvla/unit/eservices-enforcement> rdfs:label "e-services & Enforcement" . 
+
+<http://reference.data.gov.uk/id/public-body/dvla/unit/chief-executive> rdfs:label "Chief Executive" . 
+
+<http://reference.data.gov.uk/id/public-body/dvla/unit/estates-corporate-services> rdfs:label "Estates & Corporate Services" . 
+
+<http://reference.data.gov.uk/id/public-body/dvla/unit/finance> rdfs:label "Finance" . 
+
+<http://reference.data.gov.uk/id/public-body/dvla/unit/audit> rdfs:label "Audit" . 
+
+<http://reference.data.gov.uk/id/department/dft> rdfs:label "Department for Transport" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/dvla.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/dvla> ;
+                                                                   linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                   linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/dvla.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+

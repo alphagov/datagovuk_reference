@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:msg0="http://www.w3.org/ns/org#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:linked-data="http://purl.org/linked-data/api/vocab#">
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp">
+    <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/Department"/>
+    <rdf:type rdf:resource="http://reference.data.gov.uk/def/central-government/PublicBody"/>
+    <rdfs:label>Department for Work and Pensions</rdfs:label>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/strategy"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/operations-benefits"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/operations-contracted-customer-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/operations-network-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/finance-commercial"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/human-resources"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/corporate-it"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/operations-no-title-provided"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/operations-pensions"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/operations-operational-excellence"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/finance-commercial-shared-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/professional-services"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/operations-work-services-director-deputy-coo"/>
+    <msg0:hasUnit rdf:resource="http://reference.data.gov.uk/id/department/dwp/unit/operations-uc-delivery-organisation-implementation"/>
+    <foaf:isPrimaryTopicOf rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/dwp.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/strategy">
+    <rdfs:label>Strategy</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/operations-benefits">
+    <rdfs:label>Operations - Benefits</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/operations-contracted-customer-services">
+    <rdfs:label>Operations - Contracted Customer Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/operations-network-services">
+    <rdfs:label>Operations - Network Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/finance-commercial">
+    <rdfs:label>Finance &amp; Commercial</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/human-resources">
+    <rdfs:label>Human Resources</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/corporate-it">
+    <rdfs:label>Corporate IT</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/operations-no-title-provided">
+    <rdfs:label>Operations - No Title Provided</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/operations-pensions">
+    <rdfs:label>Operations - Pensions</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/operations-operational-excellence">
+    <rdfs:label>Operations - Operational Excellence</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/finance-commercial-shared-services">
+    <rdfs:label>Finance &amp; Commercial - Shared Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/professional-services">
+    <rdfs:label>Professional Services</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/operations-work-services-director-deputy-coo">
+    <rdfs:label>Operations - Work Services Director &amp; Deputy COO</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/id/department/dwp/unit/operations-uc-delivery-organisation-implementation">
+    <rdfs:label>Operations - UC Delivery Organisation Implementation</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://reference.data.gov.uk/2011-09-30/doc/department/dwp.rdf">
+    <foaf:primaryTopic rdf:resource="http://reference.data.gov.uk/id/department/dwp"/>
+    <linked-data:definition rdf:resource="http://organogram.data.gov.uk/api#department"/>
+    <linked-data:extendedMetadataVersion rdf:resource="http://reference.data.gov.uk/2011-09-30/doc/department/dwp.rdf?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings"/>
+  </rdf:Description>
+
+</rdf:RDF>

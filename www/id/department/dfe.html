@@ -1,0 +1,382 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Results</title>
+<link rel="shortcut icon" href="/images/datagovuk_favicon.png" type="image/x-icon">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.rdf" type="application/rdf+xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.ttl" type="text/turtle">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.json" type="application/json">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.xml" type="application/xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.csv" type="text/csv">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="/scripts/jquery.min.js"></script><script type="text/javascript" src="/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script><link rel="stylesheet" href="/css/html5reset-1.6.1.css" type="text/css">
+<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/smoothness/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/result.css" type="text/css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" type="text/css"></link><![endif]-->
+</head>
+<body><div id="page">
+<nav class="site"><section class="formats"><ul>
+<li class="first"><a href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+<li class="last"><a href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.csv" type="text/csv" rel="alternate" title="view in csv format">csv</a></li>
+</ul></section></nav><header><h1><a href="/">Linked Data API</a></h1></header><nav class="topnav"><section class="moreinfo"><h1>Browse</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Links to further information.</p>
+</div>
+<ul>
+<li><a href="/doc/department/dfe/minister">Department ministers</a></li>
+<li><a href="/doc/department/dfe/post">Department SCS posts</a></li>
+<li><a href="/doc/department/dfe/unit">Department units</a></li>
+<li><span class="current">Department</span></li>
+</ul>
+<ul>
+<li><a href="/doc/ministerial-department">Ministerial departments</a></li>
+<li><a href="/doc/non-ministerial-department">Non-ministerial departments</a></li>
+<li><a href="/doc/department">All departments</a></li>
+<li><a href="/doc/public-body">All public bodies</a></li>
+</ul>
+<ul>
+<li><a href="/doc/minister">All ministers</a></li>
+<li><a href="/doc/seat">All seats</a></li>
+<li><a href="/doc/mp">All MPs</a></li>
+<li><a href="/doc/peer">All peers</a></li>
+</ul></section><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view"><h1>View</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined views, but starred properties are always present no matter what the view. You can star properties by clicking on the <img src="/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.</p>
+</div>
+<ul>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.html?_view=description" title="switch to description view">description</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.html?_view=all" title="switch to all view">all</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.html?_view=minimal" title="switch to minimal view">minimal</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.html?_view=department+including+posts" title="switch to department including posts view">department including posts</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.html?_view=department" title="switch to department view">department</a></li>
+</ul>
+<ul class="properties">
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.html?_properties=label"><img src="/images/grey/16x16/Star.png" alt="star this property"> label</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.html?_properties=type"><img src="/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/dfe.html?_properties=unit.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> unit</a></li>
+</ul></section></nav><div id="result"><div class="panel">
+<header><p id="openSearch">Show Search Form</p>
+<h1>Department for Education</h1>
+<p class="id"><a href="http://reference.data.gov.uk/id/department/dfe">http://reference.data.gov.uk/id/department/dfe</a></p></header><section id="search"><form action="http://reference.data.gov.uk/2011-09-30/doc/department">
+<table>
+<colgroup>
+<col width="25%">
+<col width="70%">
+</colgroup>
+<tr>
+<th class="label"><label for="label">label</label></th>
+<td class="input"><input name="label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="type">type</label></th>
+<td class="input"><input name="type" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="unit.label">unit</label></th>
+<td class="input"><input name="unit.label" size="25"></td>
+</tr>
+</table>
+<p><button type="submit">Search</button></p>
+</form></section><section><table id="id1598008">
+<colgroup>
+<col width="25%">
+<col width="*">
+<col width="54">
+</colgroup>
+<tr class="type">
+<th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/def/central-government/Department" title="view on this site">Department</a> <a href="http://reference.data.gov.uk/def/central-government/Department" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/def/central-government/PublicBody" title="view on this site">PublicBody</a> <a href="http://reference.data.gov.uk/def/central-government/PublicBody" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value"><a href="http://www.w3.org/ns/org#Organization">Organization</a></td>
+<td class="filter"></td>
+</tr>
+</table></td>
+</tr>
+<tr class="unit last">
+<th class="label"><a href="http://www.w3.org/ns/org#hasUnit">unit</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/alb-reform-group" title="view on this site">ALB Reform Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/alb-reform-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=ALB%20Reform%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/academies-delivery-group" title="view on this site">Academies Delivery Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/academies-delivery-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Academies%20Delivery%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/academies-policy-and-school-organisation-group" title="view on this site">Academies Policy and School Organisation Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/academies-policy-and-school-organisation-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Academies%20Policy%20and%20School%20Organisation%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/chief-information-officer-and-property-asset-management-group" title="view on this site">Chief Information Officer and Property Asset Management Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/chief-information-officer-and-property-asset-management-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Chief%20Information%20Officer%20and%20Property%20Asset%20Management%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/children-young-people-and-families-directorate" title="view on this site">Children, Young People and Families Directorate</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/children-young-people-and-families-directorate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Children,%20Young%20People%20and%20Families%20Directorate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/communications-group" title="view on this site">Communications Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/communications-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Communications%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/curriculum-and-behaviour-group" title="view on this site">Curriculum and Behaviour Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/curriculum-and-behaviour-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Curriculum%20and%20Behaviour%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/early-years-extended-schools-and-special-needs-group" title="view on this site">Early Years, Extended Schools and Special Needs Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/early-years-extended-schools-and-special-needs-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Early%20Years,%20Extended%20Schools%20and%20Special%20Needs%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/education-funding-group" title="view on this site">Education Funding Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/education-funding-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Education%20Funding%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/education-strategy-performance-and-analysis-group" title="view on this site">Education Strategy, Performance and Analysis Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/education-strategy-performance-and-analysis-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Education%20Strategy,%20Performance%20and%20Analysis%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/families-group" title="view on this site">Families Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/families-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Families%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/finance-and-commercial-group" title="view on this site">Finance and Commercial Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/finance-and-commercial-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Finance%20and%20Commercial%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/free-schools-group" title="view on this site">Free Schools Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/free-schools-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Free%20Schools%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/infrastructure-funding-and-longitudinal-analysis-division" title="view on this site">Infrastructure Funding and Longitudinal Analysis Division</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/infrastructure-funding-and-longitudinal-analysis-division" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Infrastructure%20Funding%20and%20Longitudinal%20Analysis%20Division"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/infrastructure-and-funding-directorate-support-team" title="view on this site">Infrastructure and Funding Directorate Support Team</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/infrastructure-and-funding-directorate-support-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Infrastructure%20and%20Funding%20Directorate%20Support%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/internal-audit" title="view on this site">Internal Audit</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/internal-audit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Internal%20Audit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/legal-advisers-office" title="view on this site">Legal Advisers Office</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/legal-advisers-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Legal%20Advisers%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/office-of-the-schools-commissioner" title="view on this site">Office of the Schools Commissioner</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/office-of-the-schools-commissioner" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Office%20of%20the%20Schools%20Commissioner"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/people-and-change-group" title="view on this site">People and Change Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/people-and-change-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=People%20and%20Change%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/private-office" title="view on this site">Private Office</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/private-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Private%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/qualifications-and-participation-group" title="view on this site">Qualifications and Participation Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/qualifications-and-participation-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Qualifications%20and%20Participation%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/safeguarding-group" title="view on this site">Safeguarding Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/safeguarding-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Safeguarding%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/school-standards-group" title="view on this site">School Standards Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/school-standards-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=School%20Standards%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/strategic-analysis-research-and-policy-impact-group" title="view on this site">Strategic Analysis Research and Policy Impact Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/strategic-analysis-research-and-policy-impact-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Strategic%20Analysis%20Research%20and%20Policy%20Impact%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/strategy-and-performance-group" title="view on this site">Strategy and Performance Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/strategy-and-performance-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Strategy%20and%20Performance%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/supporting-children-and-young-people-group" title="view on this site">Supporting Children and Young People Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/supporting-children-and-young-people-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Supporting%20Children%20and%20Young%20People%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/supporting-delivery-group" title="view on this site">Supporting Delivery Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/supporting-delivery-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Supporting%20Delivery%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/dfe/unit/teachers-group" title="view on this site">Teachers Group</a> <a href="http://reference.data.gov.uk/id/department/dfe/unit/teachers-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Teachers%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></td>
+</tr>
+</table></section>
+</div></div>
+<nav class="bottomnav"></nav><footer><div class="provenance"><div class=" query col1">
+<h2>Viewer</h2>
+<p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the <a href="endpoint/url/@href">endpoint's page</a>.</p>
+<form action="http://10.254.6.244/organograms-2011-09-30/sparql" method="post">
+<textarea name="query" wrap="off" data-skip-lines="4">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX org: &lt;http://www.w3.org/ns/org#&gt;
+CONSTRUCT { 
+    # constructing properties of http://reference.data.gov.uk/id/department/dfe 
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; rdf:type ?var_1_0 .
+    ?var_1_0 rdfs:label ?var_1_1_0 .
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; rdfs:label ?var_2_0 .
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; skos:prefLabel ?var_3_0 .
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; skos:altLabel ?var_4_0 .
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; rdfs:comment ?var_5_0 .
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; org:hasUnit ?var_6_0 .
+    ?var_6_0 rdfs:label ?var_6_1_0 .
+} WHERE { 
+  # identifying properties of http://reference.data.gov.uk/id/department/dfe 
+  {
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; rdf:type ?var_1_0 .
+    OPTIONAL { ?var_1_0 rdfs:label ?var_1_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; rdfs:label ?var_2_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; skos:prefLabel ?var_3_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; skos:altLabel ?var_4_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; rdfs:comment ?var_5_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/dfe&gt; org:hasUnit ?var_6_0 .
+    OPTIONAL { ?var_6_0 rdfs:label ?var_6_1_0 . }
+  } 
+}
+</textarea><p><button type="submit">Run Query</button></p>
+</form>
+</div></div>
+<p>Powered by <a href="http://code.google.com/p/puelia-php/">Puelia v0.1</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p></footer>
+</div></body>
+</html>

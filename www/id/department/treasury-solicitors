@@ -1,0 +1,582 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Results</title>
+<link rel="shortcut icon" href="/images/datagovuk_favicon.png" type="image/x-icon">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.rdf" type="application/rdf+xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.ttl" type="text/turtle">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.json" type="application/json">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.xml" type="application/xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.html" type="text/html">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.csv" type="text/csv">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="/scripts/jquery.min.js"></script><script type="text/javascript" src="/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script><link rel="stylesheet" href="/css/html5reset-1.6.1.css" type="text/css">
+<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/smoothness/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/result.css" type="text/css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" type="text/css"></link><![endif]-->
+</head>
+<body><div id="page">
+<nav class="site"><section class="formats"><ul>
+<li class="first"><a href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+<li class="last"><a href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors.csv" type="text/csv" rel="alternate" title="view in csv format">csv</a></li>
+</ul></section></nav><header><h1><a href="/">Linked Data API</a></h1></header><nav class="topnav"><section class="moreinfo"><h1>Browse</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Links to further information.</p>
+</div>
+<ul>
+<li><a href="/doc/department/treasury-solicitors/minister">Department ministers</a></li>
+<li><a href="/doc/department/treasury-solicitors/post">Department SCS posts</a></li>
+<li><a href="/doc/department/treasury-solicitors/unit">Department units</a></li>
+<li><span class="current">Department</span></li>
+</ul>
+<ul>
+<li><a href="/doc/ministerial-department">Ministerial departments</a></li>
+<li><a href="/doc/non-ministerial-department">Non-ministerial departments</a></li>
+<li><a href="/doc/department">All departments</a></li>
+<li><a href="/doc/public-body">All public bodies</a></li>
+</ul>
+<ul>
+<li><a href="/doc/minister">All ministers</a></li>
+<li><a href="/doc/seat">All seats</a></li>
+<li><a href="/doc/mp">All MPs</a></li>
+<li><a href="/doc/peer">All peers</a></li>
+</ul></section><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view"><h1>View</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined views, but starred properties are always present no matter what the view. You can star properties by clicking on the <img src="/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.</p>
+</div>
+<ul>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors?_view=description" title="switch to description view">description</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors?_view=all" title="switch to all view">all</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors?_view=minimal" title="switch to minimal view">minimal</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors?_view=department+including+posts" title="switch to department including posts view">department including posts</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors?_view=department" title="switch to department view">department</a></li>
+</ul>
+<ul class="properties">
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors?_properties=label"><img src="/images/grey/16x16/Star.png" alt="star this property"> label</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors?_properties=type"><img src="/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/department/treasury-solicitors?_properties=unit.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> unit</a></li>
+</ul></section></nav><div id="result"><div class="panel">
+<header><p id="openSearch">Show Search Form</p>
+<h1>Treasury Solicitors</h1>
+<p class="id"><a href="http://reference.data.gov.uk/id/department/treasury-solicitors">http://reference.data.gov.uk/id/department/treasury-solicitors</a></p></header><section id="search"><form action="http://reference.data.gov.uk/2011-09-30/doc/department">
+<table>
+<colgroup>
+<col width="25%">
+<col width="70%">
+</colgroup>
+<tr>
+<th class="label"><label for="label">label</label></th>
+<td class="input"><input name="label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="type">type</label></th>
+<td class="input"><input name="type" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="unit.label">unit</label></th>
+<td class="input"><input name="unit.label" size="25"></td>
+</tr>
+</table>
+<p><button type="submit">Search</button></p>
+</form></section><section><table id="id1093620">
+<colgroup>
+<col width="25%">
+<col width="*">
+<col width="54">
+</colgroup>
+<tr class="type">
+<th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/def/central-government/Department" title="view on this site">Department</a> <a href="http://reference.data.gov.uk/def/central-government/Department" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/def/central-government/PublicBody" title="view on this site">PublicBody</a> <a href="http://reference.data.gov.uk/def/central-government/PublicBody" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value"><a href="http://www.w3.org/ns/org#Organization">Organization</a></td>
+<td class="filter"></td>
+</tr>
+</table></td>
+</tr>
+<tr class="unit last">
+<th class="label"><a href="http://www.w3.org/ns/org#hasUnit">unit</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/bona-vacantia" title="view on this site">Bona Vacantia</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/bona-vacantia" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Bona%20Vacantia"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/business-partnership" title="view on this site">Business Partnership</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/business-partnership" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Business%20Partnership"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/central-advisory-division" title="view on this site">Central Advisory Division</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Central%20Advisory%20Division"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/central-advisory-division-efficiency-and-reform-group" title="view on this site">Central Advisory Division - Efficiency and Reform Group</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-efficiency-and-reform-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Central%20Advisory%20Division%20-%20Efficiency%20and%20Reform%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/central-advisory-division-government-equality-office" title="view on this site">Central Advisory Division - Government Equality Office</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-government-equality-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Central%20Advisory%20Division%20-%20Government%20Equality%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/central-advisory-division-health-and-safety-executive" title="view on this site">Central Advisory Division - Health and Safety Executive</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-health-and-safety-executive" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Central%20Advisory%20Division%20-%20Health%20and%20Safety%20Executive"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/central-advisory-division-team-leader" title="view on this site">Central Advisory Division Team Leader</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/central-advisory-division-team-leader" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Central%20Advisory%20Division%20Team%20Leader"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/corporate-resources" title="view on this site">Corporate Resources</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Corporate%20Resources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/corporate-resources-finance" title="view on this site">Corporate Resources - Finance</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources-finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Corporate%20Resources%20-%20Finance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/corporate-resources-human-resources" title="view on this site">Corporate Resources - Human Resources</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources-human-resources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Corporate%20Resources%20-%20Human%20Resources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/corporate-resources-office-of-the-treasury-solicitor" title="view on this site">Corporate Resources - Office of the Treasury Solicitor</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/corporate-resources-office-of-the-treasury-solicitor" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Corporate%20Resources%20-%20Office%20of%20the%20Treasury%20Solicitor"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport" title="view on this site">Department for Culture, Media and Sport</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Culture,%20Media%20and%20Sport"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport-broadcasting-and-regulated-industries" title="view on this site">Department for Culture, Media and Sport - Broadcasting and Regulated Industries</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport-broadcasting-and-regulated-industries" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Culture,%20Media%20and%20Sport%20-%20Broadcasting%20and%20Regulated%20Industries"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport-olympic-sports-and-culture" title="view on this site">Department for Culture, Media and Sport - Olympic, Sports and Culture</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-culture-media-and-sport-olympic-sports-and-culture" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Culture,%20Media%20and%20Sport%20-%20Olympic,%20Sports%20and%20Culture"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-education-academies-and-free-schools" title="view on this site">Department for Education - Academies and Free Schools</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-academies-and-free-schools" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Education%20-%20Academies%20and%20Free%20Schools"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-education-safeguarding-early-years-information-law" title="view on this site">Department for Education - Safeguarding, Early Years &amp; Information Law</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-safeguarding-early-years-information-law" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Education%20-%20Safeguarding,%20Early%20Years%20&amp;%20Information%20Law"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-education-schools-pupils" title="view on this site">Department for Education - Schools &amp; Pupils</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-schools-pupils" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Education%20-%20Schools%20&amp;%20Pupils"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-education-young-people-albs-and-commercial" title="view on this site">Department for Education - Young People, ALBs and Commercial</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-education-young-people-albs-and-commercial" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Education%20-%20Young%20People,%20ALBs%20and%20Commercial"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-eductions-childrens-services-and-family-law" title="view on this site">Department for Eductions - Children's Services and Family Law</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-eductions-childrens-services-and-family-law" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Eductions%20-%20Children's%20Services%20and%20Family%20Law"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs" title="view on this site">Department for Environment, Food &amp; Rural Affairs</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Environment,%20Food%20&amp;%20Rural%20Affairs"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-agricultural-law" title="view on this site">Department for Environment, Food &amp; Rural Affairs - Agricultural Law</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-agricultural-law" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Environment,%20Food%20&amp;%20Rural%20Affairs%20-%20Agricultural%20Law"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-animal-health-welfare" title="view on this site">Department for Environment, Food &amp; Rural Affairs - Animal Health &amp; Welfare</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-animal-health-welfare" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Environment,%20Food%20&amp;%20Rural%20Affairs%20-%20Animal%20Health%20&amp;%20Welfare"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-arms-length-bodies-food-veterinary-medicines" title="view on this site">Department for Environment, Food &amp; Rural Affairs - Arms Length Bodies, Food &amp; Veterinary Medicines</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-arms-length-bodies-food-veterinary-medicines" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Environment,%20Food%20&amp;%20Rural%20Affairs%20-%20Arms%20Length%20Bodies,%20Food%20&amp;%20Veterinary%20Medicines"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-business-management-unit" title="view on this site">Department for Environment, Food &amp; Rural Affairs - Business Management Unit</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-business-management-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Environment,%20Food%20&amp;%20Rural%20Affairs%20-%20Business%20Management%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-commercial-procurement-law" title="view on this site">Department for Environment, Food &amp; Rural Affairs - Commercial &amp; Procurement Law</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-commercial-procurement-law" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Environment,%20Food%20&amp;%20Rural%20Affairs%20-%20Commercial%20&amp;%20Procurement%20Law"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-fish-forestry-plants-seeds-waste" title="view on this site">Department for Environment, Food &amp; Rural Affairs - Fish, Forestry, Plants, Seeds &amp; Waste</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-fish-forestry-plants-seeds-waste" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Environment,%20Food%20&amp;%20Rural%20Affairs%20-%20Fish,%20Forestry,%20Plants,%20Seeds%20&amp;%20Waste"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-international-eu-knowledge-management" title="view on this site">Department for Environment, Food &amp; Rural Affairs - International, EU &amp; Knowledge Management</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-international-eu-knowledge-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Environment,%20Food%20&amp;%20Rural%20Affairs%20-%20International,%20EU%20&amp;%20Knowledge%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-litigation-prosection" title="view on this site">Department for Environment, Food &amp; Rural Affairs - Litigation &amp; Prosection</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-litigation-prosection" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Environment,%20Food%20&amp;%20Rural%20Affairs%20-%20Litigation%20&amp;%20Prosection"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-marine-environment-conservation-biodiversity" title="view on this site">Department for Environment, Food &amp; Rural Affairs - Marine Environment, Conservation &amp; Biodiversity</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-marine-environment-conservation-biodiversity" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Environment,%20Food%20&amp;%20Rural%20Affairs%20-%20Marine%20Environment,%20Conservation%20&amp;%20Biodiversity"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-water-sustainable-development" title="view on this site">Department for Environment, Food &amp; Rural Affairs - Water &amp; Sustainable Development</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/department-for-environment-food-rural-affairs-water-sustainable-development" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Department%20for%20Environment,%20Food%20&amp;%20Rural%20Affairs%20-%20Water%20&amp;%20Sustainable%20Development"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/employment-e1" title="view on this site">Employment E1</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-e1" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Employment%20E1"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/employment-e2" title="view on this site">Employment E2</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-e2" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Employment%20E2"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/employment-e3" title="view on this site">Employment E3</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-e3" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Employment%20E3"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/employment-group" title="view on this site">Employment Group</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/employment-group" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Employment%20Group"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/european-division" title="view on this site">European Division</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/european-division" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=European%20Division"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/european-division-cabinet-office-legal" title="view on this site">European Division - Cabinet Office Legal</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/european-division-cabinet-office-legal" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=European%20Division%20-%20Cabinet%20Office%20Legal"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/european-division-litigation" title="view on this site">European Division - Litigation</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/european-division-litigation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=European%20Division%20-%20Litigation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/government-legal-service-secretariat" title="view on this site">Government Legal Service Secretariat</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/government-legal-service-secretariat" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Government%20Legal%20Service%20Secretariat"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation" title="view on this site">Litigation</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-management-unit" title="view on this site">Litigation - Management Unit</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-management-unit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20-%20Management%20Unit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-a-private-law-inquiries" title="view on this site">Litigation A - Private Law &amp; Inquiries</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a-private-law-inquiries" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20A%20-%20Private%20Law%20&amp;%20Inquiries"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-a1-moj-private-law" title="view on this site">Litigation A1 - MoJ Private Law</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a1-moj-private-law" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20A1%20-%20MoJ%20Private%20Law"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-a2-private-law" title="view on this site">Litigation A2 - Private Law</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a2-private-law" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20A2%20-%20Private%20Law"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-a3-mod-private-law" title="view on this site">Litigation A3 - MOD Private Law</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a3-mod-private-law" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20A3%20-%20MOD%20Private%20Law"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-a4-ag-general-private-law" title="view on this site">Litigation A4 - AG &amp; General Private Law</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a4-ag-general-private-law" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20A4%20-%20AG%20&amp;%20General%20Private%20Law"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-a5-companies-bis-costs-inquiries" title="view on this site">Litigation A5 - Companies, BIS, Costs &amp; Inquiries</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a5-companies-bis-costs-inquiries" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20A5%20-%20Companies,%20BIS,%20Costs%20&amp;%20Inquiries"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-a6-commercial-procurement" title="view on this site">Litigation A6 - Commercial &amp; Procurement</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-a6-commercial-procurement" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20A6%20-%20Commercial%20&amp;%20Procurement"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-b-public-law" title="view on this site">Litigation B - Public Law</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b-public-law" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20B%20-%20Public%20Law"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-b1-immigration" title="view on this site">Litigation B1 - Immigration</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b1-immigration" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20B1%20-%20Immigration"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-b2-immigration" title="view on this site">Litigation B2 - Immigration</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b2-immigration" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20B2%20-%20Immigration"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-b3-immigration" title="view on this site">Litigation B3 - Immigration</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b3-immigration" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20B3%20-%20Immigration"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-b4-justice-security" title="view on this site">Litigation B4 - Justice &amp; Security</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b4-justice-security" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20B4%20-%20Justice%20&amp;%20Security"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/litigation-b5-general-public-law-planning" title="view on this site">Litigation B5 - General Public Law &amp; Planning</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/litigation-b5-general-public-law-planning" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Litigation%20B5%20-%20General%20Public%20Law%20&amp;%20Planning"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/n1-national-security-counter-terrorism" title="view on this site">N1 National Security &amp; Counter Terrorism</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/n1-national-security-counter-terrorism" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=N1%20National%20Security%20&amp;%20Counter%20Terrorism"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/n2-al-sweady-inquiry" title="view on this site">N2 Al Sweady Inquiry</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/n2-al-sweady-inquiry" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=N2%20Al%20Sweady%20Inquiry"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/treasury-advisory-banking-and-financial-crime" title="view on this site">Treasury Advisory - Banking and Financial Crime</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-banking-and-financial-crime" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Treasury%20Advisory%20-%20Banking%20and%20Financial%20Crime"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/treasury-advisory-financial-stability" title="view on this site">Treasury Advisory - Financial Stability</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-financial-stability" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Treasury%20Advisory%20-%20Financial%20Stability"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/treasury-advisory-insurance-markets-and-mutuals" title="view on this site">Treasury Advisory - Insurance Markets and Mutuals</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-insurance-markets-and-mutuals" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Treasury%20Advisory%20-%20Insurance%20Markets%20and%20Mutuals"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/treasury-advisory-pensions-and-employment" title="view on this site">Treasury Advisory - Pensions and Employment</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-pensions-and-employment" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Treasury%20Advisory%20-%20Pensions%20and%20Employment"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/treasury-advisory-public-finances-and-general" title="view on this site">Treasury Advisory - Public Finances and General</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-advisory-public-finances-and-general" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Treasury%20Advisory%20-%20Public%20Finances%20and%20General"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/department/treasury-solicitors/unit/treasury-solicitors-department" title="view on this site">Treasury Solicitor's Department</a> <a href="http://reference.data.gov.uk/id/department/treasury-solicitors/unit/treasury-solicitors-department" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/department?unit.label=Treasury%20Solicitor's%20Department"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></td>
+</tr>
+</table></section>
+</div></div>
+<nav class="bottomnav"></nav><footer><div class="provenance"><div class=" query col1">
+<h2>Viewer</h2>
+<p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the <a href="endpoint/url/@href">endpoint's page</a>.</p>
+<form action="http://10.254.6.244/organograms-2011-09-30/sparql" method="post">
+<textarea name="query" wrap="off" data-skip-lines="4">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX org: &lt;http://www.w3.org/ns/org#&gt;
+CONSTRUCT { 
+    # constructing properties of http://reference.data.gov.uk/id/department/treasury-solicitors 
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; rdf:type ?var_1_0 .
+    ?var_1_0 rdfs:label ?var_1_1_0 .
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; rdfs:label ?var_2_0 .
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; skos:prefLabel ?var_3_0 .
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; skos:altLabel ?var_4_0 .
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; rdfs:comment ?var_5_0 .
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; org:hasUnit ?var_6_0 .
+    ?var_6_0 rdfs:label ?var_6_1_0 .
+} WHERE { 
+  # identifying properties of http://reference.data.gov.uk/id/department/treasury-solicitors 
+  {
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; rdf:type ?var_1_0 .
+    OPTIONAL { ?var_1_0 rdfs:label ?var_1_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; rdfs:label ?var_2_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; skos:prefLabel ?var_3_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; skos:altLabel ?var_4_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; rdfs:comment ?var_5_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/department/treasury-solicitors&gt; org:hasUnit ?var_6_0 .
+    OPTIONAL { ?var_6_0 rdfs:label ?var_6_1_0 . }
+  } 
+}
+</textarea><p><button type="submit">Run Query</button></p>
+</form>
+</div></div>
+<p>Powered by <a href="http://code.google.com/p/puelia-php/">Puelia v0.1</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p></footer>
+</div></body>
+</html>

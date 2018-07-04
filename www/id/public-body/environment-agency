@@ -1,0 +1,982 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Search Results</title>
+<link rel="shortcut icon" href="/images/datagovuk_favicon.png" type="image/x-icon">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.rdf" type="application/rdf+xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.ttl" type="text/turtle">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.json" type="application/json">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.xml" type="application/xml">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.html" type="text/html">
+<link rel="alternate" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.csv" type="text/csv">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="/scripts/jquery.min.js"></script><script type="text/javascript" src="/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="/scripts/jquery.sparkline.js"></script><script type="text/javascript" src="/scripts/codemirror/codemirror_min.js"></script><script type="text/javascript">
+		$(function() {
+			$('.info img')
+				.toggle(function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Cancel.png')
+						.next().show();
+				}, function () {
+					$(this)
+						.attr('src', '/images/green/16x16/Question.png')
+						.next().fadeOut('slow');
+				});
+			
+			$('input[type=date]').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				dateFormat: 'yy-mm-dd',
+				autoSize: true
+			});
+			
+			$('#search').hide();
+			
+			$('#openSearch')
+				.toggle(function () {
+					$(this).text('Hide Search Form');
+					$('#search').slideDown('slow');
+				}, function () {
+					$(this).text('Show Search Form');
+					$('#search').slideUp('slow');
+				});
+			
+			$('.provenance textarea')
+				.each(function () {
+					var skipLines = parseFloat($(this).attr('data-skip-lines'), 10);
+					var lineHeight = parseFloat($(this).css('line-height'), 10);
+					$(this).scrollTop(skipLines * lineHeight);
+					var cm = CodeMirror.fromTextArea(this, {
+						basefiles: ["/scripts/codemirror/codemirror_base_sparql.js"],
+						stylesheet: "/css/sparql.css",
+						textWrapping: false
+					});
+					$(cm.frame).load(function () {
+						cm.jumpToLine(skipLines + 1);
+						$(cm.frame)
+							.css('border', 	'1px solid #D3D3D3')
+							.css('border-radius', '5px')
+							.css('-moz-border-radius', '5px');
+					});
+				});
+			
+			
+		});
+	</script><link rel="stylesheet" href="/css/html5reset-1.6.1.css" type="text/css">
+<link rel="stylesheet" href="/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/smoothness/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="/css/result.css" type="text/css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/css/ie.css" type="text/css"></link><![endif]-->
+</head>
+<body><div id="page">
+<nav class="site"><section class="formats"><ul>
+<li class="first"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.rdf" type="application/rdf+xml" rel="alternate" title="view in rdf format">rdf</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.ttl" type="text/turtle" rel="alternate" title="view in ttl format">ttl</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.json" type="application/json" rel="alternate" title="view in json format">json</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.xml" type="application/xml" rel="alternate" title="view in xml format">xml</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.html" type="text/html" rel="alternate" title="view in html format">html</a></li>
+<li class="last"><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency.csv" type="text/csv" rel="alternate" title="view in csv format">csv</a></li>
+</ul></section></nav><header><h1><a href="/">Linked Data API</a></h1></header><nav class="topnav"><section class="moreinfo"><h1>Browse</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Links to further information.</p>
+</div>
+<ul>
+<li><a href="/doc/public-body/environment-agency/post">Public body SCS posts</a></li>
+<li><a href="/doc/public-body/environment-agency/unit">Public body units</a></li>
+<li><span class="current">Public body</span></li>
+</ul>
+<ul>
+<li><a href="/doc/ministerial-department">Ministerial departments</a></li>
+<li><a href="/doc/non-ministerial-department">Non-ministerial departments</a></li>
+<li><a href="/doc/department">All departments</a></li>
+<li><a href="/doc/public-body">All public bodies</a></li>
+</ul>
+<ul>
+<li><a href="/doc/minister">All ministers</a></li>
+<li><a href="/doc/seat">All seats</a></li>
+<li><a href="/doc/mp">All MPs</a></li>
+<li><a href="/doc/peer">All peers</a></li>
+</ul></section><script type="text/javascript">
+				function initMap() {
+					return null;
+				};
+			</script><section class="view"><h1>View</h1>
+<div class="info">
+<img class="open" src="/images/green/16x16/Question.png" alt="help"><p>Choose what information you want to view about each item. There are some pre-defined views, but starred properties are always present no matter what the view. You can star properties by clicking on the <img src="/images/grey/16x16/Star.png" alt="star this property"> icon. The currently starred icons have a <img src="/images/green/16x16/Star.png" alt="unstar this property"> icon; clicking on it will unstar the property.</p>
+</div>
+<ul>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency?_view=description" title="switch to description view">description</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency?_view=all" title="switch to all view">all</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency?_view=minimal" title="switch to minimal view">minimal</a></li>
+<li><a href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency?_view=public+body" title="switch to public body view">public body</a></li>
+</ul>
+<ul class="properties">
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency?_properties=label"><img src="/images/grey/16x16/Star.png" alt="star this property"> label</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency?_properties=type"><img src="/images/grey/16x16/Star.png" alt="star this property"> type</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency?_properties=unit.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> unit</a></li>
+<li><a rel="nofollow" title="always include this property" href="http://reference.data.gov.uk/2011-09-30/doc/public-body/environment-agency?_properties=parentDepartment.label"><img src="/images/grey/16x16/Star.png" alt="star this property"> parent department</a></li>
+</ul></section></nav><div id="result"><div class="panel">
+<header><p id="openSearch">Show Search Form</p>
+<h1>Environment Agency</h1>
+<p class="id"><a href="http://reference.data.gov.uk/id/public-body/environment-agency">http://reference.data.gov.uk/id/public-body/environment-agency</a></p></header><section id="search"><form action="http://reference.data.gov.uk/2011-09-30/doc/public-body">
+<table>
+<colgroup>
+<col width="25%">
+<col width="70%">
+</colgroup>
+<tr>
+<th class="label"><label for="label">label</label></th>
+<td class="input"><input name="label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="type">type</label></th>
+<td class="input"><input name="type" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="unit.label">unit</label></th>
+<td class="input"><input name="unit.label" size="25"></td>
+</tr>
+<tr>
+<th class="label"><label for="parentDepartment.label">parent department</label></th>
+<td class="input"><input name="parentDepartment.label" size="25"></td>
+</tr>
+</table>
+<p><button type="submit">Search</button></p>
+</form></section><section><table id="id1408600">
+<colgroup>
+<col width="25%">
+<col width="*">
+<col width="54">
+</colgroup>
+<tr class="type">
+<th class="label"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">type</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/def/central-government/PublicBody" title="view on this site">PublicBody</a> <a href="http://reference.data.gov.uk/def/central-government/PublicBody" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"></td>
+</tr>
+<tr>
+<td class="value"><a href="http://www.w3.org/ns/org#Organization">Organization</a></td>
+<td class="filter"></td>
+</tr>
+</table></td>
+</tr>
+<tr class="unit">
+<th class="label"><a href="http://www.w3.org/ns/org#hasUnit">unit</a></th>
+<td class="value nested" colspan="2"><table>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/anglian-anglian-office-anglian-office" title="view on this site">Anglian - Anglian Office - Anglian Office</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-anglian-office-anglian-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Anglian%20-%20Anglian%20Office%20-%20Anglian%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/anglian-anglian-office-environment-performance-manager" title="view on this site">Anglian - Anglian Office - Environment Performance Manager</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-anglian-office-environment-performance-manager" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Anglian%20-%20Anglian%20Office%20-%20Environment%20Performance%20Manager"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/anglian-anglian-office-flood-and-coastal-risk-management" title="view on this site">Anglian - Anglian Office - Flood and Coastal Risk Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-anglian-office-flood-and-coastal-risk-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Anglian%20-%20Anglian%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/anglian-central" title="view on this site">Anglian - Central</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-central" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Anglian%20-%20Central"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/anglian-eastern" title="view on this site">Anglian - Eastern</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-eastern" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Anglian%20-%20Eastern"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/anglian-northern" title="view on this site">Anglian - Northern</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/anglian-northern" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Anglian%20-%20Northern"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-chief-executives-directorate" title="view on this site">Head Office - Chief Executive's Directorate</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Chief%20Executive's%20Directorate"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-business-improvements" title="view on this site">Head Office - Chief Executive's Directorate - Business Improvements</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-business-improvements" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Chief%20Executive's%20Directorate%20-%20Business%20Improvements"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-corporate-planning-and-performance" title="view on this site">Head Office - Chief Executive's Directorate - Corporate Planning and Performance</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-corporate-planning-and-performance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Chief%20Executive's%20Directorate%20-%20Corporate%20Planning%20and%20Performance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-environmental-investment" title="view on this site">Head Office - Chief Executive's Directorate - Environmental Investment</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-environmental-investment" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Chief%20Executive's%20Directorate%20-%20Environmental%20Investment"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-internal-audit" title="view on this site">Head Office - Chief Executive's Directorate - Internal Audit</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-internal-audit" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Chief%20Executive's%20Directorate%20-%20Internal%20Audit"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-media-corporate-comms" title="view on this site">Head Office - Chief Executive's Directorate - Media &amp; Corporate Comms</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-chief-executives-directorate-media-corporate-comms" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Chief%20Executive's%20Directorate%20-%20Media%20&amp;%20Corporate%20Comms"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-bathing-waters" title="view on this site">Head Office - Environment and Business - Bathing Waters</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-bathing-waters" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Bathing%20Waters"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities" title="view on this site">Head Office - Environment and Business - Climate Change and Communities</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Climate%20Change%20and%20Communities"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities-climate-change" title="view on this site">Head Office - Environment and Business - Climate Change and Communities - Climate Change</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities-climate-change" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Climate%20Change%20and%20Communities%20-%20Climate%20Change"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities-sustainable-places" title="view on this site">Head Office - Environment and Business - Climate Change and Communities - Sustainable Places</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-climate-change-and-communities-sustainable-places" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Climate%20Change%20and%20Communities%20-%20Sustainable%20Places"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-directors-office" title="view on this site">Head Office - Environment and Business - Directors Office</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-directors-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Directors%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality" title="view on this site">Head Office - Environment and Business - Land &amp; Water Quality</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Land%20&amp;%20Water%20Quality"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-fisheries-biodiversity" title="view on this site">Head Office - Environment and Business - Land &amp; Water Quality - Fisheries &amp; Biodiversity</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-fisheries-biodiversity" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Land%20&amp;%20Water%20Quality%20-%20Fisheries%20&amp;%20Biodiversity"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-water-framework-directive" title="view on this site">Head Office - Environment and Business - Land &amp; Water Quality - Water Framework Directive</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-water-framework-directive" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Land%20&amp;%20Water%20Quality%20-%20Water%20Framework%20Directive"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-water-resources" title="view on this site">Head Office - Environment and Business - Land &amp; Water Quality - Water Resources</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-land-water-quality-water-resources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Land%20&amp;%20Water%20Quality%20-%20Water%20Resources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-portfolio-resources" title="view on this site">Head Office - Environment and Business - Portfolio &amp; Resources</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-portfolio-resources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Portfolio%20&amp;%20Resources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-programme-director" title="view on this site">Head Office - Environment and Business - Programme Director</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-programme-director" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Programme%20Director"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry" title="view on this site">Head Office - Environment and Business - Regulated Industry</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Regulated%20Industry"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-future-regulation" title="view on this site">Head Office - Environment and Business - Regulated Industry - Future Regulation</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-future-regulation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Regulated%20Industry%20-%20Future%20Regulation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-illegal-waste" title="view on this site">Head Office - Environment and Business - Regulated Industry - Illegal &amp; Waste</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-illegal-waste" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Regulated%20Industry%20-%20Illegal%20&amp;%20Waste"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-radioactive-substances-regulation" title="view on this site">Head Office - Environment and Business - Regulated Industry - Radioactive Substances Regulation</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-radioactive-substances-regulation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Regulated%20Industry%20-%20Radioactive%20Substances%20Regulation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-site-based-regulation" title="view on this site">Head Office - Environment and Business - Regulated Industry - Site Based Regulation</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-environment-and-business-regulated-industry-site-based-regulation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Environment%20and%20Business%20-%20Regulated%20Industry%20-%20Site%20Based%20Regulation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-evidence" title="view on this site">Head Office - Evidence</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Evidence"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-evidence-evidence-services" title="view on this site">Head Office - Evidence - Evidence Services</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-evidence-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Evidence%20-%20Evidence%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-evidence-evidence-services-data-management" title="view on this site">Head Office - Evidence - Evidence Services - Data Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-evidence-services-data-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Evidence%20-%20Evidence%20Services%20-%20Data%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-evidence-evidence-services-economics" title="view on this site">Head Office - Evidence - Evidence Services - Economics</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-evidence-services-economics" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Evidence%20-%20Evidence%20Services%20-%20Economics"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-evidence-research-innovation" title="view on this site">Head Office - Evidence - Research &amp; Innovation</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-research-innovation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Evidence%20-%20Research%20&amp;%20Innovation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-evidence-strategy-reporting" title="view on this site">Head Office - Evidence - Strategy &amp; Reporting</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-strategy-reporting" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Evidence%20-%20Strategy%20&amp;%20Reporting"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-evidence-strategy-reporting-strategic-environment-planning" title="view on this site">Head Office - Evidence - Strategy &amp; Reporting - Strategic Environment Planning</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-evidence-strategy-reporting-strategic-environment-planning" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Evidence%20-%20Strategy%20&amp;%20Reporting%20-%20Strategic%20Environment%20Planning"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-finance" title="view on this site">Head Office - Finance</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Finance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-finance-1b1s-service-centre-team" title="view on this site">Head Office - Finance - 1B1S Service Centre Team</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-1b1s-service-centre-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Finance%20-%201B1S%20Service%20Centre%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-finance-business-finance" title="view on this site">Head Office - Finance - Business Finance</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-business-finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Finance%20-%20Business%20Finance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-finance-business-finance-operations-local" title="view on this site">Head Office - Finance - Business Finance - Operations Local</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-business-finance-operations-local" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Finance%20-%20Business%20Finance%20-%20Operations%20Local"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-finance-efficiency-programme" title="view on this site">Head Office - Finance - Efficiency Programme</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-efficiency-programme" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Finance%20-%20Efficiency%20Programme"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-finance-environmental-financepension-fund-management" title="view on this site">Head Office - Finance - Environmental Finance/Pension Fund Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-environmental-financepension-fund-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Finance%20-%20Environmental%20Finance/Pension%20Fund%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-finance-financial-management" title="view on this site">Head Office - Finance - Financial Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-financial-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Finance%20-%20Financial%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-finance-financial-service-centre-head-of-financial-development" title="view on this site">Head Office - Finance - Financial Service Centre - Head of Financial Development</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-financial-service-centre-head-of-financial-development" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Finance%20-%20Financial%20Service%20Centre%20-%20Head%20of%20Financial%20Development"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-finance-procurement-national" title="view on this site">Head Office - Finance - Procurement - National</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-finance-procurement-national" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Finance%20-%20Procurement%20-%20National"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management" title="view on this site">Head Office - Flood and Coastal Risk Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-asset-management" title="view on this site">Head Office - Flood and Coastal Risk Management - Asset Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-asset-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management%20-%20Asset%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-asset-management-business-and-commercial-modelling" title="view on this site">Head Office - Flood and Coastal Risk Management - Asset Management - Business and Commercial Modelling</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-asset-management-business-and-commercial-modelling" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management%20-%20Asset%20Management%20-%20Business%20and%20Commercial%20Modelling"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-incident-management" title="view on this site">Head Office - Flood and Coastal Risk Management - Incident Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-incident-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management%20-%20Incident%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-incident-management-incidents-flood-response" title="view on this site">Head Office - Flood and Coastal Risk Management - Incident Management - Incidents &amp; Flood Response</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-incident-management-incidents-flood-response" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management%20-%20Incident%20Management%20-%20Incidents%20&amp;%20Flood%20Response"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-investment-and-funding" title="view on this site">Head Office - Flood and Coastal Risk Management - Investment and Funding</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-investment-and-funding" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management%20-%20Investment%20and%20Funding"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-portfolio-mgt" title="view on this site">Head Office - Flood and Coastal Risk Management - Portfolio Mgt</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-portfolio-mgt" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management%20-%20Portfolio%20Mgt"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-strategy-and-engagement" title="view on this site">Head Office - Flood and Coastal Risk Management - Strategy and Engagement</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-strategy-and-engagement" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management%20-%20Strategy%20and%20Engagement"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-strategy-and-engagement-stakeholder-and-legal-development" title="view on this site">Head Office - Flood and Coastal Risk Management - Strategy and Engagement - Stakeholder and Legal Development</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-flood-and-coastal-risk-management-strategy-and-engagement-stakeholder-and-legal-development" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management%20-%20Strategy%20and%20Engagement%20-%20Stakeholder%20and%20Legal%20Development"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-legal" title="view on this site">Head Office - Legal</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-legal" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Legal"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-legal-legal-services" title="view on this site">Head Office - Legal - Legal Services</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-legal-legal-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Legal%20-%20Legal%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-legal-legal-services-national" title="view on this site">Head Office - Legal - Legal Services - National</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-legal-legal-services-national" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Legal%20-%20Legal%20Services%20-%20National"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-business-development-and-support" title="view on this site">Head Office - National Operations - Business Development and Support</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-business-development-and-support" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20Business%20Development%20and%20Support"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-business-development-and-support-business-development" title="view on this site">Head Office - National Operations - Business Development and Support - Business Development</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-business-development-and-support-business-development" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20Business%20Development%20and%20Support%20-%20Business%20Development"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-flood-forecasting-centre" title="view on this site">Head Office - National Operations - Flood Forecasting Centre</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-flood-forecasting-centre" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20Flood%20Forecasting%20Centre"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-incident-management-and-operations" title="view on this site">Head Office - National Operations - Incident Management and Operations</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-incident-management-and-operations" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20Incident%20Management%20and%20Operations"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-monitoring-assessment-and-planning" title="view on this site">Head Office - National Operations - Monitoring, Assessment and Planning</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-monitoring-assessment-and-planning" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20Monitoring,%20Assessment%20and%20Planning"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-monitoring-assessment-and-planning-national-monitoring" title="view on this site">Head Office - National Operations - Monitoring, Assessment and Planning - National Monitoring</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-monitoring-assessment-and-planning-national-monitoring" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20Monitoring,%20Assessment%20and%20Planning%20-%20National%20Monitoring"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-national-capital-programme-management-service" title="view on this site">Head Office - National Operations - National Capital Programme Management Service</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-capital-programme-management-service" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20National%20Capital%20Programme%20Management%20Service"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services" title="view on this site">Head Office - National Operations - National Operations Services</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20National%20Operations%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-natational-permitting-service-central-management" title="view on this site">Head Office - National Operations - National Operations Services - Natational Permitting Service - Central Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-natational-permitting-service-central-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20National%20Operations%20Services%20-%20Natational%20Permitting%20Service%20-%20Central%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-national-environmental-assessment-service" title="view on this site">Head Office - National Operations - National Operations Services - National Environmental Assessment Service</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-national-environmental-assessment-service" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20National%20Operations%20Services%20-%20National%20Environmental%20Assessment%20Service"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-national-trading-and-regulatory-services" title="view on this site">Head Office - National Operations - National Operations Services - National Trading and Regulatory Services</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-national-trading-and-regulatory-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20National%20Operations%20Services%20-%20National%20Trading%20and%20Regulatory%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-operations-technical-services" title="view on this site">Head Office - National Operations - National Operations Services - Operations Technical Services</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-national-operations-services-operations-technical-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20National%20Operations%20Services%20-%20Operations%20Technical%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-operations-planning-development-planning-performance-communications-planning-performance" title="view on this site">Head Office - National Operations - Operations Planning &amp; Development - Planning Performance &amp; Communications - Planning &amp; Performance</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-operations-planning-development-planning-performance-communications-planning-performance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20Operations%20Planning%20&amp;%20Development%20-%20Planning%20Performance%20&amp;%20Communications%20-%20Planning%20&amp;%20Performance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-national-operations-security" title="view on this site">Head Office - National Operations - Security</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-national-operations-security" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20National%20Operations%20-%20Security"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-operations-director-of-operations" title="view on this site">Head Office - Operations - Director of Operations</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-operations-director-of-operations" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Operations%20-%20Director%20of%20Operations"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-operations-national-operations-delivery" title="view on this site">Head Office - Operations - National Operations Delivery</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-operations-national-operations-delivery" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Operations%20-%20National%20Operations%20Delivery"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-business-management" title="view on this site">Head Office - Resources - Business Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-business-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Business%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-corporate-assets-head" title="view on this site">Head Office - Resources - Corporate Assets - Head</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-assets-head" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Corporate%20Assets%20-%20Head"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services" title="view on this site">Head Office - Resources - Corporate Information Services</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Corporate%20Information%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-communications-and-business-management" title="view on this site">Head Office - Resources - Corporate Information Services - Communications and Business Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-communications-and-business-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Corporate%20Information%20Services%20-%20Communications%20and%20Business%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-customer-services-and-solutions" title="view on this site">Head Office - Resources - Corporate Information Services - Customer Services and Solutions</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-customer-services-and-solutions" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Corporate%20Information%20Services%20-%20Customer%20Services%20and%20Solutions"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-innovation-and-architecture" title="view on this site">Head Office - Resources - Corporate Information Services - Innovation and Architecture</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-innovation-and-architecture" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Corporate%20Information%20Services%20-%20Innovation%20and%20Architecture"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-service-delivery" title="view on this site">Head Office - Resources - Corporate Information Services - Service Delivery</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-service-delivery" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Corporate%20Information%20Services%20-%20Service%20Delivery"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-solutions-del" title="view on this site">Head Office - Resources - Corporate Information Services - Solutions Del</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-corporate-information-services-solutions-del" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Corporate%20Information%20Services%20-%20Solutions%20Del"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-human-resources" title="view on this site">Head Office - Resources - Human Resources</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Human%20Resources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-operations-head-office" title="view on this site">Head Office - Resources - Human Resources - Human Resources Operations (Head Office)</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-operations-head-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Human%20Resources%20-%20Human%20Resources%20Operations%20(Head%20Office)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-operations-regional" title="view on this site">Head Office - Resources - Human Resources - Human Resources Operations (Regional)</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-operations-regional" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Human%20Resources%20-%20Human%20Resources%20Operations%20(Regional)"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-service-centre" title="view on this site">Head Office - Resources - Human Resources - Human Resources Service Centre</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-service-centre" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Human%20Resources%20-%20Human%20Resources%20Service%20Centre"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-strategy" title="view on this site">Head Office - Resources - Human Resources - Human Resources Strategy</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-human-resources-strategy" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Human%20Resources%20-%20Human%20Resources%20Strategy"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/head-office-resources-human-resources-internal-transformation" title="view on this site">Head Office - Resources - Human Resources - Internal Transformation</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/head-office-resources-human-resources-internal-transformation" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Head%20Office%20-%20Resources%20-%20Human%20Resources%20-%20Internal%20Transformation"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/midlands-central" title="view on this site">Midlands - Central</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-central" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Midlands%20-%20Central"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/midlands-east" title="view on this site">Midlands - East</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-east" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Midlands%20-%20East"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/midlands-midlands-office" title="view on this site">Midlands - Midlands Office</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-midlands-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Midlands%20-%20Midlands%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/midlands-midlands-office-environment-and-performance-manager" title="view on this site">Midlands - Midlands Office - Environment and Performance Manager</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-midlands-office-environment-and-performance-manager" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Midlands%20-%20Midlands%20Office%20-%20Environment%20and%20Performance%20Manager"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/midlands-midlands-office-flood-and-coastal-risk-management" title="view on this site">Midlands - Midlands Office - Flood and Coastal Risk Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-midlands-office-flood-and-coastal-risk-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Midlands%20-%20Midlands%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/midlands-west" title="view on this site">Midlands - West</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/midlands-west" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Midlands%20-%20West"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/north-east-north-east-area" title="view on this site">North East - North East Area</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-area" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=North%20East%20-%20North%20East%20Area"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/north-east-north-east-office" title="view on this site">North East - North East Office</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=North%20East%20-%20North%20East%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/north-east-north-east-office-flood-and-coastal-risk-management" title="view on this site">North East - North East Office - Flood and Coastal Risk Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-office-flood-and-coastal-risk-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=North%20East%20-%20North%20East%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/north-east-north-east-office-regional-environmental-planning" title="view on this site">North East - North East Office - Regional Environmental Planning</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-north-east-office-regional-environmental-planning" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=North%20East%20-%20North%20East%20Office%20-%20Regional%20Environmental%20Planning"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/north-east-yorkshire-area" title="view on this site">North East - Yorkshire Area</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-east-yorkshire-area" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=North%20East%20-%20Yorkshire%20Area"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/north-west-north" title="view on this site">North West - North</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=North%20West%20-%20North"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/north-west-north-ambition" title="view on this site">North West - North Ambition</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north-ambition" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=North%20West%20-%20North%20Ambition"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/north-west-north-west-office" title="view on this site">North West - North West Office</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north-west-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=North%20West%20-%20North%20West%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/north-west-north-west-office-regional-environmental-planning" title="view on this site">North West - North West Office - Regional Environmental Planning</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-north-west-office-regional-environmental-planning" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=North%20West%20-%20North%20West%20Office%20-%20Regional%20Environmental%20Planning"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/north-west-south" title="view on this site">North West - South</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/north-west-south" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=North%20West%20-%20South"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-east-kent-and-south-london" title="view on this site">South East - Kent and South London</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-kent-and-south-london" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20East%20-%20Kent%20and%20South%20London"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-east-north-east-thames" title="view on this site">South East - North East Thames</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-north-east-thames" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20East%20-%20North%20East%20Thames"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-east-solent-and-south-downs" title="view on this site">South East - Solent and South Downs</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-solent-and-south-downs" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20East%20-%20Solent%20and%20South%20Downs"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-east-south-east-office" title="view on this site">South East - South East Office</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20East%20-%20South%20East%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-east-south-east-office-environment-and-performance-management" title="view on this site">South East - South East Office - Environment and Performance Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office-environment-and-performance-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20East%20-%20South%20East%20Office%20-%20Environment%20and%20Performance%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-east-south-east-office-flood-and-coastal-risk-management" title="view on this site">South East - South East Office - Flood and Coastal Risk Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office-flood-and-coastal-risk-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20East%20-%20South%20East%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-east-south-east-office-london-environment-team" title="view on this site">South East - South East Office - London Environment Team</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-south-east-office-london-environment-team" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20East%20-%20South%20East%20Office%20-%20London%20Environment%20Team"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-east-west-thames" title="view on this site">South East - West Thames</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-east-west-thames" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20East%20-%20West%20Thames"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-west-devoncornwall" title="view on this site">South West - Devon&amp;Cornwall</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-devoncornwall" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20West%20-%20Devon&amp;Cornwall"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-west-south-west-office" title="view on this site">South West - South West Office</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20West%20-%20South%20West%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-west-south-west-office-flood-and-coastal-risk-management" title="view on this site">South West - South West Office - Flood and Coastal Risk Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office-flood-and-coastal-risk-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20West%20-%20South%20West%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-west-south-west-office-local-business-strategy-unit-regional-environmental-planning" title="view on this site">South West - South West Office - Local Business Strategy Unit - Regional Environmental Planning</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office-local-business-strategy-unit-regional-environmental-planning" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20West%20-%20South%20West%20Office%20-%20Local%20Business%20Strategy%20Unit%20-%20Regional%20Environmental%20Planning"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-west-south-west-office-regional-environmental-planning" title="view on this site">South West - South West Office - Regional Environmental Planning</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-south-west-office-regional-environmental-planning" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20West%20-%20South%20West%20Office%20-%20Regional%20Environmental%20Planning"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/south-west-wessex" title="view on this site">South West - Wessex</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/south-west-wessex" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=South%20West%20-%20Wessex"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/wales-north" title="view on this site">Wales - North</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-north" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wales%20-%20North"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/wales-south-east" title="view on this site">Wales - South East</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-south-east" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wales%20-%20South%20East"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/wales-south-west" title="view on this site">Wales - South West</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-south-west" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wales%20-%20South%20West"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/wales-wales-office" title="view on this site">Wales - Wales Office</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wales%20-%20Wales%20Office"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/wales-wales-office-corporate-services" title="view on this site">Wales - Wales Office - Corporate Services</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-corporate-services" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wales%20-%20Wales%20Office%20-%20Corporate%20Services"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/wales-wales-office-environmental-delivery-options" title="view on this site">Wales - Wales Office - Environmental Delivery Options</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-environmental-delivery-options" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wales%20-%20Wales%20Office%20-%20Environmental%20Delivery%20Options"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/wales-wales-office-finance" title="view on this site">Wales - Wales Office - Finance</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-finance" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wales%20-%20Wales%20Office%20-%20Finance"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/wales-wales-office-flood-and-coastal-risk-management" title="view on this site">Wales - Wales Office - Flood and Coastal Risk Management</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-flood-and-coastal-risk-management" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wales%20-%20Wales%20Office%20-%20Flood%20and%20Coastal%20Risk%20Management"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/wales-wales-office-human-resources" title="view on this site">Wales - Wales Office - Human Resources</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-human-resources" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wales%20-%20Wales%20Office%20-%20Human%20Resources"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+<tr>
+<td class="value">
+<a href="/id/public-body/environment-agency/unit/wales-wales-office-strategic-unit-wales" title="view on this site">Wales - Wales Office - Strategic Unit Wales</a> <a href="http://reference.data.gov.uk/id/public-body/environment-agency/unit/wales-wales-office-strategic-unit-wales" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?unit.label=Wales%20-%20Wales%20Office%20-%20Strategic%20Unit%20Wales"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr class="parentDepartment last">
+<th class="label"><a href="http://reference.data.gov.uk/def/central-government/parentDepartment">parent department</a></th>
+<td class="value">
+<a href="/id/department/defra" title="view on this site">Department for Environment, Food and Rural Affairs</a> <a href="http://reference.data.gov.uk/id/department/defra" title="view original" class="outlink">original</a>
+</td>
+<td class="filter"><a rel="nofollow" title="more like this" href="http://reference.data.gov.uk/2011-09-30/doc/public-body?parentDepartment.label=Department%20for%20Environment,%20Food%20and%20Rural%20Affairs"><img src="/images/grey/16x16/Search.png" alt="more like this"></a></td>
+</tr>
+</table></section>
+</div></div>
+<nav class="bottomnav"></nav><footer><div class="provenance"><div class=" query col1">
+<h2>Viewer</h2>
+<p>This is the SPARQL query that was generated to pull together the data that is provided about the selected item. You can modify it here and re-run the query but you may find more options at the <a href="endpoint/url/@href">endpoint's page</a>.</p>
+<form action="http://10.254.6.244/organograms-2011-09-30/sparql" method="post">
+<textarea name="query" wrap="off" data-skip-lines="5">PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX org: &lt;http://www.w3.org/ns/org#&gt;
+PREFIX gov: &lt;http://reference.data.gov.uk/def/central-government/&gt;
+CONSTRUCT { 
+    # constructing properties of http://reference.data.gov.uk/id/public-body/environment-agency 
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; rdf:type ?var_1_0 .
+    ?var_1_0 rdfs:label ?var_1_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; rdfs:label ?var_2_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; skos:prefLabel ?var_3_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; skos:altLabel ?var_4_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; rdfs:comment ?var_5_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; org:hasUnit ?var_6_0 .
+    ?var_6_0 rdfs:label ?var_6_1_0 .
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; gov:parentDepartment ?var_7_0 .
+    ?var_7_0 rdfs:label ?var_7_1_0 .
+} WHERE { 
+  # identifying properties of http://reference.data.gov.uk/id/public-body/environment-agency 
+  {
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; rdf:type ?var_1_0 .
+    OPTIONAL { ?var_1_0 rdfs:label ?var_1_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; rdfs:label ?var_2_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; skos:prefLabel ?var_3_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; skos:altLabel ?var_4_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; rdfs:comment ?var_5_0 .
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; org:hasUnit ?var_6_0 .
+    OPTIONAL { ?var_6_0 rdfs:label ?var_6_1_0 . }
+  } UNION {
+    &lt;http://reference.data.gov.uk/id/public-body/environment-agency&gt; gov:parentDepartment ?var_7_0 .
+    OPTIONAL { ?var_7_0 rdfs:label ?var_7_1_0 . }
+  } 
+}
+</textarea><p><button type="submit">Run Query</button></p>
+</form>
+</div></div>
+<p>Powered by <a href="http://code.google.com/p/puelia-php/">Puelia v0.1</a>, an implementation of the <a href="http://code.google.com/p/linked-data-api">Linked Data API</a><br><a href="http://www.axialis.com/free/icons">Icons</a> by <a href="http://www.axialis.com">Axialis Team</a></p></footer>
+</div></body>
+</html>

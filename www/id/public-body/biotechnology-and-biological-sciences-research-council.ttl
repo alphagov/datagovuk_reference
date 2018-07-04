@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix msg0: <http://www.w3.org/ns/org#> .
+@prefix central-government: <http://reference.data.gov.uk/def/central-government/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix linked-data: <http://purl.org/linked-data/api/vocab#> .
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council> rdf:type msg0:Organization ,
+                                                                                                              central-government:PublicBody ;
+                                                                                                     rdfs:label "Biotechnology and Biological Sciences Research Council" ;
+                                                                                                     msg0:hasUnit <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/institute-for-animal-health> ,
+                                                                                                                  <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/ukro> ,
+                                                                                                                  <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-babraham-institute> ,
+                                                                                                                  <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-genome-analysis-centre> ,
+                                                                                                                  <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/swindon-office> ,
+                                                                                                                  <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/bits> ,
+                                                                                                                  <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-operations-centre> ,
+                                                                                                                  <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/ukcds> ,
+                                                                                                                  <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/rothamsted-research> ,
+                                                                                                                  <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/john-innes-centre> ,
+                                                                                                                  <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/institute-of-food-research> ;
+                                                                                                     central-government:parentDepartment <http://reference.data.gov.uk/id/department/bis> ;
+                                                                                                     foaf:isPrimaryTopicOf <http://reference.data.gov.uk/2011-09-30/doc/public-body/biotechnology-and-biological-sciences-research-council.ttl> . 
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/institute-for-animal-health> rdfs:label "Institute for Animal Health" . 
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/ukro> rdfs:label "UKRO" . 
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-babraham-institute> rdfs:label "The Babraham Institute" . 
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-genome-analysis-centre> rdfs:label "The Genome Analysis Centre" . 
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/swindon-office> rdfs:label "Swindon Office" . 
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/bits> rdfs:label "BITS" . 
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/the-operations-centre> rdfs:label "The Operations Centre" . 
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/ukcds> rdfs:label "UKCDS" . 
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/rothamsted-research> rdfs:label "Rothamsted Research" . 
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/john-innes-centre> rdfs:label "John Innes Centre" . 
+
+<http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council/unit/institute-of-food-research> rdfs:label "Institute of Food Research" . 
+
+<http://reference.data.gov.uk/id/department/bis> rdfs:label "Department for Business Innovation and Skills" . 
+
+<http://reference.data.gov.uk/2011-09-30/doc/public-body/biotechnology-and-biological-sciences-research-council.ttl> foaf:primaryTopic <http://reference.data.gov.uk/id/public-body/biotechnology-and-biological-sciences-research-council> ;
+                                                                                                                     linked-data:definition <http://organogram.data.gov.uk/api#publicBody> ;
+                                                                                                                     linked-data:extendedMetadataVersion <http://reference.data.gov.uk/2011-09-30/doc/public-body/biotechnology-and-biological-sciences-research-council.ttl?_metadata=all%2Cviews%2Cformats%2Cexecution%2Cbindings> . 
+
