@@ -1,0 +1,3 @@
+[submodule "IntervalServer"]
+	path = IntervalServer
+	url = https://github.com/epimorphics/IntervalServer
