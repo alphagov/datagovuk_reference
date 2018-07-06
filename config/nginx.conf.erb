@@ -66,7 +66,7 @@ http {
 	    # Time interval service formerly run by Epimorphics
 	    # Now running on our own AWS server
 	    # source code at https://github.com/epimorphics/IntervalServer
-	    location ~ '^/(id|doc)/(intervals|gregorian-calendar|uk-calendar|government-calendar|gregorian-instant|gregorian-interval|gregorian-year|gregorian-half|gregorian-quarter|gregorian-month|gregorian-week|gregorian-day|gregorian-hour|gregorian-minute|gregorian-second|year|half|quarter|month|week|day|hour|minute|second|government-year|government-half|government-quarter|government-week)' {
+	    location ~ '^/(id|doc)/(intervals?|gregorian-calendar|uk-calendar|government-calendar|gregorian-instant|gregorian-interval|gregorian-year|gregorian-half|gregorian-quarter|gregorian-month|gregorian-week|gregorian-day|gregorian-hour|gregorian-minute|gregorian-second|year|half|quarter|month|week|day|hour|minute|second|government-year|government-half|government-quarter|government-week)' {
 	       proxy_pass http://app_server;
 	    }
 
