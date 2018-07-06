@@ -1,0 +1,1546 @@
+@prefix : <http://reference.data.gov.uk/def/intervals/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix scv: <http://purl.org/NET/scovo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skos-xl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix time-entry: <http://www.w3.org/2006/time-entry#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://reference.data.gov.uk/def/intervals/> a owl:Ontology ;
+	owl:imports <http://purl.org/NET/scovo> , <http://purl.org/dc/dcam/> , <http://purl.org/dc/elements/1.1/> , <http://www.w3.org/2004/02/skos/core> , <http://purl.org/dc/terms/> , <http://www.w3.org/2006/time> , <http://purl.org/NET/c4dm/event.owl> , <http://www.w3.org/2008/05/skos-xl> ;
+	owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+:April a :MonthOfYear ;
+	rdfs:comment "The month of April"^^xsd:string ;
+	rdfs:label "April"@en ;
+	skos:prefLabel "April"@en .
+
+:August a :MonthOfYear ;
+	rdfs:comment "The month of August"^^xsd:string ;
+	rdfs:label "August"@en ;
+	skos:prefLabel "August"@en .
+
+:BusinessHalf a owl:Class ;
+	rdfs:comment "A class for business half year intervals. These intervals are not necessarily calendar aligned with month boundaries."@en ;
+	rdfs:label "Half Year Interval"@en ;
+	rdfs:subClassOf :Half , :BusinessInterval ;
+	skos:prefLabel "Half Year Interval"@en .
+
+:BusinessInterval a owl:Class ;
+	rdfs:comment "A top-level class for business intervals"@en ;
+	rdfs:label "Business Intervals"@en ;
+	rdfs:subClassOf time:DateTimeInterval , scv:Dimension ;
+	skos:prefLabel "Business Intervals"@en .
+
+:BusinessQuarter a owl:Class ;
+	rdfs:subClassOf :BusinessInterval , :Quarter .
+
+:BusinessYear a owl:Class ;
+	rdfs:comment "A class for regular annual business reporting and planning intervals, not necessarily calendar aligned."@en ;
+	rdfs:label "Business Year"@en ;
+	rdfs:subClassOf :Year , :BusinessInterval ;
+	skos:prefLabel "Business Year"@en .
+
+:CalendarDay a owl:Class ;
+	rdfs:comment "A class for calendar aligned one day intervals, starting at 00:00 (midnight) on the relevant day. ISO 8601(E):2004 Section 2.2.6"@en ;
+	rdfs:label "Calendar Day"@en ;
+	rdfs:subClassOf :CalendarInterval , :Day .
+
+_:node14u7vomabx1 a owl:Restriction ;
+	owl:allValuesFrom :CalendarDay ;
+	owl:onProperty :nextInterval .
+
+:CalendarDay rdfs:subClassOf _:node14u7vomabx1 .
+
+_:node14u7vomabx2 a owl:Restriction ;
+	owl:allValuesFrom :CalendarDay ;
+	owl:onProperty :previousInterval .
+
+:CalendarDay rdfs:subClassOf _:node14u7vomabx2 ;
+	skos:prefLabel "Calendar Day"@en .
+
+:CalendarHalf a owl:Class ;
+	rdfs:comment "A class for calendar aligned intervals that represent a calendar half year, a year being split into two half year periods of 6 months each."@en ;
+	rdfs:label "CalendarHalf (class)"@en ;
+	rdfs:subClassOf :CalendarInterval , :Half .
+
+_:node14u7vomabx3 a owl:Restriction ;
+	owl:cardinality "6"^^xsd:integer ;
+	owl:onProperty :intervalContainsMonth .
+
+:CalendarHalf rdfs:subClassOf _:node14u7vomabx3 .
+
+_:node14u7vomabx4 a owl:Restriction ;
+	owl:allValuesFrom :CalendarHalf ;
+	owl:onProperty :nextInterval .
+
+:CalendarHalf rdfs:subClassOf _:node14u7vomabx4 .
+
+_:node14u7vomabx5 a owl:Restriction ;
+	owl:allValuesFrom :CalendarHalf ;
+	owl:onProperty :previousInterval .
+
+:CalendarHalf rdfs:subClassOf _:node14u7vomabx5 ;
+	skos:prefLabel "CalendarHalf (class)"@en .
+
+:CalendarHour a owl:Class ;
+	rdfs:comment "A class for calendar aligned hour-long intervals. ISO 8601(E):2004 Section 2.2.4"@en ;
+	rdfs:label "Calendar Hour (Class)"@en ;
+	rdfs:subClassOf :CalendarInterval , :Hour .
+
+_:node14u7vomabx6 a owl:Restriction ;
+	owl:allValuesFrom :CalendarHour ;
+	owl:onProperty :previousInterval .
+
+:CalendarHour rdfs:subClassOf _:node14u7vomabx6 .
+
+_:node14u7vomabx7 a owl:Restriction ;
+	owl:allValuesFrom :CalendarHour ;
+	owl:onProperty :nextInterval .
+
+:CalendarHour rdfs:subClassOf _:node14u7vomabx7 ;
+	skos:prefLabel "Calendar Hour (Class)"@en .
+
+:CalendarInstant a owl:Class ;
+	rdfs:subClassOf time:Instant .
+
+:CalendarInterval a owl:Class ;
+	rdfs:comment "A class for all calendar aligned intervals.  The start of a given interval is aligned with the start of each of its first (temporally) subordinate CalendarInterval. Halfs are align the start of the first and seventh month of a year; quarters with the first, forth, seventh and tenth months; months with calendar months sof forth for calendar days, hours,minutes and seconds align "@en ;
+	rdfs:label "CalendarInterval (class)"@en ;
+	rdfs:subClassOf time:DateTimeInterval , scv:Dimension .
+
+_:node14u7vomabx8 a owl:Restriction ;
+	owl:allValuesFrom :Iso8601Week ;
+	owl:onProperty :intervalContainsWeek .
+
+:CalendarInterval rdfs:subClassOf _:node14u7vomabx8 .
+
+_:node14u7vomabx9 a owl:Restriction ;
+	owl:allValuesFrom :CalendarSecond ;
+	owl:onProperty :intervalContainsSecond .
+
+:CalendarInterval rdfs:subClassOf _:node14u7vomabx9 .
+
+_:node14u7vomabx10 a owl:Restriction ;
+	owl:allValuesFrom :CalendarDay ;
+	owl:onProperty :intervalContainsDay .
+
+:CalendarInterval rdfs:subClassOf _:node14u7vomabx10 .
+
+_:node14u7vomabx11 a owl:Restriction ;
+	owl:allValuesFrom :CalendarInstant ;
+	owl:onProperty time:hasBeginning .
+
+:CalendarInterval rdfs:subClassOf _:node14u7vomabx11 .
+
+_:node14u7vomabx12 a owl:Restriction ;
+	owl:allValuesFrom :CalendarHour ;
+	owl:onProperty :intervalContainsHour .
+
+:CalendarInterval rdfs:subClassOf _:node14u7vomabx12 .
+
+_:node14u7vomabx13 a owl:Restriction ;
+	owl:allValuesFrom :CalendarHalf ;
+	owl:onProperty :intervalContainsHalf .
+
+:CalendarInterval rdfs:subClassOf _:node14u7vomabx13 .
+
+_:node14u7vomabx14 a owl:Restriction ;
+	owl:allValuesFrom :CalendarQuarter ;
+	owl:onProperty :intervalContainsQuarter .
+
+:CalendarInterval rdfs:subClassOf _:node14u7vomabx14 .
+
+_:node14u7vomabx15 a owl:Restriction ;
+	owl:allValuesFrom :CalendarMonth ;
+	owl:onProperty :intervalContainsMonth .
+
+:CalendarInterval rdfs:subClassOf _:node14u7vomabx15 .
+
+_:node14u7vomabx16 a owl:Restriction ;
+	owl:allValuesFrom :CalendarMinute ;
+	owl:onProperty :intervalContainsMinute .
+
+:CalendarInterval rdfs:subClassOf _:node14u7vomabx16 ;
+	skos:prefLabel "CalendarInterval (class)"@en .
+
+:CalendarMinute a owl:Class ;
+	rdfs:comment "A class for calendar align one minute intervals. ISO 8601(E):2004 Section 2.2.3 (for units - 1 minute interval are not defined)."@en ;
+	rdfs:label "Calendar Minute"@en ;
+	rdfs:subClassOf :CalendarInterval , :Minute .
+
+_:node14u7vomabx17 a owl:Restriction ;
+	owl:allValuesFrom :CalendarMinute ;
+	owl:onProperty :previousInterval .
+
+:CalendarMinute rdfs:subClassOf _:node14u7vomabx17 .
+
+_:node14u7vomabx18 a owl:Restriction ;
+	owl:allValuesFrom :CalendarMinute ;
+	owl:onProperty :nextInterval .
+
+:CalendarMinute rdfs:subClassOf _:node14u7vomabx18 ;
+	skos:prefLabel "Calendar Minute"@en .
+
+:CalendarMonth a owl:Class ;
+	rdfs:comment "A class for calendar aligned intervals of one calendar month.  ISO 8601(E):2004 Section 2.2.11"@en ;
+	rdfs:label "Calendar Month"@en ;
+	rdfs:subClassOf :CalendarInterval , :Month .
+
+_:node14u7vomabx19 a owl:Restriction ;
+	owl:allValuesFrom :CalendarMonth ;
+	owl:onProperty :nextInterval .
+
+:CalendarMonth rdfs:subClassOf _:node14u7vomabx19 .
+
+_:node14u7vomabx20 a owl:Restriction ;
+	owl:allValuesFrom :CalendarMonth ;
+	owl:onProperty :previousInterval .
+
+:CalendarMonth rdfs:subClassOf _:node14u7vomabx20 .
+
+_:node14u7vomabx21 a owl:Restriction ;
+	owl:maxCardinality "31"^^xsd:integer ;
+	owl:onProperty :intervalContainsDay .
+
+:CalendarMonth rdfs:subClassOf _:node14u7vomabx21 .
+
+_:node14u7vomabx22 a owl:Restriction ;
+	owl:minCardinality "28"^^xsd:integer ;
+	owl:onProperty :intervalContainsDay .
+
+:CalendarMonth rdfs:subClassOf _:node14u7vomabx22 ;
+	skos:prefLabel "Calendar Month"@en .
+
+:CalendarQuarter a owl:Class ;
+	rdfs:comment "A class for calendar aligned one-quarter year (3 month) intervals"@en ;
+	rdfs:label "Calendar Quarter"@en ;
+	rdfs:subClassOf :CalendarInterval , :Quarter .
+
+_:node14u7vomabx23 a owl:Restriction ;
+	owl:cardinality "3"^^xsd:integer ;
+	owl:onProperty :intervalContainsMonth .
+
+:CalendarQuarter rdfs:subClassOf _:node14u7vomabx23 .
+
+_:node14u7vomabx24 a owl:Restriction ;
+	owl:allValuesFrom :CalendarQuarter ;
+	owl:onProperty :previousInterval .
+
+:CalendarQuarter rdfs:subClassOf _:node14u7vomabx24 ;
+	skos:prefLabel "Calendar Quarter"@en .
+
+:CalendarSecond a owl:Class ;
+	rdfs:comment "A class for calendar aligned one-second intervals. ISO 8601(E):2004 Section 2.2.1 (and 2.2.2 for leap seconds)(for units - 1 second interval are not defined)."@en ;
+	rdfs:label "Calendar Second"@en ;
+	rdfs:subClassOf :CalendarInterval , :Second .
+
+_:node14u7vomabx25 a owl:Restriction ;
+	owl:allValuesFrom :Second ;
+	owl:onProperty :nextInterval .
+
+:CalendarSecond rdfs:subClassOf _:node14u7vomabx25 .
+
+_:node14u7vomabx26 a owl:Restriction ;
+	owl:allValuesFrom :Second ;
+	owl:onProperty :previousInterval .
+
+:CalendarSecond rdfs:subClassOf _:node14u7vomabx26 ;
+	skos:prefLabel "Calendar Second"@en .
+
+:CalendarYear a owl:Class ;
+	rdfs:comment "A class for calendar aligned intervals of one whole year, ie. year long intervals that are aligned with a Calendar."@en ;
+	rdfs:label "Calendar Year"@en ;
+	rdfs:subClassOf :CalendarInterval , :Year .
+
+_:node14u7vomabx27 a owl:Restriction ;
+	owl:maxCardinality "366"^^xsd:integer ;
+	owl:onProperty :intervalContainsDay .
+
+:CalendarYear rdfs:subClassOf _:node14u7vomabx27 .
+
+_:node14u7vomabx28 a owl:Restriction ;
+	owl:minCardinality "365"^^xsd:integer ;
+	owl:onProperty :intervalContainsDay .
+
+:CalendarYear rdfs:subClassOf _:node14u7vomabx28 .
+
+_:node14u7vomabx29 a owl:Restriction ;
+	owl:allValuesFrom :CalendarYear ;
+	owl:onProperty :nextInterval .
+
+:CalendarYear rdfs:subClassOf _:node14u7vomabx29 .
+
+_:node14u7vomabx30 a owl:Restriction ;
+	owl:allValuesFrom :CalendarYear ;
+	owl:onProperty :previousInterval .
+
+:CalendarYear rdfs:subClassOf _:node14u7vomabx30 .
+
+_:node14u7vomabx31 a owl:Restriction ;
+	owl:cardinality "12"^^xsd:integer ;
+	owl:onProperty :intervalContainsMonth .
+
+:CalendarYear rdfs:subClassOf _:node14u7vomabx31 ;
+	skos:prefLabel "Calendar Year"@en .
+
+:Day a owl:Class ;
+	rdfs:comment "A generic superclass for all day like entities."@en ;
+	rdfs:label "Generic Day (Class)"@en ;
+	rdfs:subClassOf :Interval .
+
+_:node14u7vomabx32 a owl:Restriction ;
+	owl:allValuesFrom :Day ;
+	owl:onProperty :previousInterval .
+
+:Day rdfs:subClassOf _:node14u7vomabx32 .
+
+_:node14u7vomabx33 a owl:Restriction ;
+	owl:allValuesFrom :Day ;
+	owl:onProperty :nextInterval .
+
+:Day rdfs:subClassOf _:node14u7vomabx33 .
+
+_:node14u7vomabx34 a owl:Restriction ;
+	owl:hasValue :one-day ;
+	owl:onProperty time:hasDurationDescription .
+
+:Day rdfs:subClassOf _:node14u7vomabx34 .
+
+_:node14u7vomabx35 a owl:Restriction ;
+	owl:hasValue "P1D"^^xsd:duration ;
+	owl:onProperty :hasXsdDurationDescription .
+
+:Day rdfs:subClassOf _:node14u7vomabx35 ;
+	skos:prefLabel "Generic Day (Class)"@en .
+
+:December a :MonthOfYear ;
+	rdfs:comment "The month of December"^^xsd:string ;
+	rdfs:label "December"@en ;
+	skos:prefLabel "December"@en .
+
+:DurationDescriptions a owl:Class ;
+	rdfs:subClassOf time:DurationDescription .
+
+:February a :MonthOfYear ;
+	rdfs:comment "The month of February"@en ;
+	rdfs:label "February"@en ;
+	skos:prefLabel "February"@en .
+
+:H1 a owl:Class ;
+	rdfs:comment "A class for intervals that the first half of a (nominally) annual cycle."@en ;
+	rdfs:label "H1 Interval"@en ;
+	rdfs:subClassOf :Half .
+
+_:node14u7vomabx36 a owl:Restriction .
+
+_:node14u7vomabx37 a owl:Class .
+
+_:node14u7vomabx38 rdf:first :H1 ;
+	rdf:rest _:node14u7vomabx39 .
+
+_:node14u7vomabx39 rdf:first :H2 ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx37 owl:unionOf _:node14u7vomabx38 .
+
+_:node14u7vomabx36 owl:allValuesFrom _:node14u7vomabx37 ;
+	owl:onProperty :nextInterval .
+
+:H1 rdfs:subClassOf _:node14u7vomabx36 ;
+	skos:prefLabel "H1 Interval"@en .
+
+:H2 a owl:Class ;
+	rdfs:comment "A class for intervals that the second half of a (nominally) annual cycle."@en ;
+	rdfs:label "H2 Interval"@en ;
+	rdfs:subClassOf :Half .
+
+_:node14u7vomabx40 a owl:Restriction .
+
+_:node14u7vomabx41 a owl:Class .
+
+_:node14u7vomabx42 rdf:first :H1 ;
+	rdf:rest _:node14u7vomabx43 .
+
+_:node14u7vomabx43 rdf:first :H3 ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx41 owl:unionOf _:node14u7vomabx42 .
+
+_:node14u7vomabx40 owl:allValuesFrom _:node14u7vomabx41 ;
+	owl:onProperty :nextInterval .
+
+:H2 rdfs:subClassOf _:node14u7vomabx40 ;
+	skos:prefLabel "H2 Interval"@en .
+
+:H3 a owl:Class ;
+	rdfs:comment "A class for 3rd half year intervals in an abnormally long annual interval - in the UK a buisness interval may exceptionally extent to 6 quarters."@en ;
+	rdfs:label "H3 Interval"@en ;
+	rdfs:subClassOf :Half .
+
+_:node14u7vomabx44 a owl:Restriction ;
+	owl:allValuesFrom :H1 ;
+	owl:onProperty :nextInterval .
+
+:H3 rdfs:subClassOf _:node14u7vomabx44 ;
+	skos:prefLabel "H3 Interval"@en .
+
+:Half a owl:Class ;
+	rdfs:comment "A generic superclass for all half-year (6 month) like intervals"@en ;
+	rdfs:label "Generic Half (Class)"@en ;
+	rdfs:subClassOf :Interval .
+
+_:node14u7vomabx45 a owl:Restriction ;
+	owl:allValuesFrom :Half ;
+	owl:onProperty :nextInterval .
+
+:Half rdfs:subClassOf _:node14u7vomabx45 .
+
+_:node14u7vomabx46 a owl:Restriction ;
+	owl:hasValue "P6M"^^xsd:duration ;
+	owl:onProperty :hasXsdDurationDescription .
+
+:Half rdfs:subClassOf _:node14u7vomabx46 .
+
+_:node14u7vomabx47 a owl:Restriction ;
+	owl:allValuesFrom :Half ;
+	owl:onProperty :previousInterval .
+
+:Half rdfs:subClassOf _:node14u7vomabx47 .
+
+_:node14u7vomabx48 a owl:Restriction ;
+	owl:hasValue :one-half ;
+	owl:onProperty time:hasDurationDescription .
+
+:Half rdfs:subClassOf _:node14u7vomabx48 .
+
+_:node14u7vomabx49 a owl:Restriction ;
+	owl:cardinality "2"^^xsd:integer ;
+	owl:onProperty :intervalContainsQuarter .
+
+:Half rdfs:subClassOf _:node14u7vomabx49 ;
+	skos:prefLabel "Generic Half (Class)"@en .
+
+:Hour a owl:Class ;
+	rdfs:comment "A generic superclass for hour-long intervals. An hour may contain a positive or negative leap second (see http://en.wikipedia.org/wiki/Hour)."@en ;
+	rdfs:label "Generic Hour (class)"@en ;
+	rdfs:subClassOf :Interval .
+
+_:node14u7vomabx50 a owl:Restriction ;
+	owl:minCardinality "3599"^^xsd:integer ;
+	owl:onProperty :intervalContainsSecond .
+
+:Hour rdfs:subClassOf _:node14u7vomabx50 .
+
+_:node14u7vomabx51 a owl:Restriction ;
+	owl:hasValue "PT1H"^^xsd:duration ;
+	owl:onProperty :hasXsdDurationDescription .
+
+:Hour rdfs:subClassOf _:node14u7vomabx51 .
+
+_:node14u7vomabx52 a owl:Restriction ;
+	owl:allValuesFrom :Hour ;
+	owl:onProperty :previousInterval .
+
+:Hour rdfs:subClassOf _:node14u7vomabx52 .
+
+_:node14u7vomabx53 a owl:Restriction ;
+	owl:maxCardinality "3601"^^xsd:integer ;
+	owl:onProperty :intervalContainsSecond .
+
+:Hour rdfs:subClassOf _:node14u7vomabx53 .
+
+_:node14u7vomabx54 a owl:Restriction ;
+	owl:allValuesFrom :Hour ;
+	owl:onProperty :nextInterval .
+
+:Hour rdfs:subClassOf _:node14u7vomabx54 .
+
+_:node14u7vomabx55 a owl:Restriction ;
+	owl:cardinality "60"^^xsd:integer ;
+	owl:onProperty :intervalContainsMinute .
+
+:Hour rdfs:subClassOf _:node14u7vomabx55 .
+
+_:node14u7vomabx56 a owl:Restriction ;
+	owl:hasValue :one-hour ;
+	owl:onProperty time:hasDurationDescription .
+
+:Hour rdfs:subClassOf _:node14u7vomabx56 ;
+	skos:prefLabel "Generic Hour (class)"@en .
+
+:Interval a owl:Class ;
+	rdfs:subClassOf time:DateTimeInterval , scv:Dimension .
+
+:IntervalList a rdfs:Class ;
+	rdfs:subClassOf rdf:List , rdfs:Resource .
+
+_:node14u7vomabx57 a owl:Restriction .
+
+_:node14u7vomabx58 a owl:Class .
+
+_:node14u7vomabx59 rdf:first :Interval ;
+	rdf:rest _:node14u7vomabx60 .
+
+_:node14u7vomabx60 rdf:first rdf:nil ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx58 owl:unionOf _:node14u7vomabx59 .
+
+_:node14u7vomabx57 owl:allValuesFrom _:node14u7vomabx58 ;
+	owl:onProperty rdf:rest .
+
+:IntervalList rdfs:subClassOf _:node14u7vomabx57 .
+
+_:node14u7vomabx61 a owl:Restriction ;
+	owl:allValuesFrom :Interval ;
+	owl:onProperty rdf:first .
+
+:IntervalList rdfs:subClassOf _:node14u7vomabx61 .
+
+:IrregularInterval a owl:Class ;
+	rdfs:comment "A business interval outside of the normal pattern of business intervals. In the UK companies house allow an annual reporting interval to be extended by upto 6 months once in 5 years (and at other exceptional times)"@en ;
+	rdfs:label "Irregular Business interval"@en ;
+	rdfs:subClassOf :BusinessInterval ;
+	skos:prefLabel "Irregular Business interval"@en .
+
+:Iso8601Week a owl:Class ;
+	rdfs:comment "A class for calendar weeks. Strictly not all calendar week intervals are contained within the year to which they may be attributed. The first or last week of a given calendar year may inculde days from the preceding or following calendar year respectively. An ISO 8601 week starts at 00:00:00 in a Monday and ends at the last moment of 23:59:59 on the following Sunday.  ISO 8601(E):2004 Section 2.2.8"@en ;
+	rdfs:label "Calendar Week"@en ;
+	rdfs:subClassOf :CalendarInterval , :Week .
+
+_:node14u7vomabx62 a owl:Restriction ;
+	owl:cardinality "7"^^xsd:integer ;
+	owl:onProperty :intervalContainsDay .
+
+:Iso8601Week rdfs:subClassOf _:node14u7vomabx62 .
+
+_:node14u7vomabx63 a owl:Restriction ;
+	owl:allValuesFrom :Iso8601Week ;
+	owl:onProperty :nextInterval .
+
+:Iso8601Week rdfs:subClassOf _:node14u7vomabx63 .
+
+_:node14u7vomabx64 a owl:Restriction ;
+	owl:allValuesFrom :CalendarDay ;
+	owl:onProperty :intervalContainsDay .
+
+:Iso8601Week rdfs:subClassOf _:node14u7vomabx64 .
+
+_:node14u7vomabx65 a owl:Restriction ;
+	owl:allValuesFrom :Iso8601Week ;
+	owl:onProperty :previousInterval .
+
+:Iso8601Week rdfs:subClassOf _:node14u7vomabx65 ;
+	skos:prefLabel "ISO 8601 Week"@en .
+
+:January a :MonthOfYear ;
+	rdfs:comment "The month of January"^^xsd:string ;
+	rdfs:label "January"@en ;
+	skos:prefLabel "January"@en .
+
+:July a :MonthOfYear ;
+	rdfs:comment "The month of July"^^xsd:string ;
+	rdfs:label "July"@en ;
+	skos:prefLabel "July"@en .
+
+:June a :MonthOfYear ;
+	rdfs:comment "The month of June"^^xsd:string ;
+	rdfs:label "January"@en ;
+	skos:prefLabel "June"@en .
+
+:March a :MonthOfYear ;
+	rdfs:comment "The month of March"^^xsd:string ;
+	rdfs:label "March"@en ;
+	skos:prefLabel "March"@en .
+
+:May a :MonthOfYear ;
+	rdfs:comment "The month of May"^^xsd:string ;
+	rdfs:label "May"@en ;
+	skos:prefLabel "May"@en .
+
+:Minute a owl:Class ;
+	rdfs:comment "A generic superclass for all minute-long intervals. A minute may contain a positive or negative leap second."@en ;
+	rdfs:label "Generic Minute (Class)"@en ;
+	rdfs:subClassOf :Interval .
+
+_:node14u7vomabx66 a owl:Restriction ;
+	owl:maxCardinality "61"^^xsd:integer ;
+	owl:onProperty :intervalContainsSecond .
+
+:Minute rdfs:subClassOf _:node14u7vomabx66 .
+
+_:node14u7vomabx67 a owl:Restriction ;
+	owl:allValuesFrom :Minute ;
+	owl:onProperty :nextInterval .
+
+:Minute rdfs:subClassOf _:node14u7vomabx67 .
+
+_:node14u7vomabx68 a owl:Restriction ;
+	owl:minCardinality "59"^^xsd:integer ;
+	owl:onProperty :intervalContainsSecond .
+
+:Minute rdfs:subClassOf _:node14u7vomabx68 .
+
+_:node14u7vomabx69 a owl:Restriction ;
+	owl:hasValue "PT1M"^^xsd:duration ;
+	owl:onProperty :hasXsdDurationDescription .
+
+:Minute rdfs:subClassOf _:node14u7vomabx69 .
+
+_:node14u7vomabx70 a owl:Restriction ;
+	owl:allValuesFrom :Minute ;
+	owl:onProperty :previousInterval .
+
+:Minute rdfs:subClassOf _:node14u7vomabx70 .
+
+_:node14u7vomabx71 a owl:Restriction ;
+	owl:hasValue :one-minute ;
+	owl:onProperty time:hasDurationDescription .
+
+:Minute rdfs:subClassOf _:node14u7vomabx71 ;
+	skos:prefLabel "Generic Minute (Class)"@en .
+
+:Month a owl:Class ;
+	rdfs:comment "A generic superclass class for all month-long like intervals."@en ;
+	rdfs:label "Generic Month (Class)"@en ;
+	rdfs:subClassOf :Interval .
+
+_:node14u7vomabx72 a owl:Restriction ;
+	owl:hasValue :one-month ;
+	owl:onProperty time:hasDurationDescription .
+
+:Month rdfs:subClassOf _:node14u7vomabx72 .
+
+_:node14u7vomabx73 a owl:Restriction ;
+	owl:allValuesFrom :Month ;
+	owl:onProperty :previousInterval .
+
+:Month rdfs:subClassOf _:node14u7vomabx73 .
+
+_:node14u7vomabx74 a owl:Restriction ;
+	owl:hasValue "P1M"^^xsd:duration ;
+	owl:onProperty :hasXsdDurationDescription .
+
+:Month rdfs:subClassOf _:node14u7vomabx74 .
+
+_:node14u7vomabx75 a owl:Restriction ;
+	owl:allValuesFrom :Month ;
+	owl:onProperty :nextInterval .
+
+:Month rdfs:subClassOf _:node14u7vomabx75 ;
+	skos:prefLabel "Generic Month (Class)"@en .
+
+:MonthOfYear a owl:Class ;
+	rdfs:comment "A class for the months of a calendar year. A month of year is a recurring interval of about 12th of a year that re-occurs annually."^^xsd:string ;
+	rdfs:label "month of year"@en ;
+	rdfs:subClassOf owl:Thing .
+
+_:node14u7vomabx76 rdf:first :January ;
+	rdf:rest _:node14u7vomabx77 .
+
+_:node14u7vomabx77 rdf:first :February ;
+	rdf:rest _:node14u7vomabx78 .
+
+_:node14u7vomabx78 rdf:first :March ;
+	rdf:rest _:node14u7vomabx79 .
+
+_:node14u7vomabx79 rdf:first :April ;
+	rdf:rest _:node14u7vomabx80 .
+
+_:node14u7vomabx80 rdf:first :May ;
+	rdf:rest _:node14u7vomabx81 .
+
+_:node14u7vomabx81 rdf:first :June ;
+	rdf:rest _:node14u7vomabx82 .
+
+_:node14u7vomabx82 rdf:first :July ;
+	rdf:rest _:node14u7vomabx83 .
+
+_:node14u7vomabx83 rdf:first :August ;
+	rdf:rest _:node14u7vomabx84 .
+
+_:node14u7vomabx84 rdf:first :September ;
+	rdf:rest _:node14u7vomabx85 .
+
+_:node14u7vomabx85 rdf:first :October ;
+	rdf:rest _:node14u7vomabx86 .
+
+_:node14u7vomabx86 rdf:first :November ;
+	rdf:rest _:node14u7vomabx87 .
+
+_:node14u7vomabx87 rdf:first :December ;
+	rdf:rest rdf:nil .
+
+:MonthOfYear owl:oneOf _:node14u7vomabx76 ;
+	skos:prefLabel "month of year"@en .
+
+:November a :MonthOfYear ;
+	rdfs:comment "The month of Novermber"^^xsd:string ;
+	rdfs:label "November"@en ;
+	skos:prefLabel "November"@en .
+
+:October a :MonthOfYear ;
+	rdfs:comment "The month of October"^^xsd:string ;
+	rdfs:label "October"@en ;
+	skos:prefLabel "October"@en .
+
+:Q1 a owl:Class ;
+	rdfs:comment "A class for intervals that are the first quarter of a (nominally) annual cycle."@en ;
+	rdfs:label "Q1 Interval"@en ;
+	rdfs:subClassOf :Quarter .
+
+_:node14u7vomabx88 a owl:Restriction .
+
+_:node14u7vomabx89 a owl:Class .
+
+_:node14u7vomabx90 rdf:first :Q1 ;
+	rdf:rest _:node14u7vomabx91 .
+
+_:node14u7vomabx91 rdf:first :Q2 ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx89 owl:unionOf _:node14u7vomabx90 .
+
+_:node14u7vomabx88 owl:allValuesFrom _:node14u7vomabx89 ;
+	owl:onProperty :nextInterval .
+
+:Q1 rdfs:subClassOf _:node14u7vomabx88 ;
+	skos:prefLabel "Q1 Interval"@en .
+
+:Q2 a owl:Class ;
+	rdfs:comment "A class for intervals that are 2nd quarters of a (nominally) annual cycle"@en ;
+	rdfs:label "Q2 Interval"@en ;
+	rdfs:subClassOf :Quarter .
+
+_:node14u7vomabx92 a owl:Restriction .
+
+_:node14u7vomabx93 a owl:Class .
+
+_:node14u7vomabx94 rdf:first :Q1 ;
+	rdf:rest _:node14u7vomabx95 .
+
+_:node14u7vomabx95 rdf:first :Q3 ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx93 owl:unionOf _:node14u7vomabx94 .
+
+_:node14u7vomabx92 owl:allValuesFrom _:node14u7vomabx93 ;
+	owl:onProperty :nextInterval .
+
+:Q2 rdfs:subClassOf _:node14u7vomabx92 .
+
+_:node14u7vomabx96 a owl:Restriction ;
+	owl:allValuesFrom :Q1 ;
+	owl:onProperty :previousInterval .
+
+:Q2 rdfs:subClassOf _:node14u7vomabx96 ;
+	skos:prefLabel "Q2 Interval"@en .
+
+:Q3 a owl:Class ;
+	rdfs:comment "A class for intervals that are 3rd quarters of a (nominally) annual cycle"@en ;
+	rdfs:label "Q3 Interval"@en ;
+	rdfs:subClassOf :Quarter .
+
+_:node14u7vomabx97 a owl:Restriction ;
+	owl:allValuesFrom :Q2 ;
+	owl:onProperty :previousInterval .
+
+:Q3 rdfs:subClassOf _:node14u7vomabx97 .
+
+_:node14u7vomabx98 a owl:Restriction .
+
+_:node14u7vomabx99 a owl:Class .
+
+_:node14u7vomabx100 rdf:first :Q1 ;
+	rdf:rest _:node14u7vomabx101 .
+
+_:node14u7vomabx101 rdf:first :Q4 ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx99 owl:unionOf _:node14u7vomabx100 .
+
+_:node14u7vomabx98 owl:allValuesFrom _:node14u7vomabx99 ;
+	owl:onProperty :nextInterval .
+
+:Q3 rdfs:subClassOf _:node14u7vomabx98 ;
+	skos:prefLabel "Q3 Interval"@en .
+
+:Q4 a owl:Class ;
+	rdfs:comment "A class for intervals that are 4th quarters of a (nominally) annual cycle."@en ;
+	rdfs:label "Q4 Interval"@en ;
+	rdfs:subClassOf :Quarter .
+
+_:node14u7vomabx102 a owl:Restriction ;
+	owl:allValuesFrom :Q3 ;
+	owl:onProperty :previousInterval .
+
+:Q4 rdfs:subClassOf _:node14u7vomabx102 .
+
+_:node14u7vomabx103 a owl:Restriction .
+
+_:node14u7vomabx104 a owl:Class .
+
+_:node14u7vomabx105 rdf:first :Q1 ;
+	rdf:rest _:node14u7vomabx106 .
+
+_:node14u7vomabx106 rdf:first :Q5 ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx104 owl:unionOf _:node14u7vomabx105 .
+
+_:node14u7vomabx103 owl:allValuesFrom _:node14u7vomabx104 ;
+	owl:onProperty :nextInterval .
+
+:Q4 rdfs:subClassOf _:node14u7vomabx103 ;
+	skos:prefLabel "Q4 Interval"@en .
+
+:Q5 a owl:Class ;
+	rdfs:comment "A class for 5th quarters of an abnormally long annual interval - in the UK a buisness interval may exceptionally extent to 6 quarters."@en ;
+	rdfs:label "Q5 Interval"@en ;
+	rdfs:subClassOf :Quarter .
+
+_:node14u7vomabx107 a owl:Restriction .
+
+_:node14u7vomabx108 a owl:Class .
+
+_:node14u7vomabx109 rdf:first :Q1 ;
+	rdf:rest _:node14u7vomabx110 .
+
+_:node14u7vomabx110 rdf:first :Q6 ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx108 owl:unionOf _:node14u7vomabx109 .
+
+_:node14u7vomabx107 owl:allValuesFrom _:node14u7vomabx108 ;
+	owl:onProperty :nextInterval .
+
+:Q5 rdfs:subClassOf _:node14u7vomabx107 .
+
+_:node14u7vomabx111 a owl:Restriction ;
+	owl:allValuesFrom :Q4 ;
+	owl:onProperty :previousInterval .
+
+:Q5 rdfs:subClassOf _:node14u7vomabx111 ;
+	skos:prefLabel "Q5 Interval"@en .
+
+:Q6 a owl:Class ;
+	rdfs:comment "A class for 6th quarters of an abnormally long annual interval - in the UK a buisness interval may exceptionally extent to 6 quarters."@en ;
+	rdfs:label "Q6 Interval"@en ;
+	rdfs:subClassOf :Quarter .
+
+_:node14u7vomabx112 a owl:Restriction ;
+	owl:allValuesFrom :Q5 ;
+	owl:onProperty :previousInterval .
+
+:Q6 rdfs:subClassOf _:node14u7vomabx112 .
+
+_:node14u7vomabx113 a owl:Restriction ;
+	owl:allValuesFrom :Q1 ;
+	owl:onProperty :nextInterval .
+
+:Q6 rdfs:subClassOf _:node14u7vomabx113 ;
+	skos:prefLabel "Q6 Interval"@en .
+
+:Quarter a owl:Class ;
+	rdfs:comment "A generic superclass for all Quarter (3-month) long intervals"@en ;
+	rdfs:label "Generic Quarter (Class)"@en ;
+	rdfs:subClassOf :Interval .
+
+_:node14u7vomabx114 a owl:Restriction ;
+	owl:hasValue :one-quarter ;
+	owl:onProperty time:hasDurationDescription .
+
+:Quarter rdfs:subClassOf _:node14u7vomabx114 .
+
+_:node14u7vomabx115 a owl:Restriction ;
+	owl:hasValue "P3M"^^xsd:duration ;
+	owl:onProperty :hasXsdDurationDescription .
+
+:Quarter rdfs:subClassOf _:node14u7vomabx115 .
+
+_:node14u7vomabx116 a owl:Restriction ;
+	owl:allValuesFrom :Quarter ;
+	owl:onProperty :nextInterval .
+
+:Quarter rdfs:subClassOf _:node14u7vomabx116 .
+
+_:node14u7vomabx117 a owl:Restriction ;
+	owl:allValuesFrom :Quarter ;
+	owl:onProperty :previousInterval .
+
+:Quarter rdfs:subClassOf _:node14u7vomabx117 ;
+	skos:prefLabel "Generic Quarter (Class)"@en .
+
+:Second a owl:Class ;
+	rdfs:comment "A generic superclass for all one-second long like intervals"@en ;
+	rdfs:label "Generic Second (Class)"@en ;
+	rdfs:subClassOf :Interval .
+
+_:node14u7vomabx118 a owl:Restriction ;
+	owl:hasValue :one-second ;
+	owl:onProperty time:hasDurationDescription .
+
+:Second rdfs:subClassOf _:node14u7vomabx118 .
+
+_:node14u7vomabx119 a owl:Restriction ;
+	owl:allValuesFrom :Second ;
+	owl:onProperty :nextInterval .
+
+:Second rdfs:subClassOf _:node14u7vomabx119 .
+
+_:node14u7vomabx120 a owl:Restriction ;
+	owl:allValuesFrom :Second ;
+	owl:onProperty :previousInterval .
+
+:Second rdfs:subClassOf _:node14u7vomabx120 .
+
+_:node14u7vomabx121 a owl:Restriction ;
+	owl:hasValue "PT1S"^^xsd:duration ;
+	owl:onProperty :hasXsdDurationDescription .
+
+:Second rdfs:subClassOf _:node14u7vomabx121 ;
+	skos:prefLabel "Generic Second (Class)"@en .
+
+:September a :MonthOfYear ;
+	rdfs:comment "The month of September"^^xsd:string ;
+	rdfs:label "September"@en ;
+	skos:prefLabel "September"@en .
+
+:Week a owl:Class ;
+	rdfs:comment "A generic superclass for all one-week long (7 day) intervals."@en ;
+	rdfs:label "Generic Week (Class)"@en ;
+	rdfs:subClassOf :Interval .
+
+_:node14u7vomabx122 a owl:Restriction ;
+	owl:cardinality "7"^^xsd:integer ;
+	owl:onProperty :intervalContainsDay .
+
+:Week rdfs:subClassOf _:node14u7vomabx122 .
+
+_:node14u7vomabx123 a owl:Restriction ;
+	owl:hasValue "P7D"^^xsd:duration ;
+	owl:onProperty :hasXsdDurationDescription .
+
+:Week rdfs:subClassOf _:node14u7vomabx123 .
+
+_:node14u7vomabx124 a owl:Restriction ;
+	owl:allValuesFrom :Week ;
+	owl:onProperty :previousInterval .
+
+:Week rdfs:subClassOf _:node14u7vomabx124 .
+
+_:node14u7vomabx125 a owl:Restriction ;
+	owl:allValuesFrom :Week ;
+	owl:onProperty :nextInterval .
+
+:Week rdfs:subClassOf _:node14u7vomabx125 .
+
+_:node14u7vomabx126 a owl:Restriction ;
+	owl:hasValue :one-week ;
+	owl:onProperty time:hasDurationDescription .
+
+:Week rdfs:subClassOf _:node14u7vomabx126 ;
+	skos:prefLabel "Generice Week (Class)"@en .
+
+:Year a owl:Class ;
+	rdfs:comment "A generic superclass for all manner of Year like intervals. The the cardinality of days in a year is set to between 351 and 380 because in the UK the end of a business reporting year must be within 7 days of an annual reference date. In the worst cases this allows a reporting interval to be shortened or extended by up to two weeks."@en ;
+	rdfs:label "Generic Year (Class)"@en ;
+	rdfs:subClassOf :Interval .
+
+_:node14u7vomabx127 a owl:Restriction ;
+	owl:allValuesFrom :Year ;
+	owl:onProperty :previousInterval .
+
+:Year rdfs:subClassOf _:node14u7vomabx127 .
+
+_:node14u7vomabx128 a owl:Restriction ;
+	owl:minCardinality "351"^^xsd:integer ;
+	owl:onProperty :intervalContainsDay .
+
+:Year rdfs:subClassOf _:node14u7vomabx128 .
+
+_:node14u7vomabx129 a owl:Restriction ;
+	owl:cardinality "4"^^xsd:integer ;
+	owl:onProperty :intervalContainsQuarter .
+
+:Year rdfs:subClassOf _:node14u7vomabx129 .
+
+_:node14u7vomabx130 a owl:Restriction ;
+	owl:cardinality "2"^^xsd:integer ;
+	owl:onProperty :intervalContainsHalf .
+
+:Year rdfs:subClassOf _:node14u7vomabx130 .
+
+_:node14u7vomabx131 a owl:Restriction ;
+	owl:hasValue :one-year ;
+	owl:onProperty time:hasDurationDescription .
+
+:Year rdfs:subClassOf _:node14u7vomabx131 .
+
+_:node14u7vomabx132 a owl:Restriction ;
+	owl:hasValue "P1Y"^^xsd:duration ;
+	owl:onProperty :hasXsdDurationDescription .
+
+:Year rdfs:subClassOf _:node14u7vomabx132 .
+
+_:node14u7vomabx133 a owl:Restriction ;
+	owl:allValuesFrom :Year ;
+	owl:onProperty :nextInterval .
+
+:Year rdfs:subClassOf _:node14u7vomabx133 .
+
+_:node14u7vomabx134 a owl:Restriction ;
+	owl:maxCardinality "380"^^xsd:integer ;
+	owl:onProperty :intervalContainsDay .
+
+:Year rdfs:subClassOf _:node14u7vomabx134 .
+
+:dayOfWeek a owl:ObjectProperty ;
+	rdfs:comment "The day of the week in which an instant or interval (of duration one day or less) occurs."@en ;
+	rdfs:label "day of week"@en ;
+	rdfs:range time:DayOfWeek ;
+	skos:prefLabel "day of week"@en .
+
+:hasXsdDurationDescription a owl:DatatypeProperty ;
+	rdfs:comment "hasXsdDurationDescription: a data type property for associating an xsd:duration with an Interval. Inspired by \"durationDescriptionDataType\" mentioned in \"http://www.w3.org/TR/owl-time\" but which seems to have failed to make it into the formal ontology."@en .
+
+_:node14u7vomabx135 a owl:Class .
+
+_:node14u7vomabx136 rdf:first time:DurationDescription ;
+	rdf:rest _:node14u7vomabx137 .
+
+_:node14u7vomabx137 rdf:first time:Interval ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx135 owl:unionOf _:node14u7vomabx136 .
+
+:hasXsdDurationDescription rdfs:domain _:node14u7vomabx135 ;
+	rdfs:label "hasXsdDurationDescription (DataTypeProperty)"@en ;
+	rdfs:range xsd:duration .
+
+:intervalContainsDay a owl:ObjectProperty ;
+	rdfs:domain :Interval ;
+	rdfs:range :Day ;
+	rdfs:subPropertyOf time:intervalContains .
+
+:intervalContainsDays a rdf:Property ;
+	rdfs:range rdf:List .
+
+:intervalContainsHalf a owl:ObjectProperty ;
+	rdfs:domain :Interval ;
+	rdfs:range :Half ;
+	rdfs:subPropertyOf time:intervalContains .
+
+:intervalContainsHalves a rdf:Property ;
+	rdfs:range rdf:List .
+
+:intervalContainsHour a owl:ObjectProperty ;
+	rdfs:domain :Interval ;
+	rdfs:range :Hour ;
+	rdfs:subPropertyOf time:intervalContains .
+
+:intervalContainsHours a rdf:Property ;
+	rdfs:range rdf:List .
+
+:intervalContainsIso8601Week a owl:ObjectProperty ;
+	rdfs:domain :Interval ;
+	rdfs:subPropertyOf :intervalContainsWeek .
+
+:intervalContainsMinute a owl:ObjectProperty ;
+	rdfs:domain :Interval ;
+	rdfs:range :Minute ;
+	rdfs:subPropertyOf time:intervalContains .
+
+:intervalContainsMinutes a rdf:Property ;
+	rdfs:range rdf:List .
+
+:intervalContainsMonth a owl:ObjectProperty ;
+	rdfs:domain :Interval ;
+	rdfs:range :Month ;
+	rdfs:subPropertyOf time:intervalContains .
+
+:intervalContainsMonths a rdf:Property ;
+	rdfs:range rdf:List .
+
+:intervalContainsQuarter a owl:ObjectProperty ;
+	rdfs:domain :Interval ;
+	rdfs:range :Quarter ;
+	rdfs:subPropertyOf time:intervalContains .
+
+:intervalContainsQuarters a rdf:Property ;
+	rdfs:range rdf:List .
+
+:intervalContainsSecond a owl:ObjectProperty ;
+	rdfs:domain :Interval ;
+	rdfs:range :Second ;
+	rdfs:subPropertyOf time:intervalContains .
+
+:intervalContainsSeconds a rdf:Property ;
+	rdfs:range rdf:List .
+
+:intervalContainsWeek a owl:ObjectProperty ;
+	rdfs:domain :Interval ;
+	rdfs:range :Week ;
+	rdfs:subPropertyOf time:intervalContains .
+
+:monthOfYear a owl:ObjectProperty ;
+	rdfs:comment "The month of the year in which a contained instant or interval (of duration one month or less) occurs."@en .
+
+_:node14u7vomabx138 a owl:Class .
+
+_:node14u7vomabx139 rdf:first :Day ;
+	rdf:rest _:node14u7vomabx140 .
+
+_:node14u7vomabx140 rdf:first :Hour ;
+	rdf:rest _:node14u7vomabx141 .
+
+_:node14u7vomabx141 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx142 .
+
+_:node14u7vomabx142 rdf:first :Month ;
+	rdf:rest _:node14u7vomabx143 .
+
+_:node14u7vomabx143 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx144 .
+
+_:node14u7vomabx144 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx138 owl:unionOf _:node14u7vomabx139 .
+
+:monthOfYear rdfs:domain _:node14u7vomabx138 ;
+	rdfs:label "month of year"@en ;
+	rdfs:range :MonthOfYear ;
+	skos:prefLabel "month of year"@en .
+
+:nextAnnualReferenceDate a owl:FunctionalProperty ;
+	rdfs:comment "A reference to the companies house annual reference date at the end of the previous reporting year. Annual reporting periods are required to end with 7 days of this date. Success annual reference dates normally advance by 1 whole year each year. However, companies can always apply for an earlier reference date and under restricted circumstance request a later reference date (upto 6 months later) see http://www.companieshouse.gov.uk/about/gbhtml/gp2.shtml#ch2"@en ;
+	rdfs:domain :BusinessInterval ;
+	rdfs:label "Next Annual Reference Date."@en ;
+	rdfs:range :CalendarDay ;
+	skos:prefLabel "Next Annual Reference Date."@en .
+
+:nextInterval a owl:FunctionalProperty ;
+	rdfs:domain :Interval ;
+	rdfs:range :Interval .
+
+:one-day a :DurationDescriptions ;
+	rdfs:comment "A duration of one day, typically 24 hours)" ;
+	rdfs:label "1 day"@en ;
+	:hasXsdDurationDescription "P1D"^^xsd:duration ;
+	time:days "1"^^xsd:decimal .
+
+:one-half a :DurationDescriptions ;
+	rdfs:comment "A duration of one half year, typically 6 months" ;
+	rdfs:label "1 half of a year" ;
+	:hasXsdDurationDescription "P6M"^^xsd:duration ;
+	time:months "6"^^xsd:decimal .
+
+:one-hour a :DurationDescriptions ;
+	rdfs:comment "A duration of one hour" ;
+	rdfs:label "1 hour" ;
+	:hasXsdDurationDescription "PT1H"^^xsd:duration ;
+	time:hours "1"^^xsd:decimal .
+
+:one-minute a :DurationDescriptions ;
+	rdfs:comment "A duration of 1 minute" ;
+	rdfs:label "1 minute" ;
+	:hasXsdDurationDescription "PT1M"^^xsd:duration ;
+	time:minutes "1"^^xsd:decimal .
+
+:one-month a :DurationDescriptions ;
+	rdfs:comment "A duration of one month" ;
+	rdfs:label "1 month" ;
+	:hasXsdDurationDescription "P1M"^^xsd:duration ;
+	time:months "1"^^xsd:decimal .
+
+:one-quarter a :DurationDescriptions ;
+	rdfs:comment "A duration of one quarter, typically 3 months."@en ;
+	rdfs:label "1 quarter of a year" ;
+	:hasXsdDurationDescription "P3M"^^xsd:duration ;
+	time:months "3"^^xsd:decimal .
+
+:one-second a :DurationDescriptions ;
+	rdfs:comment "A duration of one second" ;
+	rdfs:label "1 second" ;
+	:hasXsdDurationDescription "PT1S"^^xsd:duration ;
+	time:seconds "1"^^xsd:decimal .
+
+:one-week a :DurationDescriptions ;
+	rdfs:comment "A duration of one week" ;
+	rdfs:label "1 week" ;
+	:hasXsdDurationDescription "P7D"^^xsd:duration .
+
+:one-year a :DurationDescriptions ;
+	rdfs:comment "A duration of one year" ;
+	rdfs:label "1 year" ;
+	:hasXsdDurationDescription "P1Y"^^xsd:duration ;
+	time:years "1"^^xsd:decimal .
+
+:ordinalDayOfMonth a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal number of the day of the month in in which an instant or interval (of duration less than one day) occurs. The first day of a month has the ordinal number 1."@en .
+
+_:node14u7vomabx145 a owl:Class .
+
+_:node14u7vomabx146 rdf:first :Day ;
+	rdf:rest _:node14u7vomabx147 .
+
+_:node14u7vomabx147 rdf:first :Hour ;
+	rdf:rest _:node14u7vomabx148 .
+
+_:node14u7vomabx148 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx149 .
+
+_:node14u7vomabx149 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx150 .
+
+_:node14u7vomabx150 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx145 owl:unionOf _:node14u7vomabx146 .
+
+:ordinalDayOfMonth rdfs:domain _:node14u7vomabx145 ;
+	rdfs:label "ordinal day of month"@en ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "ordinal day of month"@en .
+
+:ordinalDayOfWeek a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal number of the day of the week in which a (contained) instant or interval (of one day or less in duration) occurs. The Monday has an ordinal number of 1."@en .
+
+_:node14u7vomabx151 a owl:Class .
+
+_:node14u7vomabx152 rdf:first :Day ;
+	rdf:rest _:node14u7vomabx153 .
+
+_:node14u7vomabx153 rdf:first :Hour ;
+	rdf:rest _:node14u7vomabx154 .
+
+_:node14u7vomabx154 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx155 .
+
+_:node14u7vomabx155 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx156 .
+
+_:node14u7vomabx156 rdf:first time:DayOfWeek ;
+	rdf:rest _:node14u7vomabx157 .
+
+_:node14u7vomabx157 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx151 owl:unionOf _:node14u7vomabx152 .
+
+:ordinalDayOfWeek rdfs:domain _:node14u7vomabx151 ;
+	rdfs:label "ordinal day of week {en}"^^xsd:string ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "ordinal day of week {en}"^^xsd:string .
+
+:ordinalDayOfYear a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal number of the day of the year in in which an instant or interval (of duration one day or less) occurs. The first day of a year has the ordinal number 1."@en .
+
+_:node14u7vomabx158 a owl:Class .
+
+_:node14u7vomabx159 rdf:first :Day ;
+	rdf:rest _:node14u7vomabx160 .
+
+_:node14u7vomabx160 rdf:first :Hour ;
+	rdf:rest _:node14u7vomabx161 .
+
+_:node14u7vomabx161 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx162 .
+
+_:node14u7vomabx162 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx163 .
+
+_:node14u7vomabx163 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx158 owl:unionOf _:node14u7vomabx159 .
+
+:ordinalDayOfYear rdfs:domain _:node14u7vomabx158 ;
+	rdfs:label "ordinal day of month"@en ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "ordinal day of month"@en .
+
+:ordinalHalfOfYear a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal number of the half of a year in which a contained instant or interval (of duration one half year or less) occurs. The first half of a year has the ordinal number 1."@en .
+
+_:node14u7vomabx164 a owl:Class .
+
+_:node14u7vomabx165 rdf:first :Day ;
+	rdf:rest _:node14u7vomabx166 .
+
+_:node14u7vomabx166 rdf:first :Half ;
+	rdf:rest _:node14u7vomabx167 .
+
+_:node14u7vomabx167 rdf:first :Hour ;
+	rdf:rest _:node14u7vomabx168 .
+
+_:node14u7vomabx168 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx169 .
+
+_:node14u7vomabx169 rdf:first :Month ;
+	rdf:rest _:node14u7vomabx170 .
+
+_:node14u7vomabx170 rdf:first :Quarter ;
+	rdf:rest _:node14u7vomabx171 .
+
+_:node14u7vomabx171 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx172 .
+
+_:node14u7vomabx172 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx164 owl:unionOf _:node14u7vomabx165 .
+
+:ordinalHalfOfYear rdfs:domain _:node14u7vomabx164 ;
+	rdfs:label "has half of year"@en ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "has half of year"@en .
+
+:ordinalHourOfDay a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal number of the hour of day in which a (contained) instant or interval (of less than one hour duration) occurs. The first hour of a day has ordinal number 0."@en .
+
+_:node14u7vomabx173 a owl:Class .
+
+_:node14u7vomabx174 rdf:first :Hour ;
+	rdf:rest _:node14u7vomabx175 .
+
+_:node14u7vomabx175 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx176 .
+
+_:node14u7vomabx176 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx177 .
+
+_:node14u7vomabx177 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx173 owl:unionOf _:node14u7vomabx174 .
+
+:ordinalHourOfDay rdfs:domain _:node14u7vomabx173 ;
+	rdfs:label "ordinal hour of day"^^xsd:string ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "ordinal hour of day"@en .
+
+:ordinalMinuteOfHour a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal number of the minute of the hour in which a contained instant or interval (of duration one hour or less) occurs. The first minute of an hour has ordinal number 0."^^xsd:string .
+
+_:node14u7vomabx178 a owl:Class .
+
+_:node14u7vomabx179 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx180 .
+
+_:node14u7vomabx180 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx181 .
+
+_:node14u7vomabx181 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx178 owl:unionOf _:node14u7vomabx179 .
+
+:ordinalMinuteOfHour rdfs:domain _:node14u7vomabx178 ;
+	rdfs:label "ordinal minute of hour"@en ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "ordinal minute of hour"@en .
+
+:ordinalMonthOfYear a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal number of the month of the year in in which an instant or interval (of duration one day or less) occurs. The January has the ordinal number 1."@en .
+
+_:node14u7vomabx182 a owl:Class .
+
+_:node14u7vomabx183 rdf:first :Day ;
+	rdf:rest _:node14u7vomabx184 .
+
+_:node14u7vomabx184 rdf:first :Hour ;
+	rdf:rest _:node14u7vomabx185 .
+
+_:node14u7vomabx185 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx186 .
+
+_:node14u7vomabx186 rdf:first :Month ;
+	rdf:rest _:node14u7vomabx187 .
+
+_:node14u7vomabx187 rdf:first :MonthOfYear ;
+	rdf:rest _:node14u7vomabx188 .
+
+_:node14u7vomabx188 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx189 .
+
+_:node14u7vomabx189 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx182 owl:unionOf _:node14u7vomabx183 .
+
+:ordinalMonthOfYear rdfs:domain _:node14u7vomabx182 ;
+	rdfs:label "ordinal month of year"@en ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "ordinal month of year"@en .
+
+:ordinalQuarterOfYear a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal number of the quarter of the year in which a contained instant or interval (of duration one quarter year or less) occurs. The ordinal number of the first quarter of a year is 1."@en .
+
+_:node14u7vomabx190 a owl:Class .
+
+_:node14u7vomabx191 rdf:first :Day ;
+	rdf:rest _:node14u7vomabx192 .
+
+_:node14u7vomabx192 rdf:first :Hour ;
+	rdf:rest _:node14u7vomabx193 .
+
+_:node14u7vomabx193 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx194 .
+
+_:node14u7vomabx194 rdf:first :Month ;
+	rdf:rest _:node14u7vomabx195 .
+
+_:node14u7vomabx195 rdf:first :Quarter ;
+	rdf:rest _:node14u7vomabx196 .
+
+_:node14u7vomabx196 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx197 .
+
+_:node14u7vomabx197 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx190 owl:unionOf _:node14u7vomabx191 .
+
+:ordinalQuarterOfYear rdfs:domain _:node14u7vomabx190 ;
+	rdfs:label "ordinal quarter of year"@en ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "ordinal quarter of year"@en .
+
+:ordinalSecondOfMinute a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal number of the second of the minute in which a contained instant or interval (of one second duration or less) occurs. The ordinal number of the first second of a minute is 0."@en .
+
+_:node14u7vomabx198 a owl:Class .
+
+_:node14u7vomabx199 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx200 .
+
+_:node14u7vomabx200 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx198 owl:unionOf _:node14u7vomabx199 .
+
+:ordinalSecondOfMinute rdfs:domain _:node14u7vomabx198 ;
+	rdfs:label "ordinal second of minute"@en ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "ordinal second of minute"@en .
+
+:ordinalWeekOfYear a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal number of the week of the year in which a contained instant or interval of one week duration or less occurs. The ordinal number of the first week of a year is 1. The first week of a year is the week that contains the first Thursday of the year."^^xsd:string .
+
+_:node14u7vomabx201 a owl:Class .
+
+_:node14u7vomabx202 rdf:first :Day ;
+	rdf:rest _:node14u7vomabx203 .
+
+_:node14u7vomabx203 rdf:first :Hour ;
+	rdf:rest _:node14u7vomabx204 .
+
+_:node14u7vomabx204 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx205 .
+
+_:node14u7vomabx205 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx206 .
+
+_:node14u7vomabx206 rdf:first :Week ;
+	rdf:rest _:node14u7vomabx207 .
+
+_:node14u7vomabx207 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx201 owl:unionOf _:node14u7vomabx202 .
+
+:ordinalWeekOfYear rdfs:domain _:node14u7vomabx201 ;
+	rdfs:label "ordinal week of year"@en ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "ordinal week of year"@en .
+
+:ordinalWeekOfYearYear a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal number of the week of year year in which an instant or interval (of duration one week or less) occurs. The first year of the AD era has ordinal number 1.  The Week Of Year is the year to which a week of year pertains, which is usually the same as the calendar year except aorund the end of year where some days of the week may be deemed to be in the yearr following or the year previous depending on the alignment of the year boundary with the weekly cycle."@en .
+
+_:node14u7vomabx208 a owl:Class .
+
+_:node14u7vomabx209 rdf:first :Day ;
+	rdf:rest _:node14u7vomabx210 .
+
+_:node14u7vomabx210 rdf:first :Hour ;
+	rdf:rest _:node14u7vomabx211 .
+
+_:node14u7vomabx211 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx212 .
+
+_:node14u7vomabx212 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx213 .
+
+_:node14u7vomabx213 rdf:first :Week ;
+	rdf:rest _:node14u7vomabx214 .
+
+_:node14u7vomabx214 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx208 owl:unionOf _:node14u7vomabx209 .
+
+:ordinalWeekOfYearYear rdfs:domain _:node14u7vomabx208 ;
+	rdfs:label "ordinal week of year year"@en ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "ordinal week of year year"@en .
+
+:ordinalYear a owl:DatatypeProperty ;
+	rdfs:comment "The ordinal year of the year in which an instant or interval (of duration one year or less) occurs. The first year of the AD era has ordinal number 1."@en .
+
+_:node14u7vomabx215 a owl:Class .
+
+_:node14u7vomabx216 rdf:first :Day ;
+	rdf:rest _:node14u7vomabx217 .
+
+_:node14u7vomabx217 rdf:first :Hour ;
+	rdf:rest _:node14u7vomabx218 .
+
+_:node14u7vomabx218 rdf:first :Minute ;
+	rdf:rest _:node14u7vomabx219 .
+
+_:node14u7vomabx219 rdf:first :Second ;
+	rdf:rest _:node14u7vomabx220 .
+
+_:node14u7vomabx220 rdf:first time:Instant ;
+	rdf:rest rdf:nil .
+
+_:node14u7vomabx215 owl:unionOf _:node14u7vomabx216 .
+
+:ordinalYear rdfs:domain _:node14u7vomabx215 ;
+	rdfs:label "ordinal year"@en ;
+	rdfs:range xsd:integer ;
+	skos:prefLabel "ordinal year"@en .
+
+:previousAnnualReferenceDate a owl:FunctionalProperty ;
+	rdfs:comment "A reference to the companies house annual reference date at the end of the previous reporting year. Annual reporting periods are required to end with 7 days of this date. Success annual reference dates normally advance by 1 whole year each year. However, companies can always apply for an earlier reference date and under restricted circumstance request a later reference date (upto 6 months later) see http://www.companieshouse.gov.uk/about/gbhtml/gp2.shtml#ch2."@en ;
+	rdfs:domain :BusinessInterval ;
+	rdfs:label "Previous Annual Reference Date."@en ;
+	rdfs:range :CalendarDay ;
+	skos:prefLabel "Previous Annual Reference Date."@en .
+
+:previousInterval a owl:FunctionalProperty ;
+	rdfs:domain :Interval ;
+	rdfs:range :Interval .
+
+time:Friday :ordinalDayOfWeek "5"^^xsd:integer .
+
+time:Monday :ordinalDayOfWeek "1"^^xsd:integer .
+
+time:Saturday :ordinalDayOfWeek "6"^^xsd:integer .
+
+time:Sunday :ordinalDayOfWeek "7"^^xsd:integer .
+
+time:Thursday :ordinalDayOfWeek "4"^^xsd:integer .
+
+time:Tuesday :ordinalDayOfWeek "2"^^xsd:integer .
+
+time:Wednesday :ordinalDayOfWeek "3"^^xsd:integer .
+
+time:intervalContains a owl:TransitiveProperty .

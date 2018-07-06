@@ -1,0 +1,2505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://reference.data.gov.uk/def/intervals/"
+	xmlns:dc11="http://purl.org/dc/elements/1.1/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:scv="http://purl.org/NET/scovo#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:skos-xl="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:time="http://www.w3.org/2006/time#"
+	xmlns:time-entry="http://www.w3.org/2006/time-entry#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<owl:imports rdf:resource="http://purl.org/NET/scovo"/>
+	<owl:imports rdf:resource="http://purl.org/dc/dcam/"/>
+	<owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+	<owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+	<owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+	<owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+	<owl:imports rdf:resource="http://purl.org/NET/c4dm/event.owl"/>
+	<owl:imports rdf:resource="http://www.w3.org/2008/05/skos-xl"/>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Created with TopBraid Composer</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/April">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of April</rdfs:comment>
+	<rdfs:label xml:lang="en">April</rdfs:label>
+	<skos:prefLabel xml:lang="en">April</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/August">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of August</rdfs:comment>
+	<rdfs:label xml:lang="en">August</rdfs:label>
+	<skos:prefLabel xml:lang="en">August</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/BusinessHalf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for business half year intervals. These intervals are not necessarily calendar aligned with month boundaries.</rdfs:comment>
+	<rdfs:label xml:lang="en">Half Year Interval</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Half"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/BusinessInterval"/>
+	<skos:prefLabel xml:lang="en">Half Year Interval</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/BusinessInterval">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A top-level class for business intervals</rdfs:comment>
+	<rdfs:label xml:lang="en">Business Intervals</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/NET/scovo#Dimension"/>
+	<skos:prefLabel xml:lang="en">Business Intervals</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/BusinessQuarter">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/BusinessInterval"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/BusinessYear">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for regular annual business reporting and planning intervals, not necessarily calendar aligned.</rdfs:comment>
+	<rdfs:label xml:lang="en">Business Year</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Year"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/BusinessInterval"/>
+	<skos:prefLabel xml:lang="en">Business Year</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarDay">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for calendar aligned one day intervals, starting at 00:00 (midnight) on the relevant day. ISO 8601(E):2004 Section 2.2.6</rdfs:comment>
+	<rdfs:label xml:lang="en">Calendar Day</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarInterval"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarDay"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarDay">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarDay"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarDay">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx2"/>
+	<skos:prefLabel xml:lang="en">Calendar Day</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarHalf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for calendar aligned intervals that represent a calendar half year, a year being split into two half year periods of 6 months each.</rdfs:comment>
+	<rdfs:label xml:lang="en">CalendarHalf (class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarInterval"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Half"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</owl:cardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsMonth"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarHalf">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx4">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarHalf"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarHalf">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarHalf"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarHalf">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx5"/>
+	<skos:prefLabel xml:lang="en">CalendarHalf (class)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarHour">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for calendar aligned hour-long intervals. ISO 8601(E):2004 Section 2.2.4</rdfs:comment>
+	<rdfs:label xml:lang="en">Calendar Hour (Class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarInterval"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx6">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarHour"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarHour">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx7">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarHour"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarHour">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx7"/>
+	<skos:prefLabel xml:lang="en">Calendar Hour (Class)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarInstant">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Instant"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarInterval">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for all calendar aligned intervals.  The start of a given interval is aligned with the start of each of its first (temporally) subordinate CalendarInterval. Halfs are align the start of the first and seventh month of a year; quarters with the first, forth, seventh and tenth months; months with calendar months sof forth for calendar days, hours,minutes and seconds align </rdfs:comment>
+	<rdfs:label xml:lang="en">CalendarInterval (class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/NET/scovo#Dimension"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx8">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Iso8601Week"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsWeek"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarInterval">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx8"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx9">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarSecond"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsSecond"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarInterval">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx9"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx10">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarDay"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsDay"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarInterval">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx10"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx11">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarInstant"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasBeginning"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarInterval">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx11"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx12">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarHour"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsHour"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarInterval">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx12"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx13">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarHalf"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsHalf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarInterval">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx13"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx14">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarQuarter"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsQuarter"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarInterval">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx14"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx15">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarMonth"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsMonth"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarInterval">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx15"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx16">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarMinute"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsMinute"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarInterval">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx16"/>
+	<skos:prefLabel xml:lang="en">CalendarInterval (class)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarMinute">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for calendar align one minute intervals. ISO 8601(E):2004 Section 2.2.3 (for units - 1 minute interval are not defined).</rdfs:comment>
+	<rdfs:label xml:lang="en">Calendar Minute</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarInterval"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx17">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarMinute"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarMinute">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx17"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx18">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarMinute"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarMinute">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx18"/>
+	<skos:prefLabel xml:lang="en">Calendar Minute</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarMonth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for calendar aligned intervals of one calendar month.  ISO 8601(E):2004 Section 2.2.11</rdfs:comment>
+	<rdfs:label xml:lang="en">Calendar Month</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarInterval"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Month"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx19">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarMonth"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarMonth">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx19"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx20">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarMonth"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarMonth">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx20"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx21">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsDay"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarMonth">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx21"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx22">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsDay"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarMonth">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx22"/>
+	<skos:prefLabel xml:lang="en">Calendar Month</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarQuarter">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for calendar aligned one-quarter year (3 month) intervals</rdfs:comment>
+	<rdfs:label xml:lang="en">Calendar Quarter</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarInterval"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx23">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:cardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsMonth"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarQuarter">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx23"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx24">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarQuarter"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarQuarter">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx24"/>
+	<skos:prefLabel xml:lang="en">Calendar Quarter</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarSecond">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for calendar aligned one-second intervals. ISO 8601(E):2004 Section 2.2.1 (and 2.2.2 for leap seconds)(for units - 1 second interval are not defined).</rdfs:comment>
+	<rdfs:label xml:lang="en">Calendar Second</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarInterval"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx25">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarSecond">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx25"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx26">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarSecond">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx26"/>
+	<skos:prefLabel xml:lang="en">Calendar Second</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarYear">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for calendar aligned intervals of one whole year, ie. year long intervals that are aligned with a Calendar.</rdfs:comment>
+	<rdfs:label xml:lang="en">Calendar Year</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarInterval"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Year"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx27">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">366</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsDay"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarYear">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx27"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx28">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">365</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsDay"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarYear">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx28"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx29">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarYear"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarYear">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx29"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx30">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarYear"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarYear">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx30"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx31">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</owl:cardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsMonth"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/CalendarYear">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx31"/>
+	<skos:prefLabel xml:lang="en">Calendar Year</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Day">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A generic superclass for all day like entities.</rdfs:comment>
+	<rdfs:label xml:lang="en">Generic Day (Class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx32">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Day">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx32"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx33">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Day">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx33"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx34">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:resource="http://reference.data.gov.uk/def/intervals/one-day"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Day">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx34"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx35">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</owl:hasValue>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/hasXsdDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Day">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx35"/>
+	<skos:prefLabel xml:lang="en">Generic Day (Class)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/December">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of December</rdfs:comment>
+	<rdfs:label xml:lang="en">December</rdfs:label>
+	<skos:prefLabel xml:lang="en">December</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/DurationDescriptions">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#DurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/February">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment xml:lang="en">The month of February</rdfs:comment>
+	<rdfs:label xml:lang="en">February</rdfs:label>
+	<skos:prefLabel xml:lang="en">February</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/H1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for intervals that the first half of a (nominally) annual cycle.</rdfs:comment>
+	<rdfs:label xml:lang="en">H1 Interval</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Half"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx36">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx37">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx38">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/H1"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx39"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx39">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/H2"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx37">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx38"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx36">
+	<owl:allValuesFrom rdf:nodeID="node14u7vo6flx37"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/H1">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx36"/>
+	<skos:prefLabel xml:lang="en">H1 Interval</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/H2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for intervals that the second half of a (nominally) annual cycle.</rdfs:comment>
+	<rdfs:label xml:lang="en">H2 Interval</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Half"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx40">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx41">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx42">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/H1"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx43"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx43">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/H3"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx41">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx42"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx40">
+	<owl:allValuesFrom rdf:nodeID="node14u7vo6flx41"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/H2">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx40"/>
+	<skos:prefLabel xml:lang="en">H2 Interval</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/H3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for 3rd half year intervals in an abnormally long annual interval - in the UK a buisness interval may exceptionally extent to 6 quarters.</rdfs:comment>
+	<rdfs:label xml:lang="en">H3 Interval</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Half"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx44">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/H1"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/H3">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx44"/>
+	<skos:prefLabel xml:lang="en">H3 Interval</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Half">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A generic superclass for all half-year (6 month) like intervals</rdfs:comment>
+	<rdfs:label xml:lang="en">Generic Half (Class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx45">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Half"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Half">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx45"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx46">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P6M</owl:hasValue>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/hasXsdDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Half">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx46"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx47">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Half"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Half">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx47"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx48">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:resource="http://reference.data.gov.uk/def/intervals/one-half"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Half">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx48"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx49">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:cardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsQuarter"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Half">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx49"/>
+	<skos:prefLabel xml:lang="en">Generic Half (Class)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Hour">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A generic superclass for hour-long intervals. An hour may contain a positive or negative leap second (see http://en.wikipedia.org/wiki/Hour).</rdfs:comment>
+	<rdfs:label xml:lang="en">Generic Hour (class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx50">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3599</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsSecond"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Hour">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx50"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx51">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT1H</owl:hasValue>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/hasXsdDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Hour">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx51"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx52">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Hour">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx52"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx53">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3601</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsSecond"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Hour">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx53"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx54">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Hour">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx54"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx55">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</owl:cardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsMinute"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Hour">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx55"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx56">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:resource="http://reference.data.gov.uk/def/intervals/one-hour"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Hour">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx56"/>
+	<skos:prefLabel xml:lang="en">Generic Hour (class)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Interval">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#DateTimeInterval"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/NET/scovo#Dimension"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/IntervalList">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx57">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx58">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx59">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx60"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx60">
+	<rdf:first rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx58">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx59"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx57">
+	<owl:allValuesFrom rdf:nodeID="node14u7vo6flx58"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/IntervalList">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx57"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx61">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/IntervalList">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx61"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/IrregularInterval">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A business interval outside of the normal pattern of business intervals. In the UK companies house allow an annual reporting interval to be extended by upto 6 months once in 5 years (and at other exceptional times)</rdfs:comment>
+	<rdfs:label xml:lang="en">Irregular Business interval</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/BusinessInterval"/>
+	<skos:prefLabel xml:lang="en">Irregular Business interval</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Iso8601Week">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for calendar weeks. Strictly not all calendar week intervals are contained within the year to which they may be attributed. The first or last week of a given calendar year may inculde days from the preceding or following calendar year respectively. An ISO 8601 week starts at 00:00:00 in a Monday and ends at the last moment of 23:59:59 on the following Sunday.  ISO 8601(E):2004 Section 2.2.8</rdfs:comment>
+	<rdfs:label xml:lang="en">Calendar Week</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarInterval"/>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Week"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx62">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:cardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsDay"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Iso8601Week">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx62"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx63">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Iso8601Week"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Iso8601Week">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx63"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx64">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarDay"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsDay"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Iso8601Week">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx64"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx65">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Iso8601Week"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Iso8601Week">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx65"/>
+	<skos:prefLabel xml:lang="en">ISO 8601 Week</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/January">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of January</rdfs:comment>
+	<rdfs:label xml:lang="en">January</rdfs:label>
+	<skos:prefLabel xml:lang="en">January</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/July">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of July</rdfs:comment>
+	<rdfs:label xml:lang="en">July</rdfs:label>
+	<skos:prefLabel xml:lang="en">July</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/June">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of June</rdfs:comment>
+	<rdfs:label xml:lang="en">January</rdfs:label>
+	<skos:prefLabel xml:lang="en">June</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/March">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of March</rdfs:comment>
+	<rdfs:label xml:lang="en">March</rdfs:label>
+	<skos:prefLabel xml:lang="en">March</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/May">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of May</rdfs:comment>
+	<rdfs:label xml:lang="en">May</rdfs:label>
+	<skos:prefLabel xml:lang="en">May</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Minute">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A generic superclass for all minute-long intervals. A minute may contain a positive or negative leap second.</rdfs:comment>
+	<rdfs:label xml:lang="en">Generic Minute (Class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx66">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsSecond"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Minute">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx66"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx67">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Minute">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx67"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx68">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsSecond"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Minute">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx68"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx69">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT1M</owl:hasValue>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/hasXsdDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Minute">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx69"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx70">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Minute">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx70"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx71">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:resource="http://reference.data.gov.uk/def/intervals/one-minute"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Minute">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx71"/>
+	<skos:prefLabel xml:lang="en">Generic Minute (Class)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Month">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A generic superclass class for all month-long like intervals.</rdfs:comment>
+	<rdfs:label xml:lang="en">Generic Month (Class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx72">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:resource="http://reference.data.gov.uk/def/intervals/one-month"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Month">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx72"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx73">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Month"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Month">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx73"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx74">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1M</owl:hasValue>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/hasXsdDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Month">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx74"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx75">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Month"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Month">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx75"/>
+	<skos:prefLabel xml:lang="en">Generic Month (Class)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/MonthOfYear">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A class for the months of a calendar year. A month of year is a recurring interval of about 12th of a year that re-occurs annually.</rdfs:comment>
+	<rdfs:label xml:lang="en">month of year</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx76">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/January"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx77"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx77">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/February"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx78"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx78">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/March"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx79"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx79">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/April"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx80"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx80">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/May"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx81"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx81">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/June"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx82"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx82">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/July"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx83"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx83">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/August"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx84"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx84">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/September"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx85"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx85">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/October"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx86"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx86">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/November"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx87"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx87">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/December"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/MonthOfYear">
+	<owl:oneOf rdf:nodeID="node14u7vo6flx76"/>
+	<skos:prefLabel xml:lang="en">month of year</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/November">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of Novermber</rdfs:comment>
+	<rdfs:label xml:lang="en">November</rdfs:label>
+	<skos:prefLabel xml:lang="en">November</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/October">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of October</rdfs:comment>
+	<rdfs:label xml:lang="en">October</rdfs:label>
+	<skos:prefLabel xml:lang="en">October</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for intervals that are the first quarter of a (nominally) annual cycle.</rdfs:comment>
+	<rdfs:label xml:lang="en">Q1 Interval</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx88">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx89">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx90">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Q1"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx91"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx91">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Q2"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx89">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx90"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx88">
+	<owl:allValuesFrom rdf:nodeID="node14u7vo6flx89"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q1">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx88"/>
+	<skos:prefLabel xml:lang="en">Q1 Interval</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for intervals that are 2nd quarters of a (nominally) annual cycle</rdfs:comment>
+	<rdfs:label xml:lang="en">Q2 Interval</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx92">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx93">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx94">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Q1"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx95"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx95">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Q3"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx93">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx94"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx92">
+	<owl:allValuesFrom rdf:nodeID="node14u7vo6flx93"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q2">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx92"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx96">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Q1"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q2">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx96"/>
+	<skos:prefLabel xml:lang="en">Q2 Interval</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for intervals that are 3rd quarters of a (nominally) annual cycle</rdfs:comment>
+	<rdfs:label xml:lang="en">Q3 Interval</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx97">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Q2"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q3">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx97"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx98">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx99">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx100">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Q1"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx101"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx101">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Q4"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx99">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx100"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx98">
+	<owl:allValuesFrom rdf:nodeID="node14u7vo6flx99"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q3">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx98"/>
+	<skos:prefLabel xml:lang="en">Q3 Interval</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q4">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for intervals that are 4th quarters of a (nominally) annual cycle.</rdfs:comment>
+	<rdfs:label xml:lang="en">Q4 Interval</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx102">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Q3"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q4">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx102"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx103">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx104">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx105">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Q1"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx106"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx106">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Q5"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx104">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx105"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx103">
+	<owl:allValuesFrom rdf:nodeID="node14u7vo6flx104"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q4">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx103"/>
+	<skos:prefLabel xml:lang="en">Q4 Interval</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for 5th quarters of an abnormally long annual interval - in the UK a buisness interval may exceptionally extent to 6 quarters.</rdfs:comment>
+	<rdfs:label xml:lang="en">Q5 Interval</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx107">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx108">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx109">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Q1"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx110"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx110">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Q6"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx108">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx109"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx107">
+	<owl:allValuesFrom rdf:nodeID="node14u7vo6flx108"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q5">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx107"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx111">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Q4"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q5">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx111"/>
+	<skos:prefLabel xml:lang="en">Q5 Interval</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q6">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A class for 6th quarters of an abnormally long annual interval - in the UK a buisness interval may exceptionally extent to 6 quarters.</rdfs:comment>
+	<rdfs:label xml:lang="en">Q6 Interval</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx112">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Q5"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q6">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx112"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx113">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Q1"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Q6">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx113"/>
+	<skos:prefLabel xml:lang="en">Q6 Interval</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Quarter">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A generic superclass for all Quarter (3-month) long intervals</rdfs:comment>
+	<rdfs:label xml:lang="en">Generic Quarter (Class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx114">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:resource="http://reference.data.gov.uk/def/intervals/one-quarter"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Quarter">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx114"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx115">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P3M</owl:hasValue>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/hasXsdDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Quarter">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx115"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx116">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Quarter">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx116"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx117">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Quarter">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx117"/>
+	<skos:prefLabel xml:lang="en">Generic Quarter (Class)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Second">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A generic superclass for all one-second long like intervals</rdfs:comment>
+	<rdfs:label xml:lang="en">Generic Second (Class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx118">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:resource="http://reference.data.gov.uk/def/intervals/one-second"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Second">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx118"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx119">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Second">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx119"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx120">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Second">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx120"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx121">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT1S</owl:hasValue>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/hasXsdDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Second">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx121"/>
+	<skos:prefLabel xml:lang="en">Generic Second (Class)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/September">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The month of September</rdfs:comment>
+	<rdfs:label xml:lang="en">September</rdfs:label>
+	<skos:prefLabel xml:lang="en">September</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Week">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A generic superclass for all one-week long (7 day) intervals.</rdfs:comment>
+	<rdfs:label xml:lang="en">Generic Week (Class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx122">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</owl:cardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsDay"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Week">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx122"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx123">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P7D</owl:hasValue>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/hasXsdDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Week">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx123"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx124">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Week"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Week">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx124"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx125">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Week"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Week">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx125"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx126">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:resource="http://reference.data.gov.uk/def/intervals/one-week"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Week">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx126"/>
+	<skos:prefLabel xml:lang="en">Generice Week (Class)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Year">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A generic superclass for all manner of Year like intervals. The the cardinality of days in a year is set to between 351 and 380 because in the UK the end of a business reporting year must be within 7 days of an annual reference date. In the worst cases this allows a reporting interval to be shortened or extended by up to two weeks.</rdfs:comment>
+	<rdfs:label xml:lang="en">Generic Year (Class)</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx127">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Year"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/previousInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Year">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx127"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx128">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">351</owl:minCardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsDay"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Year">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx128"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx129">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:cardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsQuarter"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Year">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx129"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx130">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:cardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsHalf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Year">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx130"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx131">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:resource="http://reference.data.gov.uk/def/intervals/one-year"/>
+	<owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Year">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx131"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx132">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1Y</owl:hasValue>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/hasXsdDurationDescription"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Year">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx132"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx133">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:allValuesFrom rdf:resource="http://reference.data.gov.uk/def/intervals/Year"/>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/nextInterval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Year">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx133"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx134">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">380</owl:maxCardinality>
+	<owl:onProperty rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsDay"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/Year">
+	<rdfs:subClassOf rdf:nodeID="node14u7vo6flx134"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/dayOfWeek">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">The day of the week in which an instant or interval (of duration one day or less) occurs.</rdfs:comment>
+	<rdfs:label xml:lang="en">day of week</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2006/time#DayOfWeek"/>
+	<skos:prefLabel xml:lang="en">day of week</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/hasXsdDurationDescription">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">hasXsdDurationDescription: a data type property for associating an xsd:duration with an Interval. Inspired by "durationDescriptionDataType" mentioned in "http://www.w3.org/TR/owl-time" but which seems to have failed to make it into the formal ontology.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx135">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx136">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#DurationDescription"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx137"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx137">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Interval"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx135">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx136"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/hasXsdDurationDescription">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx135"/>
+	<rdfs:label xml:lang="en">hasXsdDurationDescription (DataTypeProperty)</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsDay">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsDays">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsHalf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/Half"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsHalves">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsHour">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsHours">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsIso8601Week">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdfs:subPropertyOf rdf:resource="http://reference.data.gov.uk/def/intervals/intervalContainsWeek"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsMinute">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsMinutes">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsMonth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/Month"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsMonths">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsQuarter">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsQuarters">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsSecond">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsSeconds">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/intervalContainsWeek">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/Week"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/monthOfYear">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">The month of the year in which a contained instant or interval (of duration one month or less) occurs.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx138">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx139">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx140"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx140">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx141"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx141">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx142"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx142">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Month"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx143"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx143">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx144"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx144">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx138">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx139"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/monthOfYear">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx138"/>
+	<rdfs:label xml:lang="en">month of year</rdfs:label>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<skos:prefLabel xml:lang="en">month of year</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/nextAnnualReferenceDate">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdfs:comment xml:lang="en">A reference to the companies house annual reference date at the end of the previous reporting year. Annual reporting periods are required to end with 7 days of this date. Success annual reference dates normally advance by 1 whole year each year. However, companies can always apply for an earlier reference date and under restricted circumstance request a later reference date (upto 6 months later) see http://www.companieshouse.gov.uk/about/gbhtml/gp2.shtml#ch2</rdfs:comment>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/BusinessInterval"/>
+	<rdfs:label xml:lang="en">Next Annual Reference Date.</rdfs:label>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarDay"/>
+	<skos:prefLabel xml:lang="en">Next Annual Reference Date.</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/nextInterval">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-day">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one day, typically 24 hours)</rdfs:comment>
+	<rdfs:label xml:lang="en">1 day</rdfs:label>
+	<hasXsdDurationDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1D</hasXsdDurationDescription>
+	<time:days rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</time:days>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-half">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one half year, typically 6 months</rdfs:comment>
+	<rdfs:label>1 half of a year</rdfs:label>
+	<hasXsdDurationDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P6M</hasXsdDurationDescription>
+	<time:months rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</time:months>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-hour">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one hour</rdfs:comment>
+	<rdfs:label>1 hour</rdfs:label>
+	<hasXsdDurationDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT1H</hasXsdDurationDescription>
+	<time:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</time:hours>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-minute">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of 1 minute</rdfs:comment>
+	<rdfs:label>1 minute</rdfs:label>
+	<hasXsdDurationDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT1M</hasXsdDurationDescription>
+	<time:minutes rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</time:minutes>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-month">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one month</rdfs:comment>
+	<rdfs:label>1 month</rdfs:label>
+	<hasXsdDurationDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1M</hasXsdDurationDescription>
+	<time:months rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</time:months>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-quarter">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment xml:lang="en">A duration of one quarter, typically 3 months.</rdfs:comment>
+	<rdfs:label>1 quarter of a year</rdfs:label>
+	<hasXsdDurationDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P3M</hasXsdDurationDescription>
+	<time:months rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</time:months>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-second">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one second</rdfs:comment>
+	<rdfs:label>1 second</rdfs:label>
+	<hasXsdDurationDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">PT1S</hasXsdDurationDescription>
+	<time:seconds rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</time:seconds>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-week">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one week</rdfs:comment>
+	<rdfs:label>1 week</rdfs:label>
+	<hasXsdDurationDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P7D</hasXsdDurationDescription>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/one-year">
+	<rdf:type rdf:resource="http://reference.data.gov.uk/def/intervals/DurationDescriptions"/>
+	<rdfs:comment>A duration of one year</rdfs:comment>
+	<rdfs:label>1 year</rdfs:label>
+	<hasXsdDurationDescription rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1Y</hasXsdDurationDescription>
+	<time:years rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</time:years>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalDayOfMonth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">The ordinal number of the day of the month in in which an instant or interval (of duration less than one day) occurs. The first day of a month has the ordinal number 1.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx145">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx146">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx147"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx147">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx148"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx148">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx149"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx149">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx150"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx150">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx145">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx146"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalDayOfMonth">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx145"/>
+	<rdfs:label xml:lang="en">ordinal day of month</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel xml:lang="en">ordinal day of month</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalDayOfWeek">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">The ordinal number of the day of the week in which a (contained) instant or interval (of one day or less in duration) occurs. The Monday has an ordinal number of 1.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx151">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx152">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx153"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx153">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx154"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx154">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx155"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx155">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx156"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx156">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#DayOfWeek"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx157"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx157">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx151">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx152"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalDayOfWeek">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx151"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ordinal day of week {en}</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ordinal day of week {en}</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalDayOfYear">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">The ordinal number of the day of the year in in which an instant or interval (of duration one day or less) occurs. The first day of a year has the ordinal number 1.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx158">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx159">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx160"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx160">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx161"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx161">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx162"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx162">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx163"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx163">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx158">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx159"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalDayOfYear">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx158"/>
+	<rdfs:label xml:lang="en">ordinal day of month</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel xml:lang="en">ordinal day of month</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalHalfOfYear">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">The ordinal number of the half of a year in which a contained instant or interval (of duration one half year or less) occurs. The first half of a year has the ordinal number 1.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx164">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx165">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx166"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx166">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Half"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx167"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx167">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx168"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx168">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx169"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx169">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Month"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx170"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx170">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx171"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx171">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx172"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx172">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx164">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx165"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalHalfOfYear">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx164"/>
+	<rdfs:label xml:lang="en">has half of year</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel xml:lang="en">has half of year</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalHourOfDay">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">The ordinal number of the hour of day in which a (contained) instant or interval (of less than one hour duration) occurs. The first hour of a day has ordinal number 0.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx173">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx174">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx175"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx175">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx176"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx176">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx177"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx177">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx173">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx174"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalHourOfDay">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx173"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ordinal hour of day</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel xml:lang="en">ordinal hour of day</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalMinuteOfHour">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ordinal number of the minute of the hour in which a contained instant or interval (of duration one hour or less) occurs. The first minute of an hour has ordinal number 0.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx178">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx179">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx180"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx180">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx181"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx181">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx178">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx179"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalMinuteOfHour">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx178"/>
+	<rdfs:label xml:lang="en">ordinal minute of hour</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel xml:lang="en">ordinal minute of hour</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalMonthOfYear">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">The ordinal number of the month of the year in in which an instant or interval (of duration one day or less) occurs. The January has the ordinal number 1.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx182">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx183">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx184"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx184">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx185"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx185">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx186"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx186">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Month"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx187"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx187">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/MonthOfYear"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx188"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx188">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx189"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx189">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx182">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx183"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalMonthOfYear">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx182"/>
+	<rdfs:label xml:lang="en">ordinal month of year</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel xml:lang="en">ordinal month of year</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalQuarterOfYear">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">The ordinal number of the quarter of the year in which a contained instant or interval (of duration one quarter year or less) occurs. The ordinal number of the first quarter of a year is 1.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx190">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx191">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx192"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx192">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx193"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx193">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx194"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx194">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Month"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx195"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx195">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Quarter"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx196"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx196">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx197"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx197">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx190">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx191"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalQuarterOfYear">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx190"/>
+	<rdfs:label xml:lang="en">ordinal quarter of year</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel xml:lang="en">ordinal quarter of year</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalSecondOfMinute">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">The ordinal number of the second of the minute in which a contained instant or interval (of one second duration or less) occurs. The ordinal number of the first second of a minute is 0.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx198">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx199">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx200"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx200">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx198">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx199"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalSecondOfMinute">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx198"/>
+	<rdfs:label xml:lang="en">ordinal second of minute</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel xml:lang="en">ordinal second of minute</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalWeekOfYear">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ordinal number of the week of the year in which a contained instant or interval of one week duration or less occurs. The ordinal number of the first week of a year is 1. The first week of a year is the week that contains the first Thursday of the year.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx201">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx202">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx203"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx203">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx204"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx204">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx205"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx205">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx206"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx206">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Week"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx207"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx207">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx201">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx202"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalWeekOfYear">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx201"/>
+	<rdfs:label xml:lang="en">ordinal week of year</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel xml:lang="en">ordinal week of year</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalWeekOfYearYear">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">The ordinal number of the week of year year in which an instant or interval (of duration one week or less) occurs. The first year of the AD era has ordinal number 1.  The Week Of Year is the year to which a week of year pertains, which is usually the same as the calendar year except aorund the end of year where some days of the week may be deemed to be in the yearr following or the year previous depending on the alignment of the year boundary with the weekly cycle.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx208">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx209">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx210"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx210">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx211"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx211">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx212"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx212">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx213"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx213">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Week"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx214"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx214">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx208">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx209"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalWeekOfYearYear">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx208"/>
+	<rdfs:label xml:lang="en">ordinal week of year year</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel xml:lang="en">ordinal week of year year</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalYear">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">The ordinal year of the year in which an instant or interval (of duration one year or less) occurs. The first year of the AD era has ordinal number 1.</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx215">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx216">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Day"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx217"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx217">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Hour"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx218"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx218">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Minute"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx219"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx219">
+	<rdf:first rdf:resource="http://reference.data.gov.uk/def/intervals/Second"/>
+	<rdf:rest rdf:nodeID="node14u7vo6flx220"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx220">
+	<rdf:first rdf:resource="http://www.w3.org/2006/time#Instant"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node14u7vo6flx215">
+	<owl:unionOf rdf:nodeID="node14u7vo6flx216"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/ordinalYear">
+	<rdfs:domain rdf:nodeID="node14u7vo6flx215"/>
+	<rdfs:label xml:lang="en">ordinal year</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+	<skos:prefLabel xml:lang="en">ordinal year</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/previousAnnualReferenceDate">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdfs:comment xml:lang="en">A reference to the companies house annual reference date at the end of the previous reporting year. Annual reporting periods are required to end with 7 days of this date. Success annual reference dates normally advance by 1 whole year each year. However, companies can always apply for an earlier reference date and under restricted circumstance request a later reference date (upto 6 months later) see http://www.companieshouse.gov.uk/about/gbhtml/gp2.shtml#ch2.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/BusinessInterval"/>
+	<rdfs:label xml:lang="en">Previous Annual Reference Date.</rdfs:label>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/CalendarDay"/>
+	<skos:prefLabel xml:lang="en">Previous Annual Reference Date.</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://reference.data.gov.uk/def/intervals/previousInterval">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+	<rdfs:domain rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+	<rdfs:range rdf:resource="http://reference.data.gov.uk/def/intervals/Interval"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2006/time#Friday">
+	<ordinalDayOfWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ordinalDayOfWeek>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2006/time#Monday">
+	<ordinalDayOfWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ordinalDayOfWeek>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2006/time#Saturday">
+	<ordinalDayOfWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ordinalDayOfWeek>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2006/time#Sunday">
+	<ordinalDayOfWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ordinalDayOfWeek>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2006/time#Thursday">
+	<ordinalDayOfWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ordinalDayOfWeek>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2006/time#Tuesday">
+	<ordinalDayOfWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ordinalDayOfWeek>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2006/time#Wednesday">
+	<ordinalDayOfWeek rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ordinalDayOfWeek>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2006/time#intervalContains">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+</rdf:Description>
+
+</rdf:RDF>
